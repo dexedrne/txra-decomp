@@ -38,7 +38,8 @@ def main():
     output = (a.output or Path('build/windows/txra-pc.exe' if a.target == 'windows' else 'build/txra-pc')).resolve()
     os.chdir(root)
     compiler = 'x86_64-w64-mingw32-gcc' if a.target == 'windows' else 'cc'
-    dependencies = (compiler,) if a.target == 'windows' else ('make', compiler, 'pkg-config')
+    dependencies = ((compiler, 'x86_64-w64-mingw32-windres') if a.target == 'windows'
+                    else ('make', compiler, 'pkg-config'))
     for tool in dependencies:
         if not shutil.which(tool):
             p.error(f'Missing build dependency: {tool}')
@@ -60,17 +61,28 @@ def main():
     if a.target == 'windows':
         directory = root / 'build/windows'
         directory.mkdir(parents=True, exist_ok=True)
-        flags = ['-O2', '-std=c11', '-Wall', '-Wextra', '-Wno-misleading-indentation', '-Iruntime', '-DSDL_MAIN_HANDLED']
+        # Same optimization flags as the Linux build; C99 printf formats from MinGW's stdio.
+        flags = ['-O2', '-std=c11', '-Wall', '-Wextra', '-Wno-misleading-indentation', '-Iruntime',
+                 '-DSDL_MAIN_HANDLED', '-D__USE_MINGW_ANSI_STDIO=1']
         subprocess.run([compiler, *flags, '-O1', '-c', 'build/generated.c', '-o', str(directory / 'generated.o')], check=True)
+        # Manifest: UTF-8 paths and arguments, Windows 10/11 compatibility, no elevation.
+        resources = directory / 'txra-res.o'
+        subprocess.run(['x86_64-w64-mingw32-windres', '-I', 'runtime/windows', 'runtime/windows/txra.rc',
+                        '-O', 'coff', '-o', str(resources)], check=True)
         built = directory / 'txra-pc.exe'
+        # GUI subsystem (no console window), libgcc linked in, 8 MiB stack reserve like Linux.
+        # Debug sections are dropped by the linker with no timestamp, so identical sources give
+        # an identical executable (a separate strip pass would stamp the current time).
         subprocess.run([compiler, *flags, '-I' + str(sdk / 'include/SDL2'),
                         *map(str, sorted((root / 'runtime').glob('*.c'))), str(directory / 'generated.o'),
-                        '-L' + str(sdk / 'lib'), '-lSDL2', '-o', str(built)], check=True)
+                        str(resources), '-L' + str(sdk / 'lib'), '-lSDL2', '-mwindows', '-static-libgcc',
+                        '-Wl,--stack,8388608', '-Wl,--no-insert-timestamp', '-Wl,--strip-debug',
+                        '-o', str(built)], check=True)
         publish(sdk / 'bin/SDL2.dll', output.parent / 'SDL2.dll')
         license_path = sdk.parent / 'LICENSE.txt'
         if license_path.is_file():
             publish(license_path, output.parent / 'SDL2-LICENSE.txt')
-        stripper = shutil.which('x86_64-w64-mingw32-strip')
+        stripper = None
     else:
         subprocess.run(['make', '--assume-old=build/generated.c', f'PYTHON={sys.executable}', 'recomp'], check=True)
         built = root / 'build/txra-pc'

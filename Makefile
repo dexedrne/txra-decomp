@@ -105,8 +105,21 @@ build/desktop-test: tests/desktop_test.c runtime/desktop.c runtime/desktop.h run
 	$(HOST_CC) $(HOST_CFLAGS) $(SDL_CFLAGS) -Iruntime tests/desktop_test.c runtime/desktop.c runtime/input.c runtime/audio.c $(SDL_LIBS) -o $@
 .PHONY: check-accuracy check-desktop
 
+# Windows x86-64 cross-build with MinGW-w64 and the official SDL2 MinGW SDK; the ROM stays separate.
+# SDL2_WINDOWS_ROOT is the SDK's x86_64-w64-mingw32 folder (or set TXRA_SDL2_WINDOWS_ROOT).
+windows:
+	$(PYTHON) tools/build_pc.py --target windows $(if $(SDL2_WINDOWS_ROOT),--sdl2-root "$(SDL2_WINDOWS_ROOT)") "$(ROM)"
+package-windows: windows
+	$(PYTHON) tools/package_windows.py $(if $(SDL2_WINDOWS_ROOT),--sdl2-root "$(SDL2_WINDOWS_ROOT)")
+.PHONY: windows package-windows
+
 # Pick a fresh private directory for another complete recording.
 CAREER_OUTPUT ?= build/career-check
 check-career: recomp
 	python3 tools/check_career.py "$(CAREER_OUTPUT)"
 .PHONY: check-career
+
+# Release archive of the Linux executable (no ROM or game data; verified against your ROM).
+package-pc: recomp
+	python3 tools/package_pc.py
+.PHONY: package-pc

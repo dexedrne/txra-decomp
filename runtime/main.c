@@ -3,11 +3,54 @@
 #include "gba.h"
 #include "input.h"
 #include <SDL.h>
+#include <errno.h>
 #include <inttypes.h>
+#include <stdarg.h>
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#ifdef _WIN32
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+#include <fcntl.h>
+#include <io.h>
+#include <sys/stat.h>
+/* The Windows build uses the GUI subsystem, so it starts without a console.
+   Reuse the launching console when there is one; otherwise startup errors are
+   shown in a dialog and the log goes to last-run.log in the user folder. */
+static bool no_console, dialogs;
+static void host_console(void) {
+    HANDLE err = GetStdHandle(STD_ERROR_HANDLE);
+    if (err && err != INVALID_HANDLE_VALUE)
+        return;
+    if (AttachConsole(ATTACH_PARENT_PROCESS)) {
+        freopen("CONOUT$", "w", stdout);
+        freopen("CONOUT$", "w", stderr);
+    } else
+        no_console = dialogs = true;
+}
+static double cpu_time(void) {
+    FILETIME created, exited, kernel, user;
+    if (!GetProcessTimes(GetCurrentProcess(), &created, &exited, &kernel, &user))
+        return 0;
+    return ((((uint64_t)kernel.dwHighDateTime << 32) | kernel.dwLowDateTime) +
+            (((uint64_t)user.dwHighDateTime << 32) | user.dwLowDateTime)) /
+           1e7;
+}
+#endif
+static void fatal(const char *format, ...) {
+    char message[1024];
+    va_list args;
+    va_start(args, format);
+    vsnprintf(message, sizeof(message), format, args);
+    va_end(args);
+    fprintf(stderr, "%s\n", message);
+#ifdef _WIN32
+    if (dialogs)
+        SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "TXRA", message, NULL);
+#endif
+}
 static void capture(GBA *g, const char *path) {
     FILE *f = fopen(path, "wb");
     if (!f) {
@@ -45,7 +88,7 @@ static void boot(GBA *g, const char *save, FILE *unknown, bool trace) {
 }
 static void help(void) {
     puts("TXRA PC - supply your own supported ROM\n"
-         "--rom FILE --save FILE --bindings FILE --reset-save\n"
+         "txra-pc ROM, or --rom FILE --save FILE --bindings FILE --reset-save\n"
          "--fullscreen --aspect-fit --no-vsync --no-focus-pause --mute\n"
          "Esc / controller Guide: PC menu; F11 / Alt+Enter: fullscreen\n"
          "F8: screenshot; hold Tab: 3x; hold grave: half speed\n"
@@ -66,6 +109,10 @@ int main(int argc, char **argv) {
     bool headless = false, mute = false, interpreter = false, trace = false, benchmark = false;
     bool reset_save = false, vsync = true, focus_pause = true;
     Desktop desktop = {.integer = true, .speed = 1};
+    bool rom_given = false;
+#ifdef _WIN32
+    host_console();
+#endif
     for (int i = 1; i < argc; i++) {
         if (!strcmp(argv[i], "--help")) {
             help();
@@ -84,8 +131,10 @@ int main(int argc, char **argv) {
             binding_path = argv[++i];
         else if (!strcmp(argv[i], "--ui-script") && i + 1 < argc)
             ui_script = argv[++i];
-        else if (!strcmp(argv[i], "--rom") && i + 1 < argc)
+        else if (!strcmp(argv[i], "--rom") && i + 1 < argc) {
             rompath = argv[++i];
+            rom_given = true;
+        }
         else if (!strcmp(argv[i], "--coverage") && i + 1 < argc)
             coverage = argv[++i];
         else if (!strcmp(argv[i], "--frames") && i + 1 < argc)
@@ -118,16 +167,24 @@ int main(int argc, char **argv) {
             video_start = atoi(argv[++i]);
         else if (!strcmp(argv[i], "--video-end") && i + 1 < argc)
             video_end = atoi(argv[++i]);
-        else if (!strcmp(argv[i], "--headless"))
+        else if (!strcmp(argv[i], "--headless")) {
             headless = true;
+#ifdef _WIN32
+            dialogs = false;
+#endif
+        }
         else if (!strcmp(argv[i], "--mute"))
             mute = true;
         else if (!strcmp(argv[i], "--trace"))
             trace = true;
         else if (!strcmp(argv[i], "--interpreter"))
             interpreter = true;
-        else {
-            fprintf(stderr, "Unknown option: %s\n", argv[i]);
+        else if (argv[i][0] != '-' && !rom_given) {
+            /* A bare path, as passed when a cartridge file is dropped on the executable. */
+            rompath = argv[i];
+            rom_given = true;
+        } else {
+            fatal("Unknown option: %s", argv[i]);
             return 2;
         }
     }
@@ -136,7 +193,13 @@ int main(int argc, char **argv) {
         return 1;
     FILE *f = fopen(rompath, "rb");
     if (!f) {
-        perror("Player ROM");
+        int error = errno;
+        if (rom_given)
+            fatal("Player ROM: %s\n%s", strerror(error), rompath);
+        else
+            fatal("Player ROM: %s\nDrop your own cartridge .gba file onto txra-pc, or run "
+                  "txra-pc --rom FILE.",
+                  strerror(error));
         free(g);
         return 1;
     }
@@ -144,7 +207,7 @@ int main(int argc, char **argv) {
     bool extra = fgetc(f) != EOF;
     fclose(f);
     if (n != sizeof(g->rom) || extra) {
-        fprintf(stderr, "Expected a 4 MiB ROM\n");
+        fatal("Expected a 4 MiB ROM");
         free(g);
         return 1;
     }
@@ -155,9 +218,7 @@ int main(int argc, char **argv) {
             crc = (crc >> 1) ^ (0xedb88320u & (0u - (crc & 1)));
     }
     if ((~crc) != recompiled_rom_crc) {
-        fprintf(
-            stderr,
-            "ROM does not match this recompiled build; rebuild with the supported player ROM.\n");
+        fatal("ROM does not match this recompiled build; rebuild with the supported player ROM.");
         free(g);
         return 1;
     }
@@ -165,17 +226,31 @@ int main(int argc, char **argv) {
         SDL_setenv("SDL_VIDEODRIVER", "dummy", 1);
 #ifdef _WIN32
     SDL_SetMainReady();
+    /* Draw at physical pixels instead of letting Windows stretch the window
+       (blurring the nearest-neighbor picture) on scaled displays. */
+    SDL_SetHint(SDL_HINT_WINDOWS_DPI_AWARENESS, "permonitorv2");
 #endif
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_GAMECONTROLLER | (mute ? 0 : SDL_INIT_AUDIO))) {
-        fprintf(stderr, "SDL: %s\n", SDL_GetError());
+        fatal("SDL: %s", SDL_GetError());
         free(g);
         return 1;
     }
     char *pref = SDL_GetPrefPath("dexedrne", "TXRA");
     if (!pref) {
-        fprintf(stderr, "Cannot create user folder: %s\n", SDL_GetError());
+        fatal("Cannot create user folder: %s", SDL_GetError());
         return 1;
     }
+#ifdef _WIN32
+    if (no_console) {
+        char log[4096];
+        snprintf(log, sizeof(log), "%slast-run.log", pref);
+        FILE *probe = fopen(log, "w");
+        if (probe) {
+            fclose(probe);
+            freopen(log, "w", stderr);
+        }
+    }
+#endif
     char default_save[4096], default_bindings[4096], default_stats[4096], default_unknown[4096];
     snprintf(default_save, sizeof(default_save), "%stxra.sav", pref);
     snprintf(default_bindings, sizeof(default_bindings), "%sbindings.ini", pref);
@@ -186,7 +261,13 @@ int main(int argc, char **argv) {
         /* Preserve older working-directory saves without overwriting a user profile. */
         FILE *old = fopen("txra.sav", "rb"), *existing = fopen(save, "rb");
         if (old && !existing && !reset_save) {
+#ifdef _WIN32
+            /* The Windows C runtime has no "x" mode; create exclusively by hand. */
+            int fd = _open(save, _O_WRONLY | _O_CREAT | _O_EXCL | _O_BINARY, _S_IREAD | _S_IWRITE);
+            FILE *out = fd < 0 ? NULL : _fdopen(fd, "wb");
+#else
             FILE *out = fopen(save, "wbx");
+#endif
             bool ok = out != NULL;
             if (out) {
                 int c;
@@ -224,7 +305,7 @@ int main(int argc, char **argv) {
         perror("Save backup");
         return 1;
     }
-    boot(g, save, fopen(unknown, "w"), trace);
+    boot(g, save, fopen(unknown, "wb"), trace);
     if (coverage && !coverage_start(g)) {
         fprintf(stderr, "Cannot allocate coverage logger\n");
         return 1;
@@ -234,10 +315,12 @@ int main(int argc, char **argv) {
     FILE *bf = fopen(binding_path, "r");
     if (bf) {
         fclose(bf);
-        if (!bindings_load(&bindings, binding_path))
+        if (!bindings_load(&bindings, binding_path)) {
+            fatal("Bindings file rejected: %s", binding_path);
             return 2;
+        }
     } else if (!bindings_write(&bindings, binding_path)) {
-        perror("Bindings");
+        fatal("Bindings: %s", strerror(errno));
         return 1;
     }
     SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "0");
@@ -260,7 +343,7 @@ int main(int argc, char **argv) {
                                                         SDL_TEXTUREACCESS_STREAMING, 240, 160)
                                     : NULL;
     if (!texture) {
-        fprintf(stderr, "SDL video: %s\n", SDL_GetError());
+        fatal("SDL video: %s", SDL_GetError());
         return 1;
     }
     SDL_RendererInfo ri;
@@ -318,8 +401,9 @@ int main(int argc, char **argv) {
         desktop.muted = true;
     FILE *video = raw ? fopen(raw, "wb") : NULL;
     FILE *sound = pcm ? fopen(pcm, "wb") : NULL;
-    FILE *hashes = hashpath ? fopen(hashpath, "w") : NULL;
-    FILE *timings = frame_times ? fopen(frame_times, "w") : NULL;
+    /* Binary mode keeps diagnostic files byte-identical on every platform. */
+    FILE *hashes = hashpath ? fopen(hashpath, "wb") : NULL;
+    FILE *timings = frame_times ? fopen(frame_times, "wb") : NULL;
     if (timings)
         fprintf(timings, "frame,interval_ms,work_ms,host_guest_ms,present_ms,capture_ms,audio_ms,pace_ms,audio_underruns,audio_underruns_delta,audio_backpressure_ms\n");
     if ((raw && !video) || (pcm && !sound) || (hashpath && !hashes) || (frame_times && !timings)) {
@@ -333,7 +417,11 @@ int main(int argc, char **argv) {
     bool chord_down = false, release_input = false;
     double previous_speed = 1;
     bool previous_pause = false, previous_muted = desktop.muted;
+#ifdef _WIN32
+    double cpu_start = cpu_time(); /* clock() measures wall time on Windows */
+#else
     clock_t cpu_start = clock();
+#endif
     bool refresh_host = true;
     bool quit = false;
     while (!quit && !g->stopped && (!frames || g->frame < frames)) {
@@ -660,14 +748,18 @@ int main(int argc, char **argv) {
         for (size_t i = 0; i < lengths[j]; i++)
             state = (state ^ regions[j][i]) * 16777619u;
     double elapsed = (double)(SDL_GetPerformanceCounter() - start) / freq;
+#ifdef _WIN32
+    double cpu_seconds = cpu_time() - cpu_start;
+#else
     double cpu_seconds = (double)(clock() - cpu_start) / CLOCKS_PER_SEC;
+#endif
     fprintf(stderr,
             "Performance: %.3f fps, %.3f CPU seconds, %.1f%% of one CPU; audio underruns=%u "
             "max_queue=%.1f ms\n",
             elapsed ? g->frame / elapsed : 0, cpu_seconds,
             elapsed ? cpu_seconds * 100 / elapsed : 0, audio.underruns,
             audio.format.freq ? audio.max_queue_bytes * 1000.0 / (audio.format.freq * 4) : 0);
-    f = fopen(stats, "w");
+    f = fopen(stats, "wb");
     if (f) {
         fprintf(f,
                 "{\"frames\":%u,\"pc\":\"%08x\",\"instructions\":%" PRIu64

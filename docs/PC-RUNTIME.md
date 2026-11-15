@@ -17,13 +17,104 @@ python3 tools/build_pc.py /path/to/your/cartridge.gba
 
 The output is one native executable with no asset directory or embedded ROM.
 SDL2 and its platform libraries are system runtime dependencies. Keep the ROM
-separately and supply `--rom` when launching outside the repository. This is a
-Linux build, not a Windows executable or a statically linked portable bundle.
-Other desktop platforms have not been tested.
+separately and supply `--rom` when launching outside the repository; a bare ROM
+path (`txra-pc cartridge.gba`, or a file dropped on the executable) also works.
+macOS and other desktop platforms have not been tested.
+
+## Windows build
+
+The Windows x86-64 executable is cross-built with MinGW-w64 GCC and the official
+SDL2 MinGW development SDK (`SDL2-devel-2.30.x-mingw.tar.gz` from the SDL GitHub
+releases; unpack it outside the repository). On Debian-family hosts install
+`gcc-mingw-w64-x86-64` and `binutils-mingw-w64-x86-64`.
+
+```
+make windows SDL2_WINDOWS_ROOT=/path/to/SDL2-2.30.12/x86_64-w64-mingw32
+make package-windows SDL2_WINDOWS_ROOT=/path/to/SDL2-2.30.12/x86_64-w64-mingw32
+```
+
+`make windows` runs `tools/build_pc.py --target windows` (`--sdl2-root` or
+`TXRA_SDL2_WINDOWS_ROOT` also select the SDK) and writes
+`build/windows/txra-pc.exe`, `SDL2.dll` and `SDL2-LICENSE.txt`. The recompiled
+code and runtime use the same optimization flags as Linux. The executable is a
+GUI-subsystem program that imports only `SDL2.dll`, `KERNEL32.dll` and
+`msvcrt.dll`; libgcc is linked in, the stack reserve is 8 MiB like a Linux main
+thread, and the link carries no timestamp, so the same sources and toolchain give
+the same file. Its manifest (`runtime/windows/`) selects the UTF-8 code page, so
+user folders and ROM paths with non-ASCII names work, declares Windows 10/11 and
+never requests elevation. Per-monitor DPI awareness keeps the nearest-neighbor
+picture sharp on scaled displays.
+
+`make package-windows` (`tools/package_windows.py`) writes
+`build/release/windows/txra-pc-windows-x86_64.zip`, a `SHA256SUMS` for it and a
+receipt JSON with file hashes, DLL imports and toolchain versions. The zip holds
+one folder with the executable, `SDL2.dll`, `README-PC.txt` (from
+`runtime/windows/README-PC.txt`), the SDL2 license and `SHA256SUMS` for those
+files. Entries carry fixed timestamps (`SOURCE_DATE_EPOCH` when set). It never
+contains the ROM or any data taken from it.
+
+Windows-specific behavior, all behind `_WIN32`:
+
+- Saves, bindings, screenshots and logs live in `%APPDATA%\dexedrne\TXRA\`
+  (SDL's user folder). Saves are published with `MoveFileEx`, because C
+  `rename` cannot replace an existing Windows file.
+- Started from a console, output goes to that console; redirected output works
+  as usual. Started from Explorer, startup errors (missing or unsupported ROM,
+  SDL failures, rejected bindings) appear in a dialog, and the log is written
+  to `last-run.log` in the user folder. `--headless` never shows dialogs.
+- The one-time legacy save import uses an exclusive `_open`, since the
+  `msvcrt.dll` C runtime this build links has no `"x"` open mode. `last-run.json` reports process CPU time
+  from `GetProcessTimes`, because `clock()` measures wall time on Windows.
+
+Frame hashes, frame times, run statistics and the unknown-target log are written
+in binary mode on every platform, so a Windows run produces byte-identical files
+and `tools/check_accuracy.py --existing DIR` can check it.
+
+Under Wine 11.21 the packaged executable reproduced the 4300-frame accuracy
+golden and the 37,200-frame career plus 2,200-frame reload goldens exactly:
+every frame hash, PCM byte, final state, guest cycle and sample count, and the
+career save, with no fallback, unknown or unsupported operations. The
+`tests/save-input.txt` route (3700 frames from a fresh save) made two save
+writes, the second replacing the existing file, and left the same save and frame
+hashes as Linux. ROM and save paths with Cyrillic and CJK names worked. A
+physical Windows PC, its display, audio devices and controllers, and the
+no-console dialog and log path remain untested.
+
+`tools/rom_bytes_scan.py FILE...` counts ROM bytes embedded in build outputs:
+every non-trivial 32-byte window (`--window N` changes the length) of the ROM's
+non-code regions from `tools/rom.cfg`, with code regions counted separately. It
+prints counts and ROM offsets only. For the Windows executable, `generated.c` and
+the compiled recompiled code it found no ROM data or code windows at 32 bytes,
+nor at 16 bytes for the executable. The only ROM-derived constants in the
+generated code are the CRC-32 and the instruction words guarding RAM-resident
+code (6321 compare immediates, 23,026 bytes), which are compiled into
+instructions rather than stored as a table.
 
 With the supported ROM available as `baserom.gba`, `make recomp` also works.
 The original matching build remains available through `make` and `make check`;
 it still needs the separate tools described in TOOLS.md.
+
+## Linux release package
+
+```
+python3 tools/build_pc.py /path/to/your/cartridge.gba
+make package-pc
+```
+
+`tools/package_pc.py` writes `build/release/txra-pc-linux-x86_64.tar.gz` holding the
+stripped executable, `README-PC.txt` (from `docs/release/README-PC-linux.txt`) and
+`SHA256SUMS`, plus an outer `SHA256SUMS` and `receipt.json`. The archive is
+reproducible for a given executable: sorted entries, fixed owners and modes,
+`SOURCE_DATE_EPOCH` (or the commit date) as the timestamp and no gzip timestamp.
+
+Packaging uses the supported ROM only to verify the result. `tools/scan_embedded_rom.py`
+searches the stripped executable for every 32-byte run of the ROM's non-code
+regions from `tools/rom.cfg` (runs with fewer than 8 distinct byte values are
+counted but skipped) and packaging stops if any run is found. It also attributes
+every instruction case in `build/generated.c` to the ROM region it was lifted
+from. Only counts are printed or recorded. The executable needs glibc 2.34 or newer
+(only `__libc_start_main` needs more than 2.14 when built on a current toolchain)
+and the system SDL2 library.
 
 ## Controls
 
@@ -72,7 +163,7 @@ unchanged; an audio hash match does not establish original-hardware fidelity.
 ## User files, rebinding and reset
 
 SDL creates the per-user `dexedrne/TXRA` application folder. On Linux this lives
-under `$XDG_DATA_HOME` or `~/.local/share`; the startup log prints the selected
+under `$XDG_DATA_HOME` or `~/.local/share`, on Windows under `%APPDATA%`; the startup log prints the selected
 save and binding paths. It contains `txra.sav`, `bindings.ini`, screenshots named
 `shot-*.bmp`, `last-run.json` and the unknown-target diagnostic log.
 

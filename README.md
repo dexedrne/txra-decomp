@@ -111,18 +111,22 @@ python3 tools/build_pc.py /path/to/your/cartridge.gba
 ./build/txra-pc --rom /path/to/your/cartridge.gba
 ```
 
-The PC build needs only a C11 compiler, make, Python 3, pkg-config and SDL2 development files. The executable ships no ROM or asset files: it reads the game's data from your ROM at run time. Its translated code is still derived from your ROM, so, like every other build output, it is for your own use and not for redistribution.
+The PC build needs only a C11 compiler, make, Python 3, pkg-config and SDL2 development files. The executable ships no ROM or asset files: it reads the game's data from your ROM at run time.
+
+**Prebuilt executables** for Windows (x86-64, Windows 10 1903+ or 11) and Linux (x86-64, glibc 2.34+, system SDL2) are attached to the [v1.1.0 release](https://github.com/dexedrne/txra-decomp/releases/tag/v1.1.0). They contain the game's program code translated to native code, but no ROM data, graphics, audio or text: to play you still need your own cartridge dump with the SHA-1 above, passed with `--rom` (or dropped onto `txra-pc.exe`). Each archive carries a player README and checksums.
+
+`make package-pc` builds a reproducible Linux archive and `make package-windows` a Windows one (cross-built with MinGW-w64 and SDL2); both check that the executable embeds no ROM data. See [PC build and controls](docs/PC-RUNTIME.md).
 
 Status:
 
 - The current tree emits and compiles all 228 mapped functions, and `make check-accuracy` passes: the scripted 4,300-frame session runs with no fallback, unknown or unsupported operation and reproduces its recorded framebuffer and audio hashes.
-- An earlier executable (6 November) was reviewed through a 37,200-frame scripted career and a 2,200-frame save reload, matching every recorded framebuffer hash, PCM byte, state counter and EEPROM save ([review](docs/NATIVE-RUNTIME-1106-REVIEW.md)).
+- On 15 November the current Linux executable passed `make check-career`: the 37,200-frame scripted career and the 2,200-frame save reload match every recorded framebuffer hash, PCM byte, state counter and EEPROM save, with no fallback or unknown operation (first reviewed on 6 November, [review](docs/NATIVE-RUNTIME-1106-REVIEW.md)). The Windows executable reproduced the same accuracy, career and reload hashes under Wine.
 - `progress.json` reports `boots`, `reaches_title` and `playable` as false. Those flags turn true only through a recorded review of the exact executable, and no such review has been done for the current build.
-- Timing is approximate (three clocks per instruction, not cycle-accurate). Windows builds, physical controllers, visible-window presentation and audible fidelity have not been verified. See [native execution](docs/RECOMP.md) and [PC runtime](docs/PC-RUNTIME.md).
+- Timing is approximate (three clocks per instruction, not cycle-accurate). Running on a real Windows PC, physical controllers, visible-window presentation and audible fidelity have not been verified. See [native execution](docs/RECOMP.md) and [PC runtime](docs/PC-RUNTIME.md).
 
 ## Legal
 
-This repository contains no ROM image and no game assets: no graphics, audio, text or other data from the cartridge. The original program appears only as reconstructed C, as assembly source for the 31 interface routines, and as disassembly excerpts in the matching notes. Every data region is read from your own `baserom.gba` at build time, the native executable reads the game from your ROM at run time, and the metadata in `docs/map/` describes the ROM without reproducing it. Build outputs (`build/txra.gba`, the generated C and `build/txra-pc`) are derived from your ROM; keep them private. To build anything you need your own legally obtained copy of the game. Please do not post ROM data in issues or pull requests.
+This repository contains no ROM image and no game assets: no graphics, audio, text or other data from the cartridge. The original program appears only as reconstructed C, as assembly source for the 31 interface routines, and as disassembly excerpts in the matching notes. Every data region is read from your own `baserom.gba` at build time, the native executable reads the game from your ROM at run time, and the metadata in `docs/map/` describes the ROM without reproducing it. Your own build outputs (`build/txra.gba` and the generated C) are derived from your ROM; keep them private. The prebuilt executables on the releases page contain the program's translated code but no ROM data, and run only with your own copy of the game. To build anything you need your own legally obtained copy of the game. Please do not post ROM data in issues or pull requests.
 
 Tokyo Xtreme Racer Advance, Tokyo Xtreme Racer and Game Boy Advance are trademarks of their respective owners. This is an independent research and preservation project, not affiliated with or endorsed by them.
 

@@ -1,3 +1,5 @@
+/* mkdtemp is POSIX, hidden by -std=c11 without a feature macro (an error on GCC 14+). */
+#define _DEFAULT_SOURCE
 #include "audio.h"
 #include "desktop.h"
 #include "input.h"
