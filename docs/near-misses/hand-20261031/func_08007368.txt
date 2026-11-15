@@ -1,0 +1,193 @@
+func_08007368: diagnostic probes only; no installed replacement.
+Target instructions (encodings omitted):
+08007368: add sp, #108
+0800736A: pop {r3, r4, r5}
+0800736C: mov r8, r3
+0800736E: mov r9, r4
+08007370: mov r10, r5
+08007372: pop {r4, r5, r6, r7}
+08007374: pop {r0}
+08007376: bx r0
+
+Probe: seed
+extern TxraLinkState g_03007A30;
+
+u32 func_08007368(void) {
+    return (s32)(s8)g_03007A30.field_14 << 12;
+}
+
+
+Default-profile comparison:
+Compiled output differs: target 16 bytes, compiled 16 bytes.
+First difference at +0x0 (0x08007368); exact prefix 0 bytes, exact suffix 0 bytes.
+--- target
++++ compiled
+@@ -1,8 +1,7 @@
+-08007368: add sp, #108
+-0800736A: pop {r3, r4, r5}
+-0800736C: mov r8, r3
+-0800736E: mov r9, r4
+-08007370: mov r10, r5
+-08007372: pop {r4, r5, r6, r7}
+-08007374: pop {r0}
+-08007376: bx r0
++08007368: ldr r0, [pc, #8] @ =0x08007374
++0800736A: ldrb r0, [r0, #20]
++0800736C: lsls r0, r0, #24
++0800736E: asrs r0, r0, #24
++08007370: lsls r0, r0, #12
++08007372: bx lr
++08007374: .word 0x03007A30 (literal pool)
+Check register allocation, signed widths, statement order, constants and pool alignment.
+
+Compiler loop dump:
+
+;; Function func_08007368
+
+(note 2 0 3 "" NOTE_INSN_DELETED)
+
+(note 3 2 4 "" NOTE_INSN_FUNCTION_BEG)
+
+(note 4 3 6 "" NOTE_INSN_DELETED)
+
+(note 6 4 8 "" NOTE_INSN_DELETED)
+
+(insn 8 6 10 (set (reg:SI 23)
+        (mem/u:SI (symbol_ref/u:SI ("*.LC0")) 0)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (symbol_ref:SI ("g_03007A30"))
+        (nil)))
+
+(insn 10 8 12 (set (reg:SI 25)
+        (mem/s:SI (plus:SI (reg:SI 23)
+                (const_int 20)) 4)) 1 {*movsi_insn} (nil)
+    (nil))
+
+(insn 12 10 13 (set (reg:QI 24)
+        (subreg:QI (reg:SI 25) 0)) 7 {*movqi_insn} (nil)
+    (nil))
+
+(insn 13 12 14 (set (reg:SI 27)
+        (ashift:SI (reg:SI 25)
+            (const_int 24))) 39 {ashlsi3} (nil)
+    (nil))
+
+(insn 14 13 15 (set (reg:SI 26)
+        (ashiftrt:SI (reg:SI 27)
+            (const_int 24))) 40 {ashrsi3} (nil)
+    (expr_list:REG_EQUAL (sign_extend:SI (reg:QI 24))
+        (nil)))
+
+(insn 15 14 17 (set (reg:SI 22)
+        (ashift:SI (reg:SI 26)
+            (const_int 12))) 39 {ashlsi3} (nil)
+    (nil))
+
+(insn 17 15 18 (set (reg/i:SI 0 r0)
+        (reg:SI 22)) 1 {*movsi_insn} (nil)
+    (nil))
+
+(insn 18 17 0 (use (reg/i:SI 0 r0)) -1 (nil)
+    (nil))
+
+Compiler gcse dump:
+
+;; Function func_08007368
+
+(note 2 0 3 "" NOTE_INSN_DELETED)
+
+(note 3 2 4 "" NOTE_INSN_FUNCTION_BEG)
+
+(note 4 3 6 "" NOTE_INSN_DELETED)
+
+(note 6 4 8 "" NOTE_INSN_DELETED)
+
+(insn 8 6 10 (set (reg:SI 23)
+        (mem/u:SI (symbol_ref/u:SI ("*.LC0")) 0)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (symbol_ref:SI ("g_03007A30"))
+        (nil)))
+
+(insn 10 8 12 (set (reg:SI 25)
+        (mem/s:SI (plus:SI (reg:SI 23)
+                (const_int 20)) 4)) 1 {*movsi_insn} (nil)
+    (nil))
+
+(insn 12 10 13 (set (reg:QI 24)
+        (subreg:QI (reg:SI 25) 0)) 7 {*movqi_insn} (nil)
+    (nil))
+
+(insn 13 12 14 (set (reg:SI 27)
+        (ashift:SI (reg:SI 25)
+            (const_int 24))) 39 {ashlsi3} (nil)
+    (nil))
+
+(insn 14 13 15 (set (reg:SI 26)
+        (ashiftrt:SI (reg:SI 27)
+            (const_int 24))) 40 {ashrsi3} (nil)
+    (expr_list:REG_EQUAL (sign_extend:SI (reg:QI 24))
+        (nil)))
+
+(insn 15 14 17 (set (reg:SI 22)
+        (ashift:SI (reg:SI 26)
+            (const_int 12))) 39 {ashlsi3} (nil)
+    (nil))
+
+(insn 17 15 18 (set (reg/i:SI 0 r0)
+        (reg:SI 22)) 1 {*movsi_insn} (nil)
+    (nil))
+
+(insn 18 17 0 (use (reg/i:SI 0 r0)) -1 (nil)
+    (nil))
+
+Compiler global allocation:
+;; Register dispositions:
+22 in 0  23 in 0  26 in 0  
+
+;; Hard regs used:  0
+
+Probe: empty-return
+void func_08007368(void) { return; }
+
+Default-profile comparison:
+Compiled output differs: target 16 bytes, compiled 2 bytes.
+First difference at +0x0 (0x08007368); exact prefix 0 bytes, exact suffix 1 bytes.
+Length differs by -14 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -1,8 +1 @@
+-08007368: add sp, #108
+-0800736A: pop {r3, r4, r5}
+-0800736C: mov r8, r3
+-0800736E: mov r9, r4
+-08007370: mov r10, r5
+-08007372: pop {r4, r5, r6, r7}
+-08007374: pop {r0}
+-08007376: bx r0
++08007368: bx lr
+Check register allocation, signed widths, statement order, constants and pool alignment.
+
+Probe: signed-temporary
+extern TxraLinkState g_03007A30;
+u32 func_08007368(void) { s8 field = g_03007A30.field_14; s32 value = field; return value << 12; }
+
+Default-profile comparison:
+Compiled output differs: target 16 bytes, compiled 16 bytes.
+First difference at +0x0 (0x08007368); exact prefix 0 bytes, exact suffix 0 bytes.
+--- target
++++ compiled
+@@ -1,8 +1,7 @@
+-08007368: add sp, #108
+-0800736A: pop {r3, r4, r5}
+-0800736C: mov r8, r3
+-0800736E: mov r9, r4
+-08007370: mov r10, r5
+-08007372: pop {r4, r5, r6, r7}
+-08007374: pop {r0}
+-08007376: bx r0
++08007368: ldr r0, [pc, #8] @ =0x08007374
++0800736A: ldrb r0, [r0, #20]
++0800736C: lsls r0, r0, #24
++0800736E: asrs r0, r0, #24
++08007370: lsls r0, r0, #12
++08007372: bx lr
++08007374: .word 0x03007A30 (literal pool)
+Check register allocation, signed widths, statement order, constants and pool alignment.

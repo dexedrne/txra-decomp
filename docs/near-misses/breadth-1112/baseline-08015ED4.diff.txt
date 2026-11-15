@@ -1,0 +1,110 @@
+Compiled output differs: target 132 bytes, compiled 120 bytes.
+First difference at +0x4 (0x08015ED8); exact prefix 4 bytes, exact suffix 12 bytes.
+Length differs by -12 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -1,56 +1,51 @@
+ 08015ED4: sub sp, #4
+ 08015ED6: adds r2, r0, #0
+-08015ED8: ldr r0, [pc, #40] @ =0x08015F04
++08015ED8: ldr r1, [pc, #32] @ =0x08015EFC
+ 08015EDA: cmp r2, #0
+-08015EDC: bne 0x08015F1C
+-08015EDE: str r0, [sp, #0]
+-08015EE0: ldr r0, [pc, #36] @ =0x08015F08
+-08015EE2: mov r1, sp
+-08015EE4: str r1, [r0, #0]
+-08015EE6: ldr r1, [pc, #36] @ =0x08015F0C
+-08015EE8: str r1, [r0, #4]
+-08015EEA: ldr r1, [pc, #36] @ =0x08015F10
+-08015EEC: str r1, [r0, #8]
+-08015EEE: ldr r1, [r0, #8]
++08015EDC: bne 0x08015F10
++08015EDE: ldr r0, [pc, #32] @ =0x08015F00
++08015EE0: str r0, [sp, #0]
++08015EE2: mov r0, sp
++08015EE4: str r0, [r1, #0]
++08015EE6: ldr r0, [pc, #28] @ =0x08015F04
++08015EE8: str r0, [r1, #4]
++08015EEA: ldr r0, [pc, #28] @ =0x08015F08
++08015EEC: str r0, [r1, #8]
++08015EEE: ldr r0, [r1, #8]
+ 08015EF0: str r2, [sp, #0]
+-08015EF2: mov r1, sp
+-08015EF4: str r1, [r0, #0]
+-08015EF6: ldr r1, [pc, #28] @ =0x08015F14
+-08015EF8: str r1, [r0, #4]
+-08015EFA: ldr r1, [pc, #28] @ =0x08015F18
+-08015EFC: str r1, [r0, #8]
+-08015EFE: ldr r0, [r0, #8]
+-08015F00: b 0x08015F42
+-08015F02: movs r0, r0
+-08015F04: .word <literal pool>
+-08015F08: .word <literal pool>
+-08015F0C: .word <literal pool>
+-08015F10: .word <literal pool>
+-08015F14: .word <literal pool>
+-08015F18: .word <literal pool>
+-08015F1C: str r0, [sp, #0]
+-08015F1E: ldr r1, [pc, #40] @ =0x08015F48
+-08015F20: mov r0, sp
+-08015F22: str r0, [r1, #0]
+-08015F24: movs r0, #192
+-08015F26: lsls r0, r0, #19
+-08015F28: str r0, [r1, #4]
+-08015F2A: ldr r0, [pc, #32] @ =0x08015F4C
+-08015F2C: str r0, [r1, #8]
+-08015F2E: ldr r0, [r1, #8]
+-08015F30: movs r0, #0
+-08015F32: str r0, [sp, #0]
+-08015F34: mov r0, sp
+-08015F36: str r0, [r1, #0]
+-08015F38: ldr r0, [pc, #20] @ =0x08015F50
+-08015F3A: str r0, [r1, #4]
+-08015F3C: ldr r0, [pc, #20] @ =0x08015F54
+-08015F3E: str r0, [r1, #8]
+-08015F40: ldr r0, [r1, #8]
+-08015F42: add sp, #4
+-08015F44: bx lr
+-08015F46: movs r0, r0
+-08015F48: .word <literal pool>
+-08015F4C: .word <literal pool>
+-08015F50: .word <literal pool>
+-08015F54: .word <literal pool>
++08015EF2: mov r0, sp
++08015EF4: str r0, [r1, #0]
++08015EF6: ldr r0, [pc, #20] @ =0x08015F0C
++08015EF8: b 0x08015F2E
++08015EFA: movs r0, r0
++08015EFC: .word <literal pool>
++08015F00: .word <literal pool>
++08015F04: .word <literal pool>
++08015F08: .word <literal pool>
++08015F0C: .word <literal pool>
++08015F10: ldr r0, [pc, #40] @ =0x08015F3C
++08015F12: str r0, [sp, #0]
++08015F14: mov r0, sp
++08015F16: str r0, [r1, #0]
++08015F18: movs r0, #192
++08015F1A: lsls r0, r0, #19
++08015F1C: str r0, [r1, #4]
++08015F1E: ldr r0, [pc, #32] @ =0x08015F40
++08015F20: str r0, [r1, #8]
++08015F22: ldr r0, [r1, #8]
++08015F24: movs r0, #0
++08015F26: str r0, [sp, #0]
++08015F28: mov r0, sp
++08015F2A: str r0, [r1, #0]
++08015F2C: ldr r0, [pc, #20] @ =0x08015F44
++08015F2E: str r0, [r1, #4]
++08015F30: ldr r0, [pc, #20] @ =0x08015F48
++08015F32: str r0, [r1, #8]
++08015F34: ldr r0, [r1, #8]
++08015F36: add sp, #4
++08015F38: bx lr
++08015F3A: movs r0, r0
++08015F3C: .word <literal pool>
++08015F40: .word <literal pool>
++08015F44: .word <literal pool>
++08015F48: .word <literal pool>
+Check register allocation, signed widths, statement order, constants and pool alignment.

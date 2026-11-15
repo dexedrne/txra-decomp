@@ -1,0 +1,553 @@
+--- original instructions
+
++++ draft instructions
+
+@@ -1,9 +1,9 @@
+
+ mov ip, sp
+ push {r4, r5, r6, r7, r8, sb, sl, fp, ip, lr, pc}
+ mov r0, #0
+-ldr r2, [pc, #0x3e0]
++ldr r2, [pc, #0x39c]
+ sub fp, ip, #4
+-sub sp, sp, #0x48
++sub sp, sp, #0x3c
+ str r0, [fp, #-0x44]
+ str r0, [fp, #-0x40]
+ str r0, [fp, #-0x30]
+@@ -13,18 +13,18 @@
+
+ lsr r3, r3, #0x12
+ str r3, [fp, #-0x34]
+ ldr r1, [fp, #-0x30]
+-ldr r4, [pc, #0x3b0]
++ldr r4, [pc, #0x36c]
+ ldr lr, [fp, #-0x30]
+ lsl r3, r1, #2
+ add r2, r3, r1
+ add r2, r2, r2, lsl #2
+ lsl r2, r2, #2
+ ldrsh r1, [r4, r2]
+-str r3, [fp, #-0x6c]
++str r3, [fp, #-0x5c]
+ add lr, lr, #1
+-str lr, [fp, #-0x64]
++str lr, [fp, #-0x54]
+ cmp r1, #0
+-beq #0x80187f8
++beq #0x80187d8
+ ldr r1, [fp, #-0x30]
+ mov r0, #0
+ str r0, [fp, #-0x2c]
+@@ -33,12 +33,12 @@
+
+ mov r2, #0
+ str r2, [fp, #-0x48]
+ ldr r3, [fp, #-0x2c]
+-ldr r4, [pc, #0x364]
++ldr r4, [pc, #0x320]
+ ldr lr, [fp, #-0x30]
+ lsl r2, r3, #4
+ ldr r1, [r4]
+ add r3, lr, r2
+-str r2, [fp, #-0x70]
++str r2, [fp, #-0x60]
+ cmp r1, r3
+ beq #0x8018280
+ ldr r0, [fp, #-0x2c]
+@@ -48,9 +48,9 @@
+
+ bne #0x8018288
+ mov r3, #1
+ str r3, [fp, #-0x48]
+-ldr r4, [pc, #0x328]
++ldr r4, [pc, #0x2e4]
+ ldr lr, [fp, #-0x30]
+-ldr r0, [fp, #-0x70]
++ldr r0, [fp, #-0x60]
+ ldr r2, [r4, #4]
+ add r3, lr, r0
+ cmp r2, r3
+@@ -62,9 +62,9 @@
+
+ bne #0x80182c0
+ mov lr, #1
+ str lr, [fp, #-0x48]
+-ldr r0, [pc, #0x2f0]
+-ldr r1, [fp, #-0x30]
+-ldr r4, [fp, #-0x70]
++ldr r0, [pc, #0x2ac]
++ldr r1, [fp, #-0x30]
++ldr r4, [fp, #-0x60]
+ ldr r2, [r0, #8]
+ add r3, r1, r4
+ cmp r2, r3
+@@ -76,9 +76,9 @@
+
+ bne #0x80182f8
+ mov r1, #1
+ str r1, [fp, #-0x48]
+-ldr r3, [pc, #0x2b8]
++ldr r3, [pc, #0x274]
+ ldr r4, [fp, #-0x30]
+-ldr lr, [fp, #-0x70]
++ldr lr, [fp, #-0x60]
+ ldr r2, [r3, #0xc]
+ add r3, r4, lr
+ cmp r2, r3
+@@ -90,167 +90,164 @@
+
+ bne #0x8018330
+ mov r2, #1
+ str r2, [fp, #-0x48]
+-ldr r4, [pc, #0x284]
+-ldr lr, [fp, #-0x6c]
++ldr r4, [pc, #0x240]
++ldr lr, [fp, #-0x5c]
+ ldr r0, [fp, #-0x40]
+ ldr r1, [fp, #-0x2c]
+ ldr r3, [r4, lr]
+ add r1, r1, #1
+-str r1, [fp, #-0x60]
++str r1, [fp, #-0x50]
+ tst r0, r3
+-bne #0x80187e8
++bne #0x80187c8
+ ldr r3, [fp, #-0x2c]
+ lsl r2, r3, #2
+ ldr r3, [r4, r2]
+-str r2, [fp, #-0x68]
+-ands ip, r0, r3
+-bne #0x80187e8
++str r2, [fp, #-0x58]
++ands r0, r0, r3
++bne #0x80187c8
+ ldr r4, [fp, #-0x2c]
+-ldr lr, [pc, #0x23c]
+-ldr r1, [fp, #-0x30]
++ldr lr, [pc, #0x1f8]
+ add r3, r2, r4
+ add r3, r3, r3, lsl #2
+-lsl r0, r3, #2
+-ldrsh r2, [lr, r0]
++lsl ip, r3, #2
++ldrsh r2, [lr, ip]
+ cmp r2, #0
+-cmpne r4, r1
+-beq #0x80187e8
+-ldr r2, [pc, #0x224]
++beq #0x80187c8
++ldr r1, [fp, #-0x30]
++cmp r4, r1
++beq #0x80187c8
++ldr r2, [pc, #0x1dc]
+ mvn r1, #0x3f
+ str r1, [r2]
+ mvn r3, #0xbf
+ str r3, [r2, #8]
+-ldr r4, [pc, #0x210]
++ldr r4, [pc, #0x1c8]
+ mov r2, #0x40
+ str r2, [r4, #0xc]
+ str r3, [r4, #0x14]
+ str r1, [r4, #0x18]
+ str r2, [r4, #0x24]
+ str r1, [r4, #0x30]
+-str ip, [r4, #0x38]
++str r0, [r4, #0x38]
+ str r2, [r4, #0x3c]
+-str ip, [r4, #0x44]
++str r0, [r4, #0x44]
+ add r3, r3, #0x180
+ str r3, [r4, #0x20]
+ str r3, [r4, #0x2c]
+-add r1, lr, #0x20
+-ldr lr, [pc, #0x1dc]
+-ldr r2, [pc, #0x1c8]
+-str r0, [fp, #-0x54]
++ldr r1, [pc, #0x198]
++add r2, ip, lr
++ldrsh r0, [r2, #2]
++add r3, lr, #0x20
++ldr lr, [pc, #0x18c]
++lsl r0, r0, #3
++ldr r1, [r1, r0]
++str r1, [fp, #-0x38]
++ldr r1, [pc, #0x180]
++ldr r2, [r3, ip]
++ldr r1, [r1, r0]
++ldr r3, [pc, #0x178]
++lsl r2, r2, #0x12
++str r1, [fp, #-0x3c]
++lsr r2, r2, #0x12
++ldr r0, [fp, #-0x34]
++lsl r2, r2, #2
++ldr sl, [lr, r2]
++ldr r8, [r3, r2]
++lsl r1, r0, #2
++ldr r7, [r3, r1]
++ldr r0, [pc, #0x154]
++str r1, [fp, #-0x64]
++ldr r1, [fp, #-0x5c]
++ldr r2, [fp, #-0x30]
+ mov r6, r4
+-ldr r4, [pc, #0x1d0]
+-ldr lr, [lr, r0]
+-str lr, [fp, #-0x5c]
+-add r3, r0, r2
+-ldrsh r2, [r3, #2]
+-ldr lr, [pc, #0x1c0]
+-lsl r2, r2, #3
+-ldr r4, [r4, r2]
+-ldr r3, [r1, r0]
+-str r4, [fp, #-0x38]
+-ldr r0, [pc, #0x1b0]
+-ldr r1, [fp, #-0x6c]
+-ldr r2, [lr, r2]
+-lsl r3, r3, #0x12
+-str r2, [fp, #-0x3c]
+-lsr r3, r3, #0x12
+-ldr r2, [fp, #-0x30]
++ldr r4, [r0, ip]
++add r3, r1, r2
++ldr r2, [pc, #0x13c]
++add r3, r3, r3, lsl #2
++ldr ip, [r2, ip]
+ lsl r3, r3, #2
+-ldr r0, [r0, r3]
+-add r1, r1, r2
+-ldr r2, [pc, #0x18c]
+-str r0, [fp, #-0x50]
+-str r1, [fp, #-0x58]
+-ldr sl, [r2, r3]
+-ldr r3, [fp, #-0x34]
+-mov r7, #5
+-lsl sb, r3, #2
+-ldr r8, [r2, sb]
+-ldr r0, [r6]
+-ldr r4, [fp, #-0x50]
+-mul r4, r0, r4
+-ldr r3, [r6, #8]
+-ldr r2, [fp, #-0x50]
+-mul r2, r3, r2
+-mul ip, sl, r3
+-mla r5, sl, r0, r2
+-ldr lr, [fp, #-0x58]
+-ldr r0, [pc, #0x14c]
+-ldr r2, [fp, #-0x54]
+-add r1, lr, lr, lsl #2
+-ldr lr, [r0, r2]
+-lsl r1, r1, #2
+-ldr r3, [r0, r1]
+-rsb lr, r3, lr
+-ldr r3, [pc, #0x128]
+-rsb r4, ip, r4
+-ldr r2, [r3, sb]
+-add lr, lr, r4, asr #12
+-mul ip, r2, lr
+-ldr r4, [pc, #0x108]
+-ldr r0, [fp, #-0x5c]
+-ldr r3, [r4, r1]
+-rsb r3, r3, r0
+-add r3, r3, r5, asr #12
+-mul r1, r2, r3
+-mul r0, r8, r3
+-mla r2, r8, lr, r1
+-rsb ip, r0, ip
+-asr ip, ip, #0xc
+-str ip, [r6]
++ldr r1, [r2, r3]
++mov r5, #5
++ldr r2, [r0, r3]
++rsb sb, r1, ip
++rsb r4, r2, r4
++ldr r3, [r6]
++mul r1, r3, sl
++mul ip, r3, r8
++ldr r2, [r6, #8]
++mul r3, r2, r8
++mla r0, r2, sl, ip
++rsb r1, r3, r1
++add r1, sb, r1, asr #12
++mul ip, r1, r7
++ldr r3, [pc, #0xe4]
++ldr r2, [fp, #-0x64]
++ldr lr, [r3, r2]
++mul r3, r1, lr
++add r0, r4, r0, asr #12
++mla r2, r0, lr, ip
++mul r1, r0, r7
+ asr r2, r2, #0xc
+ str r2, [r6, #8]
+-subs r7, r7, #1
++rsb r3, r1, r3
++asr r3, r3, #0xc
++str r3, [r6]
++subs r5, r5, #1
+ add r6, r6, #0xc
+-bpl #0x8018460
+-ldr r1, [fp, #-0x38]
+-ldr r0, [fp, #-0x6c]
+-ldr r2, [fp, #-0x30]
+-ldr r4, [fp, #-0x68]
+-mov r7, #0
+-ldr lr, [fp, #-0x2c]
+-rsb ip, r1, #0
+-add r1, r0, r2
+-add r3, r4, lr
++bpl #0x8018474
++ldr r3, [fp, #-0x38]
++ldr ip, [fp, #-0x5c]
++ldr r4, [fp, #-0x30]
++ldr lr, [fp, #-0x58]
++mov r5, #0
++ldr r2, [fp, #-0x2c]
++rsb r0, r3, #0
++add r3, lr, r2
+ add r3, r3, r3, lsl #2
+-ldr r2, [pc, #0x90]
+ lsl r6, r3, #2
+-add sl, r2, #0x20
+-add r3, r7, r7, lsl #1
++ldr r3, [pc, #0x6c]
++add r1, ip, r4
++add sl, r3, #0x20
++add r3, r5, r5, lsl #1
++ldr r4, [pc, #0x68]
+ lsl r8, r3, #2
+-ldr r3, [pc, #0x88]
+-ldr lr, [r3, r8]
+-cmp lr, ip
+-ble #0x80187dc
+-ldr r4, [fp, #-0x38]
+-cmp lr, r4
+-bge #0x80187dc
++ldr lr, [r4, r8]
++cmp lr, r0
++ble #0x80187bc
++ldr r2, [fp, #-0x38]
++cmp lr, r2
++bge #0x80187bc
++add r3, r4, #8
+ ldr r4, [fp, #-0x3c]
+-add r3, r3, #8
+ ldr r3, [r3, r8]
+ rsb r2, r4, #0
+ cmp r3, r2
+-ble #0x80187dc
++ble #0x80187bc
+ cmp r3, r4
+-bge #0x80187dc
+-ldr r2, [fp, #-0x48]
+-cmp r2, #0
+-bne #0x80187ac
++bge #0x80187bc
++ldr r0, [fp, #-0x48]
++cmp r0, #0
++beq #0x8018598
++ldr r1, [pc, #0x18]
++ldr r2, [fp, #-0x40]
++ldr r3, [r1, ip]
++orr r2, r2, r3
++str r2, [fp, #-0x40]
++b #0x80187c8
+ add r1, r1, r1, lsl #2
+-ldr r4, [pc, #0x58]
++ldr r4, [pc, #0x200]
+ lsl r1, r1, #2
+-ldr r2, [pc, #0x28]
++ldr r2, [pc, #0x1fc]
+ mov sb, #0x3c
+ ldrh r3, [r4, r6]
+ add r0, r1, r2
+ add r3, r3, #0x230
+ strh r3, [r0, sb]
+-ldr r3, [pc, #0x10]
++ldr r3, [pc, #0x1e4]
+ ldrh r2, [r4, r1]
+ add ip, r6, r3
+ add r2, r2, #0x230
+ strh r2, [ip, sb]
+-b #0x80185e0
+ ldrh r4, [sl, r1]
+ mov r7, #0x3e
+ strh r4, [r0, r7]
+@@ -265,7 +262,7 @@
+
+ and r3, r3, r5
+ strh r3, [ip, r4]
+ cmp lr, #0x20
+-ble #0x801865c
++ble #0x801864c
+ ldrh r3, [r0, #0x3a]
+ ldrh r2, [r0, #0x3e]
+ sub r3, r3, #0x100
+@@ -282,10 +279,10 @@
+
+ strh r3, [ip, #0x3a]
+ and r2, r2, r5
+ strh r2, [ip, #0x3e]
+-ldr lr, [pc, #0x160]
++ldr lr, [pc, #0x158]
+ ldr r3, [lr, r8]
+ cmn r3, #0x20
+-bge #0x80186ac
++bge #0x801869c
+ ldrh r3, [r0, r4]
+ ldrh r2, [r0, r7]
+ add r3, r3, #0x100
+@@ -303,26 +300,28 @@
+
+ and r2, r2, r5
+ strh r2, [ip, r7]
+ ldrsh r3, [r0, sb]
++ldrh r2, [r0, sb]
+ cmp r3, #0
+-bge #0x80186c8
++bge #0x80186bc
+ ldr r1, [fp, #-0x30]
+ cmp r1, #0
+-lslne r3, r3, #2
++lslne r3, r2, #2
+ strhne r3, [r0, sb]
+-ldr r3, [pc, #0xf8]
+-mov r1, #0x3c
++ldr r3, [pc, #0xe4]
++mov r0, #0x3c
+ add r2, r6, r3
+-ldrsh r3, [r2, r1]
++ldrsh r3, [r2, r0]
++ldrh r1, [r2, r0]
+ cmp r3, #0
+-bge #0x80186f0
++bge #0x80186e8
+ ldr r4, [fp, #-0x2c]
+ cmp r4, #0
+-lslne r3, r3, #2
+-strhne r3, [r2, r1]
+-ldr lr, [fp, #-0x6c]
++lslne r3, r1, #2
++strhne r3, [r2, r0]
++ldr lr, [fp, #-0x5c]
+ ldr r0, [fp, #-0x30]
+-ldr r3, [pc, #0xcc]
+-ldr r4, [pc, #0xc8]
++ldr r3, [pc, #0xac]
++ldr r4, [pc, #0xa8]
+ add r1, lr, r0
+ add r1, r1, r1, lsl #2
+ lsl r1, r1, #2
+@@ -330,74 +329,66 @@
+
+ ldr r0, [r3, r6]
+ asr r2, r2, #1
+ str r2, [r3, r6]
+-ldr r3, [pc, #0xac]
++ldr r3, [pc, #0x94]
+ ldrsh r2, [r3]
+ asr r0, r0, #1
+ str r0, [r4, r1]
+ cmp r2, #0
+-bne #0x8018750
+-ldr lr, [fp, #-0x30]
+-ldr r0, [fp, #-0x2c]
++bne #0x8018748
++sub r0, fp, #0x30
++ldm r0, {r0, lr}
+ ldr r1, [fp, #-0x44]
+ cmp r0, #0
+ cmpne lr, #0
+ moveq r1, #1
+ str r1, [fp, #-0x44]
+-ldr r2, [pc, #0x7c]
+-ldr r4, [fp, #-0x6c]
++ldr r2, [pc, #0x64]
++ldr r4, [fp, #-0x5c]
+ ldr r0, [fp, #-0x40]
+ ldr r3, [r2, r4]
+ ldr lr, [fp, #-0x48]
+ orr r0, r0, r3
+ str r0, [fp, #-0x40]
+ cmp lr, #0
+-bne #0x80187e8
+-ldr r1, [fp, #-0x30]
+-ldr r3, [fp, #-0x70]
+-mov r7, lr
+-ldr r0, [pc, #0x50]
++bne #0x80187c8
++ldr r1, [fp, #-0x30]
++ldr r3, [fp, #-0x60]
++mov r5, lr
++ldr r0, [pc, #0x38]
+ add r2, r1, r3
+-lsl r1, r7, #2
++lsl r1, r5, #2
+ ldr r3, [r0, r1]
+ cmp r3, #0
+-ldreq r4, [pc, #0x3c]
++ldreq r4, [pc, #0x24]
+ streq r2, [r4, r1]
+-add r7, r7, #1
+-cmp r7, #3
+-ble #0x8018788
+-b #0x80187e8
+-ldr lr, [pc, #0x20]
+-ldr r3, [lr, r0]
+-ldr r0, [fp, #-0x40]
+-orr r0, r0, r3
+-str r0, [fp, #-0x40]
+-b #0x80187e8
+-add r7, r7, #1
+-cmp r7, #5
+-ble #0x8018528
+-ldr r1, [fp, #-0x60]
+-str r1, [fp, #-0x2c]
+-cmp r1, #7
++add r5, r5, #1
++cmp r5, #3
++ble #0x8018780
++b #0x80187c8
++add r5, r5, #1
++cmp r5, #5
++ble #0x8018508
++ldr lr, [fp, #-0x50]
++str lr, [fp, #-0x2c]
++cmp lr, #7
+ ble #0x8018240
+-ldr r2, [fp, #-0x64]
+-str r2, [fp, #-0x30]
+-cmp r2, #7
++ldr r0, [fp, #-0x54]
++str r0, [fp, #-0x30]
++cmp r0, #7
+ ble #0x80181f8
+-ldr r3, [fp, #-0x40]
+-cmp r3, #0
+-bne #0x8018840
+-mov r1, r3
+-mov r4, #3
++ldr r1, [fp, #-0x40]
++cmp r1, #0
++bne #0x8018818
++mov r2, #3
++str r2, [fp, #-0x2c]
++ldr r3, [pc, #0x1c]
++mov r2, r1
++ldr r4, [fp, #-0x2c]
++str r2, [r3, r4, lsl #2]
++subs r4, r4, #1
+ str r4, [fp, #-0x2c]
+-mov r3, #0xc
+-ldr r2, [pc, #0x1c]
+-str r1, [r3, r2]
+-ldr lr, [fp, #-0x2c]
+-subs lr, lr, #1
+-str lr, [fp, #-0x2c]
+-sub r3, r3, #4
+-bpl #0x8018828
++bpl #0x8018804
+ ldr r0, [fp, #-0x44]
+-b #0x801884c
++b #0x8018824
+ ldmdb fp, {r4, r5, r6, r7, r8, sb, sl, fp, sp, lr}
+ bx lr

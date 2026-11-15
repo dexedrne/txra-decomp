@@ -1,0 +1,24 @@
+{
+  "unique_source_identities": 661,
+  "unique_compiled_outputs": 252,
+  "compiler_rejections": 4,
+  "oversize_diagnostics": 316,
+  "semantic_rejections": 0,
+  "runs": {
+    "decompiled-temporary-lifetimes": 62,
+    "mixed-record-traversal": 60,
+    "control-flow-shape": 255,
+    "projected-coordinate-lifetimes": 216,
+    "decimal-live-values": 8,
+    "sprite-source-branch-join": 36,
+    "gauge-record-and-digit-source-scopes": 24
+  },
+  "baseline_different_bytes": 3235,
+  "retained_different_bytes": 3168,
+  "baseline_instruction_distance": 1013,
+  "retained_instruction_distance": 989,
+  "profile_sweep": false,
+  "exact": false,
+  "installed": false,
+  "selection": "Only a lower full-owner byte distance fitting the unchanged boundary and passing the unchanged source fixtures can be retained. Full checker reproduced after source freeze."
+}

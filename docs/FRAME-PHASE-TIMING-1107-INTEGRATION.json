@@ -1,0 +1,39 @@
+{
+  "at": "2026-11-07T07:22:31.265109+00:00",
+  "parentMain": "0af329d308d23d6389902e3b595b6fcd2cd5f813",
+  "diagnosticCommit": "4727ab5365c1097099e40d216070d8e65530a58b",
+  "testedCodeCommit": "3c4cb0289c6b06f9a501aaef262c88feb2200888",
+  "runtimeToolsTestsCodeIdentical": true,
+  "matchingRomIdentity": true,
+  "pythonTestsRun": 183,
+  "pythonTestsPassed": 182,
+  "pythonTestsSkipped": 1,
+  "skipReason": "fewer than two unmatched retained drafts remain for search10 resume fixture",
+  "runtimeAssertions": 446,
+  "controllerChecks": "ten buttons, dead zone, diagonal, disconnect/reconnect",
+  "reporterTestsPassed": 5,
+  "strictC11WarningsAsErrors": "passed",
+  "independentReview": "no must-fix findings; diagnostic-only acceptance",
+  "logsSha256": {
+    "clone.log": "7add8fb916b976be27a45204f4550bc2675c3641466e45370f53ecc0ac7f7042",
+    "matching-build.log": "d2cc159eaac49119ed734043fb056b8497195d0fc4d0e00f567b2d996621a64a",
+    "runtime-controller.log": "94c1a74a107618e50c98517fd52be3f36ff848a8265bcc772eb6e4a359e1cf57",
+    "python-suite.log": "5a0ff0e2c97951a8656b47fda74fd4fc09dcaf644bf7607e2ca78a87722cd2fc",
+    "checkout.log": "e484732948ef9fe7b1e044d564a45c8850918f9d5e340175b310c87d5ef2d4b8"
+  },
+  "temporaryCheckoutRemoved": true,
+  "privateRomDonorUnchanged": true,
+  "generatedMetadataDeltaExcluded": true,
+  "externalRepositoryHooks": 0,
+  "repositoryWorkflows": 0,
+  "externalModelJobs": false,
+  "newCMatches": 0,
+  "performanceFixClaimed": false,
+  "binaryReleasePublished": false,
+  "remaining": [
+    "frame-time jitter",
+    "audible fidelity",
+    "physical display/controller",
+    "Windows acceptance"
+  ]
+}

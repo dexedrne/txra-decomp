@@ -1,0 +1,60 @@
+{
+  "rom_bytes": 4194304,
+  "code_bytes_mapped": 85578,
+  "data_bytes_mapped": 3389462,
+  "unknown_bytes": 719264,
+  "functions_found": 228,
+  "functions_thumb": 204,
+  "functions_arm": 24,
+  "jump_tables": 14,
+  "indirect_targets_unresolved": 11,
+  "functions_mapped": 228,
+  "functions_recompiled": 228,
+  "boots": false,
+  "reaches_title": false,
+  "playable": false,
+  "full_race": false,
+  "saves": false,
+  "evidence": "No execution milestones reviewed for this exact executable yet.",
+  "match10_search": {
+    "targets_completed": 15,
+    "minimum_target_wall_seconds": 1500.0,
+    "fresh_source_profile_trials": 324571,
+    "cache_observations": 739098,
+    "exact_replacements_added": 0,
+    "evidence": "docs/match10-search/totals.json"
+  },
+  "deep_hand_b": {
+    "baseline_matches": 109,
+    "assigned_entries": 40,
+    "exact_replacements_added": 1,
+    "exact_bytes_added": 94,
+    "outcomes": "docs/deep-b/outcomes.json"
+  },
+  "llm_attempts": 10093,
+  "llm_success_rate": 0.0,
+  "llm_requests": 9856,
+  "llm_answers_pending_judgement": 0,
+  "deterministic_matches": 5,
+  "hand_matches_added": 88,
+  "functions_matched_c": {
+    "count": 194,
+    "bytes_including_pools": 93542,
+    "percent_of_mapped_code": 109.306
+  },
+  "functions_c_matched": 194,
+  "completion": {
+    "definition": "complete entry = exact C replacement, internal label inside an installed exact owner, or documented assembly interface (docs/map/finish.json); assembly is never counted as C",
+    "entries_total": 228,
+    "exact_c_entries": 194,
+    "internal_labels_inside_exact_owners": 3,
+    "documented_assembly_interfaces": 31,
+    "assembly_interface_instruction_bytes": 6092,
+    "complete_entries": 228,
+    "remaining_c_owners": [],
+    "remaining_c_owner_bytes_including_pools": 0,
+    "remaining_fragments_inside_c_owners": 0,
+    "remaining_entries": 0,
+    "indirect_sites_unresolved_but_unreferenced": 11
+  }
+}

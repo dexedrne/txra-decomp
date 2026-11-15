@@ -1,0 +1,22 @@
+{
+  "address": "08016DA8",
+  "target_end": "08017E68",
+  "compiler": "arm",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/arm-16da8-1109b/func_08016DA8_match.c",
+  "source_sha256": "6afbfbc5cbc3971016ff1d45b1afb8b48c6c7664a649e2ff49068b0510818c70",
+  "compiler_sha256": "26d884f0d4d46180dd90d1b1b56371fa1d72e2d0a47b22b65f27b3cebb89cca8",
+  "emitted_bytes": 4164,
+  "target_bytes": 4288,
+  "local_frame_bytes": 112,
+  "instruction_distance": 859,
+  "different_bytes": 3503,
+  "exact": false,
+  "compiled_sha256": "e4a3d5e6ff7169297b7c6ccae2ee65512b4fe146d52ab8aee86e78ccb0ff6086",
+  "checker_limit": "08017E68",
+  "checker_rejection": null,
+  "installed": false
+}

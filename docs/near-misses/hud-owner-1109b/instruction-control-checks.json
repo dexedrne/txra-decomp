@@ -1,0 +1,12 @@
+{
+  "candidate": "instruction-control.c",
+  "source_sha256": "b5bfa7482e8c1b7957b6faffa54d8ebe33f9aeaa1c7126e57132e7d4cc8767ac",
+  "reference_sha256": "5b1b934aece458415e5543ddf24765921f659d4d676c563c191274802b17ba5c",
+  "fixtures": 1024,
+  "comparison": "prior C draft state and ordered helper calls; not original instructions",
+  "undefined_behavior_sanitizer": true,
+  "transform_aliases": 6,
+  "registry_unchanged": true,
+  "rom_used": false,
+  "output": "1024 HUD state and ordered-call fixtures passed against the prior C draft; no ROM oracle"
+}

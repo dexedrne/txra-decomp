@@ -1,0 +1,141 @@
+{
+  "owner": "08002854",
+  "checker_end": "0800418C",
+  "profile": "old (-O2 -mthumb-interwork)",
+  "base_statements": {
+    "fb": "fb = &((StreamFace *)0x02033B70)[(ring & 31) * 24];",
+    "first": "first = (ring & 31) * 24;",
+    "following": "following = ((ring + 1) & 31) * 24;",
+    "ahead": "ahead = ((ring + 2) & 31) * 24;",
+    "p": "p = &((StreamPoint *)0x02014000)[first];"
+  },
+  "note": "Each row changes only the listed statements of the 11/14 candidate; differing bytes over the complete owner (6,456 bytes), measured on worker A with tools/measure_candidate.py diagnostic_compile. Metadata only.",
+  "rows": [
+    {
+      "form": "following: ((ring + 1) & 31) * 24 | ahead: ((ring + 2) & 31) * 24  (11/14 candidate)",
+      "different_bytes": 23,
+      "instruction_distance": 20,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "following: ((ring + 1) & 31) * 24 | ahead: (ring + 2) & 31; ahead *= 24",
+      "different_bytes": 17,
+      "instruction_distance": 16,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "following: ((ring + 1) & 31) * 24 | ahead: ring + 2; ahead &= 31; ahead *= 24",
+      "different_bytes": 17,
+      "instruction_distance": 16,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "following: (ring + 1) & 31; following *= 24 | ahead: ((ring + 2) & 31) * 24",
+      "different_bytes": 6,
+      "instruction_distance": 4,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "following: ring + 1; following &= 31; following *= 24 | ahead: ((ring + 2) & 31) * 24",
+      "different_bytes": 6,
+      "instruction_distance": 4,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "following: (ring + 1) & 31; following *= 24 | ahead: (ring + 2) & 31; ahead *= 24  (INSTALLED)",
+      "different_bytes": 0,
+      "instruction_distance": 0,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "following: (ring + 1) & 31; following *= 24 | ahead: ring + 2; ahead &= 31; ahead *= 24",
+      "different_bytes": 0,
+      "instruction_distance": 0,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "following: ring + 1; following &= 31; following *= 24 | ahead: (ring + 2) & 31; ahead *= 24",
+      "different_bytes": 0,
+      "instruction_distance": 0,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "following: ring + 1; following &= 31; following *= 24 | ahead: ring + 2; ahead &= 31; ahead *= 24",
+      "different_bytes": 0,
+      "instruction_distance": 0,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "ring = (ring + 2) & 31; ahead = ring * 24  (ring updated in place)",
+      "different_bytes": 5602,
+      "instruction_distance": 1616,
+      "local_frame_bytes": 148
+    },
+    {
+      "form": "ring += 2; ring &= 31; ahead = ring * 24",
+      "different_bytes": 5602,
+      "instruction_distance": 1616,
+      "local_frame_bytes": 148
+    },
+    {
+      "form": "ring += 2; ahead = (ring & 31) * 24  (regmove renames it back)",
+      "different_bytes": 23,
+      "instruction_distance": 20,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "ring &= 31 before the bases",
+      "different_bytes": 6050,
+      "instruction_distance": 1662,
+      "local_frame_bytes": 148
+    },
+    {
+      "form": "block-scope temporary for (ring + 2) & 31",
+      "different_bytes": 23,
+      "instruction_distance": 20,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "p = &g_02014000[first]  (symbol base)",
+      "different_bytes": 22,
+      "instruction_distance": 20,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "fb and p both symbol bases",
+      "different_bytes": 24,
+      "instruction_distance": 22,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "p = (StreamPoint *)0x02014000 + first",
+      "different_bytes": 23,
+      "instruction_distance": 20,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "p computed from ring & 31",
+      "different_bytes": 6170,
+      "instruction_distance": 280,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "p computed before following/ahead",
+      "different_bytes": 5967,
+      "instruction_distance": 266,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "first computed before fb, fb = &faces[first]",
+      "different_bytes": 5960,
+      "instruction_distance": 222,
+      "local_frame_bytes": 268
+    },
+    {
+      "form": "two-dimensional [32][24] face base (with constant or symbol point base)",
+      "different_bytes": 23,
+      "instruction_distance": 20,
+      "local_frame_bytes": 268
+    }
+  ]
+}

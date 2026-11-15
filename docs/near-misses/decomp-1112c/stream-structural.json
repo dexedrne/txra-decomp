@@ -1,0 +1,60 @@
+{
+  "address": "08002854",
+  "source_sha256": "3cf5c6f34087ae99b1626f76d770b73d43e23f4acea1b5faa880dde01d05c8e6",
+  "compiled_sha256": "3fd8cba1008e16692a97cd1e76d66ff039787fa6cc3cba04b58ce496de01bcf7",
+  "method": "Original-address windows count positional differences, including pools/missing tail. Global instruction-shape alignment ignores register identities and local branch/PC displacements. Referenced pool words only. It is a heuristic layout aid, not causal attribution or semantic proof. Calls are not block boundaries; unconditional/conditional branches are.",
+  "original_local_frame": 268,
+  "compiled_local_frame": 156,
+  "original_pool_words": 51,
+  "compiled_pool_words": 44,
+  "shape_alignment": {
+    "identical_opcode_pairs": 582,
+    "register_operand_pairs": 1041,
+    "pc_reference_pairs": 90,
+    "branch_destination_pairs": 89,
+    "unpaired_original_rows": 1251,
+    "unpaired_compiled_rows": 1097
+  },
+  "regions": [
+    {
+      "region": "entry and stream window",
+      "start": "08002854",
+      "end": "080029BC",
+      "original_bytes": 360,
+      "positional_different_bytes": 330,
+      "original_basic_blocks": 28,
+      "original_instruction_rows": 162,
+      "original_pool_words": 9
+    },
+    {
+      "region": "bank geometry",
+      "start": "080029BC",
+      "end": "08002FDE",
+      "original_bytes": 1570,
+      "positional_different_bytes": 1443,
+      "original_basic_blocks": 35,
+      "original_instruction_rows": 747,
+      "original_pool_words": 13
+    },
+    {
+      "region": "road walls and bridge",
+      "start": "08002FDE",
+      "end": "08003786",
+      "original_bytes": 1960,
+      "positional_different_bytes": 1837,
+      "original_basic_blocks": 17,
+      "original_instruction_rows": 940,
+      "original_pool_words": 13
+    },
+    {
+      "region": "scenery continuation and return",
+      "start": "08003786",
+      "end": "0800418C",
+      "original_bytes": 2566,
+      "positional_different_bytes": 2496,
+      "original_basic_blocks": 30,
+      "original_instruction_rows": 1204,
+      "original_pool_words": 16
+    }
+  ]
+}

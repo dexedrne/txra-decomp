@@ -1,0 +1,140 @@
+[
+  {
+    "offset": 30012,
+    "size": 14,
+    "type": "code",
+    "format": "thumb"
+  },
+  {
+    "offset": 30028,
+    "size": 8,
+    "type": "table",
+    "format": "literal-pool-or-switch"
+  },
+  {
+    "offset": 30172,
+    "size": 38,
+    "type": "code",
+    "format": "thumb"
+  },
+  {
+    "offset": 30212,
+    "size": 24,
+    "type": "table",
+    "format": "literal-pool-or-switch"
+  },
+  {
+    "offset": 83856,
+    "size": 34,
+    "type": "code",
+    "format": "thumb"
+  },
+  {
+    "offset": 83892,
+    "size": 12,
+    "type": "table",
+    "format": "literal-pool-or-switch"
+  },
+  {
+    "offset": 89680,
+    "size": 46,
+    "type": "code",
+    "format": "thumb"
+  },
+  {
+    "offset": 89728,
+    "size": 24,
+    "type": "table",
+    "format": "literal-pool-or-switch"
+  },
+  {
+    "offset": 89752,
+    "size": 42,
+    "type": "code",
+    "format": "thumb"
+  },
+  {
+    "offset": 89796,
+    "size": 16,
+    "type": "table",
+    "format": "literal-pool-or-switch"
+  },
+  {
+    "offset": 89812,
+    "size": 46,
+    "type": "code",
+    "format": "thumb"
+  },
+  {
+    "offset": 89860,
+    "size": 24,
+    "type": "table",
+    "format": "literal-pool-or-switch"
+  },
+  {
+    "offset": 89884,
+    "size": 42,
+    "type": "code",
+    "format": "thumb"
+  },
+  {
+    "offset": 89928,
+    "size": 16,
+    "type": "table",
+    "format": "literal-pool-or-switch"
+  },
+  {
+    "offset": 89944,
+    "size": 20,
+    "type": "code",
+    "format": "thumb"
+  },
+  {
+    "offset": 89964,
+    "size": 12,
+    "type": "table",
+    "format": "literal-pool-or-switch"
+  },
+  {
+    "offset": 89976,
+    "size": 24,
+    "type": "code",
+    "format": "thumb"
+  },
+  {
+    "offset": 90000,
+    "size": 8,
+    "type": "table",
+    "format": "literal-pool-or-switch"
+  },
+  {
+    "offset": 90008,
+    "size": 36,
+    "type": "code",
+    "format": "thumb"
+  },
+  {
+    "offset": 90044,
+    "size": 16,
+    "type": "table",
+    "format": "literal-pool-or-switch"
+  },
+  {
+    "offset": 90060,
+    "size": 42,
+    "type": "code",
+    "format": "thumb"
+  },
+  {
+    "offset": 90104,
+    "size": 16,
+    "type": "table",
+    "format": "literal-pool-or-switch"
+  },
+  {
+    "offset": 101792,
+    "size": 62,
+    "type": "code",
+    "format": "thumb"
+  }
+]

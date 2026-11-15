@@ -1,0 +1,56 @@
+{
+  "before-0800421C.png": {
+    "bytes": 133994,
+    "sha256": "5e243a8d7d619611da23bad65d249aee41c211123f5432afdd63ad29be15fb26",
+    "width": 1600,
+    "height": 1000
+  },
+  "after-0800421C.png": {
+    "bytes": 126498,
+    "sha256": "4c88c38e4b36d8e1a62b229116cd4b50d56bd6b176a689e529ff3b09caaf8de7",
+    "width": 1600,
+    "height": 1000
+  },
+  "0800421C.webm": {
+    "bytes": 451840,
+    "sha256": "c95913a6a75e9c031fe6cdc6157632e3d62778cee36fe905d36f36fadd068195",
+    "seconds": 4.0,
+    "fps": 30,
+    "width": 1600,
+    "height": 1000,
+    "audio_streams": 0
+  },
+  "before-08016DA8.png": {
+    "bytes": 147286,
+    "sha256": "4752974cbee45c92412fcb172578fb7433e44d41a7b42059eea5908535ca16da",
+    "width": 1600,
+    "height": 1000
+  },
+  "after-08016DA8.png": {
+    "bytes": 146569,
+    "sha256": "87162479c797f499bf29c08f07dae0bb015dc626813488c55669a07ee6d0b9f0",
+    "width": 1600,
+    "height": 1000
+  },
+  "08016DA8.webm": {
+    "bytes": 404398,
+    "sha256": "44557d3913a0b5a496b67c663b0d0552013a116686715801fe22cbc1e2ed54fa",
+    "seconds": 4.0,
+    "fps": 30,
+    "width": 1600,
+    "height": 1000,
+    "audio_streams": 0
+  },
+  "arm-source-flow.png": {
+    "bytes": 83777,
+    "sha256": "aa3e1aec096db8bcb9e56dbde9610ca64451d7b970b28f429e73dfca7aa91b19",
+    "width": 1600,
+    "height": 1000
+  },
+  "clip-overview.png": {
+    "bytes": 175517,
+    "sha256": "e95fe95e902de5050793be9eaec26d3fbc25931200a2638cada86f64bc764e3f",
+    "width": 1000,
+    "height": 660
+  }
+}

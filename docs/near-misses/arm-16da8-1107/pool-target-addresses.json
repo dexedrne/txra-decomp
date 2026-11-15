@@ -1,0 +1,82 @@
+{
+  "scope": "semantic pointer target addresses only; ROM remains private and unchanged",
+  "romTransferred": false,
+  "rows": [
+    {
+      "poolAddress": "08017198",
+      "targetAddress": "030001B8"
+    },
+    {
+      "poolAddress": "0801719C",
+      "targetAddress": "030057A0"
+    },
+    {
+      "poolAddress": "080176B4",
+      "targetAddress": "03005F70"
+    },
+    {
+      "poolAddress": "080176B8",
+      "targetAddress": "030057A0"
+    },
+    {
+      "poolAddress": "080176BC",
+      "targetAddress": "03005F80"
+    },
+    {
+      "poolAddress": "080176C0",
+      "targetAddress": "03002A18"
+    },
+    {
+      "poolAddress": "080176C4",
+      "targetAddress": "03001B28"
+    },
+    {
+      "poolAddress": "080176C8",
+      "targetAddress": "03000DF8"
+    },
+    {
+      "poolAddress": "080176CC",
+      "targetAddress": "03005F58"
+    },
+    {
+      "poolAddress": "080176D0",
+      "targetAddress": "030055F8"
+    },
+    {
+      "poolAddress": "080176D4",
+      "targetAddress": "0804F330"
+    },
+    {
+      "poolAddress": "080176D8",
+      "targetAddress": "030021C4"
+    },
+    {
+      "poolAddress": "08017AA0",
+      "targetAddress": "030021C4"
+    },
+    {
+      "poolAddress": "08017AA4",
+      "targetAddress": "03000670"
+    },
+    {
+      "poolAddress": "08017E0C",
+      "targetAddress": "030021C4"
+    },
+    {
+      "poolAddress": "08017E10",
+      "targetAddress": "03000DE0"
+    },
+    {
+      "poolAddress": "08017E14",
+      "targetAddress": "03000AD0"
+    },
+    {
+      "poolAddress": "08017E18",
+      "targetAddress": "03000ADC"
+    },
+    {
+      "poolAddress": "08017E1C",
+      "targetAddress": "03000670"
+    }
+  ]
+}

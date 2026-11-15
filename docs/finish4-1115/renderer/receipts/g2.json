@@ -1,0 +1,22 @@
+{
+  "address": "08016DA8",
+  "target_end": "08017E68",
+  "compiler": "arm",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/finish4-1115/renderer/c/g2.c",
+  "source_sha256": "e7f56b93b6aef54da41994119f77fbf95d20e6e79349da6f22fb29100c42223c",
+  "compiler_sha256": "342687894970c4ed4369945d9a23ea056e9a6a5d3fcd3004044a97d1de777ac6",
+  "emitted_bytes": 4288,
+  "target_bytes": 4288,
+  "local_frame_bytes": 96,
+  "instruction_distance": 96,
+  "different_bytes": 226,
+  "exact": false,
+  "compiled_sha256": "554d62de44b8f57ec3d3b5c82f538436ba468641747d5ba7171b1b50ef519ffe",
+  "checker_limit": "08017E68",
+  "checker_rejection": null,
+  "installed": false
+}

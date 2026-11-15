@@ -1,0 +1,13 @@
+Compiled output differs: target 176 bytes, compiled 176 bytes.
+First difference at +0x2C (0x08018B50); exact prefix 44 bytes, exact suffix 130 bytes.
+Instruction shapes, constants and pools agree; inspect register allocation and variable lifetimes.
+--- target
++++ compiled
+@@ -19,5 +19,5 @@
+ 08018B4C: lsls r0, r1, #1
+ 08018B4E: mov r4, sp
+-08018B50: adds r2, r0, r4
++08018B50: adds r2, r4, r0
+ 08018B52: adds r2, #2
+ 08018B54: movs r4, #0
+Check register allocation, signed widths, statement order, constants and pool alignment.

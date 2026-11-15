@@ -1,0 +1,70 @@
+{
+  "address": "08016DA8",
+  "source_sha256": "1a87183e3efe42dede36df59c90a7c167d360aa00186a11ea00d27950f0830ee",
+  "compiled_sha256": "dacd4448b4f1dffd0e39e9f8b394c53e380e76eeb76934dc2f4ccac0f396b324",
+  "method": "Original-address windows count positional differences, including pools/missing tail. Global instruction-shape alignment ignores register identities and local branch/PC displacements. Referenced pool words only. It is a heuristic layout aid, not causal attribution or semantic proof. Calls are not block boundaries; unconditional/conditional branches are.",
+  "original_local_frame": 96,
+  "compiled_local_frame": 108,
+  "original_pool_words": 19,
+  "compiled_pool_words": 21,
+  "shape_alignment": {
+    "identical_opcode_pairs": 197,
+    "register_operand_pairs": 549,
+    "pc_reference_pairs": 24,
+    "branch_destination_pairs": 22,
+    "unpaired_original_rows": 261,
+    "unpaired_compiled_rows": 252
+  },
+  "regions": [
+    {
+      "region": "entry and geometry setup",
+      "start": "08016DA8",
+      "end": "08016EF0",
+      "original_bytes": 328,
+      "positional_different_bytes": 262,
+      "original_basic_blocks": 7,
+      "original_instruction_rows": 82,
+      "original_pool_words": 0
+    },
+    {
+      "region": "subdivision cases",
+      "start": "08016EF0",
+      "end": "08017308",
+      "original_bytes": 1048,
+      "positional_different_bytes": 836,
+      "original_basic_blocks": 10,
+      "original_instruction_rows": 260,
+      "original_pool_words": 2
+    },
+    {
+      "region": "projection",
+      "start": "08017308",
+      "end": "08017470",
+      "original_bytes": 360,
+      "positional_different_bytes": 304,
+      "original_basic_blocks": 2,
+      "original_instruction_rows": 90,
+      "original_pool_words": 0
+    },
+    {
+      "region": "near visibility and packets",
+      "start": "08017470",
+      "end": "08017AA8",
+      "original_bytes": 1592,
+      "positional_different_bytes": 1188,
+      "original_basic_blocks": 30,
+      "original_instruction_rows": 386,
+      "original_pool_words": 12
+    },
+    {
+      "region": "direct path and return",
+      "start": "08017AA8",
+      "end": "08017E68",
+      "original_bytes": 960,
+      "positional_different_bytes": 668,
+      "original_basic_blocks": 21,
+      "original_instruction_rows": 235,
+      "original_pool_words": 5
+    }
+  ]
+}

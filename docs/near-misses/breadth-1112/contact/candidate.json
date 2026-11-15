@@ -1,0 +1,24 @@
+{
+  "address": "080181C0",
+  "target_end": "08018854",
+  "compiler": "arm",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/breadth-1112/contact/func_080181C0.c",
+  "source_sha256": "82a83d46afd0e154f1d3e09474acecbb5df140218320f0a440c4d7d2f9df1bdf",
+  "compiler_sha256": "26d884f0d4d46180dd90d1b1b56371fa1d72e2d0a47b22b65f27b3cebb89cca8",
+  "emitted_bytes": 1660,
+  "target_bytes": 1684,
+  "local_frame_bytes": 64,
+  "instruction_distance": 225,
+  "different_bytes": 941,
+  "exact": false,
+  "compiled_sha256": "70a6250bec920674683beb0e1bb65bd90647e391e33cdb350c032b059f040ee6",
+  "checker_limit": "08018854",
+  "checker_rejection": null,
+  "installed": false,
+  "semantics_rejected": true,
+  "rejection_receipt": "rejection.json"
+}

@@ -1,0 +1,32 @@
+{
+  "source": "ed92865f5b6399778cb8ae9d74bad551c9d970de",
+  "candidateSha256": "8b846a8c22a2abeeb8f18042dc195098aa37fc9ff9a633871d67de1ca7b99847",
+  "compiler": "old",
+  "compilerInvocations": 1,
+  "targetStart": "080064A4",
+  "targetEnd": "08007398",
+  "targetBytes": 3828,
+  "exact": false,
+  "installed": false,
+  "modelCalls": 0,
+  "romTransferred": false,
+  "startedAt": 1794095029.1279213,
+  "toolchainSHA256": {
+    "old_agbcc": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+    "arm-none-eabi-gcc": "510c55cfeed7328ade1eb8cb23808fcce1ba6c52dac8d4ebfe033ae4b2534385",
+    "arm-none-eabi-as": "500c3d460643e1961d1de6b5be98c50ceae574d85edce8e3c8c57cf8c35d2fd8",
+    "arm-none-eabi-objcopy": "0424b422a6c075238c2d4878630e9f111fd0f9320ac34e6f2cd617954042adda",
+    "arm-none-eabi-objdump": "29829538419301ed3da5f3148a89e19ea9f9111105fa2ec3e05550f8998a5389"
+  },
+  "matchedBefore": 181,
+  "compiledBytes": 2996,
+  "compiledSHA256": "e274ed409767128ee9eaa0c2021818c038d4af7843104741a226ba9ad024ae1a",
+  "targetSHA256": "e391678273de8dae8b0f0c4f845dbb86674af3f8b97b7ca015632cc17cf8f301",
+  "registryUnchanged": true,
+  "matchedAfter": 181,
+  "toolchainUnchanged": true,
+  "scratchRemoved": true,
+  "romUnchanged": true,
+  "finishedAt": 1794095030.348324,
+  "receiptSHA256": "924c49855105013bc59767c45f89fcce9e0dc2001a5d6048562eeeaf7fb7c093"
+}

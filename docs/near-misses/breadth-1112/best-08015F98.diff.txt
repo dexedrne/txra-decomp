@@ -1,0 +1,80 @@
+Compiled output differs: target 112 bytes, compiled 112 bytes.
+First difference at +0x0 (0x08015F98); exact prefix 0 bytes, exact suffix 21 bytes.
+--- target
++++ compiled
+@@ -1,19 +1,19 @@
+-08015F98: sub sp, #4
++08015F98: sub sp, #8
+ 08015F9A: adds r2, r0, #0
+ 08015F9C: cmp r2, #0
+ 08015F9E: bne 0x08015FCC
+ 08015FA0: str r2, [sp, #0]
+-08015FA2: ldr r0, [pc, #24] @ =0x08015FBC
+-08015FA4: mov r1, sp
+-08015FA6: str r1, [r0, #0]
+-08015FA8: ldr r1, [pc, #20] @ =0x08015FC0
+-08015FAA: str r1, [r0, #4]
+-08015FAC: ldr r1, [pc, #20] @ =0x08015FC4
+-08015FAE: str r1, [r0, #8]
+-08015FB0: ldr r1, [r0, #8]
+-08015FB2: str r2, [sp, #0]
+-08015FB4: mov r1, sp
+-08015FB6: str r1, [r0, #0]
+-08015FB8: ldr r1, [pc, #12] @ =0x08015FC8
++08015FA2: ldr r1, [pc, #24] @ =0x08015FBC
++08015FA4: mov r0, sp
++08015FA6: str r0, [r1, #0]
++08015FA8: ldr r0, [pc, #20] @ =0x08015FC0
++08015FAA: str r0, [r1, #4]
++08015FAC: ldr r0, [pc, #20] @ =0x08015FC4
++08015FAE: str r0, [r1, #8]
++08015FB0: ldr r0, [r1, #8]
++08015FB2: str r2, [sp, #4]
++08015FB4: add r0, sp, #4
++08015FB6: str r0, [r1, #0]
++08015FB8: ldr r0, [pc, #12] @ =0x08015FC8
+ 08015FBA: b 0x08015FEA
+ 08015FBC: .word <literal pool>
+@@ -22,23 +22,23 @@
+ 08015FC8: .word <literal pool>
+ 08015FCC: movs r2, #0
+-08015FCE: str r2, [sp, #0]
+-08015FD0: ldr r0, [pc, #36] @ =0x08015FF8
+-08015FD2: mov r1, sp
+-08015FD4: str r1, [r0, #0]
+-08015FD6: movs r1, #192
+-08015FD8: lsls r1, r1, #19
+-08015FDA: str r1, [r0, #4]
+-08015FDC: ldr r1, [pc, #28] @ =0x08015FFC
+-08015FDE: str r1, [r0, #8]
+-08015FE0: ldr r1, [r0, #8]
++08015FCE: str r2, [sp, #4]
++08015FD0: ldr r1, [pc, #36] @ =0x08015FF8
++08015FD2: add r0, sp, #4
++08015FD4: str r0, [r1, #0]
++08015FD6: movs r0, #192
++08015FD8: lsls r0, r0, #19
++08015FDA: str r0, [r1, #4]
++08015FDC: ldr r0, [pc, #28] @ =0x08015FFC
++08015FDE: str r0, [r1, #8]
++08015FE0: ldr r0, [r1, #8]
+ 08015FE2: str r2, [sp, #0]
+-08015FE4: mov r1, sp
+-08015FE6: str r1, [r0, #0]
+-08015FE8: ldr r1, [pc, #20] @ =0x08016000
+-08015FEA: str r1, [r0, #4]
+-08015FEC: ldr r1, [pc, #20] @ =0x08016004
+-08015FEE: str r1, [r0, #8]
+-08015FF0: ldr r0, [r0, #8]
+-08015FF2: add sp, #4
++08015FE4: mov r0, sp
++08015FE6: str r0, [r1, #0]
++08015FE8: ldr r0, [pc, #20] @ =0x08016000
++08015FEA: str r0, [r1, #4]
++08015FEC: ldr r0, [pc, #20] @ =0x08016004
++08015FEE: str r0, [r1, #8]
++08015FF0: ldr r0, [r1, #8]
++08015FF2: add sp, #8
+ 08015FF4: bx lr
+ 08015FF6: movs r0, r0
+Check register allocation, signed widths, statement order, constants and pool alignment.

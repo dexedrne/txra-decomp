@@ -1,0 +1,11 @@
+{
+  "complete": false,
+  "tested": 5732,
+  "candidates": [],
+  "scan_start": 192,
+  "scan_end": 4194304,
+  "caveat": "Manual boundary, literal and semantic review required; no runtime reachability claimed.",
+  "wall_seconds": 334.81,
+  "outside_enclosure_is_unproven": true,
+  "input_mapping_sha256": "484fd3e335840a940803b8d9094e9267cf63b6c5729a67570b864aa6ab8ba4a2"
+}

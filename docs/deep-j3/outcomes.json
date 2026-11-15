@@ -1,0 +1,248 @@
+[
+ {
+  "address": "0800B3A0",
+  "bytes": 310,
+  "group": "Exact C match, installed",
+  "note": "Point plot. The pixel value is one function-level variable shared by both parity branches, so the odd branch has two local quantities instead of three and local-alloc gives its row offset r0 as in the original."
+ },
+ {
+  "address": "0800C850",
+  "bytes": 352,
+  "group": "Exact C match, installed",
+  "note": "Track-position update on the 0800C9C4 template. The dead next + 1 is an unused second wrap (after = next + 1; if (after >= n) after = 0;). Fields indexed directly; row address at * 28 + base."
+ },
+ {
+  "address": "0800A940",
+  "bytes": 748,
+  "group": "Exact C match, installed",
+  "note": "Stat scaling. Two-dimensional s16 stats array; one function-level product temporary; first factor in two statements; third factor through a block temporary."
+ },
+ {
+  "address": "0800AC3C",
+  "bytes": 772,
+  "group": "Exact C match, installed",
+  "note": "Grade stat scaling, same macro as 0800A940. Grade read through p before the divide; the /16 and /64 factors are two variables (global allocation order)."
+ },
+ {
+  "address": "0800A17C",
+  "bytes": 1028,
+  "group": "Exact C match, installed",
+  "note": "Race HUD bars and awards (deep-a draft finished). Record field_4c, next destination row before the last copy, and bonus values held in temporaries before their stores."
+ },
+ {
+  "address": "0800C3C4",
+  "bytes": 1132,
+  "group": "Exact C match, installed",
+  "note": "Steering and heading update (deep-c candidate rewritten). Nested flag tests, a direct record access opening each block, one record pointer per block, one shared diff variable."
+ },
+ {
+  "address": "08005238",
+  "bytes": 2580,
+  "group": "Exact C match, installed",
+  "note": "Menu sprite builder (deep-a draft finished). Two-dimensional column table so loop.c reduces the shared i * 2 giv; slide + 120 inline after the loop (PRE places it); one shared call-result variable; cursor source through the source variable."
+ },
+ {
+  "address": "0800841C",
+  "bytes": 430,
+  "group": "Exact C match, installed after j3",
+  "note": "Palette fade by track tile. Matched after j3: the tile byte of all three range blocks and the blue channel of both fade loops are one function-level variable (src/generated/func_0800841C.c); the draft is kept for the review tool."
+ },
+ {
+  "address": "0800BDC0",
+  "bytes": 1540,
+  "group": "Exact C match, installed after j3",
+  "note": "AI lane choice. Matched after j3 (src/generated/func_0800BDC0.c): delta shares the loop counter, two-statement lane timer, s16 cast for the -2 mask, field_42 in the first neighbour loop, split final else-if; the draft is kept for the review tool."
+ },
+ {
+  "address": "08016C18",
+  "bytes": 400,
+  "group": "C, worked, not matched",
+  "note": "ARM point projection (arm profile). Same 408-byte length as the seed; the original adds the 0x02014000 base as two immediates per outer iteration while ours hoists it into a spilled register. Operand order and array forms did not change it."
+ },
+ {
+  "address": "08017F64",
+  "bytes": 604,
+  "group": "C, earlier seed kept, not reached",
+  "note": "ARM; deep-a candidate 207 normalized rows off under the arm profile; not reached."
+ },
+ {
+  "address": "080095E4",
+  "bytes": 758,
+  "group": "C, earlier seed kept, not reached",
+  "note": "Mapper reports an unresolved control transfer (bounded switch table); not reached."
+ },
+ {
+  "address": "080076F4",
+  "bytes": 1076,
+  "group": "C, earlier seed kept, not reached",
+  "note": "ARM sound mixer; deep-c seed 562 normalized rows off; not reached."
+ },
+ {
+  "address": "080181C0",
+  "bytes": 1684,
+  "group": "C, earlier seed kept, not reached",
+  "note": "ARM; deep-c seed 952 normalized rows off; not reached."
+ },
+ {
+  "address": "08016DA8",
+  "bytes": 4288,
+  "group": "C, earlier seed kept, not reached",
+  "note": "ARM, 4,288 bytes, conventional APCS frame; no retained draft; not reached."
+ },
+ {
+  "address": "08010A50",
+  "bytes": 6444,
+  "group": "C, earlier seed kept, not reached",
+  "note": "6,444-byte routine; not reached this round."
+ },
+ {
+  "address": "08018DE4",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r1 call veneer"
+ },
+ {
+  "address": "08018DEC",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r3 call veneer"
+ },
+ {
+  "address": "08018DF4",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r5 call veneer"
+ },
+ {
+  "address": "08018DFC",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r7 call veneer"
+ },
+ {
+  "address": "08018E04",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r9 call veneer"
+ },
+ {
+  "address": "08018E0C",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r11 call veneer"
+ },
+ {
+  "address": "08018E14",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r13 call veneer"
+ },
+ {
+  "address": "08018E84",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx pc state switch"
+ },
+ {
+  "address": "08018A54",
+  "bytes": 4,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "CpuFastSet SWI veneer"
+ },
+ {
+  "address": "08018E80",
+  "bytes": 4,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "ARM branch into the division runtime"
+ },
+ {
+  "address": "08000218",
+  "bytes": 100,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "signed division runtime"
+ },
+ {
+  "address": "080000FC",
+  "bytes": 248,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "IRQ entry"
+ },
+ {
+  "address": "08000AA0",
+  "bytes": 320,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "private renderer helper (custom register contract)"
+ },
+ {
+  "address": "08000BF0",
+  "bytes": 1224,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "ARM rasteriser with private register inputs"
+ },
+ {
+  "address": "0800735C",
+  "bytes": 12,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "call without saved LR or outside ROM"
+ },
+ {
+  "address": "080051FE",
+  "bytes": 16,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "invalid stack depth"
+ },
+ {
+  "address": "08007B28",
+  "bytes": 24,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "unresolved control transfer"
+ },
+ {
+  "address": "08006712",
+  "bytes": 46,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "call without saved LR or outside ROM"
+ },
+ {
+  "address": "08006740",
+  "bytes": 54,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "call without saved LR or outside ROM"
+ },
+ {
+  "address": "0800D51C",
+  "bytes": 84,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "path leaves ROM or enters established literal/data pool"
+ },
+ {
+  "address": "0800D570",
+  "bytes": 192,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "call without saved LR or outside ROM"
+ },
+ {
+  "address": "080064A4",
+  "bytes": 622,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "reachable body crosses mapped boundary"
+ },
+ {
+  "address": "08007B40",
+  "bytes": 2268,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "call without saved LR or outside ROM"
+ },
+ {
+  "address": "08006776",
+  "bytes": 3046,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "call without saved LR or outside ROM"
+ },
+ {
+  "address": "08002854",
+  "bytes": 3890,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "reachable body crosses mapped boundary"
+ }
+]

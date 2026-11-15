@@ -1,0 +1,182 @@
+[
+  {
+    "address": "08015DA8",
+    "uncached": true,
+    "score": [
+      4,
+      9
+    ],
+    "exact": false,
+    "complete_extent_bytes": 118,
+    "emitted_bytes": 118,
+    "fits_next_entry": true
+  },
+  {
+    "address": "08014104",
+    "uncached": true,
+    "score": [
+      6,
+      10
+    ],
+    "exact": false,
+    "complete_extent_bytes": 134,
+    "emitted_bytes": 134,
+    "fits_next_entry": true
+  },
+  {
+    "address": "0800B3A0",
+    "uncached": true,
+    "score": [
+      23,
+      31
+    ],
+    "exact": false,
+    "complete_extent_bytes": 310,
+    "emitted_bytes": 310,
+    "fits_next_entry": true
+  },
+  {
+    "address": "08013E74",
+    "uncached": true,
+    "score": [
+      33,
+      90
+    ],
+    "exact": false,
+    "complete_extent_bytes": 310,
+    "emitted_bytes": 314,
+    "fits_next_entry": false
+  },
+  {
+    "address": "080149FC",
+    "uncached": true,
+    "score": [
+      40,
+      167
+    ],
+    "exact": false,
+    "complete_extent_bytes": 228,
+    "emitted_bytes": 244,
+    "fits_next_entry": false
+  },
+  {
+    "address": "08006270",
+    "uncached": true,
+    "score": [
+      60,
+      181
+    ],
+    "exact": false,
+    "complete_extent_bytes": 356,
+    "emitted_bytes": 356,
+    "fits_next_entry": true
+  },
+  {
+    "address": "080063D4",
+    "uncached": true,
+    "score": [
+      72,
+      188
+    ],
+    "exact": false,
+    "complete_extent_bytes": 208,
+    "emitted_bytes": 192,
+    "fits_next_entry": true
+  },
+  {
+    "address": "08005F8C",
+    "uncached": true,
+    "score": [
+      71,
+      118
+    ],
+    "exact": false,
+    "complete_extent_bytes": 228,
+    "emitted_bytes": 224,
+    "fits_next_entry": true
+  },
+  {
+    "address": "080164D0",
+    "uncached": true,
+    "score": [
+      66,
+      174
+    ],
+    "exact": false,
+    "complete_extent_bytes": 236,
+    "emitted_bytes": 244,
+    "fits_next_entry": false
+  },
+  {
+    "address": "080148B0",
+    "uncached": true,
+    "score": [
+      77,
+      182
+    ],
+    "exact": false,
+    "complete_extent_bytes": 214,
+    "emitted_bytes": 228,
+    "fits_next_entry": false
+  },
+  {
+    "address": "0800B254",
+    "uncached": true,
+    "score": [
+      83,
+      300
+    ],
+    "exact": false,
+    "complete_extent_bytes": 332,
+    "emitted_bytes": 340,
+    "fits_next_entry": false
+  },
+  {
+    "address": "08018BE8",
+    "uncached": true,
+    "score": [
+      89,
+      256
+    ],
+    "exact": false,
+    "complete_extent_bytes": 352,
+    "emitted_bytes": 342,
+    "fits_next_entry": true
+  },
+  {
+    "address": "08006070",
+    "uncached": true,
+    "score": [
+      89,
+      165
+    ],
+    "exact": false,
+    "complete_extent_bytes": 300,
+    "emitted_bytes": 292,
+    "fits_next_entry": true
+  },
+  {
+    "address": "08010910",
+    "uncached": true,
+    "score": [
+      106,
+      301
+    ],
+    "exact": false,
+    "complete_extent_bytes": 320,
+    "emitted_bytes": 332,
+    "fits_next_entry": false
+  },
+  {
+    "address": "0800C850",
+    "uncached": true,
+    "score": [
+      120,
+      193
+    ],
+    "exact": false,
+    "complete_extent_bytes": 372,
+    "emitted_bytes": 368,
+    "fits_next_entry": true
+  }
+]

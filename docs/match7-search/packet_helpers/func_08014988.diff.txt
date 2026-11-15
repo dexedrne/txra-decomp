@@ -1,0 +1,12 @@
+Compiled output differs: target 116 bytes, compiled 116 bytes.
+First difference at +0x34 (0x080149BC); exact prefix 52 bytes, exact suffix 62 bytes.
+--- target
++++ compiled
+@@ -24,5 +24,5 @@
+ 080149B8: cmp r1, #9
+ 080149BA: bls 0x080149B0
+-080149BC: adds r2, r4, #0
++080149BC: ldr r2, [pc, #48] @ =0x080149F0
+ 080149BE: ldr r1, [r2, #40]
+ 080149C0: mvns r0, r5
+Check register allocation, signed widths, statement order, constants and pool alignment.

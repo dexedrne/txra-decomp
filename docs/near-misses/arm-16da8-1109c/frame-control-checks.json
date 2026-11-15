@@ -1,0 +1,14 @@
+{
+  "candidate": "frame-control.c",
+  "differential_fixtures": 199,
+  "fixed_expected_checks": 20,
+  "compile_time_size_checks": 3,
+  "compile_time_offset_checks": 14,
+  "executed_instruction_addresses": 1053,
+  "instruction_addresses": 1053,
+  "not_executed": [],
+  "source_sha256": "807f271f9015a3d7d35130a9c3a17dba02143609517f4695dde906a69a924d3f",
+  "assembly_sha256": "013f6f4982c413494122f6565c5e0f3e662bd9fd6fc232b76596b1f773b132d6",
+  "rom_used": false,
+  "byte_match_verified": false
+}

@@ -1,0 +1,31 @@
+{
+  "controls": [
+    {
+      "target": "stream",
+      "control": "swapped wall seam",
+      "source_sha256": "5c33c8edffaa2ef6a34a9b8a10f0f79e97f1c9081d0ef9cb49b17bc0ce59e653",
+      "rejected_by_original_instruction_check": true,
+      "details": {
+        "passed": 0,
+        "failure": {
+          "case": 0,
+          "scenery": 0,
+          "direction": 0,
+          "address": "0x2033c5c",
+          "call": null,
+          "original_calls": 12,
+          "candidate_calls": 12
+        },
+        "installation_authority": false
+      }
+    },
+    {
+      "target": "contact",
+      "control": "unsigned narrowed coefficient",
+      "source_sha256": "f9f222f09b2b6f7827071e5d69849bb1f8d988944399d9ae2b31470a3cb4c5d3",
+      "rejected_by_original_instruction_check": true,
+      "details": "mismatch detected; original values omitted"
+    }
+  ],
+  "installation_authority": false
+}

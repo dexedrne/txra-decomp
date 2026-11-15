@@ -1,0 +1,57 @@
+Compiled output differs: target 6456 bytes, compiled 6456 bytes.
+First difference at +0xFE (0x08002952); exact prefix 254 bytes, exact suffix 6148 bytes.
+--- target
++++ compiled
+@@ -122,31 +122,31 @@
+ 0800294E: lsls r0, r0, #3
+ 08002950: str r0, [sp, #40]
+-08002952: adds r4, #2
+-08002954: ands r4, r3
+-08002956: lsls r0, r4, #1
+-08002958: adds r0, r0, r4
++08002952: adds r1, r4, #2
++08002954: ands r1, r3
++08002956: lsls r0, r1, #1
++08002958: adds r0, r0, r1
+ 0800295A: lsls r0, r0, #3
+ 0800295C: str r0, [sp, #44]
+ 0800295E: lsls r2, r2, #6
+-08002960: ldr r3, [sp, #36]
+-08002962: subs r2, r2, r3
++08002960: ldr r1, [sp, #36]
++08002962: subs r2, r2, r1
+ 08002964: lsls r2, r2, #2
+-08002966: ldr r4, [pc, #80] @ =0x080029B8
+-08002968: adds r6, r2, r4
++08002966: ldr r3, [pc, #80] @ =0x080029B8
++08002968: adds r6, r2, r3
+ 0800296A: ldr r0, [r5, #0]
+ 0800296C: cmp r0, #0
+ 0800296E: bne 0x080029BC
+-08002970: ldr r5, [sp, #12]
+-08002972: lsls r5, r5, #3
+-08002974: str r5, [sp, #252]
+-08002976: ldr r0, [sp, #20]
+-08002978: lsls r0, r0, #3
+-0800297A: str r0, [sp, #260]
+-0800297C: ldr r1, [sp, #16]
+-0800297E: lsls r1, r1, #3
+-08002980: str r1, [sp, #256]
+-08002982: ldr r2, [sp, #8]
+-08002984: lsls r2, r2, #3
+-08002986: str r2, [sp, #244]
++08002970: ldr r4, [sp, #12]
++08002972: lsls r4, r4, #3
++08002974: str r4, [sp, #252]
++08002976: ldr r5, [sp, #20]
++08002978: lsls r5, r5, #3
++0800297A: str r5, [sp, #260]
++0800297C: ldr r0, [sp, #16]
++0800297E: lsls r0, r0, #3
++08002980: str r0, [sp, #256]
++08002982: ldr r1, [sp, #8]
++08002984: lsls r1, r1, #3
++08002986: str r1, [sp, #244]
+ 08002988: movs r2, #0
+ 0800298A: ldr r1, [sp, #28]
+Check register allocation, signed widths, statement order, constants and pool alignment.

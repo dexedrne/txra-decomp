@@ -1,0 +1,34 @@
+{
+  "address": "08018BE8",
+  "mode": "thumb",
+  "bytes": 352,
+  "instructions": 163,
+  "call_count": null,
+  "observed_entry": true,
+  "static_callers": 1,
+  "matched_callees": 1,
+  "unmatched_callees": 0,
+  "difficulty": 163,
+  "value": 8,
+  "priority": 0.04908,
+  "blocked_reason": null,
+  "comparison_bytes": 352,
+  "attempts": 5315,
+  "compile_errors": 667,
+  "seconds": 234.64,
+  "status": "neighborhood exhausted",
+  "exact": false,
+  "focus": null,
+  "learned_candidates": {
+    "separate-updates": 2337,
+    "guarded-loop": 13505,
+    "direct-short-return": 7173
+  },
+  "generations": 64,
+  "score": [
+    89,
+    256
+  ],
+  "compiler": "old-no-gcse",
+  "size": 342
+}

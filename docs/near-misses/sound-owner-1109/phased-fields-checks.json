@@ -1,0 +1,10 @@
+{
+  "candidate": "phased-fields.c",
+  "source_sha256": "f1ec54560ecb7f28c2c2fe280651561c4cb11194f7354f937240969e7143a7e6",
+  "fixture_groups": 7,
+  "undefined_behavior_sanitizer": true,
+  "registry_unchanged": true,
+  "voice_field_aliases": 17,
+  "rom_used": false,
+  "output": "7 sound-owner synthetic groups passed (actual complete C candidate; no ROM)"
+}

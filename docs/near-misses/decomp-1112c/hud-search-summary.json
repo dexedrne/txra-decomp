@@ -1,0 +1,20 @@
+{
+  "source_identities": 246,
+  "measured": 246,
+  "output_identities": 122,
+  "compile_failures": 0,
+  "boundary_rejections": 146,
+  "improvements": [
+    {
+      "trial": "baseline",
+      "source_sha256": "d97c511ae97193954393b89d29a0941a1703e5fd1f92436f3f47215bc7e291a7",
+      "emitted_bytes": 4124,
+      "local_frame_bytes": 36,
+      "different_bytes": 3152,
+      "compiled_sha256": "cc7b397f734bd1458efcc6f95274177f194cb615d682d1a98c857e7cfe721663",
+      "boundary_rejected": false,
+      "retained": true
+    }
+  ],
+  "best_different_bytes": 3152
+}

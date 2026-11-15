@@ -1,0 +1,9 @@
+Compiler: old
+Instruction edit distance: 0
+Byte distance: 0
+Compiled output differs: target 116 bytes, compiled 116 bytes.
+All bytes agree.
+--- target
++++ compiled
+Exact byte match.
+Check register allocation, signed widths, statement order, constants and pool alignment.

@@ -1,0 +1,21 @@
+{
+  "compiler": "old",
+  "profile_sweep": false,
+  "selection": "lowest complete-owner byte distance fitting the unchanged boundary; corrected six-field instruction control kept separately",
+  "unique_sources": 4310,
+  "unique_compiled_outputs": 1357,
+  "invalid_source_hypotheses": 1128,
+  "oversize_sources": 0,
+  "experiments": [
+    "sound-base2",
+    "sound-sequence",
+    "sound-entry",
+    "sound-phases",
+    "sound-roles",
+    "sound-roles2",
+    "sound-counter",
+    "sound-front",
+    "sound-phases2"
+  ],
+  "limitations": "Only retained sources receive semantic fixtures and strict checks. Macro-member renaming and mixed-declaration errors are rejected diagnostics; corrected role search is sound-roles2. The initial discarded base search with a macro counter-scope error is not a semantic candidate."
+}

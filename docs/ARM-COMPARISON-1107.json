@@ -1,0 +1,121 @@
+{
+  "donor": "a2466cefa4103ef0e509ac1b062b13ef776a314a",
+  "canonicalBase": "d03218c1db21f879f2f2ff44e828cf930fa9a796",
+  "patchedFiles": {
+    "tools/variant_search.py": "6240bfc079edb2afe8ce26cfed6def95012994a314b1b42f383be7ca64f0fe4e",
+    "tools/search10.py": "77fbe44f3d861ebf0da1f0637a9d19549692897973bc3ffe9b7290da09f4f6f5",
+    "tests/test_variant_search.py": "1efbd0bf92036ede033342d37f7d268905ae1118e558e9e28db227a5c79b66c8",
+    "tests/test_search10.py": "a83e8e0cc85773ad42ef7114384e82b36dc3c2d05c0e2d1ccd158bee1e57dc18"
+  },
+  "romCopied": false,
+  "newGitCheckout": false,
+  "modelRequests": false,
+  "nativeRuntimeRun": false,
+  "sourceArchiveBytes": 5232640,
+  "scratchRemoved": true,
+  "romDonorUnchanged": true,
+  "newMatches": 0,
+  "tests": {
+    "run": 21,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1
+  },
+  "trials": [
+    {
+      "kind": "known-exact-control",
+      "name": "func_08018E88",
+      "profile": "modern-arm",
+      "sourceSha256": "8a1bee2e8571b302454b06c9e00d205faaf3326518504282e6669d2ffb0f0535",
+      "targetBytes": 4,
+      "compiledBytes": 4,
+      "exact": true,
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "known-exact-control",
+      "name": "func_08017E68",
+      "profile": "arm",
+      "sourceSha256": "903aeb3e09ca7c457db382f8c524682c6859303a523b6c63d60dd796d0841335",
+      "targetBytes": 252,
+      "compiledBytes": 252,
+      "exact": true,
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "known-exact-control",
+      "name": "func_08014518",
+      "profile": "old",
+      "sourceSha256": "1bef55a62305c3cc83c459f41da62d5af2862023d8e1a9194ce7244ab0f06487",
+      "targetBytes": 12,
+      "compiledBytes": 12,
+      "exact": true,
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "retained-unmatched-candidate",
+      "name": "func_080181C0",
+      "source": "docs/near-misses/hand-20261104/func_080181C0.c",
+      "sourceSha256": "321d1468926498e7c93704341fdba42bcac475e13fd0d26bc1895f30276f26c5",
+      "profile": "arm",
+      "targetBytes": 1684,
+      "compiledBytes": 1640,
+      "exact": false,
+      "score": [
+        303,
+        1237
+      ]
+    },
+    {
+      "kind": "retained-unmatched-candidate",
+      "name": "func_080181C0",
+      "source": "docs/near-misses/hand-20261104/func_080181C0.c",
+      "sourceSha256": "321d1468926498e7c93704341fdba42bcac475e13fd0d26bc1895f30276f26c5",
+      "profile": "modern-arm",
+      "targetBytes": 1684,
+      "compiledBytes": 1292,
+      "exact": false,
+      "score": [
+        413,
+        1581
+      ]
+    },
+    {
+      "kind": "retained-unmatched-candidate",
+      "name": "func_080181C0",
+      "source": "docs/near-misses/hand-20261104b/func_080181C0.c",
+      "sourceSha256": "4e4b2930b59804060de718cbaa4b0988fb78dbe695fce7ee11cf2f144aff3b6e",
+      "profile": "arm",
+      "targetBytes": 1684,
+      "compiledBytes": 1644,
+      "exact": false,
+      "score": [
+        221,
+        1143
+      ]
+    },
+    {
+      "kind": "retained-unmatched-candidate",
+      "name": "func_080181C0",
+      "source": "docs/near-misses/hand-20261104b/func_080181C0.c",
+      "sourceSha256": "4e4b2930b59804060de718cbaa4b0988fb78dbe695fce7ee11cf2f144aff3b6e",
+      "profile": "modern-arm",
+      "targetBytes": 1684,
+      "compiledBytes": 1408,
+      "exact": false,
+      "score": [
+        414,
+        1556
+      ]
+    }
+  ]
+}

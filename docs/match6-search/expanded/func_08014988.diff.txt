@@ -1,0 +1,65 @@
+Compiler: old
+Instruction edit distance: 12
+Byte distance: 50
+Compiled output differs: target 116 bytes, compiled 116 bytes.
+First difference at +0x34 (0x080149BC); exact prefix 52 bytes, exact suffix 12 bytes.
+--- target
++++ compiled
+@@ -24,30 +24,30 @@
+ 080149B8: cmp r1, #9
+ 080149BA: bls 0x080149B0
+-080149BC: adds r2, r4, #0
+-080149BE: ldr r1, [r2, #40]
+-080149C0: mvns r0, r5
+-080149C2: strh r0, [r1, #2]
+-080149C4: ldrb r0, [r2, #0]
+-080149C6: cmp r0, #0
+-080149C8: beq 0x080149D0
+-080149CA: ldr r1, [pc, #44] @ =0x080149F8
+-080149CC: movs r0, #0
+-080149CE: strh r0, [r1, #0]
+-080149D0: movs r0, #1
+-080149D2: negs r0, r0
+-080149D4: str r0, [r4, #20]
+-080149D6: ldrb r0, [r4, #0]
+-080149D8: cmp r0, #0
+-080149DA: beq 0x080149E8
+-080149DC: ldrb r0, [r4, #8]
+-080149DE: cmp r0, #0
+-080149E0: beq 0x080149E8
+-080149E2: ldr r1, [pc, #20] @ =0x080149F8
+-080149E4: movs r0, #192
+-080149E6: strh r0, [r1, #0]
+-080149E8: pop {r4, r5}
+-080149EA: pop {r0}
+-080149EC: bx r0
+-080149EE: movs r0, r0
++080149BC: ldr r0, [r4, #40]
++080149BE: mvns r1, r5
++080149C0: lsls r1, r1, #24
++080149C2: lsrs r1, r1, #24
++080149C4: strh r1, [r0, #2]
++080149C6: ldrb r0, [r4, #0]
++080149C8: cmp r0, #0
++080149CA: beq 0x080149D2
++080149CC: ldr r1, [pc, #40] @ =0x080149F8
++080149CE: movs r0, #0
++080149D0: strh r0, [r1, #0]
++080149D2: movs r0, #1
++080149D4: negs r0, r0
++080149D6: str r0, [r4, #20]
++080149D8: ldrb r0, [r4, #0]
++080149DA: cmp r0, #0
++080149DC: beq 0x080149EA
++080149DE: ldrb r0, [r4, #8]
++080149E0: cmp r0, #0
++080149E2: beq 0x080149EA
++080149E4: ldr r1, [pc, #16] @ =0x080149F8
++080149E6: movs r0, #192
++080149E8: strh r0, [r1, #0]
++080149EA: pop {r4, r5}
++080149EC: pop {r0}
++080149EE: bx r0
+ 080149F0: .word 0x03007A30 (literal pool)
+ 080149F4: .word 0x04000004 (literal pool)
+Check register allocation, signed widths, statement order, constants and pool alignment.

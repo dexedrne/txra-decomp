@@ -1,0 +1,676 @@
+{
+  "blocks": [
+    {
+      "offset": 848688,
+      "size": 71708,
+      "type": "table",
+      "format": "course-records-stride28",
+      "stride": 28,
+      "count": 2561,
+      "evidence": "Literal 08007CE0 selects base; 08007CE8 supplies wrap count; 08007E94-08007EA2 and 080029F0-08002A00 index 28-byte records."
+    },
+    {
+      "offset": 920396,
+      "size": 112924,
+      "type": "table",
+      "format": "course-records-stride28",
+      "stride": 28,
+      "count": 4033,
+      "evidence": "Literal 08007D08 selects base; 08007D10 supplies wrap count; 08007E94-08007EA2 and 080029F0-08002A00 index 28-byte records."
+    },
+    {
+      "offset": 1224140,
+      "size": 122668,
+      "type": "table",
+      "format": "course-records-stride28",
+      "stride": 28,
+      "count": 4381,
+      "evidence": "Literal 08007D30 selects base; 08007D38 supplies wrap count; 08007E94-08007EA2 and 080029F0-08002A00 index 28-byte records."
+    },
+    {
+      "offset": 1346808,
+      "size": 183820,
+      "type": "table",
+      "format": "course-records-stride28",
+      "stride": 28,
+      "count": 6565,
+      "evidence": "Literal 08007D58 selects base; 08007D60 supplies wrap count; 08007E94-08007EA2 and 080029F0-08002A00 index 28-byte records."
+    },
+    {
+      "offset": 1033320,
+      "size": 89348,
+      "type": "table",
+      "format": "course-records-stride28",
+      "stride": 28,
+      "count": 3191,
+      "evidence": "Literal 08007D78 selects base; 08007D80 supplies wrap count; 08007E94-08007EA2 and 080029F0-08002A00 index 28-byte records."
+    },
+    {
+      "offset": 1122668,
+      "size": 101472,
+      "type": "table",
+      "format": "course-records-stride28",
+      "stride": 28,
+      "count": 3624,
+      "evidence": "Literal 0800815C selects base; 08008164 supplies wrap count; 08007E94-08007EA2 and 080029F0-08002A00 index 28-byte records."
+    },
+    {
+      "offset": 2599300,
+      "size": 6026,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 38400,
+      "pointer_slot": 61848,
+      "evidence": "Caller 0800F17C-0800F18C, source literal 0800F198; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 2605840,
+      "size": 25280,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 38400,
+      "pointer_slot": 61940,
+      "evidence": "Caller 0800F1CC-0800F1D4, source literal 0800F1F4; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 2631632,
+      "size": 5274,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 38400,
+      "pointer_slot": 62064,
+      "evidence": "Caller 0800F226-0800F230, source literal 0800F270; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 2637420,
+      "size": 29818,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 38400,
+      "pointer_slot": 55136,
+      "evidence": "Caller 0800D69A-0800D6A0, source literal 0800D760; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 2667752,
+      "size": 18074,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 62880,
+      "pointer_slot": 55116,
+      "evidence": "Caller 0800D674-0800D67C, source literal 0800D74C; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 2686340,
+      "size": 12359,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 38400,
+      "pointer_slot": 80136,
+      "evidence": "Caller 0801389A-080138A6, source literal 08013908; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 2914252,
+      "size": 11477,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34432,
+      "evidence": "Caller 08008662-0800866C, source literal 08008680; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 2926244,
+      "size": 12623,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34436,
+      "evidence": "Caller 08008662-0800866C, source literal 08008684; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 2939380,
+      "size": 12225,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34440,
+      "evidence": "Caller 08008662-0800866C, source literal 08008688; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 2952120,
+      "size": 12705,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34444,
+      "evidence": "Caller 08008662-0800866C, source literal 0800868C; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 2965340,
+      "size": 12139,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34448,
+      "evidence": "Caller 08008662-0800866C, source literal 08008690; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 2977992,
+      "size": 11773,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34452,
+      "evidence": "Caller 08008662-0800866C, source literal 08008694; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 2990280,
+      "size": 13123,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34456,
+      "evidence": "Caller 08008662-0800866C, source literal 08008698; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 3003916,
+      "size": 12963,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34460,
+      "evidence": "Caller 08008662-0800866C, source literal 0800869C; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 3017392,
+      "size": 12580,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34464,
+      "evidence": "Caller 08008662-0800866C, source literal 080086A0; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 3030484,
+      "size": 13207,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34468,
+      "evidence": "Caller 08008662-0800866C, source literal 080086A4; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 3044204,
+      "size": 12007,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34472,
+      "evidence": "Caller 08008662-0800866C, source literal 080086A8; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 3056724,
+      "size": 11275,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34476,
+      "evidence": "Caller 08008662-0800866C, source literal 080086AC; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 3068512,
+      "size": 13309,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34480,
+      "evidence": "Caller 08008662-0800866C, source literal 080086B0; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 3082336,
+      "size": 12254,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34484,
+      "evidence": "Caller 08008662-0800866C, source literal 080086B4; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 3095104,
+      "size": 12821,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34488,
+      "evidence": "Caller 08008662-0800866C, source literal 080086B8; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 3108440,
+      "size": 11910,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 65536,
+      "pointer_slot": 34492,
+      "evidence": "Caller 08008662-0800866C, source literal 080086BC; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 3245792,
+      "size": 16828,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 38400,
+      "pointer_slot": 76908,
+      "evidence": "Caller 08012B7C-08012B84, source literal 08012C6C; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 3292252,
+      "size": 15741,
+      "type": "compressed",
+      "format": "custom-reverse-byte-lz-rle",
+      "decompressed_size": 38400,
+      "pointer_slot": 77928,
+      "evidence": "Caller 08012FC8-08012FD2, source literal 08013068; complete checked decode of 0801251C commands; every copy reads initialized output, exact source/output end."
+    },
+    {
+      "offset": 324400,
+      "size": 524288,
+      "type": "table",
+      "format": "signed-q19-reciprocal-lookup",
+      "stride": 4,
+      "count": 131072,
+      "evidence": "08016452-0801645E and 080167F4-080167FC index signed depth/2 + 65536, read a word, multiply projected coordinates; all 65535 nonzero pairs are antisymmetric, positive half monotone, each within one integer unit of 524288/index; boundary and zero sentinels checked."
+    },
+    {
+      "offset": 6324,
+      "size": 2050,
+      "type": "table",
+      "format": "unsigned-q15-raster-reciprocal",
+      "stride": 2,
+      "count": 1025,
+      "evidence": "080003BC-080003C4 loads the shared table and reads a halfword at twice the edge-height index; the sibling rasterizers share the base. All 1024 positive-index entries exactly equal the nearest integer to 32768/index; the zero sentinel and first nonmatching following halfword are checked. The following alignment halfword is excluded."
+    },
+    {
+      "offset": 2605328,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 61840,
+      "evidence": "Aligned trailer of checked indexed-byte container at 0827A984; independent ROM reference at 0800F190; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 2631120,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 61932,
+      "evidence": "Aligned trailer of checked indexed-byte container at 0827C310; independent ROM reference at 0800F1EC; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 2636908,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 62056,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082827D0; independent ROM reference at 0800F268; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 2667240,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 83424,
+      "evidence": "Aligned trailer of checked indexed-byte container at 08283E6C; independent ROM reference at 080145E0; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 2685828,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 81212,
+      "evidence": "Aligned trailer of checked indexed-byte container at 0828B4E8; independent ROM reference at 08013D3C; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 2925732,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 61132,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082C77CC; independent ROM reference at 0800EECC; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 2938868,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134576,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082CA6A4; independent ROM reference at 08020DB0; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 2951608,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134584,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082CD9F4; independent ROM reference at 08020DB8; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 2964828,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134592,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082D0BB8; independent ROM reference at 08020DC0; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 2977480,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134600,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082D3F5C; independent ROM reference at 08020DC8; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 2989768,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134608,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082D70C8; independent ROM reference at 08020DD0; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 3003404,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134616,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082DA0C8; independent ROM reference at 08020DD8; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 3016880,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134624,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082DD60C; independent ROM reference at 08020DE0; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 3029972,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134632,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082E0AB0; independent ROM reference at 08020DE8; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 3043692,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134640,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082E3DD4; independent ROM reference at 08020DF0; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 3056212,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134648,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082E736C; independent ROM reference at 08020DF8; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 3068000,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134656,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082EA454; independent ROM reference at 08020E00; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 3081824,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134664,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082ED260; independent ROM reference at 08020E08; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 3094592,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134672,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082F0860; independent ROM reference at 08020E10; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 3107928,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134680,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082F3A40; independent ROM reference at 08020E18; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 3120352,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 134688,
+      "evidence": "Aligned trailer of checked indexed-byte container at 082F6E58; independent ROM reference at 08020E20; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 3262620,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 81408,
+      "evidence": "Aligned trailer of checked indexed-byte container at 083186E0; independent ROM reference at 08013E00; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 3307996,
+      "size": 512,
+      "type": "graphics",
+      "format": "attached-palette-bgr555-256",
+      "count": 256,
+      "stride": 2,
+      "pointer_slot": 83296,
+      "evidence": "Aligned trailer of checked indexed-byte container at 08323C5C; independent ROM reference at 08014560; all 256 halfwords satisfy 15-bit color bounds. Palette source references include the screen DMA setup at 0800F190 and per-car selection table at 08020DA8."
+    },
+    {
+      "offset": 1547140,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136304,
+      "evidence": "ROM source pointer 08021470, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    },
+    {
+      "offset": 1612676,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136308,
+      "evidence": "ROM source pointer 08021474, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    },
+    {
+      "offset": 1678212,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136312,
+      "evidence": "ROM source pointer 08021478, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    },
+    {
+      "offset": 1743748,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136316,
+      "evidence": "ROM source pointer 0802147C, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    },
+    {
+      "offset": 1809284,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136320,
+      "evidence": "ROM source pointer 08021480, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    },
+    {
+      "offset": 1874820,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136288,
+      "evidence": "ROM source pointer 08021460, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    },
+    {
+      "offset": 1940356,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136352,
+      "evidence": "ROM source pointer 080214A0, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    },
+    {
+      "offset": 2005892,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136360,
+      "evidence": "ROM source pointer 080214A8, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    },
+    {
+      "offset": 2071428,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136356,
+      "evidence": "ROM source pointer 080214A4, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    },
+    {
+      "offset": 2136964,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136364,
+      "evidence": "ROM source pointer 080214AC, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    },
+    {
+      "offset": 2202500,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136348,
+      "evidence": "ROM source pointer 0802149C, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    },
+    {
+      "offset": 2268036,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136344,
+      "evidence": "ROM source pointer 08021498, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    },
+    {
+      "offset": 2333572,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136292,
+      "evidence": "ROM source pointer 08021464, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    },
+    {
+      "offset": 2399108,
+      "size": 65536,
+      "type": "graphics",
+      "format": "software-raster-index8-bank",
+      "width": 256,
+      "height": 256,
+      "stride": 256,
+      "pointer_slot": 136296,
+      "evidence": "ROM source pointer 08021468, rasterizer table literal 080018B0; 14 ROM targets form consecutive 65536-byte banks. 08001840-08001860 extracts two unsigned 8-bit coordinates, reads source[y*256+x] as bytes and packs two pixels to the framebuffer. Small isolated sources are excluded; this does not imply tile ordering."
+    }
+  ]
+}

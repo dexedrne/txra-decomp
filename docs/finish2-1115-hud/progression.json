@@ -1,0 +1,13 @@
+{
+  "measured_with": "tools/measure_candidate.py <source> 0800421C 08005238 old (worker D)",
+  "target": {"bytes": 4124, "frame": 36},
+  "steps": [
+    {"step": "baseline docs/near-misses/decomp-1112c/func_0800421C.c", "emitted_bytes": 4124, "frame": 36, "instruction_distance": 1023, "different_bytes": 3144},
+    {"step": "fresh rewrite: function-wide t, s, u (the three stack words), i, x, y, a, src; one block per HUD element", "emitted_bytes": 4104, "frame": 40, "instruction_distance": 856, "different_bytes": 3800},
+    {"step": "overlay drawn at centre (120, 72) minus 32; timer digits assigned to src before each call", "emitted_bytes": 4112, "frame": 44, "instruction_distance": 545, "different_bytes": 2748},
+    {"step": "gauge loop written with index expressions (98 + i*16, 172 + j*32, 512 + i*32 + j*16); finish, status, timer and text positions as base + i*step; smoke abs value block-local; overlay scale as if/else", "emitted_bytes": 4104, "frame": 36, "instruction_distance": 569, "different_bytes": 3825, "comment": "byte count inflated by a 20-byte length shift; 1,401 of 1,813 instructions already identical"},
+    {"step": "smoke spawn loop as plain g_030067F0[i] indexing in a for loop", "emitted_bytes": 4116, "frame": 36, "instruction_distance": 140, "different_bytes": 1725},
+    {"step": "map y assigned in two steps (y = field_0c; y = (y * coefficient) >> 19)", "emitted_bytes": 4124, "frame": 36, "instruction_distance": 23, "different_bytes": 24},
+    {"step": "map x also in two steps (x = -field_04; x = (x * coefficient) >> 19): installed source", "emitted_bytes": 4124, "frame": 36, "instruction_distance": 0, "different_bytes": 0, "exact": true}
+  ]
+}

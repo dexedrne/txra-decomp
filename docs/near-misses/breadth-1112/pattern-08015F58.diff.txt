@@ -1,0 +1,53 @@
+Compiled output differs: target 64 bytes, compiled 60 bytes.
+First difference at +0x3 (0x08015F5B); exact prefix 3 bytes, exact suffix 4 bytes.
+Length differs by -4 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -1,27 +1,26 @@
+ 08015F58: sub sp, #4
+-08015F5A: ldr r1, [pc, #16] @ =0x08015F6C
+-08015F5C: cmp r0, #0
+-08015F5E: bne 0x08015F78
+-08015F60: str r1, [sp, #0]
+-08015F62: ldr r1, [pc, #12] @ =0x08015F70
++08015F5A: ldr r2, [pc, #16] @ =0x08015F6C
++08015F5C: ldr r1, [pc, #16] @ =0x08015F70
++08015F5E: cmp r0, #0
++08015F60: bne 0x08015F78
++08015F62: str r2, [sp, #0]
+ 08015F64: mov r0, sp
+ 08015F66: str r0, [r1, #0]
+ 08015F68: ldr r0, [pc, #8] @ =0x08015F74
+-08015F6A: b 0x08015F84
++08015F6A: b 0x08015F82
+ 08015F6C: .word <literal pool>
+ 08015F70: .word <literal pool>
+ 08015F74: .word <literal pool>
+-08015F78: str r1, [sp, #0]
+-08015F7A: ldr r1, [pc, #20] @ =0x08015F90
+-08015F7C: mov r0, sp
+-08015F7E: str r0, [r1, #0]
+-08015F80: movs r0, #192
+-08015F82: lsls r0, r0, #19
+-08015F84: str r0, [r1, #4]
+-08015F86: ldr r0, [pc, #12] @ =0x08015F94
+-08015F88: str r0, [r1, #8]
+-08015F8A: ldr r0, [r1, #8]
+-08015F8C: add sp, #4
+-08015F8E: bx lr
+-08015F90: .word <literal pool>
+-08015F94: .word <literal pool>
++08015F78: str r2, [sp, #0]
++08015F7A: mov r0, sp
++08015F7C: str r0, [r1, #0]
++08015F7E: movs r0, #192
++08015F80: lsls r0, r0, #19
++08015F82: str r0, [r1, #4]
++08015F84: ldr r0, [pc, #8] @ =0x08015F90
++08015F86: str r0, [r1, #8]
++08015F88: ldr r0, [r1, #8]
++08015F8A: add sp, #4
++08015F8C: bx lr
++08015F8E: movs r0, r0
++08015F90: .word <literal pool>
+Check register allocation, signed widths, statement order, constants and pool alignment.

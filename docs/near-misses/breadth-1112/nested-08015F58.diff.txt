@@ -1,0 +1,33 @@
+Compiled output differs: target 64 bytes, compiled 64 bytes.
+First difference at +0x8 (0x08015F60); exact prefix 8 bytes, exact suffix 4 bytes.
+--- target
++++ compiled
+@@ -3,15 +3,15 @@
+ 08015F5C: cmp r0, #0
+ 08015F5E: bne 0x08015F78
+-08015F60: str r1, [sp, #0]
+-08015F62: ldr r1, [pc, #12] @ =0x08015F70
++08015F60: ldr r0, [pc, #12] @ =0x08015F70
++08015F62: str r0, [sp, #0]
+ 08015F64: mov r0, sp
+ 08015F66: str r0, [r1, #0]
+ 08015F68: ldr r0, [pc, #8] @ =0x08015F74
+ 08015F6A: b 0x08015F84
+-08015F6C: .word <literal pool>
+-08015F70: .word <literal pool>
++08015F6C: .word <literal pool>
++08015F70: .word <literal pool>
+ 08015F74: .word <literal pool>
+-08015F78: str r1, [sp, #0]
+-08015F7A: ldr r1, [pc, #20] @ =0x08015F90
++08015F78: ldr r0, [pc, #20] @ =0x08015F90
++08015F7A: str r0, [sp, #0]
+ 08015F7C: mov r0, sp
+ 08015F7E: str r0, [r1, #0]
+@@ -24,4 +24,4 @@
+ 08015F8C: add sp, #4
+ 08015F8E: bx lr
+-08015F90: .word <literal pool>
++08015F90: .word <literal pool>
+ 08015F94: .word <literal pool>
+Check register allocation, signed widths, statement order, constants and pool alignment.

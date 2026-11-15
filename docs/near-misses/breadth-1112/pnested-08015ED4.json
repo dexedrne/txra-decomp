@@ -1,0 +1,22 @@
+{
+  "address": "08015ED4",
+  "target_end": "08015F58",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/breadth-1112/pnested-08015ED4.c",
+  "source_sha256": "322ae30c81ab8907f3c990baa5696586a1f87d9eaecbd86681510dd6ffb29b22",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 132,
+  "target_bytes": 132,
+  "local_frame_bytes": 4,
+  "instruction_distance": 0,
+  "different_bytes": 0,
+  "exact": true,
+  "compiled_sha256": "0069f4d0e8b951ae27d06df89d53143eb77bda35cd5624302b8c82e51f40a489",
+  "checker_limit": "08015F58",
+  "checker_rejection": null,
+  "installed": false
+}

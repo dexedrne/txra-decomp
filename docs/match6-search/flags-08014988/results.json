@@ -1,0 +1,212 @@
+{
+  "compiler": "old",
+  "source": "docs/match6-search/packet-hints/func_08014988.c",
+  "records": [
+    {
+      "flags": [],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations"
+      ],
+      "score": [
+        8,
+        10
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fforce-addr"
+      ],
+      "error": "ValueError"
+    },
+    {
+      "flags": [
+        "-fno-force-addr"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-omit-frame-pointer"
+      ],
+      "score": [
+        12,
+        100
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-inline"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strict-aliasing"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-delete-null-pointer-checks"
+      ],
+      "error": "CalledProcessError"
+    },
+    {
+      "flags": [
+        "-fno-split-wide-types"
+      ],
+      "error": "CalledProcessError"
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+[
+ {
+  "address": "080147D0",
+  "bytes": 194,
+  "mode": "thumb",
+  "group": "Exact C match, installed",
+  "note": "Link setup. Every slot/buffer access through g_03007A30 itself. Through a local pointer the loop has 20 RTL insns and loop.c reduces every giv; directly it has more than 26, so the short-lived s+80 base stays in the loop and the third slot is never reduced, as in the original."
+ },
+ {
+  "address": "08018BE8",
+  "bytes": 352,
+  "mode": "thumb",
+  "group": "Exact C match, installed",
+  "note": "EEPROM write. standard-o1 (the EEPROM library profile). Sibling idiom offset=bits*2; p=(u16*)(offset+(u32)buffer); one for(;;) wait loop with the ready/ack test first; current + (228 - previous)."
+ },
+ {
+  "address": "08012CC8",
+  "bytes": 480,
+  "mode": "thumb",
+  "group": "Exact C match, installed",
+  "note": "Title loop. SDK DmaClear shape (block-local vu32 tmp=0 before the DMA register pointer), upward clear loop that loop.c reverses, while (1) not for (;;)."
+ },
+ {
+  "address": "08012EB8",
+  "bytes": 500,
+  "mode": "thumb",
+  "group": "Exact C match, installed",
+  "note": "Three-line title loop; 08012CC8 source with three text records, exact on the first try."
+ },
+ {
+  "address": "0800F008",
+  "bytes": 712,
+  "mode": "thumb",
+  "group": "Exact C match, installed",
+  "note": "Scene player; same DMA macros, a switch per frame and one for the scene change, gotos to two restart points; exact on the first draft."
+ },
+ {
+  "address": "08014AE0",
+  "bytes": 270,
+  "mode": "thumb",
+  "group": "C, closer draft retained",
+  "note": "Serial receive, 3 lines off (was 131). Global-direct accesses (same fix as 080147D0), u64 copy of the receive registers, count loaded before the buffer pointer, other = field_40; field_40 = buf; field_30 = other. Remaining: r0/r1 swap in the 0xFEFE store; traced local-alloc shows the value gets twice the address's priority, so the original's address register had more references."
+ },
+ {
+  "address": "0800B3A0",
+  "bytes": 310,
+  "mode": "thumb",
+  "group": "C, closer draft retained",
+  "note": "Point plot, 78 lines off (was 86). Read the flag before the screen base; load both record fields before the multiplies. Remaining: which invariants loop.c hoists (0xFF00 vs &count), a loop-size threshold effect."
+ },
+ {
+  "address": "08006270",
+  "bytes": 348,
+  "mode": "thumb",
+  "group": "C, closer draft retained",
+  "note": "Sound stream mixer, 25 lines off (was 100). Array-indexed mix buffer, local pos copied to/from the global, v = dst + *src; src++. Remaining: hoist order of three address constants in the first loop (not label numbering: insensitive to 0-40 pool-label offsets and to compiling after the sound unit)."
+ },
+ {
+  "address": "0800AC3C",
+  "bytes": 772,
+  "mode": "thumb",
+  "group": "C, closer draft retained",
+  "note": "Stat scaling, new draft, 213 lines off. x += ((x<<5)*(level*k))/100 then /32 in a separate step (a single /100/32 folds to /3200); level is an int, only the /12 value is narrowed. Remaining: level in a high register and the factor row as a CSE expression rebuilt for the tenth entry (consistent with CSE's 10-branch path limit)."
+ },
+ {
+  "address": "08014104",
+  "bytes": 134,
+  "mode": "thumb",
+  "group": "C, worked, diagnosed, not matched",
+  "note": "Blend blit, 4 lines off (unchanged). Traced global-alloc: priority = refs*log2(refs)/live*10000 and local-alloc doubles the live length of REG_EQUIV registers. The target order needs height and the source base without that doubling; no natural single-set constant avoids it."
+ },
+ {
+  "address": "080149FC",
+  "bytes": 208,
+  "mode": "thumb",
+  "group": "C, worked, diagnosed, not matched",
+  "note": "Link checksum. Global-direct and hybrid w/s forms tried; deep-e's draft (72 lines) stays closest."
+ },
+ {
+  "address": "08010910",
+  "bytes": 298,
+  "mode": "thumb",
+  "group": "C, worked, diagnosed, not matched",
+  "note": "Number to text, 27 lines off (unchanged). The stored zero joins the flag's CSE class. do{}while(0) stops CSE pass 1 but CSE pass 2 merges it again; disabling pass 2 breaks 18 installed matches, so the original ran it."
+ },
+ {
+  "address": "0800CEEC",
+  "bytes": 620,
+  "mode": "thumb",
+  "group": "C, worked, diagnosed, not matched",
+  "note": "Steering routine; read, heavy spilling, not drafted this round."
+ },
+ {
+  "address": "0800A940",
+  "bytes": 748,
+  "mode": "thumb",
+  "group": "C, worked, diagnosed, not matched",
+  "note": "Stat scaling sibling of 0800AC3C. Same expression findings; deep-a draft (207 lines) stays closest."
+ },
+ {
+  "address": "0800A17C",
+  "bytes": 1028,
+  "mode": "thumb",
+  "group": "C, worked, diagnosed, not matched",
+  "note": "Race HUD routine; deep-a draft is 234 lines off at the right length, not reworked."
+ },
+ {
+  "address": "08018DE0",
+  "bytes": 2,
+  "mode": "thumb",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "bx r0 call veneer"
+ },
+ {
+  "address": "08018DE8",
+  "bytes": 2,
+  "mode": "thumb",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "bx r2 call veneer"
+ },
+ {
+  "address": "08018DF0",
+  "bytes": 2,
+  "mode": "thumb",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "bx r4 call veneer"
+ },
+ {
+  "address": "08018DF8",
+  "bytes": 2,
+  "mode": "thumb",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "bx r6 call veneer"
+ },
+ {
+  "address": "08018E00",
+  "bytes": 2,
+  "mode": "thumb",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "bx r8 call veneer"
+ },
+ {
+  "address": "08018E08",
+  "bytes": 2,
+  "mode": "thumb",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "bx r10 call veneer"
+ },
+ {
+  "address": "08018E10",
+  "bytes": 2,
+  "mode": "thumb",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "bx r12 call veneer"
+ },
+ {
+  "address": "08018E7C",
+  "bytes": 2,
+  "mode": "thumb",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "bx pc switch into ARM division"
+ },
+ {
+  "address": "08000000",
+  "bytes": 4,
+  "mode": "arm",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "ARM reset branch"
+ },
+ {
+  "address": "08018A58",
+  "bytes": 4,
+  "mode": "thumb",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "CpuSet SWI veneer"
+ },
+ {
+  "address": "080001F4",
+  "bytes": 36,
+  "mode": "arm",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "IRQ return (banked mode restore)"
+ },
+ {
+  "address": "080000C0",
+  "bytes": 52,
+  "mode": "arm",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "startup mode and stack setup"
+ },
+ {
+  "address": "0800027C",
+  "bytes": 68,
+  "mode": "arm",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "unsigned division runtime"
+ },
+ {
+  "address": "080002CC",
+  "bytes": 88,
+  "mode": "arm",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "private ARM register interface"
+ },
+ {
+  "address": "08000AA0",
+  "bytes": 320,
+  "mode": "arm",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "raster helper using caller registers"
+ },
+ {
+  "address": "08000324",
+  "bytes": 680,
+  "mode": "arm",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "renderer fragment with private registers"
+ },
+ {
+  "address": "080005D8",
+  "bytes": 1224,
+  "mode": "arm",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "rasterizer with private register contract"
+ },
+ {
+  "address": "08001218",
+  "bytes": 1224,
+  "mode": "arm",
+  "group": "Assembly, BIOS or runtime entry",
+  "note": "rasterizer with private register contract"
+ },
+ {
+  "address": "0800D960",
+  "bytes": 8,
+  "mode": "thumb",
+  "group": "Boundary fragment",
+  "note": "internal tail entry"
+ },
+ {
+  "address": "080095C4",
+  "bytes": 14,
+  "mode": "thumb",
+  "group": "Boundary fragment",
+  "note": "shared epilogue"
+ },
+ {
+  "address": "08007368",
+  "bytes": 16,
+  "mode": "thumb",
+  "group": "Boundary fragment",
+  "note": "shared epilogue"
+ },
+ {
+  "address": "08007B40",
+  "bytes": 2268,
+  "mode": "thumb",
+  "group": "Boundary fragment",
+  "note": "internal entry writing an enclosing frame"
+ },
+ {
+  "address": "08006776",
+  "bytes": 3046,
+  "mode": "thumb",
+  "group": "Boundary fragment",
+  "note": "starts mid-mixer"
+ },
+ {
+  "address": "08002854",
+  "bytes": 3890,
+  "mode": "thumb",
+  "group": "Boundary fragment",
+  "note": "body crosses mapped boundary"
+ },
+ {
+  "address": "08008914",
+  "bytes": 370,
+  "mode": "thumb",
+  "group": "C candidate not reached",
+  "note": "not reached this round"
+ },
+ {
+  "address": "080162F8",
+  "bytes": 406,
+  "mode": "thumb",
+  "group": "C candidate not reached",
+  "note": "not reached this round"
+ },
+ {
+  "address": "0800BBD4",
+  "bytes": 444,
+  "mode": "thumb",
+  "group": "C candidate not reached",
+  "note": "not reached this round"
+ },
+ {
+  "address": "08017F64",
+  "bytes": 604,
+  "mode": "arm",
+  "group": "C candidate not reached",
+  "note": "ARM blitter, hand-unrolled two pixels per step; read only."
+ },
+ {
+  "address": "080095E4",
+  "bytes": 758,
+  "mode": "thumb",
+  "group": "C candidate not reached",
+  "note": "not reached this round"
+ },
+ {
+  "address": "080076F4",
+  "bytes": 1076,
+  "mode": "arm",
+  "group": "C candidate not reached",
+  "note": "not reached this round"
+ },
+ {
+  "address": "0800C3C4",
+  "bytes": 1132,
+  "mode": "thumb",
+  "group": "C candidate not reached",
+  "note": "not reached this round"
+ },
+ {
+  "address": "0800BDC0",
+  "bytes": 1540,
+  "mode": "thumb",
+  "group": "C candidate not reached",
+  "note": "not reached this round"
+ },
+ {
+  "address": "080181C0",
+  "bytes": 1684,
+  "mode": "arm",
+  "group": "C candidate not reached",
+  "note": "not reached this round"
+ },
+ {
+  "address": "08005238",
+  "bytes": 2580,
+  "mode": "thumb",
+  "group": "C candidate not reached",
+  "note": "not reached this round"
+ },
+ {
+  "address": "08016DA8",
+  "bytes": 4288,
+  "mode": "arm",
+  "group": "C candidate not reached",
+  "note": "not reached this round"
+ },
+ {
+  "address": "08010A50",
+  "bytes": 6444,
+  "mode": "thumb",
+  "group": "C candidate not reached",
+  "note": "not reached this round"
+ }
+]

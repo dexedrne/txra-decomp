@@ -1,0 +1,29 @@
+{
+  "address": "080164D0",
+  "mode": "thumb",
+  "bytes": 198,
+  "instructions": 99,
+  "call_count": null,
+  "observed_entry": true,
+  "static_callers": 3,
+  "matched_callees": 0,
+  "unmatched_callees": 0,
+  "difficulty": 99,
+  "value": 8,
+  "priority": 0.080808,
+  "blocked_reason": null,
+  "comparison_bytes": 236,
+  "attempts": 2500,
+  "compile_errors": 0,
+  "seconds": 19.96,
+  "status": "budget exhausted",
+  "exact": false,
+  "focus": null,
+  "learned_candidates": {},
+  "score": [
+    78,
+    179
+  ],
+  "compiler": "old-o1",
+  "size": 228
+}

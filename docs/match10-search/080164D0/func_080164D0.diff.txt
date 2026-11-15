@@ -1,0 +1,200 @@
+Compiler: standard
+Compiled output differs: target 236 bytes, compiled 244 bytes.
+First difference at +0x2 (0x080164D2); exact prefix 2 bytes, exact suffix 11 bytes.
+Length differs by +8 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -1,24 +1,24 @@
+ 080164D0: push {r4, r5, r6, r7, lr}
+-080164D2: mov r7, r8
+-080164D4: push {r7}
+-080164D6: ldr r1, [pc, #192] @ =0x08016598
+-080164D8: lsls r4, r0, #1
+-080164DA: adds r4, r4, r0
+-080164DC: lsls r4, r4, #2
+-080164DE: adds r0, r4, r1
+-080164E0: ldr r3, [pc, #184] @ =0x0801659C
+-080164E2: ldr r2, [r0, #0]
+-080164E4: ldr r0, [r3, #0]
+-080164E6: subs r2, r2, r0
+-080164E8: mov r12, r2
+-080164EA: adds r0, r1, #4
+-080164EC: adds r0, r4, r0
+-080164EE: ldr r2, [r0, #0]
+-080164F0: ldr r0, [r3, #4]
+-080164F2: subs r7, r2, r0
+-080164F4: adds r1, #8
+-080164F6: adds r1, r4, r1
+-080164F8: ldr r1, [r1, #0]
+-080164FA: ldr r0, [r3, #8]
++080164D2: ldr r1, [pc, #188] @ =0x08016590
++080164D4: lsls r2, r0, #1
++080164D6: adds r2, r2, r0
++080164D8: lsls r2, r2, #2
++080164DA: adds r0, r2, r1
++080164DC: ldr r4, [r0, #0]
++080164DE: ldr r0, [pc, #180] @ =0x08016594
++080164E0: ldr r0, [r0, #0]
++080164E2: subs r0, r4, r0
++080164E4: mov r12, r0
++080164E6: adds r0, r1, #4
++080164E8: adds r0, r2, r0
++080164EA: ldr r4, [r0, #0]
++080164EC: ldr r0, [pc, #168] @ =0x08016598
++080164EE: ldr r0, [r0, #0]
++080164F0: subs r7, r4, r0
++080164F2: adds r1, #8
++080164F4: adds r1, r2, r1
++080164F6: ldr r1, [r1, #0]
++080164F8: ldr r0, [pc, #160] @ =0x0801659C
++080164FA: ldr r0, [r0, #0]
+ 080164FC: subs r6, r1, r0
+ 080164FE: ldr r0, [pc, #160] @ =0x080165A0
+@@ -31,74 +31,72 @@
+ 0801650C: muls r0, r1
+ 0801650E: subs r5, r5, r0
+-08016510: asrs r5, r5, #12
+-08016512: mov r8, r7
+-08016514: mov r2, r12
+-08016516: muls r2, r1
++08016510: lsls r0, r5, #16
++08016512: asrs r5, r0, #28
++08016514: mov r4, r12
++08016516: muls r4, r1
+ 08016518: adds r0, r6, #0
+ 0801651A: muls r0, r3
+-0801651C: adds r2, r2, r0
+-0801651E: asrs r2, r2, #12
+-08016520: ldr r0, [pc, #132] @ =0x080165A8
+-08016522: ldr r6, [r0, #0]
+-08016524: mov r1, r8
+-08016526: muls r1, r6
++0801651C: adds r4, r4, r0
++0801651E: lsls r0, r4, #16
++08016520: lsrs r4, r0, #28
++08016522: ldr r0, [pc, #132] @ =0x080165A8
++08016524: ldr r6, [r0, #0]
++08016526: lsls r1, r7, #16
+ 08016528: ldr r0, [pc, #128] @ =0x080165AC
+ 0801652A: ldr r3, [r0, #0]
+-0801652C: adds r0, r2, #0
++0801652C: asrs r0, r1, #16
+ 0801652E: muls r0, r3
+-08016530: subs r1, r1, r0
+-08016532: asrs r7, r1, #12
+-08016534: mov r0, r8
+-08016536: muls r0, r3
+-08016538: adds r1, r2, #0
+-0801653A: muls r1, r6
+-0801653C: adds r0, r0, r1
+-0801653E: asrs r6, r0, #12
+-08016540: ldr r1, [pc, #108] @ =0x080165B0
+-08016542: ldr r0, [r1, #0]
+-08016544: adds r5, r5, r0
+-08016546: mov r12, r5
+-08016548: ldr r0, [r1, #4]
+-0801654A: adds r6, r6, r0
+-0801654C: ldr r0, [r1, #8]
+-0801654E: adds r7, r7, r0
+-08016550: ldr r1, [pc, #96] @ =0x080165B4
+-08016552: adds r0, r1, #0
+-08016554: adds r0, #8
+-08016556: adds r0, r4, r0
+-08016558: str r7, [r0, #0]
+-0801655A: mov r0, r12
+-0801655C: lsls r0, r0, #3
+-0801655E: mov r12, r0
+-08016560: lsls r6, r6, #3
+-08016562: asrs r7, r7, #1
+-08016564: ldr r2, [pc, #80] @ =0x080165B8
+-08016566: movs r3, #128
+-08016568: lsls r3, r3, #9
+-0801656A: adds r0, r7, r3
+-0801656C: lsls r0, r0, #2
+-0801656E: adds r0, r0, r2
+-08016570: ldr r3, [r0, #0]
+-08016572: adds r2, r4, r1
+-08016574: mov r0, r12
+-08016576: muls r0, r3
+-08016578: asrs r0, r0, #16
+-0801657A: adds r0, #60
+-0801657C: str r0, [r2, #0]
+-0801657E: adds r1, #4
+-08016580: adds r4, r4, r1
+-08016582: adds r0, r6, #0
+-08016584: muls r0, r3
+-08016586: asrs r0, r0, #15
+-08016588: adds r0, #80
+-0801658A: str r0, [r4, #0]
+-0801658C: pop {r3}
+-0801658E: mov r8, r3
+-08016590: pop {r4, r5, r6, r7}
+-08016592: pop {r0}
+-08016594: bx r0
+-08016596: movs r0, r0
+-08016598: .word 0x030057A0 (literal pool)
+-0801659C: .word 0x03005F70 (literal pool)
++08016530: adds r1, r4, #0
++08016532: muls r1, r6
++08016534: adds r0, r0, r1
++08016536: asrs r6, r0, #12
++08016538: ldr r0, [pc, #116] @ =0x080165B0
++0801653A: ldr r0, [r0, #0]
++0801653C: adds r5, r5, r0
++0801653E: ldr r0, [pc, #116] @ =0x080165B4
++08016540: ldr r0, [r0, #0]
++08016542: adds r6, r6, r0
++08016544: ldr r0, [pc, #112] @ =0x080165B8
++08016546: ldr r7, [r0, #0]
++08016548: ldr r1, [pc, #112] @ =0x080165BC
++0801654A: adds r0, r2, #0
++0801654C: adds r0, #248
++0801654E: str r7, [r0, #0]
++08016550: lsls r5, r5, #3
++08016552: mov r12, r5
++08016554: lsls r6, r6, #3
++08016556: lsls r0, r7, #16
++08016558: lsrs r7, r0, #17
++0801655A: movs r3, #128
++0801655C: lsls r3, r3, #9
++0801655E: adds r0, r7, r3
++08016560: lsls r0, r0, #2
++08016562: ldr r3, [pc, #92] @ =0x080165C0
++08016564: adds r0, r0, r3
++08016566: ldrh r3, [r0, #0]
++08016568: adds r4, r2, r1
++0801656A: mov r0, r12
++0801656C: muls r0, r3
++0801656E: asrs r0, r0, #16
++08016570: adds r0, #60
++08016572: str r0, [r4, #0]
++08016574: adds r1, #4
++08016576: adds r2, r2, r1
++08016578: adds r0, r6, #0
++0801657A: muls r0, r3
++0801657C: lsls r0, r0, #16
++0801657E: asrs r0, r0, #31
++08016580: lsls r0, r0, #16
++08016582: asrs r0, r0, #16
++08016584: adds r0, #80
++08016586: str r0, [r2, #0]
++08016588: pop {r4, r5, r6, r7}
++0801658A: pop {r0}
++0801658C: bx r0
++0801658E: movs r0, r0
++08016590: .word 0x030057A0 (literal pool)
++08016594: .word 0x03005F70 (literal pool)
++08016598: .word 0x03005F74 (literal pool)
++0801659C: .word 0x03005F78 (literal pool)
+ 080165A0: .word 0x03002A18 (literal pool)
+ 080165A4: .word 0x03001B28 (literal pool)
+@@ -106,4 +104,6 @@
+ 080165AC: .word 0x03005F58 (literal pool)
+ 080165B0: .word 0x03005F80 (literal pool)
+-080165B4: .word 0x030055F0 (literal pool)
+-080165B8: .word 0x0804F330 (literal pool)
++080165B4: .word 0x03005F84 (literal pool)
++080165B8: .word 0x03005F88 (literal pool)
++080165BC: .word 0x030055F0 (literal pool)
++080165C0: .word 0x0804F330 (literal pool)
+Check register allocation, signed widths, statement order, constants and pool alignment.

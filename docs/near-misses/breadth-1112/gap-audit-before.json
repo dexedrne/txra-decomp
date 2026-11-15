@@ -1,0 +1,150 @@
+{
+  "complete": false,
+  "tested": 9,
+  "candidates": [
+    {
+      "offset": 8192,
+      "mode": "thumb",
+      "spans": [
+        [
+          8192,
+          8788
+        ],
+        [
+          8924,
+          9026
+        ],
+        [
+          9036,
+          9084
+        ]
+      ],
+      "return_sites": 1,
+      "reason": "unreferenced candidate; all paths decode; balanced return; ARMv4T",
+      "execution_verified": false
+    },
+    {
+      "offset": 30012,
+      "mode": "thumb",
+      "spans": [
+        [
+          30012,
+          30026
+        ]
+      ],
+      "return_sites": 1,
+      "reason": "unreferenced candidate; all paths decode; balanced return; ARMv4T",
+      "execution_verified": false
+    },
+    {
+      "offset": 30172,
+      "mode": "thumb",
+      "spans": [
+        [
+          30172,
+          30210
+        ]
+      ],
+      "return_sites": 1,
+      "reason": "unreferenced candidate; all paths decode; balanced return; ARMv4T",
+      "execution_verified": false
+    },
+    {
+      "offset": 83856,
+      "mode": "thumb",
+      "spans": [
+        [
+          83856,
+          83890
+        ]
+      ],
+      "return_sites": 1,
+      "reason": "unreferenced candidate; all paths decode; balanced return; ARMv4T",
+      "execution_verified": false
+    },
+    {
+      "offset": 89680,
+      "mode": "thumb",
+      "spans": [
+        [
+          89680,
+          89726
+        ],
+        [
+          89752,
+          89794
+        ]
+      ],
+      "return_sites": 1,
+      "reason": "unreferenced candidate; all paths decode; balanced return; ARMv4T",
+      "execution_verified": false
+    },
+    {
+      "offset": 89812,
+      "mode": "thumb",
+      "spans": [
+        [
+          89812,
+          89858
+        ],
+        [
+          89884,
+          89926
+        ]
+      ],
+      "return_sites": 1,
+      "reason": "unreferenced candidate; all paths decode; balanced return; ARMv4T",
+      "execution_verified": false
+    },
+    {
+      "offset": 89944,
+      "mode": "thumb",
+      "spans": [
+        [
+          89944,
+          89964
+        ],
+        [
+          89976,
+          90000
+        ]
+      ],
+      "return_sites": 1,
+      "reason": "unreferenced candidate; all paths decode; balanced return; ARMv4T",
+      "execution_verified": false
+    },
+    {
+      "offset": 90008,
+      "mode": "thumb",
+      "spans": [
+        [
+          90008,
+          90044
+        ],
+        [
+          90060,
+          90102
+        ]
+      ],
+      "return_sites": 1,
+      "reason": "unreferenced candidate; all paths decode; balanced return; ARMv4T",
+      "execution_verified": false
+    },
+    {
+      "offset": 101792,
+      "mode": "thumb",
+      "spans": [
+        [
+          101792,
+          101854
+        ]
+      ],
+      "return_sites": 2,
+      "reason": "unreferenced candidate; all paths decode; balanced return; ARMv4T",
+      "execution_verified": false
+    }
+  ],
+  "scan_start": 8192,
+  "scan_end": 102028,
+  "caveat": "Manual boundary, literal and semantic review required; no runtime reachability claimed."
+}

@@ -1,0 +1,8 @@
+{
+  "complete": false,
+  "tested": 0,
+  "candidates": [],
+  "scan_start": 8192,
+  "scan_end": 102028,
+  "caveat": "Manual boundary, literal and semantic review required; no runtime reachability claimed."
+}

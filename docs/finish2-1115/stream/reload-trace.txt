@@ -1,0 +1,26 @@
+Reload register picks in the bases block (08002928..0800296E), from a private
+build of old_agbcc with debug prints added by trace_patch.py. Its assembly
+output was compared with the official compiler for both sources: identical.
+RA = allocate_reload_reg pick (round-robin over spill regs r0..r5; prev = the
+previous pick), RI = reload satisfied by inheritance. Insn uids are per build.
+
+11/14 candidate (23 differing bytes):
+RA uid=182 r=1 reg=2 prev=2    fb output (ldr r2,=faces; adds r2,r0,r2; str r2,[sp,#28])
+RA uid=192 r=0 reg=0 prev=2    first output (lsls r0,r2,#3; str r0,[sp,#36])
+   (ring+1)&31 and (ring+2)&31 are local pseudos; local-alloc gives both r1
+RA uid=225 r=0 reg=1 prev=0    first reload for p     -> ldr r1,[sp,#36]   (original: r3)
+RA uid=229 r=0 reg=3 prev=1    points constant        -> ldr r3,=points    (original: r4)
+RA uid=10530.. reg=4,5,0,1     four GCSE spill stores                       (original: r5,r0,r1,r2)
+
+Installed source (exact):
+RA uid=192 r=0 reg=0 prev=2    first output
+RA uid=196 r=0 reg=1 prev=0    following = ring + 1: output reload of the stack variable -> adds r1,r4,#1
+RI uid=200,204,205 reg=1       following &= 31; following *= 24 reuse r1    -> ands r1,r3 ...
+RI uid=214,218,219 reg=4       ahead = ring + 2 takes ring's dying r4 (dummy reload), then r4 is inherited
+                                                                             -> adds r4,#2; ands r4,r3 ...
+RA uid=227 r=0 reg=3 prev=1    first reload for p (r2 is busy)              -> ldr r3,[sp,#36]
+RA uid=231 r=0 reg=4 prev=3    points constant                              -> ldr r4,=points
+RA uid=10532.. reg=5,0,1,2     four GCSE spill stores                       -> r5,r0,r1,r2
+
+No intermediate stack stores of following/ahead remain in the output: only
+the final str to sp+40 / sp+44 is emitted, as in the original.

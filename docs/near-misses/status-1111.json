@@ -1,0 +1,197 @@
+{
+  "snapshot": "2026-11-11T22:08:01+00:00",
+  "attempts": 419,
+  "requests": 109,
+  "names_proposed": 181,
+  "installed": [],
+  "targets": {
+    "0800421C": {
+      "before": {
+        "address": "0800421C",
+        "target_end": "08005238",
+        "compiler": "old",
+        "flags": [
+          "-O2",
+          "-mthumb-interwork"
+        ],
+        "source": "docs/near-misses/hud-owner-1110/func_0800421C.c",
+        "source_sha256": "d106e3fead0f8d42d34073427992cf79ae578c131a9c29eee10db597ff9c2ce8",
+        "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+        "emitted_bytes": 4124,
+        "target_bytes": 4124,
+        "local_frame_bytes": 36,
+        "instruction_distance": 989,
+        "different_bytes": 3168,
+        "exact": false,
+        "compiled_sha256": "643e8b7a4e2f1442804cf6a69974d49416674f9efa6b59e7cee2b4e518a7d639",
+        "checker_limit": "08005238",
+        "checker_rejection": null,
+        "installed": false
+      },
+      "after": {
+        "address": "0800421C",
+        "target_end": "08005238",
+        "compiler": "old",
+        "flags": [
+          "-O2",
+          "-mthumb-interwork"
+        ],
+        "source": "docs/near-misses/hud-owner-1111/func_0800421C.c",
+        "source_sha256": "d97c511ae97193954393b89d29a0941a1703e5fd1f92436f3f47215bc7e291a7",
+        "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+        "emitted_bytes": 4124,
+        "target_bytes": 4124,
+        "local_frame_bytes": 36,
+        "instruction_distance": 1022,
+        "different_bytes": 3152,
+        "exact": false,
+        "compiled_sha256": "cc7b397f734bd1458efcc6f95274177f194cb615d682d1a98c857e7cfe721663",
+        "checker_limit": "08005238",
+        "checker_rejection": null,
+        "installed": false
+      },
+      "measured": 200,
+      "proposed": 367,
+      "improvements": 6,
+      "by_model": {
+        "kat-coder-v2.5:iq3s": {
+          "proposed": 327,
+          "measured": 177,
+          "retained": 5
+        },
+        "qwen3.6-35b-a3b:iq3s": {
+          "proposed": 40,
+          "measured": 23,
+          "retained": 1
+        }
+      },
+      "checks_sha256": "edab47f26cf0ff23eecd9ebe632a0285f36c5907ca44da639af5416cc0fa3c67"
+    },
+    "080064A4": {
+      "before": {
+        "address": "080064A4",
+        "target_end": "08007398",
+        "compiler": "old",
+        "flags": [
+          "-O2",
+          "-mthumb-interwork"
+        ],
+        "source": "docs/near-misses/sound-owner-1109d/func_080064A4.c",
+        "source_sha256": "c07b91202435f2f7057ce1a49714f819d8a575acbabe40a5ee6cb156fcc310d2",
+        "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+        "emitted_bytes": 3808,
+        "target_bytes": 3828,
+        "local_frame_bytes": 100,
+        "instruction_distance": 1472,
+        "different_bytes": 3227,
+        "exact": false,
+        "compiled_sha256": "7d84245b1400063bd8d2828dc6ee45083d8f5adedb138c05bf477c8b65c789c4",
+        "checker_limit": "08007398",
+        "checker_rejection": null,
+        "installed": false
+      },
+      "after": {
+        "address": "080064A4",
+        "target_end": "08007398",
+        "compiler": "old",
+        "flags": [
+          "-O2",
+          "-mthumb-interwork"
+        ],
+        "source": "docs/near-misses/sound-owner-1111/func_080064A4.c",
+        "source_sha256": "c07b91202435f2f7057ce1a49714f819d8a575acbabe40a5ee6cb156fcc310d2",
+        "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+        "emitted_bytes": 3808,
+        "target_bytes": 3828,
+        "local_frame_bytes": 100,
+        "instruction_distance": 1472,
+        "different_bytes": 3227,
+        "exact": false,
+        "compiled_sha256": "7d84245b1400063bd8d2828dc6ee45083d8f5adedb138c05bf477c8b65c789c4",
+        "checker_limit": "08007398",
+        "checker_rejection": null,
+        "installed": false
+      },
+      "measured": 14,
+      "proposed": 32,
+      "improvements": 0,
+      "by_model": {
+        "kat-coder-v2.5:iq3s": {
+          "proposed": 28,
+          "measured": 14,
+          "retained": 0
+        },
+        "qwen3.6-35b-a3b:iq3s": {
+          "proposed": 4,
+          "measured": 0,
+          "retained": 0
+        }
+      },
+      "checks_sha256": "ecd7d6180b09136300cb5144796e37e2c0955ba2f6cba522a03e106b12a58b4d"
+    },
+    "08016DA8": {
+      "before": {
+        "address": "08016DA8",
+        "target_end": "08017E68",
+        "compiler": "arm",
+        "flags": [
+          "-O2",
+          "-mthumb-interwork"
+        ],
+        "source": "docs/near-misses/arm-16da8-1110/func_08016DA8.c",
+        "source_sha256": "558324bab1fa37d5db18889304436fafea391854c573907850e19859fdf14f58",
+        "compiler_sha256": "26d884f0d4d46180dd90d1b1b56371fa1d72e2d0a47b22b65f27b3cebb89cca8",
+        "emitted_bytes": 4268,
+        "target_bytes": 4288,
+        "local_frame_bytes": 108,
+        "instruction_distance": 898,
+        "different_bytes": 3251,
+        "exact": false,
+        "compiled_sha256": "d821cdb421a0546c681d72df6d21a7e5bf0650253e5a06a2dc357ca78e5292cd",
+        "checker_limit": "08017E68",
+        "checker_rejection": null,
+        "installed": false
+      },
+      "after": {
+        "address": "08016DA8",
+        "target_end": "08017E68",
+        "compiler": "arm",
+        "flags": [
+          "-O2",
+          "-mthumb-interwork"
+        ],
+        "source": "docs/near-misses/arm-16da8-1111/func_08016DA8.c",
+        "source_sha256": "558324bab1fa37d5db18889304436fafea391854c573907850e19859fdf14f58",
+        "compiler_sha256": "26d884f0d4d46180dd90d1b1b56371fa1d72e2d0a47b22b65f27b3cebb89cca8",
+        "emitted_bytes": 4268,
+        "target_bytes": 4288,
+        "local_frame_bytes": 108,
+        "instruction_distance": 898,
+        "different_bytes": 3251,
+        "exact": false,
+        "compiled_sha256": "d821cdb421a0546c681d72df6d21a7e5bf0650253e5a06a2dc357ca78e5292cd",
+        "checker_limit": "08017E68",
+        "checker_rejection": null,
+        "installed": false
+      },
+      "measured": 15,
+      "proposed": 20,
+      "improvements": 0,
+      "by_model": {
+        "kat-coder-v2.5:iq3s": {
+          "proposed": 16,
+          "measured": 11,
+          "retained": 0
+        },
+        "qwen3.6-35b-a3b:iq3s": {
+          "proposed": 4,
+          "measured": 4,
+          "retained": 0
+        }
+      },
+      "checks_sha256": "e9721f8842b107b85e9fead4544cf82d6fde839663bdceb07dc74eece393878b"
+    }
+  },
+  "context_tokens": 8192,
+  "tool_sha256": "21102528fc2d0f3b3fe94efc9d2438b30568798bdccc5c00bb3ffac9f46d7e15"
+}

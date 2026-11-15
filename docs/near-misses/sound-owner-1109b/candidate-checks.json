@@ -1,0 +1,10 @@
+{
+  "candidate": "func_080064A4.c",
+  "source_sha256": "6792eb6ca73c18bd8b4cbc6abf65a71e2bea6107b82fc15e12c6524d5c16b945",
+  "fixture_groups": 7,
+  "undefined_behavior_sanitizer": true,
+  "registry_unchanged": true,
+  "voice_field_aliases": 17,
+  "rom_used": false,
+  "output": "7 sound-owner synthetic groups passed (actual complete C candidate; no ROM)"
+}

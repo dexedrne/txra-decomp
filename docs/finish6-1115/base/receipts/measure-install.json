@@ -1,0 +1,22 @@
+{
+  "address": "08016DA8",
+  "target_end": "08017E68",
+  "compiler": "arm",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "src/generated/func_08016DA8.c",
+  "source_sha256": "12df7a98166037a384a9a1b6245fd77f4804281be159b59539df73d3aec141ac",
+  "compiler_sha256": "342687894970c4ed4369945d9a23ea056e9a6a5d3fcd3004044a97d1de777ac6",
+  "emitted_bytes": 4288,
+  "target_bytes": 4288,
+  "local_frame_bytes": 96,
+  "instruction_distance": 0,
+  "different_bytes": 0,
+  "exact": true,
+  "compiled_sha256": "7fa142f8d5114098aac6e6579c2eb6214de22529d447caed8f09d8d8a90cd852",
+  "checker_limit": "08017E68",
+  "checker_rejection": null,
+  "installed": false
+}

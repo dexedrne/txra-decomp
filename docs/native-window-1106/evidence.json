@@ -1,0 +1,454 @@
+{
+  "base": "c51286ec5005f053022e0fbee0711ab4f2f1af90",
+  "source_count": 193,
+  "source_manifest_sha256": "1194fadff816e7bbb6fca5bf7762d1a61db5e86c412d80f09387cc9c1d6b5572",
+  "pins": {
+    "build/generated.c": "d2ec9123b89460ede4168fa387677a89872370e62ea3b3f061e465b610f043c5",
+    "build/generated.o": "97d2cd731564a067bcddefc85342b89834938be958a562e0cec5b36234381f59",
+    "build/txra-pc": "7e4bade876fbfab7b0393d98a0de565e72de0ef7892dc8e5aed5802938d9cfd9",
+    "build/deps/libsdl2-dev_2.30.0+dfsg-1ubuntu3.1_amd64.deb": "8d78c93699aafdb33205ef7712baeefc8d8aa806862fac4c2554f3f8db234da1"
+  },
+  "host_sdl_sha256": "2507acbbe40afe7d3e2e775dd8af00a1dba93579b9e837563032f3d751a9a45b",
+  "toolchain": {
+    "cc": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "python": "Python 3.12.3",
+    "make": "GNU Make 4.3",
+    "ld": "GNU ld (GNU Binutils for Ubuntu) 2.42"
+  },
+  "compile_flags": "-O2 -std=c11 -Wall -Wextra -Wno-misleading-indentation; generated unit trailing -O1",
+  "sdl_flags": "-Ibuild/deps/sdl/usr/include/SDL2 -Ibuild/deps/sdl/usr/include/x86_64-linux-gnu -D_REENTRANT",
+  "sdl_link": "/lib/x86_64-linux-gnu/libSDL2-2.0.so.0",
+  "matching_liveness": {
+    "time_utc": "2026-11-06T22:38:30.894656+00:00",
+    "processes_with_matching_cwd": [],
+    "retained_results_read_or_changed": false
+  },
+  "window": {
+    "native_pid": 2510170,
+    "wm_pid": 2510154,
+    "display": ":99",
+    "captures": {
+      "default-running": {
+        "geometry": [
+          37,
+          106,
+          960,
+          640,
+          24
+        ],
+        "sha256": "ad0918375f94001034089e51c4706c3ca9115b712cd594d1efa0df95b5a36574"
+      },
+      "default-paused": {
+        "geometry": [
+          37,
+          106,
+          960,
+          640,
+          24
+        ],
+        "sha256": "23a404cd643d118d9b4cc1cb927d1b64f874ec4593a68f04e7f0318687a715df",
+        "native_scaled_pixel_mismatches": 0
+      },
+      "resized-letterbox": {
+        "geometry": [
+          5,
+          42,
+          800,
+          600,
+          24
+        ],
+        "sha256": "b736c5a04356716433836728cc2d52fe72e884c77fa993c86b3198e2cccae04a",
+        "native_scaled_pixel_mismatches": 0
+      },
+      "minimum-paused": {
+        "geometry": [
+          5,
+          42,
+          240,
+          160,
+          24
+        ],
+        "sha256": "7fdcc23c50a32d366221142b7bc1c10b5c76c49603520344394a473d1ca71a94",
+        "native_scaled_pixel_mismatches": 0
+      },
+      "fullscreen-paused": {
+        "geometry": [
+          0,
+          0,
+          1024,
+          768,
+          24
+        ],
+        "sha256": "c07827679bdbc9f5bb2f16b6c069318f1925bde05c80cb41b896a0151ed947ba",
+        "native_scaled_pixel_mismatches": 0
+      },
+      "quit-selected": {
+        "geometry": [
+          5,
+          42,
+          800,
+          600,
+          24
+        ],
+        "sha256": "c3e5309e808e95c4791a07b02d98aee1f2846c7a3478f809795899ed94a5365f",
+        "native_scaled_pixel_mismatches": 0
+      }
+    },
+    "events": [
+      "Escape",
+      "F8",
+      "F8",
+      "F8",
+      "F11",
+      "F8",
+      "F11",
+      "Escape",
+      "Escape",
+      "Up",
+      "F8",
+      "Return"
+    ],
+    "xvfb_pid": 2510148,
+    "minimum_size_hint": [
+      240,
+      160
+    ],
+    "below_minimum_clamped": true,
+    "stats": {
+      "frames": 1014,
+      "pc": "0800642c",
+      "instructions": 94915008,
+      "compiled_steps": 94915008,
+      "fallback_steps": 0,
+      "unknown_targets": 0,
+      "unsupported": 0,
+      "functions_compiled": 229,
+      "state_hash": "60bff14a",
+      "cycles": 284745024,
+      "audio_samples": 556142,
+      "audio_hash": "569c849285625a95",
+      "save_writes": 0,
+      "elapsed_seconds": 40.120988,
+      "cpu_seconds": 17.075531,
+      "audio_underruns": 0,
+      "audio_max_queue_ms": 0.0,
+      "audio_backpressure_seconds": 0.0,
+      "stopped": false
+    },
+    "native_closed": true,
+    "wm_closed": true,
+    "menu_transitions": [
+      [
+        "paused",
+        "476"
+      ],
+      [
+        "resumed",
+        "476"
+      ],
+      [
+        "paused",
+        "1014"
+      ]
+    ]
+  },
+  "rebind": {
+    "native_pid": 2512947,
+    "wm_pid": 2512931,
+    "display": ":99",
+    "captures": {
+      "rebound-before-start": {
+        "geometry": [
+          37,
+          106,
+          960,
+          640,
+          24
+        ],
+        "sha256": "ffd8b5e37b50c2d3ceb52186a09d28db3f2140b6d06a6309cee33a1129b937d0",
+        "native_scaled_pixel_mismatches": 0
+      },
+      "rebound-after-start": {
+        "geometry": [
+          37,
+          106,
+          960,
+          640,
+          24
+        ],
+        "sha256": "6566889b9adebe448d8580561467a6ab59bca549d4a12c261fb49f61f34ec392",
+        "native_scaled_pixel_mismatches": 0
+      }
+    },
+    "events": [
+      "Escape",
+      "F8",
+      "Escape",
+      "q",
+      "Escape",
+      "F8",
+      "Up",
+      "Return"
+    ],
+    "xvfb_pid": 2512925,
+    "minimum_size_hint": [
+      240,
+      160
+    ],
+    "persisted_binding_unchanged": true,
+    "stats": {
+      "frames": 1145,
+      "pc": "03004ec0",
+      "instructions": 107180736,
+      "compiled_steps": 107180736,
+      "fallback_steps": 0,
+      "unknown_targets": 0,
+      "unsupported": 0,
+      "functions_compiled": 229,
+      "state_hash": "23dd075a",
+      "cycles": 321542208,
+      "audio_samples": 628012,
+      "audio_hash": "0611dcac743b52c5",
+      "save_writes": 0,
+      "elapsed_seconds": 31.033142,
+      "cpu_seconds": 17.076778,
+      "audio_underruns": 0,
+      "audio_max_queue_ms": 0.0,
+      "audio_backpressure_seconds": 0.0,
+      "stopped": false
+    },
+    "native_closed": true,
+    "wm_closed": true,
+    "binding_before_sha256": "5bd7c83ae8ec2cbeffb554bf1d605e4867f506913688542279222b459bf569a7",
+    "binding_after_sha256": "c56f86dbd592600b5c3222b24087bd3970cece9cdb00d89cfa6fd7aabdb8aa94",
+    "only_binding_change": "key.start=Return -> key.start=Q"
+  },
+  "race": {
+    "native_pid": 2513441,
+    "wm_pid": 2513434,
+    "display": ":99",
+    "captures": {
+      "race-running": {
+        "geometry": [
+          37,
+          106,
+          960,
+          640,
+          24
+        ],
+        "sha256": "4c28736c2bae0ebfd8302f649ff0a6e525b83b7d0d47affcabf62c058f51c151"
+      }
+    },
+    "events": [],
+    "xvfb_pid": 2513428,
+    "minimum_size_hint": [
+      240,
+      160
+    ],
+    "stats": {
+      "frames": 4300,
+      "pc": "080063e4",
+      "instructions": 402589728,
+      "compiled_steps": 402589728,
+      "fallback_steps": 0,
+      "unknown_targets": 0,
+      "unsupported": 0,
+      "functions_compiled": 229,
+      "state_hash": "25ab436f",
+      "cycles": 1207769184,
+      "audio_samples": 2358924,
+      "audio_hash": "0cf1545835f3c205",
+      "save_writes": 0,
+      "elapsed_seconds": 71.995394,
+      "cpu_seconds": 53.682876,
+      "audio_underruns": 0,
+      "audio_max_queue_ms": 0.0,
+      "audio_backpressure_seconds": 0.0,
+      "stopped": false
+    },
+    "visible_and_headless_golden_passed": true,
+    "native_closed": true,
+    "wm_closed": true
+  },
+  "headless": {
+    "frames": 4300,
+    "pc": "080063e4",
+    "instructions": 402589728,
+    "compiled_steps": 402589728,
+    "fallback_steps": 0,
+    "unknown_targets": 0,
+    "unsupported": 0,
+    "functions_compiled": 229,
+    "state_hash": "25ab436f",
+    "cycles": 1207769184,
+    "audio_samples": 2358924,
+    "audio_hash": "0cf1545835f3c205",
+    "save_writes": 0,
+    "elapsed_seconds": 33.199799,
+    "cpu_seconds": 33.198942,
+    "audio_underruns": 0,
+    "audio_max_queue_ms": 0.0,
+    "audio_backpressure_seconds": 0.0,
+    "stopped": false
+  },
+  "review": {
+    "default-running.png": {
+      "source": "build/window-review/default-running.png",
+      "sha256": "ad0918375f94001034089e51c4706c3ca9115b712cd594d1efa0df95b5a36574",
+      "bytes": 43724
+    },
+    "default-paused.png": {
+      "source": "build/window-review/default-paused.png",
+      "sha256": "23a404cd643d118d9b4cc1cb927d1b64f874ec4593a68f04e7f0318687a715df",
+      "bytes": 14245
+    },
+    "resized-letterbox.png": {
+      "source": "build/window-review/resized-letterbox.png",
+      "sha256": "b736c5a04356716433836728cc2d52fe72e884c77fa993c86b3198e2cccae04a",
+      "bytes": 12547
+    },
+    "minimum-paused.png": {
+      "source": "build/window-review/minimum-paused.png",
+      "sha256": "7fdcc23c50a32d366221142b7bc1c10b5c76c49603520344394a473d1ca71a94",
+      "bytes": 5007
+    },
+    "fullscreen-paused.png": {
+      "source": "build/window-review/fullscreen-paused.png",
+      "sha256": "c07827679bdbc9f5bb2f16b6c069318f1925bde05c80cb41b896a0151ed947ba",
+      "bytes": 17055
+    },
+    "quit-selected.png": {
+      "source": "build/window-review/quit-selected.png",
+      "sha256": "c3e5309e808e95c4791a07b02d98aee1f2846c7a3478f809795899ed94a5365f",
+      "bytes": 16785
+    },
+    "race-running.png": {
+      "source": "build/window-race-review/race-running.png",
+      "sha256": "4c28736c2bae0ebfd8302f649ff0a6e525b83b7d0d47affcabf62c058f51c151",
+      "bytes": 36990
+    },
+    "rebound-before-start.png": {
+      "source": "build/window-rebind-review/rebound-before-start.png",
+      "sha256": "ffd8b5e37b50c2d3ceb52186a09d28db3f2140b6d06a6309cee33a1129b937d0",
+      "bytes": 18462
+    },
+    "rebound-after-start.png": {
+      "source": "build/window-rebind-review/rebound-after-start.png",
+      "sha256": "6566889b9adebe448d8580561467a6ab59bca549d4a12c261fb49f61f34ec392",
+      "bytes": 12713
+    },
+    "rebound-guest.png": {
+      "source": "build/window-rebind-review/rebound-guest.png",
+      "sha256": "daf962efc6f43f991c2bf2135c3351b1a73575fbc029a2e3a7c0764e77ccee1b",
+      "bytes": 13565
+    },
+    "menu.webm": {
+      "source": "build/window-rebind-review/rebound-menu.webm",
+      "sha256": "c5651127cca4208218cfd231e5c11cfcee30711edca7dbae8852a0f0bc70aa88",
+      "bytes": 1003172,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 960,
+            "height": 640,
+            "r_frame_rate": "30/1",
+            "nb_read_frames": "150"
+          }
+        ],
+        "format": {
+          "duration": "5.000000",
+          "size": "1003172"
+        }
+      }
+    },
+    "race.webm": {
+      "source": "build/window-race-review/race-motion.webm",
+      "sha256": "8b74185ebb263e8bbfed5615f3748fe403e644ceb2d52601c2d81bba58b92517",
+      "bytes": 1304737,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 960,
+            "height": 640,
+            "r_frame_rate": "30/1",
+            "nb_read_frames": "150"
+          }
+        ],
+        "format": {
+          "duration": "5.000000",
+          "size": "1304737"
+        }
+      }
+    },
+    "menu-samples.png": {
+      "source": "build/window-rebind-review/clip-samples.png",
+      "sha256": "151633e1fd3d797d784110dd039fa590863c755e7595883ac032c88e3ed58b23",
+      "bytes": 192102
+    },
+    "race-samples.png": {
+      "source": "build/window-race-review/clip-samples.png",
+      "sha256": "228f994a13209f0f73f569ae5aab6cfece2485e14c3f194216296fc10b14fe21",
+      "bytes": 666278
+    }
+  },
+  "cleanup": {
+    "time_utc": "2026-11-06T22:44:36.993311+00:00",
+    "owned_pid_exists": {
+      "2508181": false,
+      "2508871": false,
+      "2508864": false,
+      "2510170": false,
+      "2510154": false,
+      "2510148": false,
+      "2512947": false,
+      "2512931": false,
+      "2512925": false,
+      "2511532": false,
+      "2511527": false,
+      "2511521": false,
+      "2513441": false,
+      "2513434": false,
+      "2513428": false
+    },
+    "removed_temporary_paths": [
+      "build/window-initial-cursor/profile",
+      "build/window-bare-x/profile",
+      "build/window-wm-probe/profile",
+      "build/window-wm-probe/cache",
+      "build/window-review/profile",
+      "build/window-review/cache",
+      "build/window-review/runtime",
+      "build/window-rebind-review/cache",
+      "build/window-rebind-review/runtime",
+      "build/window-race-first-capture/profile",
+      "build/window-race-first-capture/cache",
+      "build/window-race-first-capture/runtime",
+      "build/window-race-review/profile",
+      "build/window-race-review/cache",
+      "build/window-race-review/runtime",
+      "build/window-xauth"
+    ],
+    "remaining_native_xvfb_wm_processes": 0
+  },
+  "tests": {
+    "runtime_assertions": 446,
+    "desktop_assertions": 69,
+    "desktop_flow_checks": 22,
+    "layout_selfchecks": 5,
+    "private_display_rejection_selfchecks": 2,
+    "controller": "ten buttons, dead zone, diagonal, disconnect/reconnect passed",
+    "golden_replays": 4,
+    "frames_per_golden_replay": 4300,
+    "scaled_pixel_comparisons": 7,
+    "pixel_mismatches": 0,
+    "optimized_python_rejected_exit": 2
+  },
+  "helper_commits": [
+    "08e2c36",
+    "eda54fb"
+  ]
+}

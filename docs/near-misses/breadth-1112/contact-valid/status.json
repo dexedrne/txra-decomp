@@ -1,0 +1,20 @@
+{
+  "measured": 934,
+  "compile_errors": 15,
+  "rejected_width_changes": 2231,
+  "best_different_bytes": 1011,
+  "baseline_different_bytes": 1143,
+  "wall_seconds": 616.04,
+  "compiler": "arm",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "owner_end": "08018854",
+  "installed": false,
+  "independent_semantic_verification": false,
+  "retention": "Width-preserving candidate passes synthetic prior-C comparisons; whole original owner still differs and cannot install.",
+  "stop_reason": "neighborhood exhausted",
+  "prior_c_fixture_passed": true,
+  "fixture_receipt": "fixtures.json"
+}

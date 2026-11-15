@@ -1,0 +1,30 @@
+{
+  "address": "0800B3A0",
+  "mode": "thumb",
+  "bytes": 310,
+  "instructions": 137,
+  "call_count": null,
+  "observed_entry": false,
+  "static_callers": 0,
+  "matched_callees": 1,
+  "unmatched_callees": 0,
+  "difficulty": 137,
+  "value": 3,
+  "priority": 0.021898,
+  "blocked_reason": null,
+  "comparison_bytes": 310,
+  "attempts": 6000,
+  "compile_errors": 0,
+  "seconds": 95.95,
+  "status": "budget exhausted",
+  "exact": false,
+  "focus": null,
+  "learned_candidates": {},
+  "generations": 7,
+  "score": [
+    24,
+    33
+  ],
+  "compiler": "old",
+  "size": 310
+}

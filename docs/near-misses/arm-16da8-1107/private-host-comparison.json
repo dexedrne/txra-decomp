@@ -1,0 +1,66 @@
+{
+  "scope": "Full target source assembly and all19 semantic pointer bindings verified against private ROM; three legal-size exact-profile comparisons nonmatching; oversized modern matching candidate rejected by unchanged next-entry guard. Original runner terminal1 reflected overstrict zero-error summary assertion, not a failed ROM identity/cleanup check.",
+  "originalRunnerExit": 1,
+  "sourceAssemblyExact": true,
+  "sourceAssemblySha256": "7fa142f8d5114098aac6e6579c2eb6214de22529d447caed8f09d8d8a90cd852",
+  "poolTargetsVerified": 19,
+  "targetBytes": 4288,
+  "rows": [
+    {
+      "candidate": "func_08016DA8.c",
+      "profile": "arm",
+      "sourceSha256": "a448074fc93e69534ad9112bc48477ec541d3a3c083fd047cdb97df4db55a8ab",
+      "exact": false,
+      "compiledBytes": 2856,
+      "score": [
+        1038,
+        4027
+      ],
+      "compiledSha256": "538611006c5a731a22ca1da9d15a80b7793b39daea52a28826fd47da0a3f1e6b"
+    },
+    {
+      "candidate": "func_08016DA8.c",
+      "profile": "modern-arm",
+      "sourceSha256": "a448074fc93e69534ad9112bc48477ec541d3a3c083fd047cdb97df4db55a8ab",
+      "exact": false,
+      "compiledBytes": 2596,
+      "score": [
+        1043,
+        4085
+      ],
+      "compiledSha256": "8abdd4f775ef1a05718e0721da3a9a96a3db9d37e9ad749d566b2890e8e68fc3"
+    },
+    {
+      "candidate": "func_08016DA8_match.c",
+      "profile": "arm",
+      "sourceSha256": "ff01f366e731509f5d7ac163bc64c7b1bf465fbcbef739a1fd37224aee4a16d6",
+      "exact": false,
+      "compiledBytes": 4028,
+      "score": [
+        1046,
+        3850
+      ],
+      "compiledSha256": "e04e8ae08b9fa01ec5ab51af46c4a6523f1a75b3e8a45a819c63a51565fd0b01"
+    },
+    {
+      "candidate": "func_08016DA8_match.c",
+      "profile": "modern-arm",
+      "sourceSha256": "ff01f366e731509f5d7ac163bc64c7b1bf465fbcbef739a1fd37224aee4a16d6",
+      "error": {
+        "type": "ValueError",
+        "detail": "output crosses next candidate boundary"
+      }
+    }
+  ],
+  "oversizedCandidateBytes": 5604,
+  "admittedComparisons": 3,
+  "exactMatchesAdded": 0,
+  "installed": false,
+  "matchedBefore": 181,
+  "matchedAfter": 181,
+  "romUnchanged": true,
+  "scratchRemoved": true,
+  "romTransferred": false,
+  "resultSha256": "04432b2edad1cd231f0d038d24bd56e33b38ba36eb981a82daf48306890fcff4",
+  "sourceSnapshotArchiveSha256": "4d627a1331d0a84260f53ee2beeed69094a4b59b95492e2fa775c596e46602c6"
+}

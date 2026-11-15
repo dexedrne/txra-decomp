@@ -1,0 +1,67 @@
+{
+  "directory": "txra-review/breadth-1112b",
+  "artifacts": {
+    "before-raster-table.png": {
+      "bytes": 87359,
+      "sha256": "c192755db2a91ef2af3bfb7d774074b52eb5854ae9276b60bd10a6e795e8a780",
+      "width": 1600,
+      "height": 1000
+    },
+    "after-raster-table.png": {
+      "bytes": 91661,
+      "sha256": "9a9359e387e35b548b5bcf3dd154430dde4a0068604a90c67f42d499ef7fb097",
+      "width": 1600,
+      "height": 1000
+    },
+    "raster-table.webm": {
+      "bytes": 204737,
+      "sha256": "4720270b8276058b984814c8ee50bd9fe2b8e891c56dfb7e26e1b15f9c1fe8f4",
+      "seconds": 4.0,
+      "fps": 30,
+      "width": 1600,
+      "height": 1000,
+      "audio_streams": 0
+    },
+    "before-080181C0.png": {
+      "bytes": 158172,
+      "sha256": "38dd4f9713696838b7c2c17b1352e91c6bbeb2f206a84262d328965d828fbe10",
+      "width": 1600,
+      "height": 1000
+    },
+    "after-080181C0.png": {
+      "bytes": 155097,
+      "sha256": "95671a7ffb3146529df9d8d52cdd2b22f9f66f9e20c81625149a9bb5f5624567",
+      "width": 1600,
+      "height": 1000
+    },
+    "080181C0.webm": {
+      "bytes": 492259,
+      "sha256": "953621299a7600e7431117a795488be852b9eab18c4e111fe74441e5d669fcf5",
+      "seconds": 4.0,
+      "fps": 30,
+      "width": 1600,
+      "height": 1000,
+      "audio_streams": 0
+    },
+    "clip-overview.png": {
+      "bytes": 160060,
+      "sha256": "a43fb24bcef81ed524575829e1f63502e05fe5d32f4d97f21eae4e25d667ab53",
+      "width": 1000,
+      "height": 660
+    }
+  },
+  "gameplay_claimed": false,
+  "comparisons_only": true,
+  "final_pictures_opened_and_inspected": [
+    "before-raster-table.png",
+    "after-raster-table.png",
+    "before-080181C0.png",
+    "after-080181C0.png",
+    "clip-overview.png"
+  ],
+  "decoded_clip_samples_inspected": true,
+  "captions_complete": true,
+  "contact_retake": "Both compiled code columns begin at their first rotation loop; original view remains 08018460.",
+  "notes_sha256": "f7db8ec4e51f8ef8f17c7dbc454bcead5d5ef071d9a570d9f9a98d51e89cd7de",
+  "captions_sha256": "403191c9c2b1de2bd4c749bbe108b23a41d5749b38e1ae779f11313d06eda4db"
+}

@@ -1,0 +1,52 @@
+Allocator experiments for 080064A4 with a private debug build of old_agbcc (diagnostic only).
+
+Build: buildcc.sh applies the stream lane's trace_patch.py and this lane's trace_patch2.py to
+fresh copies of local-alloc.c, global.c and reload1.c on the worker, then `make old -j1`.
+Every trace below was checked first: with no TX* override set, the debug compiler's assembly is
+identical to the official compiler's ("traced==official" from tr.sh).  Overrides change the
+allocator on purpose; their output is never a candidate, only a statement of which allocator
+decision the original reflects.  No ROM bytes are printed: align.py/sdiff.py rebuild the
+original listing in memory on the worker and print instruction text only.
+
+Trace letters (TXDBG): L local-alloc qtys, G global find_reg, R reload picks, O reload
+spill-register order with per-hard-register cost, S spills / stack slots / deleted output
+reloads, P global preferences, Q preference sources.
+Overrides: TXFORCE=uid:reg or p<pseudo> (reload spill choice), TXFIRST=pseudo[,..] (global
+allocation order), TXPREF=pseudo:reg[,..] (global preference).
+
+1. Frame and length (0x67 master-volume block)
+   finish2 source: pseudo 37 (cidx) is the only reload-time spill (from r2, sp+96, frame 100).
+   At the gFadeLevel address reload (insn 4016) reload's cost per low register is
+   refs x (number of usable registers at or above it): r2 = cidx 12x10 = 120 is cheapest,
+   piece's r1 = 16x11 = 176.
+   TXFORCE=4016:1 (spill piece's r1 there instead): iteration 1 spills piece (sp+96),
+   iteration 2 spills fl<<4 (sp+100; its only store is then deleted by delete_output_reload,
+   which is the "unused" slot), iteration 3 spills cidx (sp+104).  Frame 108, the original
+   slot layout; only the second piece store (str r2,[sp,#96]) was still deleted.
+   Natural fix: `piece = commands[cidx + 1] * 256; piece += gFadeLevel;` - the multiply result
+   is its own pseudo (2 refs x 4 = 8, cost 88), so reload spills it from r1 at insn 4016;
+   piece later spills from the same r1 and reuses that slot, which keeps its store.  The
+   official compiler then produces the original block, frame 108, 3828 bytes (203 differing).
+
+2. Envelope tick slide sections (08006776..08006D62)
+   With a function-level slide temporary p, global order is p (#2, refs 45 / length 27),
+   ..., &pitch_cursor (#48-50), slide pointer (#58, refs 54 / length 159): p and the cursor
+   address take r2/r3 first, the pointer gets r5.  The original gives the pointer r2.
+   TXFIRST=<slide> or TXPREF=<slide>:2 makes all three tone slide sections exact.  No natural
+   source variant tried gives the pointer a preference (P/Q traces: its only preference
+   candidates are r0 from first-operand temporaries, pruned by conflicts).
+   Noise channel: splitting `index` per envelope part fixes part of it; with the slide
+   pointer first, TXPREF=<noise pointer>:2 makes region D (08006776..08006D62) fully exact.
+
+3. Effect loop (080065C2..08006712)
+   events16 / stop / base copy get r2 / r4 / r3; the original has r4 / r3 / r2.  Using the
+   function-level val and a short stop flag fixes val (r4) and most rows; TXPREF=<events16>:4
+   leaves 7 register rows in B (tempo-counter addresses and two reload picks after the clear
+   loop).
+
+4. Combined (final source, pseudo numbers of that source):
+   TXFIRST=38 TXPREF=1919:2,130:4  ->  3828/3828 bytes, frame 108, 31 differing bytes, 19
+   register rows: the mix-buffer scale loop (buffer r2 / counter r1 against r1 / r2; the
+   original computes the buffer into a new register while gMixBuffer sits in r2), the
+   mix-buffer clear (zero constant hoisted before i = 175, pointer = (idx*176 + base) + 175),
+   and the tempo-counter address registers.

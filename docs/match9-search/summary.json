@@ -1,0 +1,278 @@
+{
+  "passes": [
+    {
+      "pass_name": "angle-audit",
+      "address": "08014614",
+      "exact": true,
+      "size": 88,
+      "already_installed_at_baseline": true,
+      "new_match": false,
+      "attempts": 1
+    },
+    {
+      "pass_name": "queue-coalescing",
+      "address": "08015DA8",
+      "planned_jobs": 4896,
+      "attempts": 4896,
+      "compile_errors": 288,
+      "seconds": 112.64,
+      "exact": false,
+      "score": [
+        14,
+        14
+      ],
+      "size": 118,
+      "compiler": "old"
+    },
+    {
+      "pass_name": "queue-control",
+      "address": "08015DA8",
+      "planned_jobs": 540,
+      "attempts": 540,
+      "compile_errors": 108,
+      "seconds": 6.02,
+      "exact": false,
+      "score": [
+        7,
+        7
+      ],
+      "size": 118,
+      "compiler": "old"
+    },
+    {
+      "pass_name": "queue-dead-parameters",
+      "address": "08015DA8",
+      "planned_jobs": 384,
+      "attempts": 384,
+      "compile_errors": 90,
+      "seconds": 3.6,
+      "exact": false,
+      "score": [
+        7,
+        7
+      ],
+      "size": 118,
+      "compiler": "old"
+    },
+    {
+      "pass_name": "queue-helpers",
+      "address": "08015DA8",
+      "planned_jobs": 1920,
+      "attempts": 1920,
+      "compile_errors": 0,
+      "seconds": 35.06,
+      "exact": false,
+      "score": [
+        11,
+        11
+      ],
+      "size": 118,
+      "compiler": "old"
+    },
+    {
+      "pass_name": "queue-lifetimes",
+      "address": "08015DA8",
+      "planned_jobs": 1400,
+      "attempts": 1400,
+      "compile_errors": 0,
+      "seconds": 26.59,
+      "exact": false,
+      "score": [
+        7,
+        7
+      ],
+      "size": 118,
+      "compiler": "old"
+    },
+    {
+      "pass_name": "queue-pointer-work",
+      "address": "08015DA8",
+      "planned_jobs": 576,
+      "attempts": 576,
+      "compile_errors": 0,
+      "seconds": 4.37,
+      "exact": false,
+      "score": [
+        11,
+        11
+      ],
+      "size": 118,
+      "compiler": "old"
+    },
+    {
+      "pass_name": "queue-setup-declarations-rejected",
+      "address": "08015DA8",
+      "planned_jobs": 1143,
+      "attempts": 1143,
+      "compile_errors": 1134,
+      "seconds": 9.03,
+      "exact": false,
+      "score": [
+        7,
+        7
+      ],
+      "size": 118,
+      "compiler": "old"
+    },
+    {
+      "pass_name": "queue-setup-reuse",
+      "address": "08015DA8",
+      "planned_jobs": 1143,
+      "attempts": 1143,
+      "compile_errors": 0,
+      "seconds": 8.91,
+      "exact": false,
+      "score": [
+        7,
+        7
+      ],
+      "size": 118,
+      "compiler": "old"
+    },
+    {
+      "pass_name": "queue-tails",
+      "address": "08015DA8",
+      "planned_jobs": 360,
+      "attempts": 360,
+      "compile_errors": 0,
+      "seconds": 13.27,
+      "exact": false,
+      "score": [
+        8,
+        8
+      ],
+      "size": 118,
+      "compiler": "old"
+    },
+    {
+      "pass_name": "queue-update-reuse",
+      "address": "08015DA8",
+      "attempts": 72,
+      "score": [
+        11,
+        11
+      ],
+      "exact": false
+    },
+    {
+      "pass_name": "queue-zero-branch",
+      "address": "08015DA8",
+      "attempts": 96,
+      "score": [
+        4,
+        9
+      ],
+      "exact": false
+    },
+    {
+      "pass_name": "queue-final-focused",
+      "address": "08015DA8",
+      "mode": "thumb",
+      "bytes": 118,
+      "instructions": 52,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 1,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 52,
+      "value": 4,
+      "priority": 0.076923,
+      "blocked_reason": null,
+      "comparison_bytes": 118,
+      "attempts": 1992,
+      "compile_errors": 253,
+      "seconds": 120.02,
+      "status": "time limit",
+      "exact": false,
+      "focus": "dest|work|count|source",
+      "seconds_limit": 120.0,
+      "learned_candidates": {
+        "saved-constant": 3582
+      },
+      "generations": 47,
+      "score": [
+        4,
+        9
+      ],
+      "compiler": "old",
+      "size": 118
+    },
+    {
+      "pass_name": "queue-focused",
+      "address": "08015DA8",
+      "mode": "thumb",
+      "bytes": 118,
+      "instructions": 52,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 1,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 52,
+      "value": 4,
+      "priority": 0.076923,
+      "blocked_reason": null,
+      "comparison_bytes": 118,
+      "attempts": 1126,
+      "compile_errors": 217,
+      "seconds": 120.02,
+      "status": "time limit",
+      "exact": false,
+      "focus": "work|dest|count|addend",
+      "seconds_limit": 120.0,
+      "learned_candidates": {
+        "saved-constant": 1170
+      },
+      "generations": 23,
+      "score": [
+        11,
+        11
+      ],
+      "compiler": "old",
+      "size": 118
+    },
+    {
+      "pass_name": "queue-refined",
+      "address": "08015DA8",
+      "mode": "thumb",
+      "bytes": 118,
+      "instructions": 52,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 1,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 52,
+      "value": 4,
+      "priority": 0.076923,
+      "blocked_reason": null,
+      "comparison_bytes": 118,
+      "attempts": 856,
+      "compile_errors": 24,
+      "seconds": 120.05,
+      "status": "time limit",
+      "exact": false,
+      "focus": "work|dest|count|addend",
+      "seconds_limit": 120.0,
+      "learned_candidates": {
+        "saved-constant": 839
+      },
+      "generations": 15,
+      "score": [
+        7,
+        7
+      ],
+      "compiler": "old",
+      "size": 118
+    }
+  ],
+  "consumed_trials": 16505,
+  "recorded_errors": 2114,
+  "new_matches": 0,
+  "already_matched_angle_checks": 1,
+  "missing_error_totals": [
+    "queue-update-reuse",
+    "queue-zero-branch"
+  ]
+}

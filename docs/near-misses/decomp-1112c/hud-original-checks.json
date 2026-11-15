@@ -1,0 +1,18 @@
+{
+  "candidate": "docs/near-misses/decomp-1112c/func_0800421C.c",
+  "source_sha256": "f8ecf21820e21c2d1d7069e1aa4a7f09707ea586f267abc9e6ee8ddb372e36ff",
+  "compiled_sha256": "28db65402b5529e06eae2b99b5fc88a4f108cf00299fb0ce792e76c10bf36301",
+  "cases": 192,
+  "passed": 192,
+  "state_changing_cases": 185,
+  "ordered_helper_calls_compared": 9194,
+  "original_instructions_executed": true,
+  "original_helpers_executed": true,
+  "helper_calls_mocked": false,
+  "compared": "IWRAM below stack region, helper arguments/order, callee-saved registers and stack restoration",
+  "engine": "Unicorn ARM/Thumb",
+  "private_rom_identity_verified": true,
+  "binary_artifacts_written": false,
+  "installation_authority": false,
+  "limitations": "Bounded synthetic states, original lookup data. No gameplay or arbitrary malformed-state proof; byte equality and whole-ROM gates still required."
+}

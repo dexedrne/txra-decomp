@@ -1,0 +1,26 @@
+[
+  {
+    "optimization": "-O1",
+    "emitted_bytes": 140,
+    "multiply_accumulates": 2,
+    "long_multiplies": 0,
+    "probe_only": true,
+    "original_function_match_claimed": false
+  },
+  {
+    "optimization": "-O2",
+    "emitted_bytes": 140,
+    "multiply_accumulates": 2,
+    "long_multiplies": 0,
+    "probe_only": true,
+    "original_function_match_claimed": false
+  },
+  {
+    "optimization": "-Os",
+    "emitted_bytes": 140,
+    "multiply_accumulates": 2,
+    "long_multiplies": 0,
+    "probe_only": true,
+    "original_function_match_claimed": false
+  }
+]

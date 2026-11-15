@@ -1,0 +1,298 @@
+Compiler: old-no-gcse
+Compiled output differs: target 352 bytes, compiled 342 bytes.
+First difference at +0x2 (0x08018BEA); exact prefix 2 bytes, exact suffix 6 bytes.
+Length differs by -10 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -1,50 +1,50 @@
+ 08018BE8: push {r4, r5, r6, r7, lr}
+-08018BEA: sub sp, #176
+-08018BEC: adds r5, r1, #0
+-08018BEE: lsls r0, r0, #16
+-08018BF0: lsrs r1, r0, #16
+-08018BF2: lsls r2, r2, #24
+-08018BF4: lsrs r7, r2, #24
+-08018BF6: ldr r0, [pc, #12] @ =0x08018C04
+-08018BF8: ldr r0, [r0, #0]
+-08018BFA: ldrh r0, [r0, #4]
+-08018BFC: cmp r1, r0
+-08018BFE: bcc 0x08018C0C
+-08018C00: ldr r0, [pc, #4] @ =0x08018C08
+-08018C02: b 0x08018D40
+-08018C04: .word 0x03007B50 (literal pool)
+-08018C08: .word 0x000080FF (literal pool)
+-08018C0C: ldr r0, [pc, #60] @ =0x08018C4C
+-08018C0E: ldr r0, [r0, #0]
+-08018C10: ldrb r0, [r0, #8]
+-08018C12: lsls r0, r0, #1
+-08018C14: mov r2, sp
+-08018C16: adds r3, r0, r2
+-08018C18: adds r3, #132
+-08018C1A: movs r0, #0
+-08018C1C: strh r0, [r3, #0]
+-08018C1E: subs r3, #2
+-08018C20: movs r4, #0
+-08018C22: ldrh r2, [r5, #0]
+-08018C24: adds r5, #2
+-08018C26: movs r0, #0
+-08018C28: strh r2, [r3, #0]
+-08018C2A: subs r3, #2
+-08018C2C: lsrs r2, r2, #1
+-08018C2E: adds r0, #1
+-08018C30: lsls r0, r0, #24
+-08018C32: lsrs r0, r0, #24
+-08018C34: cmp r0, #15
+-08018C36: bls 0x08018C28
+-08018C38: adds r0, r4, #1
+-08018C3A: lsls r0, r0, #24
+-08018C3C: lsrs r4, r0, #24
+-08018C3E: cmp r4, #3
+-08018C40: bls 0x08018C22
+-08018C42: movs r4, #0
+-08018C44: ldr r0, [pc, #4] @ =0x08018C4C
+-08018C46: adds r2, r0, #0
+-08018C48: ldr r0, [r0, #0]
+-08018C4A: b 0x08018C5E
++08018BEA: mov r7, r8
++08018BEC: push {r7}
++08018BEE: sub sp, #176
++08018BF0: adds r5, r1, #0
++08018BF2: lsls r0, r0, #16
++08018BF4: lsrs r1, r0, #16
++08018BF6: lsls r2, r2, #24
++08018BF8: lsrs r2, r2, #24
++08018BFA: mov r8, r2
++08018BFC: ldr r0, [pc, #12] @ =0x08018C0C
++08018BFE: ldr r0, [r0, #0]
++08018C00: ldrh r2, [r0, #4]
++08018C02: cmp r1, r2
++08018C04: bcc 0x08018C14
++08018C06: ldr r0, [pc, #8] @ =0x08018C10
++08018C08: b 0x08018D32
++08018C0A: movs r0, r0
++08018C0C: .word 0x03007B50 (literal pool)
++08018C10: .word 0x000080FF (literal pool)
++08018C14: ldrb r0, [r0, #8]
++08018C16: lsls r0, r0, #1
++08018C18: mov r2, sp
++08018C1A: adds r3, r0, r2
++08018C1C: adds r3, #132
++08018C1E: movs r0, #0
++08018C20: strh r0, [r3, #0]
++08018C22: subs r3, #2
++08018C24: movs r4, #0
++08018C26: ldrh r2, [r5, #0]
++08018C28: adds r5, #2
++08018C2A: movs r0, #0
++08018C2C: strh r2, [r3, #0]
++08018C2E: subs r3, #2
++08018C30: lsrs r2, r2, #1
++08018C32: adds r0, #1
++08018C34: lsls r0, r0, #24
++08018C36: lsrs r0, r0, #24
++08018C38: cmp r0, #15
++08018C3A: bls 0x08018C2C
++08018C3C: adds r0, r4, #1
++08018C3E: lsls r0, r0, #24
++08018C40: lsrs r4, r0, #24
++08018C42: cmp r4, #3
++08018C44: bls 0x08018C26
++08018C46: movs r4, #0
++08018C48: ldr r2, [pc, #0] @ =0x08018C4C
++08018C4A: b 0x08018C5C
+ 08018C4C: .word 0x03007B50 (literal pool)
+ 08018C50: strh r1, [r3, #0]
+@@ -61,9 +61,9 @@
+ 08018C66: strh r0, [r3, #0]
+ 08018C68: subs r3, #2
+-08018C6A: movs r6, #1
+-08018C6C: strh r6, [r3, #0]
++08018C6A: movs r0, #1
++08018C6C: strh r0, [r3, #0]
+ 08018C6E: movs r4, #208
+ 08018C70: lsls r4, r4, #20
+-08018C72: ldr r0, [pc, #92] @ =0x08018CD0
++08018C72: ldr r0, [pc, #100] @ =0x08018CD8
+ 08018C74: ldr r0, [r0, #0]
+ 08018C76: ldrb r2, [r0, #8]
+@@ -72,98 +72,93 @@
+ 08018C7C: adds r1, r4, #0
+ 08018C7E: bl 0x08018AA4
+-08018C82: movs r5, #0
++08018C82: movs r7, #0
+ 08018C84: add r2, sp, #164
+-08018C86: strh r5, [r2, #0]
++08018C86: strh r7, [r2, #0]
+ 08018C88: mov r1, sp
+ 08018C8A: adds r1, #166
+-08018C8C: ldr r0, [pc, #68] @ =0x08018CD4
++08018C8C: ldr r0, [pc, #76] @ =0x08018CDC
+ 08018C8E: ldrh r0, [r0, #0]
+ 08018C90: strh r0, [r1, #0]
+ 08018C92: add r0, sp, #172
+-08018C94: str r5, [r0, #0]
+-08018C96: ldrh r0, [r2, #0]
+-08018C98: cmp r0, #0
+-08018C9A: bne 0x08018CA4
+-08018C9C: ldrh r0, [r4, #0]
+-08018C9E: ands r0, r6
++08018C94: str r7, [r0, #0]
++08018C96: adds r5, r2, #0
++08018C98: movs r6, #1
++08018C9A: mov r12, r4
++08018C9C: adds r4, r0, #0
++08018C9E: ldrh r0, [r5, #0]
+ 08018CA0: cmp r0, #0
+-08018CA2: bne 0x08018D34
+-08018CA4: add r3, sp, #168
+-08018CA6: ldr r0, [pc, #44] @ =0x08018CD4
+-08018CA8: ldrh r0, [r0, #0]
+-08018CAA: strh r0, [r3, #0]
+-08018CAC: mov r4, sp
+-08018CAE: adds r4, #166
+-08018CB0: ldrh r1, [r3, #0]
+-08018CB2: ldrh r0, [r4, #0]
+-08018CB4: cmp r1, r0
+-08018CB6: beq 0x08018D1E
++08018CA2: bne 0x08018CAC
++08018CA4: ldrh r0, [r6, #0]
++08018CA6: movs r0, #0
++08018CA8: cmp r0, #0
++08018CAA: bne 0x08018D24
++08018CAC: add r3, sp, #168
++08018CAE: ldr r0, [pc, #44] @ =0x08018CDC
++08018CB0: ldrh r0, [r0, #0]
++08018CB2: strh r0, [r3, #0]
++08018CB4: mov r2, sp
++08018CB6: adds r2, #166
+ 08018CB8: ldrh r1, [r3, #0]
+-08018CBA: ldrh r0, [r4, #0]
++08018CBA: ldrh r0, [r2, #0]
+ 08018CBC: cmp r1, r0
+-08018CBE: bls 0x08018CD8
+-08018CC0: add r2, sp, #172
+-08018CC2: ldrh r1, [r3, #0]
+-08018CC4: ldrh r0, [r4, #0]
+-08018CC6: subs r1, r1, r0
+-08018CC8: ldr r0, [r2, #0]
+-08018CCA: adds r1, r1, r0
+-08018CCC: str r1, [r2, #0]
+-08018CCE: b 0x08018CEE
+-08018CD0: .word 0x03007B50 (literal pool)
+-08018CD4: .word 0x04000006 (literal pool)
+-08018CD8: add r2, sp, #172
+-08018CDA: add r0, sp, #168
+-08018CDC: ldrh r0, [r0, #0]
+-08018CDE: adds r0, #228
+-08018CE0: mov r1, sp
+-08018CE2: adds r1, #166
+-08018CE4: ldrh r1, [r1, #0]
++08018CBE: beq 0x08018D1A
++08018CC0: ldrh r1, [r3, #0]
++08018CC2: ldrh r0, [r2, #0]
++08018CC4: cmp r1, r0
++08018CC6: bls 0x08018CE0
++08018CC8: ldrh r1, [r3, #0]
++08018CCA: ldrh r0, [r2, #0]
++08018CCC: subs r1, r1, r0
++08018CCE: ldr r0, [r4, #0]
++08018CD0: adds r0, r0, r1
++08018CD2: str r0, [r4, #0]
++08018CD4: b 0x08018CEE
++08018CD6: movs r0, r0
++08018CD8: .word 0x03007B50 (literal pool)
++08018CDC: .word 0x04000006 (literal pool)
++08018CE0: ldrh r0, [r3, #0]
++08018CE2: ldrh r1, [r2, #0]
++08018CE4: subs r1, #228
+ 08018CE6: subs r0, r0, r1
+-08018CE8: ldr r1, [r2, #0]
+-08018CEA: adds r0, r0, r1
+-08018CEC: str r0, [r2, #0]
+-08018CEE: add r0, sp, #172
+-08018CF0: ldr r0, [r0, #0]
+-08018CF2: cmp r0, #136
+-08018CF4: bls 0x08018D14
+-08018CF6: add r0, sp, #164
+-08018CF8: ldrh r0, [r0, #0]
+-08018CFA: cmp r0, #0
+-08018CFC: bne 0x08018D3E
+-08018CFE: movs r0, #208
+-08018D00: lsls r0, r0, #20
+-08018D02: ldrh r0, [r0, #0]
+-08018D04: movs r1, #1
+-08018D06: ands r0, r1
+-08018D08: cmp r0, #0
+-08018D0A: bne 0x08018D3E
+-08018D0C: ldr r5, [pc, #0] @ =0x08018D10
+-08018D0E: b 0x08018D3E
+-08018D10: .word 0x0000C001 (literal pool)
+-08018D14: mov r0, sp
+-08018D16: adds r0, #166
+-08018D18: add r1, sp, #168
+-08018D1A: ldrh r1, [r1, #0]
+-08018D1C: strh r1, [r0, #0]
+-08018D1E: add r2, sp, #164
+-08018D20: ldrh r0, [r2, #0]
+-08018D22: cmp r0, #0
+-08018D24: bne 0x08018CA4
+-08018D26: movs r0, #208
+-08018D28: lsls r0, r0, #20
+-08018D2A: movs r1, #1
+-08018D2C: ldrh r0, [r0, #0]
+-08018D2E: ands r1, r0
+-08018D30: cmp r1, #0
+-08018D32: beq 0x08018CA4
+-08018D34: ldrh r0, [r2, #0]
+-08018D36: adds r0, #1
+-08018D38: strh r0, [r2, #0]
+-08018D3A: cmp r7, #0
+-08018D3C: bne 0x08018CA4
+-08018D3E: adds r0, r5, #0
+-08018D40: add sp, #176
+-08018D42: pop {r4, r5, r6, r7}
+-08018D44: pop {r1}
+-08018D46: bx r1
++08018CE8: ldr r1, [r4, #0]
++08018CEA: adds r1, r1, r0
++08018CEC: str r1, [r4, #0]
++08018CEE: ldr r0, [r4, #0]
++08018CF0: cmp r0, #136
++08018CF2: bls 0x08018D10
++08018CF4: ldrh r0, [r5, #0]
++08018CF6: cmp r0, #0
++08018CF8: bne 0x08018D30
++08018CFA: mov r0, r12
++08018CFC: ldrh r1, [r0, #0]
++08018CFE: adds r0, r6, #0
++08018D00: ands r0, r1
++08018D02: cmp r0, #0
++08018D04: bne 0x08018D30
++08018D06: ldr r7, [pc, #4] @ =0x08018D0C
++08018D08: b 0x08018D30
++08018D0A: movs r0, r0
++08018D0C: .word 0x0000C001 (literal pool)
++08018D10: mov r0, sp
++08018D12: adds r0, #166
++08018D14: add r1, sp, #168
++08018D16: ldrh r1, [r1, #0]
++08018D18: strh r1, [r0, #0]
++08018D1A: ldrh r0, [r5, #0]
++08018D1C: cmp r0, #0
++08018D1E: bne 0x08018CAC
++08018D20: ldrh r0, [r6, #0]
++08018D22: b 0x08018CAC
++08018D24: ldrh r0, [r5, #0]
++08018D26: adds r0, #1
++08018D28: strh r0, [r5, #0]
++08018D2A: mov r2, r8
++08018D2C: cmp r2, #0
++08018D2E: bne 0x08018C9E
++08018D30: adds r0, r7, #0
++08018D32: add sp, #176
++08018D34: pop {r3}
++08018D36: mov r8, r3
++08018D38: pop {r4, r5, r6, r7}
++08018D3A: pop {r1}
++08018D3C: bx r1
+Check register allocation, signed widths, statement order, constants and pool alignment.

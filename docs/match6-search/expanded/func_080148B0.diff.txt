@@ -1,0 +1,204 @@
+Compiler: old
+Instruction edit distance: 79
+Byte distance: 187
+Compiled output differs: target 214 bytes, compiled 228 bytes.
+First difference at +0x2 (0x080148B2); exact prefix 2 bytes, exact suffix 6 bytes.
+Length differs by +14 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -1,97 +1,102 @@
+ 080148B0: push {r4, r5, r6, r7, lr}
+-080148B2: mov r7, r8
+-080148B4: push {r7}
+-080148B6: mov r8, r0
+-080148B8: adds r7, r1, #0
+-080148BA: ldr r6, [pc, #12] @ =0x080148C8
+-080148BC: ldrb r0, [r6, #1]
+-080148BE: cmp r0, #0
++080148B2: adds r2, r0, #0
++080148B4: lsls r0, r2, #24
++080148B6: lsrs r7, r0, #24
++080148B8: adds r6, r1, #0
++080148BA: ldr r0, [pc, #12] @ =0x080148C8
++080148BC: ldrb r2, [r0, #0]
++080148BE: cmp r2, #0
+ 080148C0: beq 0x080148CC
+-080148C2: cmp r0, #1
++080148C2: cmp r2, #1
+ 080148C4: beq 0x08014932
+-080148C6: b 0x0801493E
+-080148C8: .word 0x03007A30 (literal pool)
+-080148CC: ldr r5, [pc, #140] @ =0x0801495C
+-080148CE: ldr r2, [r5, #0]
++080148C6: b 0x08014940
++080148C8: .word 0x03007A31 (literal pool)
++080148CC: ldr r0, [pc, #148] @ =0x08014964
++080148CE: ldr r3, [r0, #0]
+ 080148D0: movs r1, #48
+-080148D2: adds r0, r2, #0
+-080148D4: ands r0, r1
+-080148D6: cmp r0, #0
++080148D2: adds r2, r3, #0
++080148D4: ands r2, r1
++080148D6: cmp r2, #0
+ 080148D8: bne 0x0801492C
+-080148DA: movs r0, #136
+-080148DC: adds r4, r2, #0
+-080148DE: ands r4, r0
+-080148E0: cmp r4, #8
+-080148E2: bne 0x0801493E
+-080148E4: movs r0, #4
+-080148E6: ands r2, r0
+-080148E8: lsls r0, r2, #24
+-080148EA: lsrs r2, r0, #24
+-080148EC: cmp r2, #0
+-080148EE: bne 0x0801492C
+-080148F0: ldr r1, [r6, #20]
+-080148F2: movs r0, #1
+-080148F4: negs r0, r0
+-080148F6: cmp r1, r0
+-080148F8: bne 0x0801492C
+-080148FA: ldr r3, [pc, #100] @ =0x08014960
+-080148FC: strh r2, [r3, #0]
+-080148FE: ldr r2, [pc, #100] @ =0x08014964
+-08014900: ldrh r1, [r2, #0]
+-08014902: ldr r0, [pc, #100] @ =0x08014968
+-08014904: ands r0, r1
+-08014906: strh r0, [r2, #0]
+-08014908: ldrh r0, [r2, #0]
+-0801490A: movs r1, #64
+-0801490C: orrs r0, r1
+-0801490E: strh r0, [r2, #0]
+-08014910: movs r0, #1
+-08014912: strh r0, [r3, #0]
+-08014914: ldrb r1, [r5, #1]
+-08014916: movs r0, #65
+-08014918: negs r0, r0
+-0801491A: ands r0, r1
+-0801491C: strb r0, [r5, #1]
+-0801491E: ldr r1, [pc, #76] @ =0x0801496C
+-08014920: movs r0, #192
+-08014922: strh r0, [r1, #0]
+-08014924: subs r1, #246
+-08014926: ldr r0, [pc, #72] @ =0x08014970
+-08014928: str r0, [r1, #0]
+-0801492A: strb r4, [r6, #0]
+-0801492C: ldr r1, [pc, #68] @ =0x08014974
+-0801492E: movs r0, #1
+-08014930: strb r0, [r1, #1]
+-08014932: adds r0, r7, #0
+-08014934: bl 0x080149FC
+-08014938: mov r0, r8
+-0801493A: bl 0x08014988
+-0801493E: ldr r0, [pc, #52] @ =0x08014974
+-08014940: ldrb r1, [r0, #11]
+-08014942: adds r1, #1
+-08014944: strb r1, [r0, #11]
+-08014946: ldrb r2, [r0, #3]
+-08014948: ldrb r3, [r0, #2]
+-0801494A: lsls r1, r3, #8
+-0801494C: ldrb r0, [r0, #0]
+-0801494E: cmp r0, #8
+-08014950: bne 0x08014978
+-08014952: movs r0, #128
+-08014954: orrs r0, r1
+-08014956: orrs r0, r2
+-08014958: b 0x0801497C
+-0801495A: movs r0, r0
+-0801495C: .word 0x04000128 (literal pool)
+-08014960: .word 0x04000208 (literal pool)
+-08014964: .word 0x04000200 (literal pool)
+-08014968: .word 0x0000FF7F (literal pool)
+-0801496C: .word 0x04000202 (literal pool)
+-08014970: .word 0x0000B1FC (literal pool)
+-08014974: .word 0x03007A30 (literal pool)
+-08014978: adds r0, r2, #0
+-0801497A: orrs r0, r1
+-0801497C: pop {r3}
+-0801497E: mov r8, r3
+-08014980: pop {r4, r5, r6, r7}
+-08014982: pop {r1}
+-08014984: bx r1
++080148DA: movs r4, #136
++080148DC: ands r4, r3
++080148DE: cmp r4, #8
++080148E0: bne 0x08014940
++080148E2: movs r2, #4
++080148E4: ands r3, r2
++080148E6: lsls r2, r3, #24
++080148E8: lsrs r3, r2, #24
++080148EA: cmp r3, #0
++080148EC: bne 0x0801492C
++080148EE: ldr r1, [r1, #20]
++080148F0: movs r2, #1
++080148F2: negs r2, r2
++080148F4: cmp r1, r2
++080148F6: bne 0x0801492C
++080148F8: ldr r5, [pc, #108] @ =0x08014968
++080148FA: strh r3, [r5, #0]
++080148FC: ldr r3, [pc, #108] @ =0x0801496C
++080148FE: ldrh r0, [r3, #0]
++08014900: ldr r2, [pc, #108] @ =0x08014970
++08014902: ands r2, r0
++08014904: strh r2, [r3, #0]
++08014906: ldrh r0, [r3, #0]
++08014908: movs r1, #64
++0801490A: orrs r1, r0
++0801490C: strh r1, [r3, #0]
++0801490E: movs r2, #1
++08014910: strh r2, [r5, #0]
++08014912: ldr r1, [pc, #96] @ =0x08014974
++08014914: ldrb r0, [r1, #0]
++08014916: subs r2, #66
++08014918: ands r2, r0
++0801491A: strb r2, [r1, #0]
++0801491C: adds r1, #217
++0801491E: movs r2, #192
++08014920: strh r2, [r1, #0]
++08014922: subs r1, #246
++08014924: ldr r2, [pc, #80] @ =0x08014978
++08014926: str r2, [r1, #0]
++08014928: movs r0, #48
++0801492A: strb r4, [r0, #0]
++0801492C: movs r2, #1
++0801492E: ldr r0, [pc, #76] @ =0x0801497C
++08014930: strb r2, [r0, #0]
++08014932: adds r2, r6, #0
++08014934: adds r0, r2, #0
++08014936: bl 0x080149FC
++0801493A: adds r0, r7, #0
++0801493C: bl 0x08014988
++08014940: ldr r0, [pc, #60] @ =0x08014980
++08014942: ldrb r1, [r0, #0]
++08014944: adds r1, #1
++08014946: strb r1, [r0, #0]
++08014948: subs r0, #8
++0801494A: ldrb r3, [r0, #0]
++0801494C: subs r0, #1
++0801494E: ldrb r0, [r0, #0]
++08014950: lsls r1, r0, #8
++08014952: ldr r0, [pc, #48] @ =0x08014984
++08014954: ldrb r0, [r0, #0]
++08014956: cmp r0, #8
++08014958: bne 0x08014988
++0801495A: movs r2, #128
++0801495C: orrs r2, r1
++0801495E: orrs r2, r3
++08014960: b 0x0801498C
++08014962: movs r0, r0
++08014964: .word 0x04000128 (literal pool)
++08014968: .word 0x04000208 (literal pool)
++0801496C: .word 0x04000200 (literal pool)
++08014970: .word 0x0000FF7F (literal pool)
++08014974: .word 0x04000129 (literal pool)
++08014978: .word 0x0000B1FC (literal pool)
++0801497C: .word 0x03007A31 (literal pool)
++08014980: .word 0x03007A3B (literal pool)
++08014984: .word 0x03007A30 (literal pool)
++08014988: adds r2, r3, #0
++0801498A: orrs r2, r1
++0801498C: adds r0, r2, #0
++0801498E: pop {r4, r5, r6, r7}
++08014990: pop {r1}
++08014992: bx r1
+Check register allocation, signed widths, statement order, constants and pool alignment.

@@ -1,0 +1,12 @@
+typedef unsigned char u8;
+typedef unsigned short u16;
+typedef unsigned int u32;
+typedef signed char s8;
+typedef signed short s16;
+typedef signed int s32;
+extern u32 gTempoCounter;
+extern u32 gTempo;
+extern s32 gSoundPaused;
+typedef struct { s32 enabled, output, command, cursor, delay; u32 *commands; } V;
+extern V gV[8];
+extern u32 gA, gB;

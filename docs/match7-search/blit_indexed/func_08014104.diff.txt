@@ -1,0 +1,53 @@
+Compiled output differs: target 134 bytes, compiled 134 bytes.
+First difference at +0x10 (0x08014114); exact prefix 16 bytes, exact suffix 15 bytes.
+--- target
++++ compiled
+@@ -7,21 +7,21 @@
+ 08014110: movs r7, #120
+ 08014112: movs r0, #48
+-08014114: mov r8, r0
++08014114: mov r9, r0
+ 08014116: ldr r1, [pc, #76] @ =0x08014164
+-08014118: mov r9, r1
++08014118: mov r8, r1
+ 0801411A: ldr r3, [pc, #76] @ =0x08014168
+ 0801411C: mov r12, r3
+ 0801411E: movs r1, #0
+ 08014120: adds r6, r1, #1
+-08014122: cmp r7, #0
+-08014124: beq 0x08014178
+-08014126: lsls r0, r1, #4
+-08014128: subs r0, r0, r1
+-0801412A: lsls r0, r0, #4
+-0801412C: mov r1, r9
+-0801412E: adds r2, r1, r0
+-08014130: mov r3, r12
+-08014132: adds r4, r3, r0
+-08014134: adds r5, r7, #0
++08014122: lsls r0, r1, #4
++08014124: subs r0, r0, r1
++08014126: lsls r0, r0, #4
++08014128: mov r1, r8
++0801412A: adds r2, r1, r0
++0801412C: mov r3, r12
++0801412E: adds r4, r3, r0
++08014130: movs r5, #0
++08014132: cmp r5, r7
++08014134: bcs 0x08014178
+ 08014136: ldrh r1, [r4, #0]
+ 08014138: cmp r1, #0
+@@ -51,9 +51,9 @@
+ 0801416E: adds r2, #2
+ 08014170: adds r4, #2
+-08014172: subs r5, #1
+-08014174: cmp r5, #0
+-08014176: bne 0x08014136
++08014172: adds r5, #1
++08014174: cmp r5, r7
++08014176: bcc 0x08014136
+ 08014178: adds r1, r6, #0
+-0801417A: cmp r1, r8
++0801417A: cmp r1, r9
+ 0801417C: blt 0x08014120
+ 0801417E: pop {r3, r4}
+Check register allocation, signed widths, statement order, constants and pool alignment.

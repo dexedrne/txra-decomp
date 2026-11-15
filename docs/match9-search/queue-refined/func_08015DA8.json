@@ -1,0 +1,33 @@
+{
+  "address": "08015DA8",
+  "mode": "thumb",
+  "bytes": 118,
+  "instructions": 52,
+  "call_count": null,
+  "observed_entry": true,
+  "static_callers": 1,
+  "matched_callees": 0,
+  "unmatched_callees": 0,
+  "difficulty": 52,
+  "value": 4,
+  "priority": 0.076923,
+  "blocked_reason": null,
+  "comparison_bytes": 118,
+  "attempts": 856,
+  "compile_errors": 24,
+  "seconds": 120.05,
+  "status": "time limit",
+  "exact": false,
+  "focus": "work|dest|count|addend",
+  "seconds_limit": 120.0,
+  "learned_candidates": {
+    "saved-constant": 839
+  },
+  "generations": 15,
+  "score": [
+    7,
+    7
+  ],
+  "compiler": "old",
+  "size": 118
+}

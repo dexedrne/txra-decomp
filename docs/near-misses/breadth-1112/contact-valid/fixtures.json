@@ -1,0 +1,14 @@
+{
+  "cases": 768,
+  "passed": 768,
+  "state_changing_cases": 672,
+  "rejected_narrowing_control_cases": 428,
+  "candidate": "docs/near-misses/breadth-1112/contact-valid/func_080181C0.c",
+  "candidate_sha256": "d28bcb9e3f30038b7ba7c40e96e6bd17b9308705bddb7f5ce5129cc7825a1105",
+  "baseline": "docs/near-misses/hand-20261104b/func_080181C0.c",
+  "baseline_sha256": "4e4b2930b59804060de718cbaa4b0988fb78dbe695fce7ee11cf2f144aff3b6e",
+  "harness_sha256": "aeb209b0ddf40d3f6e5281a7c642efe526693459ecca2e33542af9989a3bf743",
+  "original_instructions_executed": false,
+  "installation_authority": false,
+  "limitations": "Prior-C equivalence on synthetic bounded state only; not a proof of original semantics or arbitrary malformed inputs."
+}

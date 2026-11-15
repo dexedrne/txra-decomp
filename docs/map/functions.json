@@ -1,0 +1,5121 @@
+{
+  "complete": false,
+  "caveat": "Static candidate inventory. Computed transfers and leaf entries can remain unresolved. Ends are reachable extents, not linker symbol sizes.",
+  "functions": [
+    {
+      "start": "0x08000000",
+      "end": "0x08000004",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "explicit entry/runtime seed",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08000000",
+          "0x08000004"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080000C0",
+      "end": "0x080000F4",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "explicit entry/runtime seed",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080000C0",
+          "0x080000F4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080000FC",
+      "end": "0x080001F4",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "explicit entry/runtime seed",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080000FC",
+          "0x080001F4"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03004DE0",
+          "copy_load": "0x080000FC"
+        }
+      ]
+    },
+    {
+      "start": "0x080001F4",
+      "end": "0x08000218",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "executed IRQ epilogue; reviewed runtime coverage",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080001F4",
+          "0x08000218"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03004ED8",
+          "copy_load": "0x080000FC"
+        }
+      ]
+    },
+    {
+      "start": "0x08000218",
+      "end": "0x0800027C",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "explicit entry/runtime seed",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08000218",
+          "0x0800027C"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03004EFC",
+          "copy_load": "0x080000FC"
+        }
+      ]
+    },
+    {
+      "start": "0x0800027C",
+      "end": "0x080002C0",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "explicit entry/runtime seed",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800027C",
+          "0x080002C0"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03004F60",
+          "copy_load": "0x080000FC"
+        }
+      ]
+    },
+    {
+      "start": "0x080002CC",
+      "end": "0x08000324",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "explicit entry/runtime seed",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080002CC",
+          "0x08000324"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03004FB0",
+          "copy_load": "0x080000FC"
+        },
+        {
+          "start": "0x03001B30",
+          "copy_load": "0x080002CC"
+        }
+      ]
+    },
+    {
+      "start": "0x08000324",
+      "end": "0x080005CC",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08000324",
+          "0x080005CC"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03005008",
+          "copy_load": "0x080000FC"
+        },
+        {
+          "start": "0x03001B88",
+          "copy_load": "0x080002CC"
+        }
+      ]
+    },
+    {
+      "start": "0x080005D8",
+      "end": "0x08000AA0",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "DMA-copied IWRAM routine",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080005D8",
+          "0x08000AA0"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x030052BC",
+          "copy_load": "0x080000FC"
+        },
+        {
+          "start": "0x03004790",
+          "copy_load": "0x080005D8"
+        }
+      ]
+    },
+    {
+      "start": "0x08000AA0",
+      "end": "0x08000BE0",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08000AA0",
+          "0x08000BE0"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03004C58",
+          "copy_load": "0x080005D8"
+        }
+      ]
+    },
+    {
+      "start": "0x08000BF0",
+      "end": "0x080010B8",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "DMA-copied IWRAM routine",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08000BF0",
+          "0x080010B8"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x030014D0",
+          "copy_load": "0x08000BF0"
+        }
+      ]
+    },
+    {
+      "start": "0x080010B8",
+      "end": "0x08001208",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080010B8",
+          "0x08001208"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03001998",
+          "copy_load": "0x08000BF0"
+        }
+      ]
+    },
+    {
+      "start": "0x08001218",
+      "end": "0x080016E0",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "DMA-copied IWRAM routine",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08001218",
+          "0x080016E0"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03002E60",
+          "copy_load": "0x08001218"
+        }
+      ]
+    },
+    {
+      "start": "0x080016E0",
+      "end": "0x080018A4",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080016E0",
+          "0x080018A4"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03003328",
+          "copy_load": "0x08001218"
+        }
+      ]
+    },
+    {
+      "start": "0x080020B8",
+      "end": "0x0800237C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "explicit entry/runtime seed",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080020B8",
+          "0x08002254"
+        ],
+        [
+          "0x080022DC",
+          "0x08002342"
+        ],
+        [
+          "0x0800234C",
+          "0x0800237C"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800237C",
+      "end": "0x080024FE",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800237C",
+          "0x080024FE"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08002500",
+      "end": "0x08002770",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08002500",
+          "0x08002586"
+        ],
+        [
+          "0x080025A0",
+          "0x080025BC"
+        ],
+        [
+          "0x0800273C",
+          "0x08002740"
+        ],
+        [
+          "0x08002744",
+          "0x08002748"
+        ],
+        [
+          "0x0800274C",
+          "0x08002770"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08002778",
+      "end": "0x08002846",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08002778",
+          "0x080027C4"
+        ],
+        [
+          "0x080027D8",
+          "0x08002846"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08002854",
+      "end": "0x08003786",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08002854",
+          "0x080028BC"
+        ],
+        [
+          "0x080028CC",
+          "0x080029A6"
+        ],
+        [
+          "0x080029BC",
+          "0x08002C14"
+        ],
+        [
+          "0x08002C24",
+          "0x08002EA4"
+        ],
+        [
+          "0x08002EB8",
+          "0x08002F62"
+        ],
+        [
+          "0x08002F70",
+          "0x08002FBA"
+        ],
+        [
+          "0x08002FC0",
+          "0x080033CE"
+        ],
+        [
+          "0x080033F0",
+          "0x080036E6"
+        ],
+        [
+          "0x080036FC",
+          "0x08003786"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08003786",
+      "end": "0x0800417E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08003786",
+          "0x08003A3E"
+        ],
+        [
+          "0x08003A50",
+          "0x08003B48"
+        ],
+        [
+          "0x08003B54",
+          "0x08003F5E"
+        ],
+        [
+          "0x08003F78",
+          "0x0800417E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800418C",
+      "end": "0x08004204",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800418C",
+          "0x080041A2"
+        ],
+        [
+          "0x080041A8",
+          "0x08004204"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800421C",
+      "end": "0x0800520E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800421C",
+          "0x0800426C"
+        ],
+        [
+          "0x08004274",
+          "0x08004438"
+        ],
+        [
+          "0x08004474",
+          "0x08004810"
+        ],
+        [
+          "0x08004880",
+          "0x08004A22"
+        ],
+        [
+          "0x08004A4C",
+          "0x08004B62"
+        ],
+        [
+          "0x08004B94",
+          "0x08004F58"
+        ],
+        [
+          "0x08004F88",
+          "0x0800507C"
+        ],
+        [
+          "0x080050A4",
+          "0x0800520E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005238",
+      "end": "0x08005C4C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005238",
+          "0x08005304"
+        ],
+        [
+          "0x08005328",
+          "0x080055E0"
+        ],
+        [
+          "0x080055EC",
+          "0x080058B4"
+        ],
+        [
+          "0x080058B8",
+          "0x08005B32"
+        ],
+        [
+          "0x08005B6C",
+          "0x08005C4C"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005C7C",
+      "end": "0x08005CE4",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005C7C",
+          "0x08005CE4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005CF4",
+      "end": "0x08005D82",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005CF4",
+          "0x08005D82"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005D9C",
+      "end": "0x08005DCE",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005D9C",
+          "0x08005DCE"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005DD4",
+      "end": "0x08005E08",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005DD4",
+          "0x08005E08"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005E14",
+      "end": "0x08005E22",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005E14",
+          "0x08005E22"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005E28",
+      "end": "0x08005E84",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005E28",
+          "0x08005E3A"
+        ],
+        [
+          "0x08005E40",
+          "0x08005E84"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005E84",
+      "end": "0x08005EE0",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005E84",
+          "0x08005E96"
+        ],
+        [
+          "0x08005E9C",
+          "0x08005EE0"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005EE0",
+      "end": "0x08005EF4",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005EE0",
+          "0x08005EF4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005EF8",
+      "end": "0x08005F06",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005EF8",
+          "0x08005F06"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005F0C",
+      "end": "0x08005F1A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005F0C",
+          "0x08005F1A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005F20",
+      "end": "0x08005F2E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005F20",
+          "0x08005F2E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005F34",
+      "end": "0x08005F42",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005F34",
+          "0x08005F42"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005F48",
+      "end": "0x08005F80",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005F48",
+          "0x08005F80"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08005F8C",
+      "end": "0x08006052",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08005F8C",
+          "0x08006052"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08006070",
+      "end": "0x08006144",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08006070",
+          "0x08006144"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800619C",
+      "end": "0x0800622A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800619C",
+          "0x0800622A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08006270",
+      "end": "0x080063CC",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "DMA-copied IWRAM routine",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08006270",
+          "0x080062A2"
+        ],
+        [
+          "0x080062B0",
+          "0x080062DA"
+        ],
+        [
+          "0x080062E4",
+          "0x08006350"
+        ],
+        [
+          "0x0800636C",
+          "0x08006396"
+        ],
+        [
+          "0x0800639C",
+          "0x080063CC"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x030068A0",
+          "copy_load": "0x08006270"
+        }
+      ]
+    },
+    {
+      "start": "0x080063D4",
+      "end": "0x08006472",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080063D4",
+          "0x08006472"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03006A04",
+          "copy_load": "0x08006270"
+        }
+      ]
+    },
+    {
+      "start": "0x080064A4",
+      "end": "0x08007378",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080064A4",
+          "0x08006572"
+        ],
+        [
+          "0x08006598",
+          "0x08006628"
+        ],
+        [
+          "0x08006640",
+          "0x08006A0E"
+        ],
+        [
+          "0x08006A54",
+          "0x08006CBA"
+        ],
+        [
+          "0x08006CE8",
+          "0x08006D30"
+        ],
+        [
+          "0x08006D38",
+          "0x08006D96"
+        ],
+        [
+          "0x08006DA4",
+          "0x08006F06"
+        ],
+        [
+          "0x08006F3C",
+          "0x08007072"
+        ],
+        [
+          "0x08007090",
+          "0x08007150"
+        ],
+        [
+          "0x08007160",
+          "0x0800723A"
+        ],
+        [
+          "0x08007254",
+          "0x08007378"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08007398",
+      "end": "0x080074AE",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08007398",
+          "0x080074AE"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08007510",
+      "end": "0x08007534",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08007510",
+          "0x08007534"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800753C",
+      "end": "0x0800754A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Starts the sound fade request and clears its phase tick.",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800753C",
+          "0x0800754A"
+        ]
+      ],
+      "runtime_aliases": [],
+      "suggested_name": "begin_sound_fade",
+      "execution_verified": false
+    },
+    {
+      "start": "0x08007554",
+      "end": "0x080075C8",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08007554",
+          "0x080075C8"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080075DC",
+      "end": "0x08007602",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Restores saved sound words on request, then clears the adjacent state pair.",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080075DC",
+          "0x08007602"
+        ]
+      ],
+      "runtime_aliases": [],
+      "suggested_name": "restore_sound_state_and_clear_pair",
+      "execution_verified": false
+    },
+    {
+      "start": "0x0800761C",
+      "end": "0x08007674",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800761C",
+          "0x08007674"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08007698",
+      "end": "0x080076E4",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08007698",
+          "0x080076E4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080076F4",
+      "end": "0x08007B28",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "DMA-copied IWRAM routine",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080076F4",
+          "0x08007AD0"
+        ],
+        [
+          "0x08007AE4",
+          "0x08007B18"
+        ],
+        [
+          "0x08007B20",
+          "0x08007B28"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03006AA0",
+          "copy_load": "0x080076F4"
+        }
+      ]
+    },
+    {
+      "start": "0x08007B28",
+      "end": "0x0800841C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08007B28",
+          "0x08007C50"
+        ],
+        [
+          "0x08007CC8",
+          "0x08007CDA"
+        ],
+        [
+          "0x08007CF0",
+          "0x08007D02"
+        ],
+        [
+          "0x08007D18",
+          "0x08007D2A"
+        ],
+        [
+          "0x08007D40",
+          "0x08007D52"
+        ],
+        [
+          "0x08007D68",
+          "0x08007D74"
+        ],
+        [
+          "0x08007D84",
+          "0x08008156"
+        ],
+        [
+          "0x080081E4",
+          "0x080082B6"
+        ],
+        [
+          "0x08008304",
+          "0x080083E6"
+        ],
+        [
+          "0x0800840C",
+          "0x0800841C"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03006ED4",
+          "copy_load": "0x080076F4"
+        }
+      ]
+    },
+    {
+      "start": "0x0800841C",
+      "end": "0x080085CA",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800841C",
+          "0x080085CA"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080085E0",
+      "end": "0x08008676",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080085E0",
+          "0x08008676"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080086C0",
+      "end": "0x0800877A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080086C0",
+          "0x0800877A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08008780",
+      "end": "0x08008832",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08008780",
+          "0x08008832"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08008838",
+      "end": "0x08008910",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08008838",
+          "0x08008910"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08008914",
+      "end": "0x08008A86",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08008914",
+          "0x08008A86"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08008A88",
+      "end": "0x080095D2",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08008A88",
+          "0x08008ABA"
+        ],
+        [
+          "0x08008AF8",
+          "0x08008B30"
+        ],
+        [
+          "0x08008B3C",
+          "0x08008B60"
+        ],
+        [
+          "0x08008B6C",
+          "0x08008B78"
+        ],
+        [
+          "0x08008B7C",
+          "0x08008BB6"
+        ],
+        [
+          "0x08008BC8",
+          "0x08008BD6"
+        ],
+        [
+          "0x08008BDC",
+          "0x08008BF8"
+        ],
+        [
+          "0x08008C00",
+          "0x08008C3A"
+        ],
+        [
+          "0x08008C4C",
+          "0x08008CAE"
+        ],
+        [
+          "0x08008CE8",
+          "0x08008D26"
+        ],
+        [
+          "0x08008D38",
+          "0x08008DBC"
+        ],
+        [
+          "0x08008DD0",
+          "0x08008E0E"
+        ],
+        [
+          "0x08008E20",
+          "0x08008E30"
+        ],
+        [
+          "0x08008E34",
+          "0x08008E50"
+        ],
+        [
+          "0x08008E58",
+          "0x08008E98"
+        ],
+        [
+          "0x08008EAC",
+          "0x08008EBC"
+        ],
+        [
+          "0x08008EC0",
+          "0x08008EEE"
+        ],
+        [
+          "0x08008EF8",
+          "0x08008F56"
+        ],
+        [
+          "0x08008F9C",
+          "0x0800906C"
+        ],
+        [
+          "0x08009090",
+          "0x08009120"
+        ],
+        [
+          "0x08009144",
+          "0x08009180"
+        ],
+        [
+          "0x080091A0",
+          "0x080091DE"
+        ],
+        [
+          "0x08009200",
+          "0x08009208"
+        ],
+        [
+          "0x0800920C",
+          "0x08009256"
+        ],
+        [
+          "0x08009270",
+          "0x080092CE"
+        ],
+        [
+          "0x080092F0",
+          "0x0800930A"
+        ],
+        [
+          "0x0800931C",
+          "0x080093A2"
+        ],
+        [
+          "0x080093C4",
+          "0x080093E4"
+        ],
+        [
+          "0x080093F4",
+          "0x0800941E"
+        ],
+        [
+          "0x08009430",
+          "0x080094B4"
+        ],
+        [
+          "0x080094D4",
+          "0x08009588"
+        ],
+        [
+          "0x080095AC",
+          "0x080095D2"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080095E4",
+      "end": "0x080098DA",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080095E4",
+          "0x08009622"
+        ],
+        [
+          "0x08009654",
+          "0x08009664"
+        ],
+        [
+          "0x0800966C",
+          "0x08009692"
+        ],
+        [
+          "0x080096A4",
+          "0x080096C8"
+        ],
+        [
+          "0x080096D8",
+          "0x080096E4"
+        ],
+        [
+          "0x080096E8",
+          "0x0800970C"
+        ],
+        [
+          "0x0800971C",
+          "0x08009742"
+        ],
+        [
+          "0x08009754",
+          "0x08009898"
+        ],
+        [
+          "0x080098B8",
+          "0x080098DA"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080098DC",
+      "end": "0x08009D1A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080098DC",
+          "0x08009910"
+        ],
+        [
+          "0x08009918",
+          "0x08009934"
+        ],
+        [
+          "0x08009940",
+          "0x08009946"
+        ],
+        [
+          "0x0800994C",
+          "0x0800996A"
+        ],
+        [
+          "0x0800997C",
+          "0x08009996"
+        ],
+        [
+          "0x080099A0",
+          "0x080099B4"
+        ],
+        [
+          "0x080099BC",
+          "0x080099DA"
+        ],
+        [
+          "0x080099E0",
+          "0x08009A16"
+        ],
+        [
+          "0x08009A28",
+          "0x08009BE2"
+        ],
+        [
+          "0x08009C1C",
+          "0x08009D1A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08009D38",
+      "end": "0x08009D84",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08009D38",
+          "0x08009D84"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08009D94",
+      "end": "0x08009F84",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08009D94",
+          "0x08009DDC"
+        ],
+        [
+          "0x08009DF0",
+          "0x08009F4E"
+        ],
+        [
+          "0x08009F60",
+          "0x08009F84"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08009F84",
+      "end": "0x0800A008",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08009F84",
+          "0x08009FDA"
+        ],
+        [
+          "0x08009FFC",
+          "0x0800A008"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800A00C",
+      "end": "0x0800A15E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800A00C",
+          "0x0800A15E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800A17C",
+      "end": "0x0800A580",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800A17C",
+          "0x0800A244"
+        ],
+        [
+          "0x0800A264",
+          "0x0800A2F2"
+        ],
+        [
+          "0x0800A30C",
+          "0x0800A580"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800A5C4",
+      "end": "0x0800A61C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800A5C4",
+          "0x0800A61C"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800A62C",
+      "end": "0x0800A682",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800A62C",
+          "0x0800A682"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800A68C",
+      "end": "0x0800A870",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800A68C",
+          "0x0800A750"
+        ],
+        [
+          "0x0800A79C",
+          "0x0800A870"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800A8A0",
+      "end": "0x0800A93A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800A8A0",
+          "0x0800A93A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800A940",
+      "end": "0x0800AC2C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800A940",
+          "0x0800AC2C"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800AC3C",
+      "end": "0x0800AF40",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800AC3C",
+          "0x0800AF40"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800AF4C",
+      "end": "0x0800B248",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800AF4C",
+          "0x0800AF62"
+        ],
+        [
+          "0x0800AF88",
+          "0x0800B072"
+        ],
+        [
+          "0x0800B080",
+          "0x0800B11C"
+        ],
+        [
+          "0x0800B130",
+          "0x0800B248"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800B254",
+      "end": "0x0800B386",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800B254",
+          "0x0800B386"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800B3A0",
+      "end": "0x0800B4D6",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800B3A0",
+          "0x0800B482"
+        ],
+        [
+          "0x0800B4A4",
+          "0x0800B4D6"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800B4D8",
+      "end": "0x0800B908",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800B4D8",
+          "0x0800B6BE"
+        ],
+        [
+          "0x0800B764",
+          "0x0800B8C4"
+        ],
+        [
+          "0x0800B8F8",
+          "0x0800B908"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800B908",
+      "end": "0x0800BBD4",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800B908",
+          "0x0800BB80"
+        ],
+        [
+          "0x0800BBB8",
+          "0x0800BBD4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800BBD4",
+      "end": "0x0800BD90",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800BBD4",
+          "0x0800BC1E"
+        ],
+        [
+          "0x0800BC30",
+          "0x0800BD90"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800BDC0",
+      "end": "0x0800C3C4",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800BDC0",
+          "0x0800BE30"
+        ],
+        [
+          "0x0800BE40",
+          "0x0800BE56"
+        ],
+        [
+          "0x0800BE5C",
+          "0x0800BF20"
+        ],
+        [
+          "0x0800BF44",
+          "0x0800BF6A"
+        ],
+        [
+          "0x0800BF74",
+          "0x0800BF84"
+        ],
+        [
+          "0x0800BF88",
+          "0x0800BF9E"
+        ],
+        [
+          "0x0800BFA8",
+          "0x0800C170"
+        ],
+        [
+          "0x0800C188",
+          "0x0800C1C4"
+        ],
+        [
+          "0x0800C1C8",
+          "0x0800C25E"
+        ],
+        [
+          "0x0800C268",
+          "0x0800C282"
+        ],
+        [
+          "0x0800C288",
+          "0x0800C304"
+        ],
+        [
+          "0x0800C308",
+          "0x0800C38C"
+        ],
+        [
+          "0x0800C3AC",
+          "0x0800C3C4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800C3C4",
+      "end": "0x0800C830",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800C3C4",
+          "0x0800C71E"
+        ],
+        [
+          "0x0800C75C",
+          "0x0800C830"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800C850",
+      "end": "0x0800C9B0",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800C850",
+          "0x0800C938"
+        ],
+        [
+          "0x0800C964",
+          "0x0800C9B0"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800C9C4",
+      "end": "0x0800CB1C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800C9C4",
+          "0x0800CB1C"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800CB5C",
+      "end": "0x0800CEEC",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800CB5C",
+          "0x0800CC82"
+        ],
+        [
+          "0x0800CC9C",
+          "0x0800CE9E"
+        ],
+        [
+          "0x0800CEC0",
+          "0x0800CEEC"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800CEEC",
+      "end": "0x0800D158",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800CEEC",
+          "0x0800D158"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D188",
+      "end": "0x0800D196",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "explicit entry/runtime seed",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D188",
+          "0x0800D196"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D1A0",
+      "end": "0x0800D1B4",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D1A0",
+          "0x0800D1B4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D1B8",
+      "end": "0x0800D212",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D1B8",
+          "0x0800D1EA"
+        ],
+        [
+          "0x0800D1F8",
+          "0x0800D212"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D214",
+      "end": "0x0800D26E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D214",
+          "0x0800D26E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D290",
+      "end": "0x0800D2EA",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D290",
+          "0x0800D2EA"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D2F4",
+      "end": "0x0800D378",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D2F4",
+          "0x0800D378"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D37C",
+      "end": "0x0800D3B4",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D37C",
+          "0x0800D3A0"
+        ],
+        [
+          "0x0800D3A8",
+          "0x0800D3B4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D3B4",
+      "end": "0x0800D3EE",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D3B4",
+          "0x0800D3EE"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D3F8",
+      "end": "0x0800D486",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D3F8",
+          "0x0800D41A"
+        ],
+        [
+          "0x0800D420",
+          "0x0800D486"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D490",
+      "end": "0x0800D4AA",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D490",
+          "0x0800D4AA"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D4B0",
+      "end": "0x0800D4BC",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D4B0",
+          "0x0800D4BC"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D4BC",
+      "end": "0x0800D51A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D4BC",
+          "0x0800D4EC"
+        ],
+        [
+          "0x0800D4F8",
+          "0x0800D51A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D51C",
+      "end": "0x0800D570",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D51C",
+          "0x0800D570"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D570",
+      "end": "0x0800D630",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D570",
+          "0x0800D630"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800D630",
+      "end": "0x0800E47E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800D630",
+          "0x0800D6CA"
+        ],
+        [
+          "0x0800D960",
+          "0x0800D968"
+        ],
+        [
+          "0x0800D96C",
+          "0x0800D97C"
+        ],
+        [
+          "0x0800D984",
+          "0x0800D994"
+        ],
+        [
+          "0x0800D99C",
+          "0x0800D9AC"
+        ],
+        [
+          "0x0800D9B4",
+          "0x0800D9C4"
+        ],
+        [
+          "0x0800D9C8",
+          "0x0800D9EA"
+        ],
+        [
+          "0x0800D9FC",
+          "0x0800DA1E"
+        ],
+        [
+          "0x0800DA30",
+          "0x0800DA38"
+        ],
+        [
+          "0x0800DA40",
+          "0x0800DA48"
+        ],
+        [
+          "0x0800DA50",
+          "0x0800DA58"
+        ],
+        [
+          "0x0800DA60",
+          "0x0800DA68"
+        ],
+        [
+          "0x0800DA70",
+          "0x0800DA78"
+        ],
+        [
+          "0x0800DA80",
+          "0x0800DA88"
+        ],
+        [
+          "0x0800DA90",
+          "0x0800DA98"
+        ],
+        [
+          "0x0800DAA0",
+          "0x0800DAA8"
+        ],
+        [
+          "0x0800DAB0",
+          "0x0800DAB8"
+        ],
+        [
+          "0x0800DAC0",
+          "0x0800DAC8"
+        ],
+        [
+          "0x0800DAD0",
+          "0x0800DADC"
+        ],
+        [
+          "0x0800DAE4",
+          "0x0800DB78"
+        ],
+        [
+          "0x0800DB94",
+          "0x0800DBCA"
+        ],
+        [
+          "0x0800DBD4",
+          "0x0800DC34"
+        ],
+        [
+          "0x0800DC54",
+          "0x0800DCF0"
+        ],
+        [
+          "0x0800DD24",
+          "0x0800DE9A"
+        ],
+        [
+          "0x0800DEE8",
+          "0x0800DF2E"
+        ],
+        [
+          "0x0800DF40",
+          "0x0800E00A"
+        ],
+        [
+          "0x0800E028",
+          "0x0800E09A"
+        ],
+        [
+          "0x0800E0B0",
+          "0x0800E12A"
+        ],
+        [
+          "0x0800E140",
+          "0x0800E2DE"
+        ],
+        [
+          "0x0800E30C",
+          "0x0800E34E"
+        ],
+        [
+          "0x0800E35C",
+          "0x0800E3E8"
+        ],
+        [
+          "0x0800E3FC",
+          "0x0800E47E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800E498",
+      "end": "0x0800EC4E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800E498",
+          "0x0800E4D6"
+        ],
+        [
+          "0x0800E4E0",
+          "0x0800E50E"
+        ],
+        [
+          "0x0800E68C",
+          "0x0800E72A"
+        ],
+        [
+          "0x0800E748",
+          "0x0800E7E6"
+        ],
+        [
+          "0x0800E804",
+          "0x0800E8A2"
+        ],
+        [
+          "0x0800E8C0",
+          "0x0800E946"
+        ],
+        [
+          "0x0800E960",
+          "0x0800E9E6"
+        ],
+        [
+          "0x0800EA00",
+          "0x0800EA86"
+        ],
+        [
+          "0x0800EAA0",
+          "0x0800EB02"
+        ],
+        [
+          "0x0800EB24",
+          "0x0800EB84"
+        ],
+        [
+          "0x0800EBA4",
+          "0x0800EC4E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800EC70",
+      "end": "0x0800ECC8",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800EC70",
+          "0x0800ECC8"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800ECCC",
+      "end": "0x0800ED24",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800ECCC",
+          "0x0800ED24"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800ED28",
+      "end": "0x0800EDCE",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800ED28",
+          "0x0800EDCE"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800EDF4",
+      "end": "0x0800F006",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800EDF4",
+          "0x0800EECC"
+        ],
+        [
+          "0x0800EF6C",
+          "0x0800F006"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800F008",
+      "end": "0x0800F2D0",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800F008",
+          "0x0800F118"
+        ],
+        [
+          "0x0800F158",
+          "0x0800F170"
+        ],
+        [
+          "0x0800F174",
+          "0x0800F18E"
+        ],
+        [
+          "0x0800F19C",
+          "0x0800F1AE"
+        ],
+        [
+          "0x0800F1B4",
+          "0x0800F1EC"
+        ],
+        [
+          "0x0800F1F8",
+          "0x0800F20A"
+        ],
+        [
+          "0x0800F210",
+          "0x0800F268"
+        ],
+        [
+          "0x0800F278",
+          "0x0800F2D0"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0800F2D0",
+      "end": "0x08010834",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0800F2D0",
+          "0x0800F62A"
+        ],
+        [
+          "0x0800F688",
+          "0x0800F9D6"
+        ],
+        [
+          "0x0800FA28",
+          "0x0800FD72"
+        ],
+        [
+          "0x0800FDB0",
+          "0x080100F8"
+        ],
+        [
+          "0x080101BC",
+          "0x08010214"
+        ],
+        [
+          "0x0801022C",
+          "0x080103FC"
+        ],
+        [
+          "0x08010470",
+          "0x0801048E"
+        ],
+        [
+          "0x080104A0",
+          "0x080104BE"
+        ],
+        [
+          "0x080104D0",
+          "0x080105CE"
+        ],
+        [
+          "0x08010628",
+          "0x08010706"
+        ],
+        [
+          "0x08010750",
+          "0x080107BE"
+        ],
+        [
+          "0x080107D8",
+          "0x08010834"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0801084C",
+      "end": "0x08010908",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0801084C",
+          "0x0801089C"
+        ],
+        [
+          "0x080108AC",
+          "0x08010908"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08010910",
+      "end": "0x08010A3A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08010910",
+          "0x0801095C"
+        ],
+        [
+          "0x08010970",
+          "0x08010A3A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08010A50",
+      "end": "0x0801237C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08010A50",
+          "0x08010B64"
+        ],
+        [
+          "0x08010B7C",
+          "0x08010BDE"
+        ],
+        [
+          "0x08010BF0",
+          "0x08010C84"
+        ],
+        [
+          "0x08010C98",
+          "0x08010CFA"
+        ],
+        [
+          "0x08010D0C",
+          "0x08010DA0"
+        ],
+        [
+          "0x08010DB4",
+          "0x08010E16"
+        ],
+        [
+          "0x08010E28",
+          "0x08010EBC"
+        ],
+        [
+          "0x08010ED0",
+          "0x08010F32"
+        ],
+        [
+          "0x08010F44",
+          "0x08010FD8"
+        ],
+        [
+          "0x08010FEC",
+          "0x0801104E"
+        ],
+        [
+          "0x08011060",
+          "0x080110F4"
+        ],
+        [
+          "0x08011108",
+          "0x0801116A"
+        ],
+        [
+          "0x0801117C",
+          "0x080111DE"
+        ],
+        [
+          "0x080111F0",
+          "0x08011252"
+        ],
+        [
+          "0x08011264",
+          "0x080112F8"
+        ],
+        [
+          "0x0801130C",
+          "0x0801136E"
+        ],
+        [
+          "0x08011380",
+          "0x080113E2"
+        ],
+        [
+          "0x080113F4",
+          "0x08011456"
+        ],
+        [
+          "0x08011468",
+          "0x080114FC"
+        ],
+        [
+          "0x08011510",
+          "0x08011572"
+        ],
+        [
+          "0x08011584",
+          "0x080115E6"
+        ],
+        [
+          "0x080115F8",
+          "0x0801165A"
+        ],
+        [
+          "0x0801166C",
+          "0x08011700"
+        ],
+        [
+          "0x08011714",
+          "0x08011776"
+        ],
+        [
+          "0x08011788",
+          "0x080117EA"
+        ],
+        [
+          "0x080117FC",
+          "0x0801185E"
+        ],
+        [
+          "0x08011870",
+          "0x08011904"
+        ],
+        [
+          "0x08011918",
+          "0x0801197A"
+        ],
+        [
+          "0x0801198C",
+          "0x080119EE"
+        ],
+        [
+          "0x08011A00",
+          "0x08011A62"
+        ],
+        [
+          "0x08011A74",
+          "0x08011B08"
+        ],
+        [
+          "0x08011B1C",
+          "0x08011B7E"
+        ],
+        [
+          "0x08011B90",
+          "0x08011EE4"
+        ],
+        [
+          "0x08011F14",
+          "0x08012232"
+        ],
+        [
+          "0x08012270",
+          "0x08012308"
+        ],
+        [
+          "0x0801231C",
+          "0x0801237C"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0801238C",
+      "end": "0x080123E4",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0801238C",
+          "0x080123E4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080123F0",
+      "end": "0x08012516",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080123F0",
+          "0x08012516"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0801251C",
+      "end": "0x080125FE",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0801251C",
+          "0x080125FE"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08012600",
+      "end": "0x08012A46",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08012600",
+          "0x08012616"
+        ],
+        [
+          "0x080127C0",
+          "0x0801280A"
+        ],
+        [
+          "0x08012818",
+          "0x08012856"
+        ],
+        [
+          "0x08012864",
+          "0x080128B0"
+        ],
+        [
+          "0x080128BC",
+          "0x08012914"
+        ],
+        [
+          "0x08012920",
+          "0x08012962"
+        ],
+        [
+          "0x08012968",
+          "0x08012972"
+        ],
+        [
+          "0x0801297C",
+          "0x080129DA"
+        ],
+        [
+          "0x080129E4",
+          "0x08012A46"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08012A50",
+      "end": "0x08012CB6",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08012A50",
+          "0x08012C02"
+        ],
+        [
+          "0x08012C78",
+          "0x08012CB6"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08012CC8",
+      "end": "0x08012EA8",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08012CC8",
+          "0x08012E0A"
+        ],
+        [
+          "0x08012E6C",
+          "0x08012EA8"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08012EB8",
+      "end": "0x080130AC",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08012EB8",
+          "0x0801300A"
+        ],
+        [
+          "0x08013070",
+          "0x080130AC"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080130BC",
+      "end": "0x08013574",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080130BC",
+          "0x080133F0"
+        ],
+        [
+          "0x08013470",
+          "0x080134A6"
+        ],
+        [
+          "0x080134AC",
+          "0x08013574"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08013594",
+      "end": "0x08013B26",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08013594",
+          "0x080136C6"
+        ],
+        [
+          "0x08013744",
+          "0x0801375A"
+        ],
+        [
+          "0x0801376C",
+          "0x08013786"
+        ],
+        [
+          "0x08013798",
+          "0x080137B2"
+        ],
+        [
+          "0x080137C4",
+          "0x080137DE"
+        ],
+        [
+          "0x080137F0",
+          "0x0801385C"
+        ],
+        [
+          "0x0801387C",
+          "0x080138F6"
+        ],
+        [
+          "0x0801394C",
+          "0x080139B0"
+        ],
+        [
+          "0x080139B8",
+          "0x080139E6"
+        ],
+        [
+          "0x080139EC",
+          "0x08013A6C"
+        ],
+        [
+          "0x08013A74",
+          "0x08013ABE"
+        ],
+        [
+          "0x08013AC4",
+          "0x08013B26"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08013B38",
+      "end": "0x08013BD4",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08013B38",
+          "0x08013BD4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08013C08",
+      "end": "0x08013CBE",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08013C08",
+          "0x08013CBE"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08013CF4",
+      "end": "0x08013D9E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08013CF4",
+          "0x08013D32"
+        ],
+        [
+          "0x08013D58",
+          "0x08013D9E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08013DB4",
+      "end": "0x08013E64",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08013DB4",
+          "0x08013DF8"
+        ],
+        [
+          "0x08013E1C",
+          "0x08013E64"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08013E74",
+      "end": "0x08013FAA",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08013E74",
+          "0x08013F5E"
+        ],
+        [
+          "0x08013F74",
+          "0x08013FAA"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08013FAC",
+      "end": "0x080140E6",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08013FAC",
+          "0x08013FD4"
+        ],
+        [
+          "0x08013FEC",
+          "0x0801402E"
+        ],
+        [
+          "0x08014058",
+          "0x08014084"
+        ],
+        [
+          "0x08014090",
+          "0x080140E6"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014104",
+      "end": "0x0801418A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014104",
+          "0x0801415E"
+        ],
+        [
+          "0x0801416C",
+          "0x0801418A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0801418C",
+      "end": "0x080141E8",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0801418C",
+          "0x080141E8"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080141EC",
+      "end": "0x08014204",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080141EC",
+          "0x08014204"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014208",
+      "end": "0x08014246",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014208",
+          "0x08014246"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014250",
+      "end": "0x08014262",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014250",
+          "0x08014262"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014264",
+      "end": "0x0801429C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014264",
+          "0x0801429C"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080142AC",
+      "end": "0x080142F0",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080142AC",
+          "0x080142F0"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014300",
+      "end": "0x0801435E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014300",
+          "0x0801435E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014364",
+      "end": "0x08014392",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014364",
+          "0x0801436A"
+        ],
+        [
+          "0x08014370",
+          "0x08014392"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014394",
+      "end": "0x080143AA",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014394",
+          "0x080143AA"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080143B0",
+      "end": "0x080143C6",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080143B0",
+          "0x080143C6"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080143CC",
+      "end": "0x080143FA",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080143CC",
+          "0x080143FA"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014408",
+      "end": "0x0801441C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014408",
+          "0x0801441C"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014420",
+      "end": "0x08014438",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014420",
+          "0x08014438"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0801443C",
+      "end": "0x08014454",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0801443C",
+          "0x08014454"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014458",
+      "end": "0x080144E2",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014458",
+          "0x080144E2"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080144F4",
+      "end": "0x0801450E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080144F4",
+          "0x0801450E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014518",
+      "end": "0x08014520",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "explicit entry/runtime seed",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014518",
+          "0x08014520"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014524",
+      "end": "0x080145AA",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014524",
+          "0x08014556"
+        ],
+        [
+          "0x08014574",
+          "0x080145AA"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080145B8",
+      "end": "0x0801460C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080145B8",
+          "0x080145D8"
+        ],
+        [
+          "0x080145EC",
+          "0x0801460C"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014614",
+      "end": "0x08014668",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014614",
+          "0x0801464C"
+        ],
+        [
+          "0x08014650",
+          "0x0801465C"
+        ],
+        [
+          "0x08014660",
+          "0x08014668"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0801466C",
+      "end": "0x080146F4",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0801466C",
+          "0x0801467A"
+        ],
+        [
+          "0x08014680",
+          "0x080146C2"
+        ],
+        [
+          "0x080146D8",
+          "0x080146F4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080146F4",
+      "end": "0x0801473E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080146F4",
+          "0x0801473E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0801474C",
+      "end": "0x0801478E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0801474C",
+          "0x08014770"
+        ],
+        [
+          "0x0801477C",
+          "0x0801478E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014790",
+      "end": "0x080147B2",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Sets the link request byte and snapshots its companion byte when clearing it.",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014790",
+          "0x080147B2"
+        ]
+      ],
+      "runtime_aliases": [],
+      "suggested_name": "set_link_transfer_request",
+      "execution_verified": false
+    },
+    {
+      "start": "0x080147C0",
+      "end": "0x080147CC",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "explicit entry/runtime seed",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080147C0",
+          "0x080147CC"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080147D0",
+      "end": "0x08014892",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080147D0",
+          "0x08014892"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080148B0",
+      "end": "0x08014986",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080148B0",
+          "0x080148C8"
+        ],
+        [
+          "0x080148CC",
+          "0x0801495A"
+        ],
+        [
+          "0x08014978",
+          "0x08014986"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014988",
+      "end": "0x080149EE",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014988",
+          "0x080149EE"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080149FC",
+      "end": "0x08014ACC",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080149FC",
+          "0x08014ACC"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014AE0",
+      "end": "0x08014BEE",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014AE0",
+          "0x08014B18"
+        ],
+        [
+          "0x08014B28",
+          "0x08014B6E"
+        ],
+        [
+          "0x08014B78",
+          "0x08014BEE"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014BF8",
+      "end": "0x08014C06",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014BF8",
+          "0x08014C06"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014C0C",
+      "end": "0x08014C40",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014C0C",
+          "0x08014C40"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014C5C",
+      "end": "0x08014CCC",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014C5C",
+          "0x08014CCC"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014CE4",
+      "end": "0x08014E52",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014CE4",
+          "0x08014E52"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014E8C",
+      "end": "0x08014FC0",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "ROM pointer at 08018E90 + PUSH prologue",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014E8C",
+          "0x08014F18"
+        ],
+        [
+          "0x08014F38",
+          "0x08014FC0"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08014FF4",
+      "end": "0x08015122",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08014FF4",
+          "0x08015122"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015128",
+      "end": "0x080151F6",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015128",
+          "0x080151F6"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015200",
+      "end": "0x0801523E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015200",
+          "0x0801523E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015250",
+      "end": "0x08015338",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015250",
+          "0x08015282"
+        ],
+        [
+          "0x080152A0",
+          "0x080152E8"
+        ],
+        [
+          "0x080152F8",
+          "0x08015338"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0801533C",
+      "end": "0x08015488",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0801533C",
+          "0x0801537A"
+        ],
+        [
+          "0x08015394",
+          "0x080153AA"
+        ],
+        [
+          "0x080153B0",
+          "0x08015488"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080154AC",
+      "end": "0x08015798",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080154AC",
+          "0x080154EE"
+        ],
+        [
+          "0x080154F8",
+          "0x08015502"
+        ],
+        [
+          "0x08015508",
+          "0x08015526"
+        ],
+        [
+          "0x08015530",
+          "0x08015564"
+        ],
+        [
+          "0x08015568",
+          "0x080155A6"
+        ],
+        [
+          "0x080155B0",
+          "0x080155D8"
+        ],
+        [
+          "0x080155E0",
+          "0x08015766"
+        ],
+        [
+          "0x08015780",
+          "0x08015798"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080157A0",
+      "end": "0x08015C2A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080157A0",
+          "0x080157EC"
+        ],
+        [
+          "0x08015B70",
+          "0x08015C2A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015C2C",
+      "end": "0x08015CBC",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015C2C",
+          "0x08015C4A"
+        ],
+        [
+          "0x08015C54",
+          "0x08015C90"
+        ],
+        [
+          "0x08015C94",
+          "0x08015CBC"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015CBC",
+      "end": "0x08015CE4",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015CBC",
+          "0x08015CC4"
+        ],
+        [
+          "0x08015CC8",
+          "0x08015CE4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015CF0",
+      "end": "0x08015D02",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "ROM pointer at 08018EA4 + PUSH prologue",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015CF0",
+          "0x08015D02"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015D08",
+      "end": "0x08015D4A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015D08",
+          "0x08015D4A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015D68",
+      "end": "0x08015D74",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "explicit entry/runtime seed",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015D68",
+          "0x08015D74"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015D78",
+      "end": "0x08015D98",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015D78",
+          "0x08015D98"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015DA4",
+      "end": "0x08015DA6",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "explicit entry/runtime seed",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015DA4",
+          "0x08015DA6"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015DA8",
+      "end": "0x08015E1E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015DA8",
+          "0x08015DD2"
+        ],
+        [
+          "0x08015DE0",
+          "0x08015E1E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015E20",
+      "end": "0x08015E2E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015E20",
+          "0x08015E2E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015E34",
+      "end": "0x08015E48",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015E34",
+          "0x08015E48"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08015E50",
+      "end": "0x08015EC2",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Fills display and object buffers with a neutral pattern or clears display memory.",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015E50",
+          "0x08015E7E"
+        ],
+        [
+          "0x08015E98",
+          "0x08015EC2"
+        ]
+      ],
+      "runtime_aliases": [],
+      "suggested_name": "fill_display_buffers_neutral_a",
+      "execution_verified": false
+    },
+    {
+      "start": "0x08015ED4",
+      "end": "0x08015F46",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Second identical neutral display/object fill helper.",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015ED4",
+          "0x08015F02"
+        ],
+        [
+          "0x08015F1C",
+          "0x08015F46"
+        ]
+      ],
+      "runtime_aliases": [],
+      "suggested_name": "fill_display_buffers_neutral_b",
+      "execution_verified": false
+    },
+    {
+      "start": "0x08015F58",
+      "end": "0x08015F90",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Fills one display buffer with a neutral pattern using DMA3.",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015F58",
+          "0x08015F6C"
+        ],
+        [
+          "0x08015F78",
+          "0x08015F90"
+        ]
+      ],
+      "runtime_aliases": [],
+      "suggested_name": "fill_display_neutral",
+      "execution_verified": false
+    },
+    {
+      "start": "0x08015F98",
+      "end": "0x08015FF6",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Clears the selected display and object buffers using DMA3.",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08015F98",
+          "0x08015FBC"
+        ],
+        [
+          "0x08015FCC",
+          "0x08015FF6"
+        ]
+      ],
+      "runtime_aliases": [],
+      "suggested_name": "clear_display_buffers",
+      "execution_verified": false
+    },
+    {
+      "start": "0x08016008",
+      "end": "0x08016038",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08016008",
+          "0x08016038"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x0801604C",
+      "end": "0x0801606E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x0801604C",
+          "0x0801606E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08016078",
+      "end": "0x080160A0",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08016078",
+          "0x0801608C"
+        ],
+        [
+          "0x08016090",
+          "0x080160A0"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080160A4",
+      "end": "0x080160C4",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080160A4",
+          "0x080160C4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080160C4",
+      "end": "0x0801612C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080160C4",
+          "0x0801612C"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08016134",
+      "end": "0x08016174",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08016134",
+          "0x08016154"
+        ],
+        [
+          "0x0801615C",
+          "0x08016174"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08016174",
+      "end": "0x080161E4",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08016174",
+          "0x08016188"
+        ],
+        [
+          "0x08016190",
+          "0x080161BA"
+        ],
+        [
+          "0x080161C8",
+          "0x080161E4"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080161E8",
+      "end": "0x0801620C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080161E8",
+          "0x080161F8"
+        ],
+        [
+          "0x08016200",
+          "0x0801620C"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08016210",
+      "end": "0x0801625C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08016210",
+          "0x0801625C"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08016264",
+      "end": "0x080162D0",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08016264",
+          "0x080162D0"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080162F8",
+      "end": "0x0801648E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080162F8",
+          "0x0801648E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080164D0",
+      "end": "0x08016596",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "PUSH with LR candidate (medium confidence)",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080164D0",
+          "0x08016596"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x080165BC",
+      "end": "0x08016C18",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "DMA-copied IWRAM routine",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080165BC",
+          "0x080169BC"
+        ],
+        [
+          "0x08016A00",
+          "0x08016BB4"
+        ],
+        [
+          "0x08016BB8",
+          "0x08016C04"
+        ],
+        [
+          "0x08016C0C",
+          "0x08016C18"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03002340",
+          "copy_load": "0x080165BC"
+        }
+      ]
+    },
+    {
+      "start": "0x08016C18",
+      "end": "0x08016DA8",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "DMA-copied IWRAM routine",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08016C18",
+          "0x08016D7C"
+        ],
+        [
+          "0x08016D9C",
+          "0x08016DA8"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x0300299C",
+          "copy_load": "0x080165BC"
+        },
+        {
+          "start": "0x03000020",
+          "copy_load": "0x08016C18"
+        }
+      ]
+    },
+    {
+      "start": "0x08016DA8",
+      "end": "0x08017E68",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "DMA-copied IWRAM routine",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08016DA8",
+          "0x08017198"
+        ],
+        [
+          "0x080171A0",
+          "0x080176B4"
+        ],
+        [
+          "0x080176DC",
+          "0x08017AA0"
+        ],
+        [
+          "0x08017AA8",
+          "0x08017E0C"
+        ],
+        [
+          "0x08017E20",
+          "0x08017E68"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03003540",
+          "copy_load": "0x08016DA8"
+        }
+      ]
+    },
+    {
+      "start": "0x08017E68",
+      "end": "0x08017F64",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "DMA-copied IWRAM routine",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08017E68",
+          "0x08017F14"
+        ],
+        [
+          "0x08017F2C",
+          "0x08017F54"
+        ],
+        [
+          "0x08017F58",
+          "0x08017F64"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03004600",
+          "copy_load": "0x08016DA8"
+        },
+        {
+          "start": "0x030066E0",
+          "copy_load": "0x08017E68"
+        }
+      ]
+    },
+    {
+      "start": "0x08017F64",
+      "end": "0x080181C0",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "DMA-copied IWRAM routine",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08017F64",
+          "0x0801815C"
+        ],
+        [
+          "0x0801817C",
+          "0x080181C0"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x030067DC",
+          "copy_load": "0x08017E68"
+        },
+        {
+          "start": "0x03005830",
+          "copy_load": "0x08017F64"
+        }
+      ]
+    },
+    {
+      "start": "0x080181C0",
+      "end": "0x08018854",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "DMA-copied IWRAM routine",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x080181C0",
+          "0x080185B4"
+        ],
+        [
+          "0x080185E0",
+          "0x080187C4"
+        ],
+        [
+          "0x080187DC",
+          "0x08018848"
+        ],
+        [
+          "0x0801884C",
+          "0x08018854"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03005A8C",
+          "copy_load": "0x08017F64"
+        },
+        {
+          "start": "0x03000E00",
+          "copy_load": "0x080181C0"
+        }
+      ]
+    },
+    {
+      "start": "0x08018854",
+      "end": "0x080189F4",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "explicit entry/runtime seed",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018854",
+          "0x080189F4"
+        ]
+      ],
+      "runtime_aliases": [
+        {
+          "start": "0x03001494",
+          "copy_load": "0x080181C0"
+        }
+      ]
+    },
+    {
+      "start": "0x08018A54",
+      "end": "0x08018A58",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018A54",
+          "0x08018A58"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018A58",
+      "end": "0x08018A5C",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018A58",
+          "0x08018A5C"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018A5C",
+      "end": "0x08018A9A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018A5C",
+          "0x08018A70"
+        ],
+        [
+          "0x08018A78",
+          "0x08018A84"
+        ],
+        [
+          "0x08018A8C",
+          "0x08018A9A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018AA4",
+      "end": "0x08018B02",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018AA4",
+          "0x08018B02"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018B24",
+      "end": "0x08018BCE",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018B24",
+          "0x08018B3C"
+        ],
+        [
+          "0x08018B44",
+          "0x08018BCE"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018BD4",
+      "end": "0x08018BE8",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018BD4",
+          "0x08018BE8"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018BE8",
+      "end": "0x08018D48",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018BE8",
+          "0x08018C04"
+        ],
+        [
+          "0x08018C0C",
+          "0x08018C4C"
+        ],
+        [
+          "0x08018C50",
+          "0x08018CD0"
+        ],
+        [
+          "0x08018CD8",
+          "0x08018D10"
+        ],
+        [
+          "0x08018D14",
+          "0x08018D48"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018D48",
+      "end": "0x08018D9E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018D48",
+          "0x08018D62"
+        ],
+        [
+          "0x08018D6C",
+          "0x08018D9E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018DA0",
+      "end": "0x08018DDE",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "medium",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Retries the existing EEPROM write and compare helpers up to three times.",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018DA0",
+          "0x08018DDE"
+        ]
+      ],
+      "runtime_aliases": [],
+      "suggested_name": "retry_eeprom_write_and_verify",
+      "execution_verified": false
+    },
+    {
+      "start": "0x08018DE0",
+      "end": "0x08018DE2",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018DE0",
+          "0x08018DE2"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018DE4",
+      "end": "0x08018DE6",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018DE4",
+          "0x08018DE6"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018DE8",
+      "end": "0x08018DEA",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018DE8",
+          "0x08018DEA"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018DEC",
+      "end": "0x08018DEE",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018DEC",
+          "0x08018DEE"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018DF0",
+      "end": "0x08018DF2",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018DF0",
+          "0x08018DF2"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018DF4",
+      "end": "0x08018DF6",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018DF4",
+          "0x08018DF6"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018DF8",
+      "end": "0x08018DFA",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018DF8",
+          "0x08018DFA"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018DFC",
+      "end": "0x08018DFE",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018DFC",
+          "0x08018DFE"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018E00",
+      "end": "0x08018E02",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018E00",
+          "0x08018E02"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018E04",
+      "end": "0x08018E06",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018E04",
+          "0x08018E06"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018E08",
+      "end": "0x08018E0A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018E08",
+          "0x08018E0A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018E0C",
+      "end": "0x08018E0E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018E0C",
+          "0x08018E0E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018E10",
+      "end": "0x08018E12",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018E10",
+          "0x08018E12"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018E14",
+      "end": "0x08018E16",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018E14",
+          "0x08018E16"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018E18",
+      "end": "0x08018E1A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "libgcc register-call veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018E18",
+          "0x08018E1A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018E1C",
+      "end": "0x08018E7A",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018E1C",
+          "0x08018E7A"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018E7C",
+      "end": "0x08018E7E",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018E7C",
+          "0x08018E7E"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018E80",
+      "end": "0x08018E84",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "BX PC interworking veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018E80",
+          "0x08018E84"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018E84",
+      "end": "0x08018E86",
+      "end_exclusive": true,
+      "mode": "thumb",
+      "confidence": "high",
+      "evidence": "direct BL",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018E84",
+          "0x08018E86"
+        ]
+      ],
+      "runtime_aliases": []
+    },
+    {
+      "start": "0x08018E88",
+      "end": "0x08018E8C",
+      "end_exclusive": true,
+      "mode": "arm",
+      "confidence": "high",
+      "evidence": "BX PC interworking veneer",
+      "extent_kind": "reachable instructions; excludes pools; may share tails",
+      "spans": [
+        [
+          "0x08018E88",
+          "0x08018E8C"
+        ]
+      ],
+      "runtime_aliases": []
+    }
+  ]
+}

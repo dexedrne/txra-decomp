@@ -1,0 +1,394 @@
+{
+  "proof": {
+    "offset": 6324,
+    "size": 2050,
+    "type": "table",
+    "format": "unsigned-q15-raster-reciprocal",
+    "stride": 2,
+    "count": 1025,
+    "evidence": "080003BC-080003C4 loads the shared table and reads a halfword at twice the edge-height index; the sibling rasterizers share the base. All 1024 positive-index entries exactly equal the nearest integer to 32768/index; the zero sentinel and first nonmatching following halfword are checked. The following alignment halfword is excluded."
+  },
+  "before": {
+    "rom_bytes": 4194304,
+    "code_bytes_mapped": 85578,
+    "data_bytes_mapped": 3387356,
+    "unknown_bytes": 721370
+  },
+  "after": {
+    "rom_bytes": 4194304,
+    "code_bytes_mapped": 85578,
+    "data_bytes_mapped": 3388904,
+    "unknown_bytes": 719822
+  },
+  "previous_partition_with_read_evidence": [
+    {
+      "offset": 6324,
+      "size": 426,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6750,
+      "size": 2,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6752,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6754,
+      "size": 8,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6762,
+      "size": 8,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6770,
+      "size": 2,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6772,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6774,
+      "size": 2,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6776,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6778,
+      "size": 4,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6782,
+      "size": 4,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6786,
+      "size": 4,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6790,
+      "size": 4,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6794,
+      "size": 10,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6804,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6806,
+      "size": 2,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6808,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6810,
+      "size": 6,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6816,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6818,
+      "size": 2,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6820,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6822,
+      "size": 4,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6826,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6828,
+      "size": 6,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6834,
+      "size": 4,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6838,
+      "size": 8,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6846,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6848,
+      "size": 6,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6854,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6856,
+      "size": 8,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6864,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6866,
+      "size": 22,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6888,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6890,
+      "size": 4,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6894,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6896,
+      "size": 16,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6912,
+      "size": 4,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6916,
+      "size": 8,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6924,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6926,
+      "size": 22,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6948,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6950,
+      "size": 2,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6952,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6954,
+      "size": 4,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6958,
+      "size": 6,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6964,
+      "size": 4,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6968,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6970,
+      "size": 4,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 6974,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 6976,
+      "size": 26,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 7002,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 7004,
+      "size": 38,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 7042,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 7044,
+      "size": 42,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 7086,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 7088,
+      "size": 14,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 7102,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 7104,
+      "size": 152,
+      "type": "unknown",
+      "format": "unclassified"
+    },
+    {
+      "offset": 7256,
+      "size": 2,
+      "type": "data",
+      "format": "observed-rom-read"
+    },
+    {
+      "offset": 7258,
+      "size": 1116,
+      "type": "unknown",
+      "format": "unclassified"
+    }
+  ],
+  "registry_preserved_verbatim": true,
+  "seeds_and_indirect_evidence_preserved": true,
+  "coverage_sessions_and_read_totals_preserved": true,
+  "new_execution_claimed": false,
+  "new_functions_mapped": 0,
+  "new_matches": 0,
+  "input_cfg_sha256": "58699d627fd45ec20c4151a608fb41d3cef03fe8e463888f2618ae7a855ee94e",
+  "output_cfg_sha256": "122aa8bebd6da86065189dcfcc4eeeecbb571c46b36214941d02a2229690c394",
+  "caveat": "This is a data-table classification, not a new function or replacement. The following two-byte aligner remains outside the table."
+}

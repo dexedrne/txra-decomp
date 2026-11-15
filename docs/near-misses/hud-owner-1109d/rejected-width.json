@@ -1,0 +1,8 @@
+{
+  "source_sha256": "8082f6b92f6f16b74d10288493927b60fefd99013bfa89f530d92ef71c621e88",
+  "different_bytes": 3233,
+  "retained": false,
+  "reason": "Strict source check rejects the unsigned 16-bit smoke value: the negative guard is always false.",
+  "diagnostic": "-Werror=type-limits",
+  "rom_used": false
+}

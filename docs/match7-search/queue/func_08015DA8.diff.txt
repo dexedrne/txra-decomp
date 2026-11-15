@@ -1,0 +1,102 @@
+Compiled output differs: target 118 bytes, compiled 110 bytes.
+First difference at +0xB (0x08015DB3); exact prefix 11 bytes, exact suffix 17 bytes.
+Length differs by -8 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -4,20 +4,20 @@
+ 08015DAE: push {r6, r7}
+ 08015DB0: movs r7, #0
+-08015DB2: ldr r0, [pc, #32] @ =0x08015DD4
+-08015DB4: mov r12, r0
+-08015DB6: ldr r1, [pc, #32] @ =0x08015DD8
+-08015DB8: mov r9, r1
+-08015DBA: ldr r6, [pc, #32] @ =0x08015DDC
+-08015DBC: mov r5, r12
+-08015DBE: movs r4, #0
+-08015DC0: movs r0, #4
+-08015DC2: add r0, r12
+-08015DC4: mov r8, r0
+-08015DC6: ldr r3, [r5, #0]
+-08015DC8: cmp r3, #0
+-08015DCA: bne 0x08015DE0
+-08015DCC: mov r1, r12
+-08015DCE: str r3, [r1, #0]
+-08015DD0: b 0x08015E08
++08015DB2: ldr r5, [pc, #32] @ =0x08015DD4
++08015DB4: ldr r0, [pc, #32] @ =0x08015DD8
++08015DB6: mov r9, r0
++08015DB8: ldr r3, [pc, #32] @ =0x08015DDC
++08015DBA: movs r4, #0
++08015DBC: adds r6, r5, #0
++08015DBE: adds r1, r5, #4
++08015DC0: mov r8, r1
++08015DC2: movs r0, #132
++08015DC4: lsls r0, r0, #24
++08015DC6: mov r12, r0
++08015DC8: ldr r2, [r6, #0]
++08015DCA: cmp r2, #0
++08015DCC: bne 0x08015DE0
++08015DCE: str r2, [r5, #0]
++08015DD0: b 0x08015E02
+ 08015DD2: movs r0, r0
+ 08015DD4: .word 0x030061F0 (literal pool)
+@@ -25,32 +25,28 @@
+ 08015DDC: .word 0x040000D4 (literal pool)
+ 08015DE0: mov r1, r8
+-08015DE2: adds r0, r4, r1
+-08015DE4: ldr r2, [r0, #0]
+-08015DE6: mov r0, r12
+-08015DE8: adds r0, #8
+-08015DEA: adds r0, r4, r0
+-08015DEC: ldr r1, [r0, #0]
+-08015DEE: str r3, [r6, #0]
+-08015DF0: str r2, [r6, #4]
+-08015DF2: lsrs r1, r1, #2
+-08015DF4: movs r0, #132
+-08015DF6: lsls r0, r0, #24
+-08015DF8: orrs r1, r0
+-08015DFA: str r1, [r6, #8]
+-08015DFC: ldr r0, [r6, #8]
+-08015DFE: adds r5, #12
+-08015E00: adds r4, #12
+-08015E02: adds r7, #1
+-08015E04: cmp r7, #96
+-08015E06: bls 0x08015DC6
+-08015E08: movs r0, #0
+-08015E0A: mov r1, r12
+-08015E0C: str r0, [r1, #0]
+-08015E0E: mov r1, r9
+-08015E10: str r0, [r1, #0]
+-08015E12: pop {r3, r4}
+-08015E14: mov r8, r3
+-08015E16: mov r9, r4
+-08015E18: pop {r4, r5, r6, r7}
+-08015E1A: pop {r0}
+-08015E1C: bx r0
++08015DE2: adds r0, r1, r4
++08015DE4: ldr r1, [r0, #0]
++08015DE6: adds r0, r4, r5
++08015DE8: ldr r0, [r0, #8]
++08015DEA: str r2, [r3, #0]
++08015DEC: str r1, [r3, #4]
++08015DEE: lsrs r0, r0, #2
++08015DF0: mov r1, r12
++08015DF2: orrs r0, r1
++08015DF4: str r0, [r3, #8]
++08015DF6: ldr r0, [r3, #8]
++08015DF8: adds r6, #12
++08015DFA: adds r4, #12
++08015DFC: adds r7, #1
++08015DFE: cmp r7, #96
++08015E00: bls 0x08015DC8
++08015E02: movs r0, #0
++08015E04: str r0, [r5, #0]
++08015E06: mov r1, r9
++08015E08: str r0, [r1, #0]
++08015E0A: pop {r3, r4}
++08015E0C: mov r8, r3
++08015E0E: mov r9, r4
++08015E10: pop {r4, r5, r6, r7}
++08015E12: pop {r0}
++08015E14: bx r0
+Check register allocation, signed widths, statement order, constants and pool alignment.

@@ -1,0 +1,2 @@
+Rejected before compilation: call without saved LR or outside ROM
+No compiled comparison exists for this entry. See the diagnostic draft; recover the enclosing body or a suitable compiler path first.

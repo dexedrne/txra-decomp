@@ -1,0 +1,35 @@
+[
+  {
+    "address": "08014988",
+    "mode": "thumb",
+    "bytes": 102,
+    "instructions": 50,
+    "call_count": null,
+    "observed_entry": false,
+    "static_callers": 1,
+    "matched_callees": 0,
+    "unmatched_callees": 1,
+    "difficulty": 58,
+    "value": 2,
+    "priority": 0.034483,
+    "blocked_reason": null,
+    "comparison_bytes": 116,
+    "attempts": 1440,
+    "compile_errors": 712,
+    "seconds": 41.25,
+    "status": "neighborhood exhausted",
+    "exact": false,
+    "focus": "tail|packet|inverted",
+    "learned_candidates": {
+      "integer-cursor": 803,
+      "saved-constant": 1148
+    },
+    "generations": 64,
+    "score": [
+      1,
+      2
+    ],
+    "compiler": "old",
+    "size": 116
+  }
+]

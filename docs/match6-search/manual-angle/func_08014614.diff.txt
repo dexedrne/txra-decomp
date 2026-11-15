@@ -1,0 +1,22 @@
+Compiled output differs: target 88 bytes, compiled 92 bytes.
+First difference at +0x46 (0x0801465A); exact prefix 70 bytes, exact suffix 6 bytes.
+Length differs by +4 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -33,9 +33,11 @@
+ 08014656: ble 0x08014660
+ 08014658: movs r0, #0
+-0801465A: b 0x08014666
++0801465A: b 0x0801466A
+ 0801465C: .word 0xFFFFE000 (literal pool)
+-08014660: ldr r3, [pc, #4] @ =0x08014668
++08014660: ldr r3, [pc, #8] @ =0x0801466C
+ 08014662: adds r0, r2, r3
+ 08014664: subs r0, r1, r0
+-08014666: bx lr
+-08014668: .word 0xFFFFC000 (literal pool)
++08014666: lsls r0, r0, #16
++08014668: lsrs r0, r0, #16
++0801466A: bx lr
++0801466C: .word 0xFFFFC000 (literal pool)
+Check register allocation, signed widths, statement order, constants and pool alignment.

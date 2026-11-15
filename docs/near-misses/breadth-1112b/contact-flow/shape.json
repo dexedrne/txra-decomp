@@ -1,0 +1,22 @@
+{
+  "address": "080181C0",
+  "target_end": "08018854",
+  "compiler": "arm",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/breadth-1112b/contact-flow/shape-080181C0.c",
+  "source_sha256": "692c0d114201d1dab86c196e9dfa85c867580f2c3479c4137f38d6fc1f433973",
+  "compiler_sha256": "26d884f0d4d46180dd90d1b1b56371fa1d72e2d0a47b22b65f27b3cebb89cca8",
+  "emitted_bytes": 1636,
+  "target_bytes": 1684,
+  "local_frame_bytes": 60,
+  "instruction_distance": 199,
+  "different_bytes": 1100,
+  "exact": false,
+  "compiled_sha256": "24cc7fea19fef102ce6584c88070190481031150c2d612817dadc8f5fabff380",
+  "checker_limit": "08018854",
+  "checker_rejection": null,
+  "installed": false
+}

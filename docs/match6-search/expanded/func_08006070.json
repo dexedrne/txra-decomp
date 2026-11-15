@@ -1,0 +1,29 @@
+{
+  "address": "08006070",
+  "mode": "thumb",
+  "bytes": 212,
+  "instructions": 106,
+  "call_count": null,
+  "observed_entry": false,
+  "static_callers": 0,
+  "matched_callees": 0,
+  "unmatched_callees": 0,
+  "difficulty": 106,
+  "value": 1,
+  "priority": 0.009434,
+  "blocked_reason": null,
+  "comparison_bytes": 300,
+  "attempts": 2500,
+  "compile_errors": 0,
+  "seconds": 17.8,
+  "status": "budget exhausted",
+  "exact": false,
+  "focus": null,
+  "learned_candidates": {},
+  "score": [
+    91,
+    164
+  ],
+  "compiler": "old",
+  "size": 296
+}

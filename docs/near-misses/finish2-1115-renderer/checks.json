@@ -1,0 +1,57 @@
+{
+  "func_08016DA8": {
+    "candidate": "func_08016DA8.c",
+    "differential_fixtures": 199,
+    "failures": 0,
+    "first_failures": [],
+    "executed_instruction_addresses": 1053,
+    "instruction_addresses": 1053,
+    "source_sha256": "847a36ef5c8ff71c7828cc5337d2be06d511e18326320873eaa48aaecfac3db1",
+    "rom_used": false,
+    "byte_match_verified": false
+  },
+  "func_08016DA8_order": {
+    "candidate": "func_08016DA8_order.c",
+    "differential_fixtures": 199,
+    "failures": 0,
+    "first_failures": [],
+    "executed_instruction_addresses": 1053,
+    "instruction_addresses": 1053,
+    "source_sha256": "69570165355bb972bcc663cefb86dc00e126af31e31e7a960b03bc8029873447",
+    "rom_used": false,
+    "byte_match_verified": false
+  },
+  "v-ref": {
+    "candidate": "v-ref.c",
+    "differential_fixtures": 199,
+    "failures": 0,
+    "first_failures": [],
+    "executed_instruction_addresses": 1053,
+    "instruction_addresses": 1053,
+    "source_sha256": "c5ec729820d495e93908cf99bdeb4acc8b1634dda8255603c75307703b7895a4",
+    "rom_used": false,
+    "byte_match_verified": false
+  },
+  "yz1": {
+    "candidate": "yz1.c",
+    "differential_fixtures": 199,
+    "failures": 0,
+    "first_failures": [],
+    "executed_instruction_addresses": 1053,
+    "instruction_addresses": 1053,
+    "source_sha256": "de9d2d061e5fe9db7aaf02b426d1f7d4c14813ddc00f4a9de53f15973d29b25f",
+    "rom_used": false,
+    "byte_match_verified": false
+  },
+  "f1": {
+    "candidate": "f1.c",
+    "differential_fixtures": 199,
+    "failures": 0,
+    "first_failures": [],
+    "executed_instruction_addresses": 1053,
+    "instruction_addresses": 1053,
+    "source_sha256": "02c8a0a00363078a854837b16f337a3dd6b53625181c55403d3bf52a308491f5",
+    "rom_used": false,
+    "byte_match_verified": false
+  }
+}

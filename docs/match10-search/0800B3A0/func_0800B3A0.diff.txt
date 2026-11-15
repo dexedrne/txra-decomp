@@ -1,0 +1,85 @@
+Compiler: old
+Compiled output differs: target 310 bytes, compiled 310 bytes.
+First difference at +0x7B (0x0800B41B); exact prefix 123 bytes, exact suffix 45 bytes.
+--- target
++++ compiled
+@@ -59,15 +59,15 @@
+ 0800B416: cmp r5, r1
+ 0800B418: bge 0x0800B4C8
+-0800B41A: ldr r2, [pc, #128] @ =0x0800B49C
++0800B41A: ldr r3, [pc, #128] @ =0x0800B49C
+ 0800B41C: movs r1, #128
+ 0800B41E: lsls r1, r1, #9
+ 0800B420: adds r0, r6, r1
+ 0800B422: lsls r0, r0, #2
+-0800B424: adds r0, r0, r2
++0800B424: adds r0, r0, r3
+ 0800B426: ldr r0, [r0, #0]
+ 0800B428: mov r8, r0
+ 0800B42A: adds r1, r4, r1
+ 0800B42C: lsls r1, r1, #2
+-0800B42E: adds r1, r1, r2
++0800B42E: adds r1, r1, r3
+ 0800B430: ldr r6, [r1, #0]
+ 0800B432: ldr r2, [pc, #108] @ =0x0800B4A0
+@@ -78,30 +78,30 @@
+ 0800B43C: adds r1, r4, r1
+ 0800B43E: ldr r0, [r1, #0]
+-0800B440: negs r3, r0
+-0800B442: ldr r2, [r1, #8]
+-0800B444: mov r0, r8
+-0800B446: muls r0, r3
+-0800B448: asrs r3, r0, #19
+-0800B44A: adds r0, r2, #0
+-0800B44C: muls r0, r6
+-0800B44E: asrs r2, r0, #19
+-0800B450: adds r0, r3, #0
++0800B440: negs r2, r0
++0800B442: mov r0, r8
++0800B444: muls r0, r2
++0800B446: asrs r2, r0, #19
++0800B448: ldr r0, [r1, #8]
++0800B44A: muls r0, r6
++0800B44C: lsls r0, r0, #16
++0800B44E: asrs r3, r0, #31
++0800B450: adds r0, r2, #0
+ 0800B452: adds r0, #32
+-0800B454: adds r3, r0, r7
+-0800B456: adds r2, #120
+-0800B458: subs r0, r3, #1
++0800B454: adds r2, r0, r7
++0800B456: adds r3, #120
++0800B458: subs r0, r2, #1
+ 0800B45A: cmp r0, #238
+ 0800B45C: bhi 0x0800B4BC
+-0800B45E: cmp r2, #0
++0800B45E: cmp r3, #0
+ 0800B460: ble 0x0800B4BC
+-0800B462: cmp r2, #159
++0800B462: cmp r3, #159
+ 0800B464: bgt 0x0800B4BC
+ 0800B466: movs r0, #1
+-0800B468: ands r0, r3
++0800B468: ands r0, r2
+ 0800B46A: cmp r0, #0
+ 0800B46C: beq 0x0800B4A4
+-0800B46E: asrs r1, r3, #1
+-0800B470: lsls r0, r2, #4
+-0800B472: subs r0, r0, r2
++0800B46E: asrs r1, r2, #1
++0800B470: lsls r0, r3, #4
++0800B472: subs r0, r0, r3
+ 0800B474: lsls r0, r0, #4
+ 0800B476: lsls r1, r1, #1
+@@ -120,7 +120,7 @@
+ 0800B49C: .word 0x0804F330 (literal pool)
+ 0800B4A0: .word 0x03006874 (literal pool)
+-0800B4A4: asrs r0, r3, #1
+-0800B4A6: lsls r1, r2, #4
+-0800B4A8: subs r1, r1, r2
++0800B4A4: asrs r0, r2, #1
++0800B4A6: lsls r1, r3, #4
++0800B4A8: subs r1, r1, r3
+ 0800B4AA: lsls r1, r1, #4
+ 0800B4AC: lsls r0, r0, #1
+Check register allocation, signed widths, statement order, constants and pool alignment.

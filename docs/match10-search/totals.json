@@ -1,0 +1,18 @@
+{
+  "attempts": 1063669,
+  "compiled": 324571,
+  "cache_hits": 739098,
+  "errors": 15800,
+  "restarts": 786,
+  "equal_moves": 147907,
+  "seconds": 22514.019584581984,
+  "targets": 15,
+  "minimum_target_seconds": 1500.0001647300087,
+  "improved_drafts": 12,
+  "exact_search_results": 0,
+  "exact_replacements_added": 0,
+  "compiler_processes": 5,
+  "active_target_windows": 5,
+  "seed_base": 101029,
+  "accounting": "Recorded consumed trials only. compiled counts fresh source/profile attempts including failures; attempts also includes repeated cache observations; errors includes repeated cached failures. Unconsumed work at the checkpointed restart is excluded. Target time includes shared-pool queueing; it is accumulated active wall time, not exclusive CPU time."
+}

@@ -1,0 +1,9 @@
+{
+  "rejected": true,
+  "reason": "Narrowing the signed sine coefficient changes prior-C behavior.",
+  "candidate_sha256": "82a83d46afd0e154f1d3e09474acecbb5df140218320f0a440c4d7d2f9df1bdf",
+  "exit_code": 1,
+  "fixture_output": "candidate mismatch in case 2",
+  "installation_authority": false,
+  "original_instructions_executed": false
+}

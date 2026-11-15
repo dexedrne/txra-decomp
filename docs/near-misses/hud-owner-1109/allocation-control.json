@@ -1,0 +1,22 @@
+{
+  "address": "0800421C",
+  "target_end": "08005238",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/hud-owner-1109/allocation-control.c",
+  "source_sha256": "1fbd487dffc1011ebc05d71c7348fba5f265f362d930dd44619dde76ec8afa34",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 4012,
+  "target_bytes": 4124,
+  "local_frame_bytes": 44,
+  "instruction_distance": 1071,
+  "different_bytes": 3888,
+  "exact": false,
+  "compiled_sha256": "bfaf70f7e3968dd837eebd1d93870f814e8f5356507c206843e739c659a509ac",
+  "checker_limit": "08005238",
+  "checker_rejection": null,
+  "installed": false
+}

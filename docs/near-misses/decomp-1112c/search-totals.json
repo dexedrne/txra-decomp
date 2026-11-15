@@ -1,0 +1,41 @@
+{
+  "targets": [
+    {
+      "target": "hud",
+      "source_identities": 556,
+      "measured_source_identities": 508,
+      "measurements_including_repeated_baselines": 511,
+      "compile_failures_including_repeats": 48,
+      "fixture_rejections": 0,
+      "boundary_rejections": 251
+    },
+    {
+      "target": "contact",
+      "source_identities": 607,
+      "measured_source_identities": 527,
+      "measurements_including_repeated_baselines": 576,
+      "compile_failures_including_repeats": 96,
+      "fixture_rejections": 0,
+      "boundary_rejections": 0
+    },
+    {
+      "target": "arm",
+      "source_identities": 240,
+      "measured_source_identities": 176,
+      "measurements_including_repeated_baselines": 192,
+      "compile_failures_including_repeats": 64,
+      "fixture_rejections": 8,
+      "boundary_rejections": 96
+    },
+    {
+      "target": "stream",
+      "source_identities": 384,
+      "measured_source_identities": 384,
+      "measurements_including_repeated_baselines": 388,
+      "compile_failures_including_repeats": 0,
+      "fixture_rejections": 0,
+      "boundary_rejections": 107
+    }
+  ],
+  "scope": "Finite width-preserving source-shape neighborhoods, not exhaustive source recovery."
+}

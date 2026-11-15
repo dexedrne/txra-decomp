@@ -1,0 +1,10 @@
+# One-edit ablations of src/generated/func_08016DA8.c (ablate.py), official agbcc_arm on worker B, batch.py columns:
+# differing bytes, instruction distance, emitted bytes, frame, source
+3796  517  4352  96   ab1_dy_one_stmt.c     dy = -gScratch[i].y - gCamera.y; (one statement)
+90    47   4288  96   ab2_shift_late.c      dy = saved_y*DF8 - tz*F58; ... dy = gOffset.z + (dy >> 12);
+3798  517  4352  96   ab3_no_copy.c         no saved_y: t = (dy*DF8 - tz*F58) >> 12; ty from dy; dy = t + gOffset.z;
+53    23   4288  96   ab4_tx_in_place.c     tx = dx*cos; tx -= dz*sin;
+0     0    4288  96   ab5_copy_after_tz.c   saved_y = dy; after the tz statement
+0     0    4288  96   ab6_off_first.c       dy = gOffset.z + dy;
+16    11   4288  96   ab7_dx_one_stmt.c     dx = gScratch[i].x - gCamera.x; (one statement)
+3800  568  4428  96   ab8_ty_first.c        ty statement before the dy (depth) statement

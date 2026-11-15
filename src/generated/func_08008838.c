@@ -1,0 +1,17 @@
+/* Byte-verified C; address name retained pending semantic review. */
+typedef unsigned char u8; typedef unsigned short u16; typedef unsigned int u32;
+typedef signed char s8; typedef signed short s16; typedef signed int s32;
+typedef volatile u8 vu8; typedef volatile u16 vu16; typedef volatile u32 vu32;
+extern u16 g_08179784[][32];
+extern void func_08008914(u32,u32,u32,u32,u32,u32,u32,u32,u32);
+void func_08008838(u32 a,s32 b)
+{
+    if(b) {
+        s32 x=((b-1)&1)*24+192;
+        s32 y=((b-1)>>1)*24+128;
+        func_08008914(x,y,24,24,g_08179784[a][16],g_08179784[a][17],0,0,0);
+        func_08008914(x,y,24,24,g_08179784[a][18],g_08179784[a][19],0,0,0);
+        func_08008914(x,y,24,24,g_08179784[a][20],g_08179784[a][21],0,0,0);
+        func_08008914(x,y,24,24,g_08179784[a][22],g_08179784[a][23],0,0,0);
+    }
+}

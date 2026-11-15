@@ -1,0 +1,183 @@
+Compiler: standard-o1
+Compiled output differs: target 208 bytes, compiled 192 bytes.
+First difference at +0x2 (0x080063D6); exact prefix 2 bytes, exact suffix 11 bytes.
+Length differs by -16 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -1,92 +1,85 @@
+ 080063D4: push {r4, r5, r6, r7, lr}
+-080063D6: mov r7, r10
+-080063D8: mov r6, r9
+-080063DA: mov r5, r8
+-080063DC: push {r5, r6, r7}
+-080063DE: ldr r0, [pc, #148] @ =0x08006474
+-080063E0: ldr r3, [r0, #0]
+-080063E2: adds r3, #1
+-080063E4: movs r1, #1
+-080063E6: mov r12, r1
+-080063E8: ands r3, r1
+-080063EA: str r3, [r0, #0]
+-080063EC: ldr r6, [pc, #136] @ =0x08006478
+-080063EE: movs r5, #0
+-080063F0: str r5, [r6, #0]
+-080063F2: ldr r2, [pc, #136] @ =0x0800647C
+-080063F4: str r5, [r2, #0]
+-080063F6: ldr r1, [pc, #136] @ =0x08006480
+-080063F8: ldr r0, [pc, #136] @ =0x08006484
+-080063FA: str r0, [r1, #0]
+-080063FC: subs r1, #4
+-080063FE: movs r7, #176
+-08006400: mov r10, r7
+-08006402: mov r4, r10
+-08006404: muls r4, r3
+-08006406: ldr r0, [pc, #128] @ =0x08006488
+-08006408: mov r9, r0
+-0800640A: adds r0, r4, r0
+-0800640C: str r0, [r1, #0]
+-0800640E: ldr r0, [pc, #124] @ =0x0800648C
+-08006410: str r0, [r6, #0]
+-08006412: ldr r1, [pc, #124] @ =0x08006490
+-08006414: mov r8, r1
++080063D6: mov r7, r8
++080063D8: push {r7}
++080063DA: ldr r0, [pc, #140] @ =0x08006468
++080063DC: ldr r7, [r0, #0]
++080063DE: adds r7, #1
++080063E0: movs r3, #1
++080063E2: ands r7, r3
++080063E4: str r7, [r0, #0]
++080063E6: ldr r2, [pc, #132] @ =0x0800646C
++080063E8: movs r1, #0
++080063EA: str r1, [r2, #0]
++080063EC: ldr r6, [pc, #128] @ =0x08006470
++080063EE: str r1, [r6, #0]
++080063F0: ldr r3, [pc, #128] @ =0x08006474
++080063F2: ldr r5, [pc, #132] @ =0x08006478
++080063F4: str r5, [r3, #0]
++080063F6: subs r3, #4
++080063F8: movs r4, #176
++080063FA: adds r0, r7, #0
++080063FC: muls r0, r4
++080063FE: lsls r0, r0, #24
++08006400: lsrs r4, r0, #24
++08006402: ldr r5, [pc, #120] @ =0x0800647C
++08006404: mov r8, r5
++08006406: adds r5, r4, r5
++08006408: str r5, [r3, #0]
++0800640A: ldr r5, [pc, #116] @ =0x08006480
++0800640C: stmia r2!, {r5}
++0800640E: ldr r3, [pc, #116] @ =0x08006484
++08006410: mov r12, r3
++08006412: str r3, [r6, #0]
++08006414: ldr r5, [r6, #0]
+ 08006416: str r1, [r2, #0]
+-08006418: ldr r0, [r2, #0]
+-0800641A: adds r6, #4
+-0800641C: str r5, [r6, #0]
+-0800641E: adds r2, #12
+-08006420: str r5, [r2, #0]
+-08006422: ldr r1, [pc, #112] @ =0x08006494
+-08006424: ldr r0, [pc, #112] @ =0x08006498
+-08006426: str r0, [r1, #0]
+-08006428: adds r0, #36
+-0800642A: ldr r1, [pc, #112] @ =0x0800649C
+-0800642C: adds r4, r4, r1
+-0800642E: str r4, [r0, #0]
+-08006430: ldr r0, [pc, #108] @ =0x080064A0
+-08006432: str r0, [r6, #0]
+-08006434: mov r7, r8
+-08006436: str r7, [r2, #0]
+-08006438: ldr r0, [r2, #0]
+-0800643A: adds r3, #1
+-0800643C: mov r0, r12
+-0800643E: ands r3, r0
+-08006440: mov r0, r10
+-08006442: muls r0, r3
+-08006444: add r0, r9
+-08006446: movs r4, #0
+-08006448: movs r2, #43
+-0800644A: stmia r0!, {r4}
+-0800644C: subs r2, #1
+-0800644E: cmp r2, #0
+-08006450: bge 0x0800644A
+-08006452: movs r0, #176
+-08006454: muls r0, r3
+-08006456: adds r0, r0, r1
+-08006458: movs r1, #0
+-0800645A: movs r2, #43
+-0800645C: stmia r0!, {r1}
+-0800645E: subs r2, #1
+-08006460: cmp r2, #0
+-08006462: bge 0x0800645C
+-08006464: pop {r3, r4, r5}
+-08006466: mov r8, r3
+-08006468: mov r9, r4
+-0800646A: mov r10, r5
+-0800646C: pop {r4, r5, r6, r7}
+-0800646E: pop {r0}
+-08006470: bx r0
+-08006472: movs r0, r0
+-08006474: .word 0x03006A98 (literal pool)
+-08006478: .word 0x04000100 (literal pool)
+-0800647C: .word 0x040000C4 (literal pool)
+-08006480: .word 0x040000C0 (literal pool)
+-08006484: .word 0x040000A0 (literal pool)
+-08006488: .word 0x03007410 (literal pool)
+-0800648C: .word 0x0080F9C4 (literal pool)
+-08006490: .word 0xBE400000 (literal pool)
+-08006494: .word 0x040000CC (literal pool)
+-08006498: .word 0x040000A4 (literal pool)
+-0800649C: .word 0x03007600 (literal pool)
+-080064A0: .word 0x0080F99D (literal pool)
++08006418: adds r6, #12
++0800641A: str r1, [r6, #0]
++0800641C: movs r5, #164
++0800641E: ldr r0, [pc, #104] @ =0x08006488
++08006420: str r5, [r0, #0]
++08006422: ldr r3, [pc, #104] @ =0x0800648C
++08006424: subs r0, #4
++08006426: str r4, [r0, #0]
++08006428: ldr r5, [pc, #100] @ =0x08006490
++0800642A: str r5, [r2, #0]
++0800642C: mov r0, r12
++0800642E: str r0, [r6, #0]
++08006430: ldr r5, [r6, #0]
++08006432: adds r7, #1
++08006434: movs r5, #1
++08006436: ands r7, r5
++08006438: movs r5, #176
++0800643A: muls r5, r7
++0800643C: add r5, r8
++0800643E: movs r4, #0
++08006440: movs r6, #43
++08006442: stmia r5!, {r4}
++08006444: subs r6, #1
++08006446: cmp r6, #0
++08006448: bge 0x08006442
++0800644A: movs r5, #176
++0800644C: muls r5, r7
++0800644E: adds r5, r5, r3
++08006450: movs r3, #0
++08006452: movs r6, #43
++08006454: stmia r5!, {r3}
++08006456: subs r6, #1
++08006458: cmp r6, #0
++0800645A: bge 0x08006454
++0800645C: pop {r3}
++0800645E: mov r8, r3
++08006460: pop {r4, r5, r6, r7}
++08006462: pop {r0}
++08006464: bx r0
++08006466: movs r0, r0
++08006468: .word 0x03006A98 (literal pool)
++0800646C: .word 0x04000100 (literal pool)
++08006470: .word 0x040000C4 (literal pool)
++08006474: .word 0x040000C0 (literal pool)
++08006478: .word 0x040000A0 (literal pool)
++0800647C: .word 0x03007410 (literal pool)
++08006480: .word 0x0080F9C4 (literal pool)
++08006484: .word 0xBE400000 (literal pool)
++08006488: .word 0x040000CC (literal pool)
++0800648C: .word 0x03007600 (literal pool)
++08006490: .word 0x0080F99D (literal pool)
+Check register allocation, signed widths, statement order, constants and pool alignment.

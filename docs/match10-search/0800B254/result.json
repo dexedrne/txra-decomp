@@ -1,0 +1,33 @@
+{
+  "address": "0800B254",
+  "seed": 134364409,
+  "seconds": 1503.7920436389977,
+  "attempts": 74769,
+  "compiled": 23684,
+  "cache_hits": 51085,
+  "errors": 0,
+  "restarts": 32,
+  "equal_moves": 11151,
+  "generation": 132,
+  "operators": {
+    "seed": 5,
+    "base": 52423,
+    "temporary-introduce": 10052,
+    "offset-field": 648,
+    "widen-narrow": 8148,
+    "qualifier": 2184,
+    "independent-order": 367,
+    "multiply-shift": 163,
+    "profile": 655,
+    "saved-constant": 113,
+    "qualifier-remove": 10,
+    "field-offset": 1
+  },
+  "best_score": [
+    83,
+    300
+  ],
+  "compiler": "old",
+  "exact": false,
+  "variants_per_second": 49.72
+}

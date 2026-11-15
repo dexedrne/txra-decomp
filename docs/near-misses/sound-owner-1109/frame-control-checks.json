@@ -1,0 +1,10 @@
+{
+  "candidate": "frame-control.c",
+  "source_sha256": "3212372be7757b43e2fb2c730740b54ccd7ec1dacbdac381882ea2e2a0dba84b",
+  "fixture_groups": 7,
+  "undefined_behavior_sanitizer": true,
+  "registry_unchanged": true,
+  "voice_field_aliases": 17,
+  "rom_used": false,
+  "output": "7 sound-owner synthetic groups passed (actual complete C candidate; no ROM)"
+}

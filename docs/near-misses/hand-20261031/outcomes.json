@@ -1,0 +1,681 @@
+{
+  "snapshot_date": "2026-10-31",
+  "threshold_inclusive": 15,
+  "score_units": "differing bytes including length penalty; not instruction edits",
+  "snapshot": [
+    {
+      "name": "func_08018E84",
+      "byte_distance": 1,
+      "source_sha256": "7d1bda3d16907be026e38a9477ac1546ea9637b2dda9a2c51cedb42a1b119ea5"
+    },
+    {
+      "name": "func_0800D960",
+      "byte_distance": 2,
+      "source_sha256": "36647750c28aab3cfc2dc6768cc566453594aebbc84e484136cc7473c5f392c3"
+    },
+    {
+      "name": "func_080095C4",
+      "byte_distance": 10,
+      "source_sha256": "c2d5fc778ae9a5ad08c6d22783e3852898df951717b63bab73fd12ee68abd983"
+    },
+    {
+      "name": "func_08007368",
+      "byte_distance": 15,
+      "source_sha256": "3a85c13ac563311d072384dde6b7dbfc2ce01e14b0832f3bd6c7c7584407a09a"
+    },
+    {
+      "name": "func_080051FE",
+      "byte_distance": 16,
+      "source_sha256": "270215cd5345b779c4e9b597cb13f94b1366a4da58ba5d4523239ebd5b9c5147"
+    },
+    {
+      "name": "func_08007B28",
+      "byte_distance": 23,
+      "source_sha256": "b8108bc7897d655946c7c2b7d12bd431aa618f85d419cd6b2d2d4e4ab42e2f38"
+    },
+    {
+      "name": "func_08006740",
+      "byte_distance": 53,
+      "source_sha256": "5d9ce99350e188737b103fb2f6df5072fb7379ec553713ecbb8d2bbe1ed4b22e"
+    },
+    {
+      "name": "func_0800D51C",
+      "byte_distance": 84,
+      "source_sha256": "f43d43b0b7805f087e73020cfd834c78ca89bd363bd307d34adfe22b77c0e9f6"
+    },
+    {
+      "name": "func_08014104",
+      "byte_distance": 123,
+      "source_sha256": "42eaa8593747b40bd3787c803092c034ab79895313433cfb05f2c93efb9c3866"
+    },
+    {
+      "name": "func_08014AE0",
+      "byte_distance": 174,
+      "source_sha256": "f8cbe4d27c6f1500eeb05ecaa2c8dd50ac1be044459b8dabb88f93e34820d23c"
+    },
+    {
+      "name": "func_080149FC",
+      "byte_distance": 199,
+      "source_sha256": "c6fcbcad4e6924b4e2e2a48dd2f80ecf57ffb92cceaa6483625655886423e0aa"
+    },
+    {
+      "name": "func_08013E74",
+      "byte_distance": 223,
+      "source_sha256": "55ccd20c60c56c2f2d0637f787ff0e96ab2667d4feb8e24aacd31098eed4a909"
+    }
+  ],
+  "order": [
+    "func_08018E84",
+    "func_0800D960",
+    "func_080095C4",
+    "func_08007368"
+  ],
+  "trials": 78,
+  "exact_matches": 0,
+  "matched_before": 156,
+  "matched_after": 156,
+  "matched_bytes_before": 37824,
+  "matched_bytes_after": 37824,
+  "results": [
+    {
+      "name": "func_08018E84",
+      "seed_byte_distance": 1,
+      "trials": [
+        {
+          "variant": "seed",
+          "compiler": "old",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 1
+        },
+        {
+          "variant": "seed",
+          "compiler": "standard",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 1
+        },
+        {
+          "variant": "seed",
+          "compiler": "old-no-gcse",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 1
+        },
+        {
+          "variant": "seed",
+          "compiler": "old-o1",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 1
+        },
+        {
+          "variant": "seed",
+          "compiler": "standard-o1",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 1
+        },
+        {
+          "variant": "seed",
+          "compiler": "old-no-interwork",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 1
+        },
+        {
+          "variant": "implicit-return",
+          "compiler": "old",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 1
+        },
+        {
+          "variant": "implicit-return",
+          "compiler": "standard",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 1
+        },
+        {
+          "variant": "implicit-return",
+          "compiler": "old-no-gcse",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 1
+        },
+        {
+          "variant": "implicit-return",
+          "compiler": "old-o1",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 1
+        },
+        {
+          "variant": "implicit-return",
+          "compiler": "standard-o1",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 1
+        },
+        {
+          "variant": "implicit-return",
+          "compiler": "old-no-interwork",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 1
+        },
+        {
+          "variant": "call-arm-entry",
+          "compiler": "old",
+          "exact": false,
+          "error": "BL to non-THUMB target arm_func_08018E88"
+        },
+        {
+          "variant": "call-arm-entry",
+          "compiler": "standard",
+          "exact": false,
+          "error": "BL to non-THUMB target arm_func_08018E88"
+        },
+        {
+          "variant": "call-arm-entry",
+          "compiler": "old-no-gcse",
+          "exact": false,
+          "error": "BL to non-THUMB target arm_func_08018E88"
+        },
+        {
+          "variant": "call-arm-entry",
+          "compiler": "old-o1",
+          "exact": false,
+          "error": "BL to non-THUMB target arm_func_08018E88"
+        },
+        {
+          "variant": "call-arm-entry",
+          "compiler": "standard-o1",
+          "exact": false,
+          "error": "BL to non-THUMB target arm_func_08018E88"
+        },
+        {
+          "variant": "call-arm-entry",
+          "compiler": "old-no-interwork",
+          "exact": false,
+          "error": "BL to non-THUMB target arm_func_08018E88"
+        }
+      ],
+      "standalone_validation": {
+        "valid": false,
+        "reason": "unresolved BX or unbalanced return"
+      },
+      "mapped_callers": [
+        "08007B40",
+        "0800B4D8",
+        "0800D570",
+        "0800F008",
+        "08012A50",
+        "08012CC8",
+        "08012EB8",
+        "080130BC",
+        "08013594"
+      ]
+    },
+    {
+      "name": "func_0800D960",
+      "seed_byte_distance": 2,
+      "trials": [
+        {
+          "variant": "seed",
+          "compiler": "old",
+          "exact": false,
+          "bytes_emitted": 12,
+          "byte_distance": 2
+        },
+        {
+          "variant": "seed",
+          "compiler": "standard",
+          "exact": false,
+          "bytes_emitted": 12,
+          "byte_distance": 2
+        },
+        {
+          "variant": "seed",
+          "compiler": "old-no-gcse",
+          "exact": false,
+          "bytes_emitted": 12,
+          "byte_distance": 2
+        },
+        {
+          "variant": "seed",
+          "compiler": "old-o1",
+          "exact": false,
+          "bytes_emitted": 12,
+          "byte_distance": 2
+        },
+        {
+          "variant": "seed",
+          "compiler": "standard-o1",
+          "exact": false,
+          "bytes_emitted": 12,
+          "byte_distance": 2
+        },
+        {
+          "variant": "seed",
+          "compiler": "old-no-interwork",
+          "exact": false,
+          "bytes_emitted": 12,
+          "byte_distance": 2
+        },
+        {
+          "variant": "split-pointer",
+          "compiler": "old",
+          "exact": false,
+          "bytes_emitted": 12,
+          "byte_distance": 2
+        },
+        {
+          "variant": "split-pointer",
+          "compiler": "standard",
+          "exact": false,
+          "bytes_emitted": 12,
+          "byte_distance": 2
+        },
+        {
+          "variant": "split-pointer",
+          "compiler": "old-no-gcse",
+          "exact": false,
+          "bytes_emitted": 12,
+          "byte_distance": 2
+        },
+        {
+          "variant": "split-pointer",
+          "compiler": "old-o1",
+          "exact": false,
+          "bytes_emitted": 12,
+          "byte_distance": 2
+        },
+        {
+          "variant": "split-pointer",
+          "compiler": "standard-o1",
+          "exact": false,
+          "bytes_emitted": 12,
+          "byte_distance": 2
+        },
+        {
+          "variant": "split-pointer",
+          "compiler": "old-no-interwork",
+          "exact": false,
+          "bytes_emitted": 12,
+          "byte_distance": 2
+        },
+        {
+          "variant": "corrected-call",
+          "compiler": "old",
+          "exact": false,
+          "bytes_emitted": 20,
+          "byte_distance": 20
+        },
+        {
+          "variant": "corrected-call",
+          "compiler": "standard",
+          "exact": false,
+          "bytes_emitted": 20,
+          "byte_distance": 20
+        },
+        {
+          "variant": "corrected-call",
+          "compiler": "old-no-gcse",
+          "exact": false,
+          "bytes_emitted": 20,
+          "byte_distance": 20
+        },
+        {
+          "variant": "corrected-call",
+          "compiler": "old-o1",
+          "exact": false,
+          "bytes_emitted": 20,
+          "byte_distance": 20
+        },
+        {
+          "variant": "corrected-call",
+          "compiler": "standard-o1",
+          "exact": false,
+          "bytes_emitted": 20,
+          "byte_distance": 20
+        },
+        {
+          "variant": "corrected-call",
+          "compiler": "old-no-interwork",
+          "exact": false,
+          "bytes_emitted": 20,
+          "byte_distance": 20
+        },
+        {
+          "variant": "explicit-return-call",
+          "compiler": "old",
+          "exact": false,
+          "bytes_emitted": 20,
+          "byte_distance": 19
+        },
+        {
+          "variant": "explicit-return-call",
+          "compiler": "standard",
+          "exact": false,
+          "bytes_emitted": 20,
+          "byte_distance": 19
+        },
+        {
+          "variant": "explicit-return-call",
+          "compiler": "old-no-gcse",
+          "exact": false,
+          "bytes_emitted": 20,
+          "byte_distance": 19
+        },
+        {
+          "variant": "explicit-return-call",
+          "compiler": "old-o1",
+          "exact": false,
+          "bytes_emitted": 20,
+          "byte_distance": 19
+        },
+        {
+          "variant": "explicit-return-call",
+          "compiler": "standard-o1",
+          "exact": false,
+          "bytes_emitted": 20,
+          "byte_distance": 19
+        },
+        {
+          "variant": "explicit-return-call",
+          "compiler": "old-no-interwork",
+          "exact": false,
+          "bytes_emitted": 20,
+          "byte_distance": 19
+        }
+      ],
+      "standalone_validation": {
+        "valid": false,
+        "reason": "call without saved LR or outside ROM"
+      },
+      "mapped_callers": [
+        "0800D630"
+      ]
+    },
+    {
+      "name": "func_080095C4",
+      "seed_byte_distance": 10,
+      "trials": [
+        {
+          "variant": "seed",
+          "compiler": "old",
+          "exact": false,
+          "bytes_emitted": 14,
+          "byte_distance": 10
+        },
+        {
+          "variant": "seed",
+          "compiler": "standard",
+          "exact": false,
+          "bytes_emitted": 14,
+          "byte_distance": 10
+        },
+        {
+          "variant": "seed",
+          "compiler": "old-no-gcse",
+          "exact": false,
+          "bytes_emitted": 14,
+          "byte_distance": 10
+        },
+        {
+          "variant": "seed",
+          "compiler": "old-o1",
+          "exact": false,
+          "bytes_emitted": 14,
+          "byte_distance": 10
+        },
+        {
+          "variant": "seed",
+          "compiler": "standard-o1",
+          "exact": false,
+          "bytes_emitted": 14,
+          "byte_distance": 10
+        },
+        {
+          "variant": "seed",
+          "compiler": "old-no-interwork",
+          "exact": false,
+          "bytes_emitted": 12,
+          "byte_distance": 14
+        },
+        {
+          "variant": "return-argument",
+          "compiler": "old",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 14
+        },
+        {
+          "variant": "return-argument",
+          "compiler": "standard",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 14
+        },
+        {
+          "variant": "return-argument",
+          "compiler": "old-no-gcse",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 14
+        },
+        {
+          "variant": "return-argument",
+          "compiler": "old-o1",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 14
+        },
+        {
+          "variant": "return-argument",
+          "compiler": "standard-o1",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 14
+        },
+        {
+          "variant": "return-argument",
+          "compiler": "old-no-interwork",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 14
+        },
+        {
+          "variant": "return-zero",
+          "compiler": "old",
+          "exact": false,
+          "bytes_emitted": 4,
+          "byte_distance": 14
+        },
+        {
+          "variant": "return-zero",
+          "compiler": "standard",
+          "exact": false,
+          "bytes_emitted": 4,
+          "byte_distance": 14
+        },
+        {
+          "variant": "return-zero",
+          "compiler": "old-no-gcse",
+          "exact": false,
+          "bytes_emitted": 4,
+          "byte_distance": 14
+        },
+        {
+          "variant": "return-zero",
+          "compiler": "old-o1",
+          "exact": false,
+          "bytes_emitted": 4,
+          "byte_distance": 14
+        },
+        {
+          "variant": "return-zero",
+          "compiler": "standard-o1",
+          "exact": false,
+          "bytes_emitted": 4,
+          "byte_distance": 14
+        },
+        {
+          "variant": "return-zero",
+          "compiler": "old-no-interwork",
+          "exact": false,
+          "bytes_emitted": 4,
+          "byte_distance": 14
+        }
+      ],
+      "standalone_validation": {
+        "valid": false,
+        "reason": "stack underflow"
+      },
+      "mapped_callers": [
+        "08008A88"
+      ]
+    },
+    {
+      "name": "func_08007368",
+      "seed_byte_distance": 15,
+      "trials": [
+        {
+          "variant": "seed",
+          "compiler": "old",
+          "exact": false,
+          "bytes_emitted": 16,
+          "byte_distance": 15
+        },
+        {
+          "variant": "seed",
+          "compiler": "standard",
+          "exact": false,
+          "bytes_emitted": 16,
+          "byte_distance": 15
+        },
+        {
+          "variant": "seed",
+          "compiler": "old-no-gcse",
+          "exact": false,
+          "bytes_emitted": 16,
+          "byte_distance": 15
+        },
+        {
+          "variant": "seed",
+          "compiler": "old-o1",
+          "exact": false,
+          "bytes_emitted": 16,
+          "byte_distance": 15
+        },
+        {
+          "variant": "seed",
+          "compiler": "standard-o1",
+          "exact": false,
+          "bytes_emitted": 16,
+          "byte_distance": 15
+        },
+        {
+          "variant": "seed",
+          "compiler": "old-no-interwork",
+          "exact": false,
+          "bytes_emitted": 16,
+          "byte_distance": 15
+        },
+        {
+          "variant": "empty-return",
+          "compiler": "old",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 16
+        },
+        {
+          "variant": "empty-return",
+          "compiler": "standard",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 16
+        },
+        {
+          "variant": "empty-return",
+          "compiler": "old-no-gcse",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 16
+        },
+        {
+          "variant": "empty-return",
+          "compiler": "old-o1",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 16
+        },
+        {
+          "variant": "empty-return",
+          "compiler": "standard-o1",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 16
+        },
+        {
+          "variant": "empty-return",
+          "compiler": "old-no-interwork",
+          "exact": false,
+          "bytes_emitted": 2,
+          "byte_distance": 16
+        },
+        {
+          "variant": "signed-temporary",
+          "compiler": "old",
+          "exact": false,
+          "bytes_emitted": 16,
+          "byte_distance": 15
+        },
+        {
+          "variant": "signed-temporary",
+          "compiler": "standard",
+          "exact": false,
+          "bytes_emitted": 16,
+          "byte_distance": 15
+        },
+        {
+          "variant": "signed-temporary",
+          "compiler": "old-no-gcse",
+          "exact": false,
+          "bytes_emitted": 16,
+          "byte_distance": 15
+        },
+        {
+          "variant": "signed-temporary",
+          "compiler": "old-o1",
+          "exact": false,
+          "bytes_emitted": 16,
+          "byte_distance": 15
+        },
+        {
+          "variant": "signed-temporary",
+          "compiler": "standard-o1",
+          "exact": false,
+          "bytes_emitted": 16,
+          "byte_distance": 15
+        },
+        {
+          "variant": "signed-temporary",
+          "compiler": "old-no-interwork",
+          "exact": false,
+          "bytes_emitted": 16,
+          "byte_distance": 15
+        }
+      ],
+      "standalone_validation": {
+        "valid": false,
+        "reason": "invalid stack depth"
+      },
+      "mapped_callers": [
+        "080064A4"
+      ]
+    }
+  ]
+}

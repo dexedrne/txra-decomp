@@ -1,0 +1,1148 @@
+{
+ "rom_sha1": "4197339d4add74bb40ed02a8fba5e58096afb487",
+ "entries_total": 228,
+ "exact_c_entries": 194,
+ "unmatched_by_class": {
+  "assembly-interface": 31,
+  "covered-by-installed-owner": 3
+ },
+ "unmatched_instruction_bytes_by_class": {
+  "assembly-interface": 6092,
+  "covered-by-installed-owner": 6406
+ },
+ "verification_failures": [],
+ "entries": [
+  {
+   "start": "0x080000C0",
+   "end": "0x080000F4",
+   "mode": "arm",
+   "instruction_bytes": 52,
+   "class": "assembly-interface",
+   "unit": "startup",
+   "reason": "reset: privileged mode changes, banked stacks, IRQ hook, BX to Thumb",
+   "measured_evidence": "2 status-register writes (mode changes) and banked stack setup",
+   "properties": {
+    "instructions": 13,
+    "first_instruction": "mov r0, #0x12",
+    "swi": [],
+    "status_register_access": 2,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 1,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {
+    "direct branch": 2
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x080000FC",
+   "end": "0x080001F4",
+   "mode": "arm",
+   "instruction_bytes": 248,
+   "class": "assembly-interface",
+   "unit": "irq",
+   "reason": "IRQ dispatcher: SPSR save, mode switch, table dispatch",
+   "measured_evidence": "3 MRS/MSR instructions on SPSR/CPSR (exception state)",
+   "properties": {
+    "instructions": 62,
+    "first_instruction": "mov r3, #0x4000000",
+    "swi": [],
+    "status_register_access": 3,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 1,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {
+    "code pc-relative address": 1,
+    "code literal": 2
+   },
+   "data_slot_references": {
+    "table": 2
+   },
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x080001F4",
+   "end": "0x08000218",
+   "mode": "arm",
+   "instruction_bytes": 36,
+   "class": "assembly-interface",
+   "unit": "irq",
+   "reason": "IRQ return tail: restores banked SPSR/mode",
+   "measured_evidence": "3 MRS/MSR instructions on SPSR/CPSR (exception state)",
+   "properties": {
+    "instructions": 9,
+    "first_instruction": "ldm sp!, {lr}",
+    "swi": [],
+    "status_register_access": 3,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {
+    "code pc-relative address": 1
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x08000218",
+   "end": "0x0800027C",
+   "mode": "arm",
+   "instruction_bytes": 100,
+   "class": "assembly-interface",
+   "unit": "division-runtime",
+   "reason": "signed division helper (flag-coupled ARM runtime)",
+   "measured_evidence": "no frame; 11 conditionally executed non-branch instructions driven by shift/subtract flags",
+   "properties": {
+    "instructions": 25,
+    "first_instruction": "cmp r1, #0",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "r4"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 1,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 11,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {
+    "direct branch": 1
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x0800027C",
+   "end": "0x080002C0",
+   "mode": "arm",
+   "instruction_bytes": 68,
+   "class": "assembly-interface",
+   "unit": "division-runtime",
+   "reason": "unsigned division helper (carry-driven ARM runtime)",
+   "measured_evidence": "no frame; 7 conditionally executed non-branch instructions driven by shift/subtract flags",
+   "properties": {
+    "instructions": 17,
+    "first_instruction": "cmp r1, #0",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 7,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {},
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": false,
+   "executed_in_recorded_coverage": false
+  },
+  {
+   "start": "0x080002CC",
+   "end": "0x08000324",
+   "mode": "arm",
+   "instruction_bytes": 88,
+   "class": "assembly-interface",
+   "unit": "renderer-private-abi",
+   "reason": "raster front end passing operands in r6-r11",
+   "measured_evidence": "LR used as a general register (4 writes); calls 0x08000324, which reads fp/r6/r7/r8/sb/sl on entry (private register contract)",
+   "properties": {
+    "instructions": 22,
+    "first_instruction": "push {r4, r5, r6, r7, r8, sb, sl, fp, ip, lr}",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 4,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": true,
+    "direct_calls": [
+     "0x8000324"
+    ]
+   },
+   "code_references": {
+    "code literal": 2,
+    "resolved indirect": 1
+   },
+   "data_slot_references": {
+    "table": 2,
+    "data": 1
+   },
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x08000324",
+   "end": "0x080005CC",
+   "mode": "arm",
+   "instruction_bytes": 680,
+   "class": "assembly-interface",
+   "unit": "renderer-private-abi",
+   "reason": "raster inner loop with preloaded high registers",
+   "measured_evidence": "reads fp/r6/r7/r8/sb/sl before defining them; 6 XOR register swaps; 5 stores below SP without allocation; 26 predicated non-branch instructions",
+   "properties": {
+    "instructions": 170,
+    "first_instruction": "add r6, r6, r6",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "fp",
+     "r6",
+     "r7",
+     "r8",
+     "sb",
+     "sl"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 6,
+    "stores_below_sp": 5,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 26,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {
+    "direct call": 2
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x080005D8",
+   "end": "0x08000AA0",
+   "mode": "arm",
+   "instruction_bytes": 1224,
+   "class": "assembly-interface",
+   "unit": "renderer-private-abi",
+   "reason": "textured raster front end calling 08000AA0 privately",
+   "measured_evidence": "17 XOR register swaps; LR used as a general register (9 writes); 33 predicated non-branch instructions; calls 0x08000AA0, which reads fp/ip/r4/r6/r7/r8 on entry (private register contract)",
+   "properties": {
+    "instructions": 306,
+    "first_instruction": "push {r4, r5, r6, r7, r8, sb, sl, fp, ip, lr}",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 17,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 9,
+    "conditional_non_branch_instructions": 33,
+    "conventional_frame_at_entry": true,
+    "direct_calls": [
+     "0x8000aa0"
+    ]
+   },
+   "code_references": {
+    "code literal": 3,
+    "resolved indirect": 1
+   },
+   "data_slot_references": {
+    "table": 4,
+    "data": 1
+   },
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x08000AA0",
+   "end": "0x08000BE0",
+   "mode": "arm",
+   "instruction_bytes": 320,
+   "class": "assembly-interface",
+   "unit": "renderer-private-abi",
+   "reason": "raster helper consuming live high registers and flags",
+   "measured_evidence": "reads fp/ip/r4/r6/r7/r8 before defining them; LR used as a general register (2 writes); 5 predicated non-branch instructions",
+   "properties": {
+    "instructions": 80,
+    "first_instruction": "stmdb sp!, {lr}",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "fp",
+     "ip",
+     "r4",
+     "r6",
+     "r7",
+     "r8"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 2,
+    "conditional_non_branch_instructions": 5,
+    "conventional_frame_at_entry": true,
+    "direct_calls": []
+   },
+   "code_references": {
+    "direct call": 3
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x08000BF0",
+   "end": "0x080010B8",
+   "mode": "arm",
+   "instruction_bytes": 1224,
+   "class": "assembly-interface",
+   "unit": "renderer-private-abi",
+   "reason": "raster front end calling 080010B8 privately",
+   "measured_evidence": "17 XOR register swaps; LR used as a general register (9 writes); 33 predicated non-branch instructions; calls 0x080010B8, which reads fp/ip/r4/r6/r7/r8 on entry (private register contract)",
+   "properties": {
+    "instructions": 306,
+    "first_instruction": "push {r4, r5, r6, r7, r8, sb, sl, fp, ip, lr}",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 17,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 9,
+    "conditional_non_branch_instructions": 33,
+    "conventional_frame_at_entry": true,
+    "direct_calls": [
+     "0x80010b8"
+    ]
+   },
+   "code_references": {
+    "code literal": 3,
+    "resolved indirect": 1
+   },
+   "data_slot_references": {
+    "table": 4,
+    "data": 1
+   },
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x080010B8",
+   "end": "0x08001208",
+   "mode": "arm",
+   "instruction_bytes": 336,
+   "class": "assembly-interface",
+   "unit": "renderer-private-abi",
+   "reason": "raster helper with packed inputs in r4/r6/r11",
+   "measured_evidence": "reads fp/ip/r4/r6/r7/r8 before defining them; LR used as a general register (2 writes); 6 predicated non-branch instructions",
+   "properties": {
+    "instructions": 84,
+    "first_instruction": "stmdb sp!, {lr}",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "fp",
+     "ip",
+     "r4",
+     "r6",
+     "r7",
+     "r8"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 2,
+    "conditional_non_branch_instructions": 6,
+    "conventional_frame_at_entry": true,
+    "direct_calls": []
+   },
+   "code_references": {
+    "direct call": 3
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x08001218",
+   "end": "0x080016E0",
+   "mode": "arm",
+   "instruction_bytes": 1224,
+   "class": "assembly-interface",
+   "unit": "renderer-private-abi",
+   "reason": "raster front end calling 080016E0 privately",
+   "measured_evidence": "17 XOR register swaps; LR used as a general register (9 writes); 33 predicated non-branch instructions; calls 0x080016E0, which reads fp/ip/r4/r6/r7/r8 on entry (private register contract)",
+   "properties": {
+    "instructions": 306,
+    "first_instruction": "push {r4, r5, r6, r7, r8, sb, sl, fp, ip, lr}",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 17,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 9,
+    "conditional_non_branch_instructions": 33,
+    "conventional_frame_at_entry": true,
+    "direct_calls": [
+     "0x80016e0"
+    ]
+   },
+   "code_references": {
+    "code literal": 3,
+    "resolved indirect": 1
+   },
+   "data_slot_references": {
+    "table": 3,
+    "data": 1
+   },
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x080016E0",
+   "end": "0x080018A4",
+   "mode": "arm",
+   "instruction_bytes": 452,
+   "class": "assembly-interface",
+   "unit": "renderer-private-abi",
+   "reason": "raster inner loop with live r4/r6-r8/r11/r12",
+   "measured_evidence": "reads fp/ip/r4/r6/r7/r8 before defining them; LR used as a general register (2 writes); 4 predicated non-branch instructions",
+   "properties": {
+    "instructions": 113,
+    "first_instruction": "stmdb sp!, {lr}",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "fp",
+     "ip",
+     "r4",
+     "r6",
+     "r7",
+     "r8"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 2,
+    "conditional_non_branch_instructions": 4,
+    "conventional_frame_at_entry": true,
+    "direct_calls": []
+   },
+   "code_references": {
+    "direct call": 3
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x08003786",
+   "end": "0x0800417E",
+   "mode": "thumb",
+   "instruction_bytes": 2552,
+   "class": "covered-by-installed-owner",
+   "unit": "08002854",
+   "reason": "internal continuation inside installed func_08002854 (second scenery pass, reached by the far BL at 0800416A)",
+   "measured_evidence": "no own prologue; reads r6/r7/r8 before defining them",
+   "properties": {
+    "instructions": 1201,
+    "first_instruction": "ldr r1, [pc, #0x2bc]",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "r6",
+     "r7",
+     "r8"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": [
+     "0x8003786",
+     "0x8005dd4",
+     "0x8005f48"
+    ]
+   },
+   "code_references": {
+    "direct call": 1
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x0800D570",
+   "end": "0x0800D630",
+   "mode": "thumb",
+   "instruction_bytes": 192,
+   "class": "covered-by-installed-owner",
+   "unit": "0800D51C",
+   "reason": "internal entry inside installed func_0800D51C",
+   "measured_evidence": "no own prologue",
+   "properties": {
+    "instructions": 90,
+    "first_instruction": "bl #0x8015e20",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": [
+     "0x80141ec",
+     "0x8015200",
+     "0x8015e20",
+     "0x8015e34",
+     "0x8018e84"
+    ]
+   },
+   "code_references": {
+    "direct call": 1
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x0800D630",
+   "end": "0x0800E47E",
+   "mode": "thumb",
+   "instruction_bytes": 3662,
+   "class": "covered-by-installed-owner",
+   "unit": "0800D51C",
+   "reason": "internal body inside installed func_0800D51C",
+   "measured_evidence": "no own prologue; reads r6 before defining them",
+   "properties": {
+    "instructions": 1170,
+    "first_instruction": "ldr r3, [pc, #0x104]",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "r6"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": [
+     "0x8002500",
+     "0x8005238",
+     "0x8005c7c",
+     "0x8005ee0",
+     "0x8005ef8",
+     "0x80085e0",
+     "0x800d570",
+     "0x800d630",
+     "0x800d960",
+     "0x800e498",
+     "0x800ed28",
+     "0x800edf4",
+     "0x800f2d0",
+     "0x8010a50",
+     "0x801251c",
+     "0x8012600",
+     "0x80130bc",
+     "0x8013594",
+     "0x8013fac",
+     "0x801418c",
+     "0x80141ec",
+     "0x8014208",
+     "0x8014394",
+     "0x80143cc",
+     "0x8014408",
+     "0x80145b8",
+     "0x8015200",
+     "0x8015250",
+     "0x80154ac",
+     "0x8015d78",
+     "0x8015e20",
+     "0x8015e34",
+     "0x801604c",
+     "0x8016134",
+     "0x8016174",
+     "0x80161e8",
+     "0x8016210",
+     "0x8016264"
+    ]
+   },
+   "code_references": {
+    "direct branch": 1,
+    "direct call": 3
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x08018A54",
+   "end": "0x08018A58",
+   "mode": "thumb",
+   "instruction_bytes": 4,
+   "class": "assembly-interface",
+   "unit": "bios-veneer",
+   "reason": "CpuFastSet SWI then return",
+   "measured_evidence": "SWI 0x0C then return; agbcc has no intrinsic for the SWI opcode",
+   "properties": {
+    "instructions": 2,
+    "first_instruction": "svc #0xc",
+    "swi": [
+     12
+    ],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 1,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {
+    "direct call": 2
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x08018A58",
+   "end": "0x08018A5C",
+   "mode": "thumb",
+   "instruction_bytes": 4,
+   "class": "assembly-interface",
+   "unit": "bios-veneer",
+   "reason": "CpuSet SWI then return",
+   "measured_evidence": "SWI 0x0B then return; agbcc has no intrinsic for the SWI opcode",
+   "properties": {
+    "instructions": 2,
+    "first_instruction": "svc #0xb",
+    "swi": [
+     11
+    ],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 1,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {
+    "direct call": 4
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x08018DE0",
+   "end": "0x08018DE2",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX r0 without setting LR (libgcc _call_via_r0)",
+   "measured_evidence": "single bx r0; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx r0",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {
+    "direct call": 6
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x08018DE4",
+   "end": "0x08018DE6",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX r1 without setting LR (libgcc _call_via_r1)",
+   "measured_evidence": "single bx r1; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx r1",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {
+    "direct call": 2
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x08018DE8",
+   "end": "0x08018DEA",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX r2 without setting LR (libgcc _call_via_r2)",
+   "measured_evidence": "single bx r2; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx r2",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {
+    "direct call": 5
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x08018DEC",
+   "end": "0x08018DEE",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX r3 without setting LR (libgcc _call_via_r3)",
+   "measured_evidence": "single bx r3; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx r3",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {},
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": false,
+   "executed_in_recorded_coverage": false
+  },
+  {
+   "start": "0x08018DF0",
+   "end": "0x08018DF2",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX r4 without setting LR (libgcc _call_via_r4)",
+   "measured_evidence": "single bx r4; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx r4",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "r4"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {},
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": false,
+   "executed_in_recorded_coverage": false
+  },
+  {
+   "start": "0x08018DF4",
+   "end": "0x08018DF6",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX r5 without setting LR (libgcc _call_via_r5)",
+   "measured_evidence": "single bx r5; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx r5",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "r5"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {},
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": false,
+   "executed_in_recorded_coverage": false
+  },
+  {
+   "start": "0x08018DF8",
+   "end": "0x08018DFA",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX r6 without setting LR (libgcc _call_via_r6)",
+   "measured_evidence": "single bx r6; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx r6",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "r6"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {},
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": false,
+   "executed_in_recorded_coverage": false
+  },
+  {
+   "start": "0x08018DFC",
+   "end": "0x08018DFE",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX r7 without setting LR (libgcc _call_via_r7)",
+   "measured_evidence": "single bx r7; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx r7",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "r7"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {},
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": false,
+   "executed_in_recorded_coverage": false
+  },
+  {
+   "start": "0x08018E00",
+   "end": "0x08018E02",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX r8 without setting LR (libgcc _call_via_r8)",
+   "measured_evidence": "single bx r8; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx r8",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "r8"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {},
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": false,
+   "executed_in_recorded_coverage": false
+  },
+  {
+   "start": "0x08018E04",
+   "end": "0x08018E06",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX sb without setting LR (libgcc _call_via_sb)",
+   "measured_evidence": "single bx sb; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx sb",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "sb"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {},
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": false,
+   "executed_in_recorded_coverage": false
+  },
+  {
+   "start": "0x08018E08",
+   "end": "0x08018E0A",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX sl without setting LR (libgcc _call_via_sl)",
+   "measured_evidence": "single bx sl; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx sl",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "sl"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {},
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": false,
+   "executed_in_recorded_coverage": false
+  },
+  {
+   "start": "0x08018E0C",
+   "end": "0x08018E0E",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX fp without setting LR (libgcc _call_via_fp)",
+   "measured_evidence": "single bx fp; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx fp",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "fp"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {},
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": false,
+   "executed_in_recorded_coverage": false
+  },
+  {
+   "start": "0x08018E10",
+   "end": "0x08018E12",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX ip without setting LR (libgcc _call_via_ip)",
+   "measured_evidence": "single bx ip; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx ip",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [
+     "ip"
+    ],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {},
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": false,
+   "executed_in_recorded_coverage": false
+  },
+  {
+   "start": "0x08018E14",
+   "end": "0x08018E16",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "register-call-veneer",
+   "reason": "BX sp without setting LR (libgcc _call_via_sp)",
+   "measured_evidence": "single bx sp; no frame, LR untouched, so the callee returns straight to the BL caller",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx sp",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {},
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": false,
+   "executed_in_recorded_coverage": false
+  },
+  {
+   "start": "0x08018E7C",
+   "end": "0x08018E7E",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "state-switch-veneer",
+   "reason": "Thumb BX PC into the ARM branch at 08018E80",
+   "measured_evidence": "bx pc switches to ARM at the next word; the paired ARM branch is installed separately",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx pc",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {
+    "direct call": 45
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  },
+  {
+   "start": "0x08018E84",
+   "end": "0x08018E86",
+   "mode": "thumb",
+   "instruction_bytes": 2,
+   "class": "assembly-interface",
+   "unit": "state-switch-veneer",
+   "reason": "Thumb BX PC into the ARM branch at 08018E88",
+   "measured_evidence": "bx pc switches to ARM at the next word; the paired ARM branch is installed separately",
+   "properties": {
+    "instructions": 1,
+    "first_instruction": "bx pc",
+    "swi": [],
+    "status_register_access": 0,
+    "non_abi_live_in_registers": [],
+    "condition_flags_live_in": false,
+    "xor_swaps": 0,
+    "stores_below_sp": 0,
+    "lr_written_as_general_register": 0,
+    "conditional_non_branch_instructions": 0,
+    "conventional_frame_at_entry": false,
+    "direct_calls": []
+   },
+   "code_references": {
+    "direct call": 9
+   },
+   "data_slot_references": {},
+   "reachable_from_reset_by_code_edges": true,
+   "executed_in_recorded_coverage": true
+  }
+ ],
+ "note": "Assembly interfaces are counted as documented assembly, never as C. Classes are reviewed; properties are re-measured from the ROM on every run."
+}

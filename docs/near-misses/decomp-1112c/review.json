@@ -1,0 +1,88 @@
+{
+  "directory": "txra-review/decomp-1112c",
+  "artifacts": {
+    "before-status.png": {
+      "bytes": 43721,
+      "sha256": "02703b5c097e951316e21a450d1fc00f6752a29b960e285fa6d627c1bbd969b9",
+      "width": 1600,
+      "height": 1000
+    },
+    "after-status.png": {
+      "bytes": 42891,
+      "sha256": "551139c4862a3d7a874a470b4fd5bdd54dfb70cf613db6cabcebc7231bcd0624",
+      "width": 1600,
+      "height": 1000
+    },
+    "status.webm": {
+      "bytes": 189339,
+      "sha256": "90b2adc4629edd289f60934a0e91f498f1e1a663ad79abac3d19e70275214543",
+      "seconds": 4,
+      "fps": 30,
+      "width": 1280,
+      "height": 800,
+      "audio_streams": 0
+    },
+    "before-0800421C.png": {
+      "bytes": 56424,
+      "sha256": "8bc591dce5a5115d8b021ff0ef105852b17c58e03fd889fc011e33105d01bd8c",
+      "width": 1600,
+      "height": 1000
+    },
+    "after-0800421C.png": {
+      "bytes": 57490,
+      "sha256": "1b4903823d03cecbe73d9f56cefd58f488665a45273b5f6f9bfa89a2762b5882",
+      "width": 1600,
+      "height": 1000
+    },
+    "0800421C.webm": {
+      "bytes": 362553,
+      "sha256": "a545dfe90d8e109d9597bbb18be02661d46d1c81ca0909d5fd6633b17972efd4",
+      "seconds": 4,
+      "fps": 30,
+      "width": 1280,
+      "height": 800,
+      "audio_streams": 0
+    },
+    "before-08002854.png": {
+      "bytes": 55636,
+      "sha256": "8c079a18f35207d3be4661bd3e452e4778a963335c25ce87d2aff696bdf71cda",
+      "width": 1600,
+      "height": 1000
+    },
+    "after-08002854.png": {
+      "bytes": 56118,
+      "sha256": "82d038b2dfa4f93164ac510c1534fa18dffe539b7195e35947fdd27cd0f2018a",
+      "width": 1600,
+      "height": 1000
+    },
+    "08002854.webm": {
+      "bytes": 382050,
+      "sha256": "43da4b2646f1dc1f092af76176d083fa991c748730490181c28a7efdea62f339",
+      "seconds": 4,
+      "fps": 30,
+      "width": 1280,
+      "height": 800,
+      "audio_streams": 0
+    },
+    "clip-overview.png": {
+      "bytes": 101360,
+      "sha256": "0d083a77a82911033251fef84820219363a1cf3d1e562a35b2b0d94ca6dfe9bf",
+      "width": 1000,
+      "height": 990
+    }
+  },
+  "comparisons_only": true,
+  "gameplay_claimed": false,
+  "browser_or_server_started": false,
+  "inspected_native_pictures": [
+    "before-status.png",
+    "after-status.png",
+    "before-0800421C.png",
+    "after-0800421C.png",
+    "before-08002854.png",
+    "after-08002854.png",
+    "clip-overview.png"
+  ],
+  "decoded_clip_samples_inspected": 24,
+  "native_decoded_after_frames_inspected": 3
+}

@@ -1,0 +1,20 @@
+{
+  "measured": 1825,
+  "compile_errors": 13,
+  "distinct_sources": 1838,
+  "best_different_bytes": 941,
+  "baseline_different_bytes": 1143,
+  "wall_seconds": 1200.371,
+  "limit_seconds": 1200,
+  "compiler": "arm",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "owner_end": "08018854",
+  "installed": false,
+  "independent_semantic_verification": false,
+  "stop_reason": "time limit",
+  "semantics_rejected": true,
+  "rejection_receipt": "rejection.json"
+}

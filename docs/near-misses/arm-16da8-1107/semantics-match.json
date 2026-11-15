@@ -1,0 +1,14 @@
+{
+  "candidate": "func_08016DA8_match.c",
+  "differential_fixtures": 199,
+  "fixed_expected_checks": 20,
+  "compile_time_size_checks": 3,
+  "compile_time_offset_checks": 14,
+  "executed_instruction_addresses": 1053,
+  "instruction_addresses": 1053,
+  "not_executed": [],
+  "source_sha256": "ff01f366e731509f5d7ac163bc64c7b1bf465fbcbef739a1fd37224aee4a16d6",
+  "assembly_sha256": "013f6f4982c413494122f6565c5e0f3e662bd9fd6fc232b76596b1f773b132d6",
+  "rom_used": false,
+  "byte_match_verified": false
+}

@@ -1,0 +1,71 @@
+{
+  "before-08016DA8.png": {
+    "sha256": "ad1b32d6e64a5130f771a30a81babdf7f6ab051dd017142b4ba622845779320a",
+    "bytes": 150016,
+    "width": 1600,
+    "height": 1000
+  },
+  "after-08016DA8.png": {
+    "sha256": "2a8f44ac709cba4413321b81eff9e996824b7b6d6ec162cd081df3d45a52f5c6",
+    "bytes": 142744,
+    "width": 1600,
+    "height": 1000
+  },
+  "08016DA8.webm": {
+    "bytes": 787633,
+    "sha256": "56610632ec437c82d8d8bfc5b40c7e7c15133c9a8196e92dff53b768fb3c6a01",
+    "seconds": 8.0,
+    "fps": 30,
+    "width": 1600,
+    "height": 1000,
+    "audio_streams": 0
+  },
+  "before-080064A4.png": {
+    "sha256": "1d0193e7d5c2cd805386338c571d0328b2b21cf2eccaee60bc3793a4f0bc3adc",
+    "bytes": 158308,
+    "width": 1600,
+    "height": 1000
+  },
+  "after-080064A4.png": {
+    "sha256": "3fd7e987860cf7af1d4f117a5f71a19f059e1c943cc48f1eb22e0229a96077ad",
+    "bytes": 156182,
+    "width": 1600,
+    "height": 1000
+  },
+  "080064A4.webm": {
+    "bytes": 795560,
+    "sha256": "b15d6fd591d2cf3c8f911450086d0e0ed31f13b10b9d5c993c9674265a53b57f",
+    "seconds": 8.0,
+    "fps": 30,
+    "width": 1600,
+    "height": 1000,
+    "audio_streams": 0
+  },
+  "before-0800421C.png": {
+    "sha256": "a9aa9e8419ced766bb7a29726892b5f616e2b1a0d3698e9fbeaebbc920289c30",
+    "bytes": 142917,
+    "width": 1600,
+    "height": 1000
+  },
+  "after-0800421C.png": {
+    "sha256": "1a3985a65b17e5d8f08102810cdf0f8f4b6825b7297554ef834026cd8c402067",
+    "bytes": 142549,
+    "width": 1600,
+    "height": 1000
+  },
+  "0800421C.webm": {
+    "bytes": 739871,
+    "sha256": "503b8ed02ef800e141942c37f9f1b0661aca3926067a98b3fd064cf112b22481",
+    "seconds": 8.0,
+    "fps": 30,
+    "width": 1600,
+    "height": 1000,
+    "audio_streams": 0
+  },
+  "clip-overview.png": {
+    "sha256": "7e85a1131307635321779f5206451565483bdafc3c26f7d173a2c57c51f9af0e",
+    "bytes": 460629,
+    "width": 1600,
+    "height": 1590
+  }
+}

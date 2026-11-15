@@ -1,0 +1,128 @@
+{
+ "tool": "tools/measure_candidate.py <src> 080064A4 08007398 old",
+ "worker": "worker A",
+ "compiler_sha256": "90bdd572d4849304b147115458d1953a457ad3ba11f3686d8029bad3a3d95cb0",
+ "steps": [
+  {
+   "source": "docs/near-misses/finish4-1115-sound/func_080064A4.c",
+   "source_sha256": "b6313992595078baf52c22fcfd2390cf7ef171ad01eec9257b773afeb3bba25c",
+   "emitted_bytes": 3828,
+   "local_frame_bytes": 108,
+   "instruction_distance": 87,
+   "different_bytes": 90,
+   "exact": false,
+   "compiled_sha256": "b44e8d5a4dcdc6baef7dc47fcaa189197da031116450fd6a8d7f41cbf422b4af",
+   "step": "finish4 near-miss (start)"
+  },
+  {
+   "source": "build/rcpt/r1_pitchsum_gain.c",
+   "source_sha256": "34f63db61e88e7759c42f40c0b244837d9119731437a2ad04584a5b2ebb09897",
+   "emitted_bytes": 3836,
+   "local_frame_bytes": 108,
+   "instruction_distance": 689,
+   "different_bytes": 3303,
+   "exact": false,
+   "compiled_sha256": "52683bc6cf0cd59eaef1e8656e3216798390b3cea3c5cdffc5c7240d849a2a06",
+   "step": "finish4 + slide pitch sums in the function-level gain temporary (alone)"
+  },
+  {
+   "source": "build/rcpt/r2_notestart_slide.c",
+   "source_sha256": "707755e1db289886fdc5df1faed84b52e7775fcb357622b0912479883d07fffe",
+   "emitted_bytes": 3852,
+   "local_frame_bytes": 108,
+   "instruction_distance": 268,
+   "different_bytes": 1063,
+   "exact": false,
+   "compiled_sha256": "181b7016e36c082d5aca65cc73e4bd1b3127b69ce0fe27e2a55d314094fb18da",
+   "step": "finish4 + tone note-start envelopes on the shared slide pointer (alone)"
+  },
+  {
+   "source": "build/rcpt/r3_both.c",
+   "source_sha256": "3e7efc41702e0e0992e488cc847a14bd16a25171eb494ef7c0181dd379520091",
+   "emitted_bytes": 3828,
+   "local_frame_bytes": 108,
+   "instruction_distance": 20,
+   "different_bytes": 23,
+   "exact": false,
+   "compiled_sha256": "6756f8e11eb33ed36ec3f1bb7fa23aa3d1be021ee6cd17dbf5478b3e6df0f66f",
+   "step": "both of the above"
+  },
+  {
+   "source": "build/rcpt/r4_t69temp.c",
+   "source_sha256": "724943fc3fa2ae99d9bbc5dba2f8bf8353b4b8a6bdc33362f4b16e6f6fb9fa5b",
+   "emitted_bytes": 3828,
+   "local_frame_bytes": 108,
+   "instruction_distance": 17,
+   "different_bytes": 20,
+   "exact": false,
+   "compiled_sha256": "73cb7a95eac0581dbe571a686ea905042c109543e97bba3e078cd584120842b2",
+   "step": "+ 0x69 command value through a block temporary"
+  },
+  {
+   "source": "build/rcpt/r5_tempo_pluseq.c",
+   "source_sha256": "d3daf4ba75830d72da23dec7b97ada6185e124155f112d9b5b3d132ae4eaff51",
+   "emitted_bytes": 3828,
+   "local_frame_bytes": 108,
+   "instruction_distance": 15,
+   "different_bytes": 18,
+   "exact": false,
+   "compiled_sha256": "7d9a0bbb619aa1cae7bcfdf213878a4002d0cd50a023b39f245f4f668fb8fe4d",
+   "step": "+ gTempoCounter += gTempo"
+  },
+  {
+   "source": "build/rcpt/r6_stop_in_gain.c",
+   "source_sha256": "032420ec1dd30debeb54f1ca886c61641227e4c5661e60db7ce1760c4a93d817",
+   "emitted_bytes": 3828,
+   "local_frame_bytes": 108,
+   "instruction_distance": 0,
+   "different_bytes": 0,
+   "exact": true,
+   "compiled_sha256": "e391678273de8dae8b0f0c4f845dbb86674af3f8b97b7ca015632cc17cf8f301",
+   "step": "+ effect stop flag kept in gain (exact)"
+  },
+  {
+   "source": "build/rcpt/s_tempo_only.c",
+   "source_sha256": "34a1cfc0d4b1ee75761c1ef1cbc8fc9bb4816b402e66b48dab901a6ee931b992",
+   "emitted_bytes": 3828,
+   "local_frame_bytes": 108,
+   "instruction_distance": 88,
+   "different_bytes": 91,
+   "exact": false,
+   "compiled_sha256": "35d931c0360ad4b87ec752f350c2a04f81f7eb75b322a262f1d70b440ff9bb3e",
+   "step": "finish4 + gTempoCounter += gTempo (alone)"
+  },
+  {
+   "source": "build/rcpt/s_t69_only.c",
+   "source_sha256": "05f2275cd10ddf0a82b9597762c4ffa1da3006ce678f911db5a7d60eebb2846f",
+   "emitted_bytes": 3828,
+   "local_frame_bytes": 108,
+   "instruction_distance": 84,
+   "different_bytes": 87,
+   "exact": false,
+   "compiled_sha256": "cc3f52a03a2cea1560b592d4de10385d0ae088c62eed4f7328695df79632f8e8",
+   "step": "finish4 + 0x69 block temporary (alone)"
+  },
+  {
+   "source": "build/rcpt/s_stop_only.c",
+   "source_sha256": "ec14ccf49d6272fa8fcd66596f453560198a874065bc25d78d737076f55d1dfb",
+   "emitted_bytes": 3828,
+   "local_frame_bytes": 108,
+   "instruction_distance": 72,
+   "different_bytes": 72,
+   "exact": false,
+   "compiled_sha256": "e3ebe0f9e7360d3f3d081365f1808831785e05f24fae0bef11e51a943f747bfd",
+   "step": "finish4 + stop flag in gain (alone)"
+  },
+  {
+   "source": "src/generated/func_080064A4.c",
+   "source_sha256": "90b6777c3969a6195c136c5f802624d10d73c6763c11616834bad96cbf9ec692",
+   "emitted_bytes": 3828,
+   "local_frame_bytes": 108,
+   "instruction_distance": 0,
+   "different_bytes": 0,
+   "exact": true,
+   "compiled_sha256": "e391678273de8dae8b0f0c4f845dbb86674af3f8b97b7ca015632cc17cf8f301",
+   "step": "installed source (unused locals removed, gain renamed tmp, header)"
+  }
+ ]
+}

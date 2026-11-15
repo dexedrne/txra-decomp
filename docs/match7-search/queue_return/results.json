@@ -1,0 +1,14 @@
+{
+  "address": "08015DA8",
+  "planned_jobs": 96,
+  "attempts": 96,
+  "compile_errors": 0,
+  "seconds": 0.65,
+  "exact": false,
+  "score": [
+    11,
+    11
+  ],
+  "size": 118,
+  "compiler": "old"
+}

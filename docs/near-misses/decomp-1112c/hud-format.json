@@ -1,0 +1,7 @@
+{
+  "search_source_sha256": "d340eb4b8ecbf3ce5260ac458421dd65b1386c804f50fc3cbd8b6bcb197b83e4",
+  "retained_source_sha256": "f8ecf21820e21c2d1d7069e1aa4a7f09707ea586f267abc9e6ee8ddb372e36ff",
+  "compiled_sha256": "28db65402b5529e06eae2b99b5fc88a4f108cf00299fb0ce792e76c10bf36301",
+  "generated_code_unchanged": true,
+  "reason": "Join external declaration lines to keep the retained source under 500 lines."
+}

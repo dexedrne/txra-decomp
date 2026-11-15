@@ -1,0 +1,248 @@
+[
+ {
+  "address": "08006270",
+  "bytes": 348,
+  "group": "Exact C match, installed",
+  "note": "Sound stream mixer. Index and limit read through two block pointers in the first loop (hoist order); one function-level mixing temporary shared by both halving loops (global allocation priority)."
+ },
+ {
+  "address": "0800B3A0",
+  "bytes": 310,
+  "group": "C, improved draft retained",
+  "note": "Point plot; everything except the odd-x branch now matches (33 differing lines, because that branch swaps r0/r1, its tail merges with the even branch and the pool shifts). Address written inside the dereference (EXPAND_SUM order), x + (32 + shift), full-width mask temporary. Draft in drafts/."
+ },
+ {
+  "address": "080162F8",
+  "bytes": 406,
+  "group": "C, improved draft retained",
+  "note": "Rotation and projection, 222 to 161 differing lines (143 with plain volatile structs). Trig globals assigned straight from the tables and read back; centre and delta as a volatile local pair. Spill layout still differs (frame 60 against 48). Draft in drafts/."
+ },
+ {
+  "address": "08008914",
+  "bytes": 370,
+  "group": "C, worked, not matched",
+  "note": "Transparent blitter. CSE merges the two 255 masks into one register used outside its block, so loop.c will not hoist it; the original keeps 1 and 255 hoisted."
+ },
+ {
+  "address": "0800CEEC",
+  "bytes": 620,
+  "group": "C, read, not reworked",
+  "note": "Steering clamp. The original keeps 4096 in r9 through the function; the retained draft is register-style and 210 lines off. Not reworked."
+ },
+ {
+  "address": "0800B4D8",
+  "bytes": 1072,
+  "group": "C, read, not reworked",
+  "note": "Title-loop family. GCSE PRE hoists g_03002A30 + 384 to the preheader; the original recomputes reg + 384 in the loop. Not reworked."
+ },
+ {
+  "address": "080154AC",
+  "bytes": 748,
+  "group": "C, earlier seed kept, not reached",
+  "note": "No retained draft in the repository; not reached."
+ },
+ {
+  "address": "0800AF4C",
+  "bytes": 764,
+  "group": "C, earlier seed kept, not reached",
+  "note": "Real switch table; deep-a candidate 238 lines off; not reached."
+ },
+ {
+  "address": "0800CB5C",
+  "bytes": 912,
+  "group": "C, earlier seed kept, not reached",
+  "note": "Deep-c candidate 347 lines off; not reached."
+ },
+ {
+  "address": "080098DC",
+  "bytes": 1086,
+  "group": "C, earlier seed kept, not reached",
+  "note": "Deep-a candidate 204 lines off; not reached."
+ },
+ {
+  "address": "080165BC",
+  "bytes": 1628,
+  "group": "C, earlier seed kept, not reached",
+  "note": "ARM C seed; not reached."
+ },
+ {
+  "address": "0800E498",
+  "bytes": 1974,
+  "group": "C, earlier seed kept, not reached",
+  "note": "Real switch table; not reached."
+ },
+ {
+  "address": "0800F2D0",
+  "bytes": 5476,
+  "group": "C, earlier seed kept, not reached",
+  "note": "Large menu body; no retained draft; not reached."
+ },
+ {
+  "address": "08018DE4",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r1 call veneer"
+ },
+ {
+  "address": "08018DEC",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r3 call veneer"
+ },
+ {
+  "address": "08018DF4",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r5 call veneer"
+ },
+ {
+  "address": "08018DFC",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r7 call veneer"
+ },
+ {
+  "address": "08018E04",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r9 call veneer"
+ },
+ {
+  "address": "08018E0C",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r11 call veneer"
+ },
+ {
+  "address": "08018E14",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r13 call veneer"
+ },
+ {
+  "address": "08018E84",
+  "bytes": 2,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx pc state switch (bx r15)"
+ },
+ {
+  "address": "08018A54",
+  "bytes": 4,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "CpuFastSet SWI veneer"
+ },
+ {
+  "address": "08018E80",
+  "bytes": 4,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "ARM branch into the division runtime"
+ },
+ {
+  "address": "08000218",
+  "bytes": 100,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "signed division runtime"
+ },
+ {
+  "address": "080000FC",
+  "bytes": 248,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "IRQ entry"
+ },
+ {
+  "address": "08000AA0",
+  "bytes": 320,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "private renderer helper (custom register contract)"
+ },
+ {
+  "address": "080016E0",
+  "bytes": 452,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "custom ARM raster inner loop"
+ },
+ {
+  "address": "08000324",
+  "bytes": 680,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "raster inner loop with preloaded registers"
+ },
+ {
+  "address": "080005D8",
+  "bytes": 1224,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "textured raster front end with private helper ABI"
+ },
+ {
+  "address": "08001218",
+  "bytes": 1224,
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "assembly rasterizer"
+ },
+ {
+  "address": "0800735C",
+  "bytes": 12,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "fragment inside a larger routine"
+ },
+ {
+  "address": "080051FE",
+  "bytes": 16,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "shared epilogue"
+ },
+ {
+  "address": "08007B28",
+  "bytes": 24,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "boundary-blocked"
+ },
+ {
+  "address": "08006712",
+  "bytes": 46,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "fragment"
+ },
+ {
+  "address": "08006740",
+  "bytes": 54,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "fragment"
+ },
+ {
+  "address": "0800D51C",
+  "bytes": 84,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "boundary-blocked"
+ },
+ {
+  "address": "0800D570",
+  "bytes": 192,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "fragment"
+ },
+ {
+  "address": "08003786",
+  "bytes": 2552,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "fragment"
+ },
+ {
+  "address": "08008A88",
+  "bytes": 2876,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "boundary-blocked"
+ },
+ {
+  "address": "0800D630",
+  "bytes": 3662,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "fragment"
+ },
+ {
+  "address": "0800421C",
+  "bytes": 4066,
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "boundary-blocked"
+ }
+]

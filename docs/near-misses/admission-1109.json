@@ -1,0 +1,24 @@
+{
+  "whole_rom_rebuilds": 1,
+  "whole_rom_identity_verified": true,
+  "build_sha1": "4197339d4add74bb40ed02a8fba5e58096afb487",
+  "registered_functions_verified": 181,
+  "registered_bytes_including_pools": 72524,
+  "mapped_code_bytes": 85132,
+  "mapped_functions": 229,
+  "registered_functions_added": 0,
+  "registry_unchanged": true,
+  "registry_sha256": "0c92a13d8a2a2fa1850491f97c2f69957d5306143ecbe5f74171d37b2425f2da",
+  "unit_tests": 223,
+  "passed": 222,
+  "skipped": 1,
+  "skips": [
+    "test_real_compiler_resume_and_no_false_match (test_search10.Search10Tests.test_real_compiler_resume_and_no_false_match) ... skipped 'fewer than two unmatched retained drafts remain to search'"
+  ],
+  "arm_differential_fixtures": 199,
+  "sound_fixture_groups_per_retained_source": 7,
+  "sound_retained_sources": 3,
+  "hud_regression_fixtures_per_retained_source": 1024,
+  "hud_retained_sources": 3,
+  "hud_regression_oracle": "prior C draft, not original instructions"
+}

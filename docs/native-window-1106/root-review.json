@@ -1,0 +1,65 @@
+{
+  "at": "2026-11-06T17:55:55.649072-05:00",
+  "workerHead": "4ee11352c4cf6c163fc6c98163d1c12a1aeec038",
+  "runtimeSourceUnchangedFiles": 193,
+  "artifactPinsVerified": 4,
+  "privateReviewMediaHashesVerified": 14,
+  "retainedNativeBmpCount": 7,
+  "independentPixelComparisons": [
+    {
+      "capture": "default-paused",
+      "width": 960,
+      "height": 640,
+      "exactNativePixelMatch": true
+    },
+    {
+      "capture": "resized-letterbox",
+      "width": 800,
+      "height": 600,
+      "exactNativePixelMatch": true
+    },
+    {
+      "capture": "minimum-paused",
+      "width": 240,
+      "height": 160,
+      "exactNativePixelMatch": true
+    },
+    {
+      "capture": "fullscreen-paused",
+      "width": 1024,
+      "height": 768,
+      "exactNativePixelMatch": true
+    },
+    {
+      "capture": "quit-selected",
+      "width": 800,
+      "height": 600,
+      "exactNativePixelMatch": true
+    },
+    {
+      "capture": "rebound-before-start",
+      "width": 960,
+      "height": 640,
+      "exactNativePixelMatch": true
+    },
+    {
+      "capture": "rebound-after-start",
+      "width": 960,
+      "height": 640,
+      "exactNativePixelMatch": true
+    }
+  ],
+  "ownedPidsAndTemporaryPathsGone": true,
+  "rawArtifacts": "Remain exclusively in ignored build/ on worker E; only this numeric receipt leaves host",
+  "limits": [
+    "No independent visual review of raw frames outside worker E.",
+    "No physical keyboard/controller, Windows, GPU, hardware pacing or audible acceptance."
+  ],
+  "localHelperChecks": {
+    "layout": 5,
+    "unsafeDisplayRejection": 2,
+    "optimizedPythonRejectedExit": 2,
+    "diffCheck": "pass"
+  },
+  "reviewScope": "Root read all helper code and independently recomputed scaling/borders for seven actual saved captures against seven retained native BMPs on worker E. Raw media never copied off worker E. No actual guest runtime change."
+}

@@ -1,0 +1,80 @@
+{
+  "address": "080064A4",
+  "source_sha256": "fbfbe5287116721486524474d4b213346e17d517e1cdaf6609cbd5cdf7a8f3c8",
+  "compiled_sha256": "40e4146502f561e59e4d869ce50d9fb8fa2b1b10719d4ba8c41b953f5776cd99",
+  "method": "Original-address windows count positional differences, including pools/missing tail. Global instruction-shape alignment ignores register identities and local branch/PC displacements. Referenced pool words only. It is a heuristic layout aid, not causal attribution or semantic proof. Calls are not block boundaries; unconditional/conditional branches are.",
+  "original_local_frame": 108,
+  "compiled_local_frame": 100,
+  "original_pool_words": 86,
+  "compiled_pool_words": 98,
+  "shape_alignment": {
+    "identical_opcode_pairs": 462,
+    "register_operand_pairs": 746,
+    "pc_reference_pairs": 72,
+    "branch_destination_pairs": 74,
+    "unpaired_original_rows": 378,
+    "unpaired_compiled_rows": 287
+  },
+  "regions": [
+    {
+      "region": "fade and sample update",
+      "start": "080064A4",
+      "end": "080065C2",
+      "original_bytes": 286,
+      "positional_different_bytes": 110,
+      "original_basic_blocks": 19,
+      "original_instruction_rows": 123,
+      "original_pool_words": 9
+    },
+    {
+      "region": "sequence loop",
+      "start": "080065C2",
+      "end": "080066E4",
+      "original_bytes": 290,
+      "positional_different_bytes": 236,
+      "original_basic_blocks": 24,
+      "original_instruction_rows": 132,
+      "original_pool_words": 6
+    },
+    {
+      "region": "voice entry and preparation",
+      "start": "080066E4",
+      "end": "0800677A",
+      "original_bytes": 150,
+      "positional_different_bytes": 144,
+      "original_basic_blocks": 9,
+      "original_instruction_rows": 71,
+      "original_pool_words": 0
+    },
+    {
+      "region": "envelope updates",
+      "start": "0800677A",
+      "end": "08006D62",
+      "original_bytes": 1512,
+      "positional_different_bytes": 1319,
+      "original_basic_blocks": 97,
+      "original_instruction_rows": 696,
+      "original_pool_words": 30
+    },
+    {
+      "region": "command loop",
+      "start": "08006D62",
+      "end": "08006ECC",
+      "original_bytes": 362,
+      "positional_different_bytes": 350,
+      "original_basic_blocks": 34,
+      "original_instruction_rows": 175,
+      "original_pool_words": 3
+    },
+    {
+      "region": "events, note starts and return",
+      "start": "08006ECC",
+      "end": "08007398",
+      "original_bytes": 1228,
+      "positional_different_bytes": 1194,
+      "original_basic_blocks": 66,
+      "original_instruction_rows": 535,
+      "original_pool_words": 38
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "address": "080123F0",
+  "mode": "thumb",
+  "bytes": 294,
+  "instructions": 147,
+  "call_count": null,
+  "observed_entry": false,
+  "static_callers": 0,
+  "matched_callees": 0,
+  "unmatched_callees": 0,
+  "difficulty": 147,
+  "value": 1,
+  "priority": 0.006803,
+  "blocked_reason": null,
+  "comparison_bytes": 300,
+  "attempts": 3000,
+  "compile_errors": 0,
+  "seconds": 23.48,
+  "status": "budget exhausted",
+  "exact": false,
+  "focus": null,
+  "seconds_limit": 45.0,
+  "learned_candidates": {
+    "structured-backedge": 8,
+    "guarded-loop": 2
+  },
+  "generations": 2,
+  "score": [
+    7,
+    12
+  ],
+  "compiler": "old-o1",
+  "size": 300
+}

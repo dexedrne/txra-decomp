@@ -1,0 +1,12 @@
+{
+  "frames": 4300,
+  "state_hash": "25ab436f",
+  "audio_samples": 2358924,
+  "audio_hash": "0cf1545835f3c205",
+  "cycles": 1207769184,
+  "input_script": "tests/race-input.txt",
+  "input_sha256": "bb1af6377ffd7f2f0ab0d2555fddc1783d7be07890c1f7a80ba5f6c50c50357a",
+  "frames_sha256": "2d29524dda28a01c3ba9ada347575337a830eb9365e5639aa05bac6d99c77d7c",
+  "pcm_sha256": "2cad93185b65bb62cf97e3590e7f295a2cb30d51bd9ae6768e4fa38dbd8aba69",
+  "source": "Unmodified pre-polish runtime, fresh EEPROM, static translation. Hashes are regression metadata, not an independent hardware reference."
+}

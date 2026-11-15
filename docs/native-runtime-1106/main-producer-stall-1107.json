@@ -1,0 +1,89 @@
+{
+  "source": "f245071aeb2a928dce3a8fb8174a1e5a63f6689f",
+  "binarySha256": "6f3b71a70339169cfaf8804b06d3e08fe9059f36ca2332ecd13dfb622e150d51",
+  "controllerSha256": "43a5254cdd943b2ab5b6deec229dc867545e50323c3483523aa6879130deda1d",
+  "probeSha256": "a590588b29976add7505aa5be850cc281b52eb5cbad97204bed0457fda4a0ae0",
+  "site": {
+    "binarySha256": "6f3b71a70339169cfaf8804b06d3e08fe9059f36ca2332ecd13dfb622e150d51",
+    "returnOffset": "0x10c413",
+    "callHex": "e8fdcdffff",
+    "disassemblySha256": "cd358e33110850e1d571b3e3bbabdb011ea201de2f45fea8827e8afac4d90906"
+  },
+  "quiet": false,
+  "performanceAccepted": false,
+  "nativeAudibilityAccepted": false,
+  "ownerApplicationsUntouched": true,
+  "guestArtifactsEqual": true,
+  "positiveNativeCounterPathExercised": true,
+  "ROMUnchanged": true,
+  "binaryUnchanged": true,
+  "runs": [
+    {
+      "label": "baseline",
+      "muteBeforePlay": true,
+      "streamClosed": true,
+      "queueZeroEvents": 0,
+      "positiveDeltaFrames": [],
+      "frameHashesSha256": "c84f1738ca58922b5051df1bf4e45878d8a85e411c69e29dcd1bf3a5295efe75",
+      "pcmSha256": "de68026f077b2784461e2cffdd78224b3ef2859e9464427eeb32a4440d642a4e",
+      "savePresent": false,
+      "saveSha256": null,
+      "native": {
+        "frames": 600,
+        "pc": "0800642c",
+        "instructions": 56151360,
+        "compiled_steps": 56151360,
+        "cycles": 168454080,
+        "state_hash": "23e538ae",
+        "audio_samples": 329011,
+        "audio_hash": "c19817e59889fa7d",
+        "save_writes": 0
+      }
+    },
+    {
+      "label": "injected",
+      "muteBeforePlay": true,
+      "streamClosed": true,
+      "queueZeroEvents": 1,
+      "positiveDeltaFrames": [
+        300
+      ],
+      "frameHashesSha256": "c84f1738ca58922b5051df1bf4e45878d8a85e411c69e29dcd1bf3a5295efe75",
+      "pcmSha256": "de68026f077b2784461e2cffdd78224b3ef2859e9464427eeb32a4440d642a4e",
+      "savePresent": false,
+      "saveSha256": null,
+      "native": {
+        "frames": 600,
+        "pc": "0800642c",
+        "instructions": 56151360,
+        "compiled_steps": 56151360,
+        "cycles": 168454080,
+        "state_hash": "23e538ae",
+        "audio_samples": 329011,
+        "audio_hash": "c19817e59889fa7d",
+        "save_writes": 0
+      }
+    }
+  ],
+  "injectedEvent": {
+    "mainThreadOnly": true,
+    "poll": 300,
+    "beforeBytes": 5800,
+    "afterBytes": 0,
+    "returnedBytes": 0,
+    "elapsedMilliseconds": 200.228314
+  },
+  "independentReview": {
+    "critical": 0,
+    "important": 0,
+    "productionParserRegressionTests": 13,
+    "privateFrameAndPcmBytesRehashedByReviewer": false,
+    "nonblockingRunnerHardening": "Future runner acceptance must assert final ROMUnchanged and binaryUnchanged; both are true in this completed capture."
+  },
+  "scopeLimits": [
+    "600 fresh frames each; no save output in either capture, so no EEPROM-save-byte equality evidence.",
+    "Matching private frame-hash stream and PCM SHA256 recorded by pinned runner; not independently rehashed on reviewer host.",
+    "Validates native queue-zero counter path, not quiet-host pacing, audibility, physical controls, new matching C or a speed improvement.",
+    "Compiled sound-owner recovery remains uninstalled and NONMATCH; registry remains 181 matched."
+  ]
+}

@@ -1,0 +1,79 @@
+Compiled output differs: target 88 bytes, compiled 84 bytes.
+First difference at +0x4 (0x08014618); exact prefix 4 bytes, exact suffix 0 bytes.
+Length differs by -4 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -1,41 +1,40 @@
+ 08014614: adds r2, r0, #0
+ 08014616: cmp r1, r2
+-08014618: blt 0x08014628
++08014618: blt 0x08014624
+ 0801461A: movs r3, #128
+ 0801461C: lsls r3, r3, #6
+ 0801461E: adds r0, r2, r3
+ 08014620: cmp r1, r0
+-08014622: bgt 0x08014628
+-08014624: subs r0, r1, r2
+-08014626: b 0x08014666
+-08014628: cmp r2, r1
+-0801462A: blt 0x0801463A
+-0801462C: movs r3, #128
+-0801462E: lsls r3, r3, #6
+-08014630: adds r0, r1, r3
+-08014632: cmp r2, r0
+-08014634: bge 0x0801463A
+-08014636: subs r0, r1, r2
+-08014638: b 0x08014666
+-0801463A: movs r3, #128
+-0801463C: lsls r3, r3, #6
+-0801463E: adds r0, r2, r3
+-08014640: cmp r1, r0
+-08014642: ble 0x08014650
+-08014644: ldr r3, [pc, #4] @ =0x0801464C
+-08014646: adds r0, r1, r3
+-08014648: subs r0, r0, r2
+-0801464A: b 0x08014666
+-0801464C: .word 0xFFFFC000 (literal pool)
+-08014650: ldr r3, [pc, #8] @ =0x0801465C
+-08014652: adds r0, r2, r3
+-08014654: cmp r1, r0
+-08014656: ble 0x08014660
+-08014658: movs r0, #0
++08014622: ble 0x08014632
++08014624: cmp r2, r1
++08014626: blt 0x08014636
++08014628: movs r3, #128
++0801462A: lsls r3, r3, #6
++0801462C: adds r0, r1, r3
++0801462E: cmp r2, r0
++08014630: bge 0x08014636
++08014632: subs r0, r1, r2
++08014634: b 0x08014666
++08014636: movs r3, #128
++08014638: lsls r3, r3, #6
++0801463A: adds r0, r2, r3
++0801463C: cmp r1, r0
++0801463E: ble 0x0801464A
++08014640: movs r3, #128
++08014642: lsls r3, r3, #7
++08014644: adds r0, r2, r3
++08014646: subs r0, r1, r0
++08014648: b 0x08014666
++0801464A: ldr r3, [pc, #16] @ =0x0801465C
++0801464C: adds r0, r2, r3
++0801464E: cmp r1, r0
++08014650: bgt 0x08014664
++08014652: ldr r0, [pc, #12] @ =0x08014660
++08014654: adds r2, r2, r0
++08014656: subs r1, r1, r2
++08014658: adds r0, r1, #0
+ 0801465A: b 0x08014666
+ 0801465C: .word 0xFFFFE000 (literal pool)
+-08014660: ldr r3, [pc, #4] @ =0x08014668
+-08014662: adds r0, r2, r3
+-08014664: subs r0, r1, r0
++08014660: .word 0xFFFFC000 (literal pool)
++08014664: movs r0, #0
+ 08014666: bx lr
+-08014668: .word 0xFFFFC000 (literal pool)
+Check register allocation, signed widths, statement order, constants and pool alignment.

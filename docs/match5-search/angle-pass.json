@@ -1,0 +1,27 @@
+[
+  {
+    "address": "08014614",
+    "mode": "thumb",
+    "bytes": 84,
+    "instructions": 38,
+    "call_count": null,
+    "observed_entry": true,
+    "static_callers": 6,
+    "matched_callees": 0,
+    "unmatched_callees": 0,
+    "difficulty": 38,
+    "value": 14,
+    "priority": 0.368421,
+    "blocked_reason": null,
+    "attempts": 387,
+    "compile_errors": 0,
+    "seconds": 12.57,
+    "exact": false,
+    "score": [
+      21,
+      57
+    ],
+    "compiler": "old",
+    "size": 84
+  }
+]

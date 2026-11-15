@@ -1,0 +1,289 @@
+Compiler: old
+Compiled output differs: target 372 bytes, compiled 368 bytes.
+First difference at +0x8 (0x0800C858); exact prefix 8 bytes, exact suffix 2 bytes.
+Length differs by -4 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -3,77 +3,77 @@
+ 0800C854: mov r6, r8
+ 0800C856: push {r6, r7}
+-0800C858: mov r8, r0
+-0800C85A: ldr r5, [pc, #220] @ =0x0800C938
+-0800C85C: movs r0, #100
+-0800C85E: mov r3, r8
+-0800C860: muls r3, r0
+-0800C862: adds r0, r3, r5
+-0800C864: mov r12, r0
+-0800C866: movs r1, #56
+-0800C868: ldrsh r6, [r0, r1]
+-0800C86A: subs r2, r6, #1
+-0800C86C: mov r9, r2
+-0800C86E: ldr r1, [pc, #204] @ =0x0800C93C
+-0800C870: cmp r2, #0
+-0800C872: bge 0x0800C878
+-0800C874: ldr r0, [r1, #0]
+-0800C876: add r9, r0
+-0800C878: adds r7, r6, #1
+-0800C87A: ldr r1, [r1, #0]
+-0800C87C: cmp r7, r1
+-0800C87E: blt 0x0800C882
+-0800C880: movs r7, #0
+-0800C882: adds r0, r7, #1
+-0800C884: adds r2, r5, #4
+-0800C886: adds r2, r3, r2
+-0800C888: ldr r0, [pc, #180] @ =0x0800C940
+-0800C88A: ldr r0, [r0, #0]
+-0800C88C: lsls r1, r6, #3
+-0800C88E: subs r1, r1, r6
+-0800C890: lsls r1, r1, #2
+-0800C892: adds r1, r1, r0
+-0800C894: ldr r4, [r2, #0]
+-0800C896: ldr r0, [r1, #0]
+-0800C898: subs r4, r4, r0
+-0800C89A: adds r0, r5, #0
+-0800C89C: adds r0, #12
+-0800C89E: adds r0, r3, r0
+-0800C8A0: ldr r3, [r0, #0]
+-0800C8A2: ldr r0, [r1, #8]
+-0800C8A4: subs r3, r3, r0
+-0800C8A6: movs r0, #128
+-0800C8A8: lsls r0, r0, #5
+-0800C8AA: ldrh r1, [r1, #12]
+-0800C8AC: subs r0, r0, r1
+-0800C8AE: ldr r1, [pc, #148] @ =0x0800C944
+-0800C8B0: ands r0, r1
+-0800C8B2: ldr r1, [pc, #148] @ =0x0800C948
+-0800C8B4: lsls r0, r0, #2
+-0800C8B6: adds r1, r0, r1
+-0800C8B8: ldr r5, [r1, #0]
+-0800C8BA: adds r1, r4, #0
+-0800C8BC: muls r1, r5
++0800C858: adds r1, r0, #0
++0800C85A: mov r8, r1
++0800C85C: movs r1, #100
++0800C85E: mov r4, r8
++0800C860: muls r4, r1
++0800C862: movs r0, #96
++0800C864: adds r0, r0, r4
++0800C866: mov r12, r0
++0800C868: adds r0, r4, #0
++0800C86A: adds r0, #152
++0800C86C: movs r1, #0
++0800C86E: ldrsh r6, [r0, r1]
++0800C870: subs r2, r6, #1
++0800C872: mov r9, r2
++0800C874: ldr r3, [pc, #196] @ =0x0800C93C
++0800C876: cmp r2, #0
++0800C878: bge 0x0800C880
++0800C87A: ldr r1, [r3, #0]
++0800C87C: adds r2, r2, r1
++0800C87E: mov r9, r2
++0800C880: adds r0, r6, #1
++0800C882: lsls r0, r0, #24
++0800C884: lsrs r7, r0, #24
++0800C886: ldr r3, [r3, #0]
++0800C888: cmp r7, r3
++0800C88A: blt 0x0800C88E
++0800C88C: movs r7, #0
++0800C88E: ldr r0, [pc, #176] @ =0x0800C940
++0800C890: ldr r1, [r0, #0]
++0800C892: lsls r3, r6, #3
++0800C894: subs r3, r3, r6
++0800C896: lsls r3, r3, #2
++0800C898: adds r3, r3, r1
++0800C89A: ldr r5, [r4, #100]
++0800C89C: ldr r1, [r3, #0]
++0800C89E: subs r5, r5, r1
++0800C8A0: ldr r4, [r4, #108]
++0800C8A2: ldr r1, [r3, #8]
++0800C8A4: subs r4, r4, r1
++0800C8A6: movs r1, #128
++0800C8A8: lsls r1, r1, #5
++0800C8AA: ldrh r3, [r3, #12]
++0800C8AC: subs r1, r1, r3
++0800C8AE: ldr r3, [pc, #148] @ =0x0800C944
++0800C8B0: ands r1, r3
++0800C8B2: lsls r1, r1, #2
++0800C8B4: ldr r2, [pc, #144] @ =0x0800C948
++0800C8B6: adds r3, r1, r2
++0800C8B8: ldrb r0, [r3, #0]
++0800C8BA: adds r3, r5, #0
++0800C8BC: muls r3, r0
+ 0800C8BE: ldr r2, [pc, #140] @ =0x0800C94C
+-0800C8C0: adds r0, r0, r2
+-0800C8C2: ldr r2, [r0, #0]
+-0800C8C4: adds r0, r3, #0
+-0800C8C6: muls r0, r2
+-0800C8C8: subs r1, r1, r0
+-0800C8CA: asrs r1, r1, #12
+-0800C8CC: adds r0, r4, #0
+-0800C8CE: muls r0, r2
+-0800C8D0: adds r2, r3, #0
+-0800C8D2: muls r2, r5
+-0800C8D4: adds r0, r0, r2
+-0800C8D6: asrs r4, r0, #12
++0800C8C0: adds r1, r1, r2
++0800C8C2: ldr r2, [r1, #0]
++0800C8C4: adds r1, r4, #0
++0800C8C6: muls r1, r2
++0800C8C8: subs r3, r3, r1
++0800C8CA: asrs r3, r3, #12
++0800C8CC: adds r1, r5, #0
++0800C8CE: muls r1, r2
++0800C8D0: adds r2, r4, #0
++0800C8D2: muls r2, r0
++0800C8D4: adds r1, r1, r2
++0800C8D6: asrs r5, r1, #12
+ 0800C8D8: movs r0, #192
+ 0800C8DA: lsls r0, r0, #2
+-0800C8DC: adds r1, r1, r0
+-0800C8DE: asrs r1, r1, #4
+-0800C8E0: mov r0, r12
+-0800C8E2: adds r0, #66
+-0800C8E4: strh r1, [r0, #0]
+-0800C8E6: ldr r0, [pc, #104] @ =0x0800C950
+-0800C8E8: cmp r4, r0
++0800C8DC: adds r3, r3, r0
++0800C8DE: asrs r3, r3, #4
++0800C8E0: mov r1, r12
++0800C8E2: adds r1, #66
++0800C8E4: strh r3, [r1, #0]
++0800C8E6: ldr r1, [pc, #104] @ =0x0800C950
++0800C8E8: cmp r5, r1
+ 0800C8EA: ble 0x0800C918
+ 0800C8EC: adds r6, r7, #0
+@@ -81,38 +81,39 @@
+ 0800C8F0: cmp r1, #0
+ 0800C8F2: bne 0x0800C918
+-0800C8F4: ldr r0, [pc, #92] @ =0x0800C954
++0800C8F4: ldr r1, [pc, #92] @ =0x0800C954
+ 0800C8F6: movs r2, #0
+-0800C8F8: ldrsh r0, [r0, r2]
+-0800C8FA: cmp r0, #0
++0800C8F8: ldrsh r1, [r1, r2]
++0800C8FA: cmp r1, #0
+ 0800C8FC: bne 0x0800C918
+-0800C8FE: ldr r2, [pc, #88] @ =0x0800C958
+-0800C900: ldr r0, [r2, #0]
+-0800C902: adds r0, #1
+-0800C904: movs r1, #31
+-0800C906: ands r0, r1
+-0800C908: str r0, [r2, #0]
+-0800C90A: ldr r0, [pc, #80] @ =0x0800C95C
+-0800C90C: mov r1, r8
+-0800C90E: str r1, [r0, #0]
++0800C8FE: ldr r0, [pc, #88] @ =0x0800C958
++0800C900: ldr r1, [r0, #0]
++0800C902: adds r1, #1
++0800C904: movs r3, #31
++0800C906: ands r3, r1
++0800C908: str r3, [r0, #0]
++0800C90A: movs r3, #0
++0800C90C: ldr r0, [pc, #76] @ =0x0800C95C
++0800C90E: str r3, [r0, #0]
+ 0800C910: ldr r0, [pc, #76] @ =0x0800C960
+ 0800C912: str r6, [r0, #0]
+ 0800C914: bl 0x08002854
+-0800C918: cmp r4, #0
+-0800C91A: bge 0x0800C996
+-0800C91C: mov r2, r8
+-0800C91E: cmp r2, #0
+-0800C920: bne 0x0800C97C
+-0800C922: ldr r0, [pc, #48] @ =0x0800C954
+-0800C924: movs r1, #0
+-0800C926: ldrsh r0, [r0, r1]
+-0800C928: cmp r0, #0
+-0800C92A: bne 0x0800C97C
+-0800C92C: cmp r6, r7
+-0800C92E: bne 0x0800C964
+-0800C930: ldr r1, [pc, #36] @ =0x0800C958
+-0800C932: ldr r0, [r1, #0]
+-0800C934: subs r0, #2
+-0800C936: b 0x0800C96A
+-0800C938: .word 0x03001E60 (literal pool)
++0800C918: mov r0, r8
++0800C91A: lsls r4, r0, #24
++0800C91C: cmp r5, #0
++0800C91E: bge 0x0800C996
++0800C920: cmp r4, #0
++0800C922: bne 0x0800C97C
++0800C924: ldr r1, [pc, #44] @ =0x0800C954
++0800C926: movs r2, #0
++0800C928: ldrsh r1, [r1, r2]
++0800C92A: cmp r1, #0
++0800C92C: bne 0x0800C97C
++0800C92E: cmp r6, r7
++0800C930: bne 0x0800C964
++0800C932: ldr r0, [pc, #36] @ =0x0800C958
++0800C934: ldr r1, [r0, #0]
++0800C936: adds r3, r0, #0
++0800C938: subs r1, #2
++0800C93A: b 0x0800C96C
+ 0800C93C: .word 0x03002E4C (literal pool)
+ 0800C940: .word 0x03006874 (literal pool)
+@@ -125,35 +126,35 @@
+ 0800C95C: .word 0x03002334 (literal pool)
+ 0800C960: .word 0x03005F50 (literal pool)
+-0800C964: ldr r1, [pc, #72] @ =0x0800C9B0
+-0800C966: ldr r0, [r1, #0]
+-0800C968: subs r0, #1
+-0800C96A: str r0, [r1, #0]
+-0800C96C: adds r2, r1, #0
+-0800C96E: ldr r0, [r2, #0]
+-0800C970: movs r1, #31
+-0800C972: ands r0, r1
+-0800C974: str r0, [r2, #0]
+-0800C976: ldr r1, [pc, #60] @ =0x0800C9B4
+-0800C978: movs r0, #1
+-0800C97A: str r0, [r1, #0]
++0800C964: ldr r0, [pc, #72] @ =0x0800C9B0
++0800C966: ldr r1, [r0, #0]
++0800C968: adds r3, r0, #0
++0800C96A: subs r1, #1
++0800C96C: str r1, [r3, #0]
++0800C96E: adds r2, r3, #0
++0800C970: movs r3, #31
++0800C972: ands r3, r1
++0800C974: str r3, [r2, #0]
++0800C976: ldr r3, [pc, #60] @ =0x0800C9B4
++0800C978: movs r1, #1
++0800C97A: str r1, [r3, #0]
+ 0800C97C: mov r6, r9
+-0800C97E: mov r2, r8
+-0800C980: cmp r2, #0
++0800C97E: mov r0, r8
++0800C980: cmp r0, #0
+ 0800C982: bne 0x0800C996
+-0800C984: ldr r0, [pc, #48] @ =0x0800C9B8
+-0800C986: movs r1, #0
+-0800C988: ldrsh r0, [r0, r1]
+-0800C98A: cmp r0, #0
++0800C984: ldr r1, [pc, #48] @ =0x0800C9B8
++0800C986: movs r2, #0
++0800C988: ldrsh r1, [r1, r2]
++0800C98A: cmp r1, #0
+ 0800C98C: bne 0x0800C996
+ 0800C98E: ldr r0, [pc, #44] @ =0x0800C9BC
+ 0800C990: str r6, [r0, #0]
+ 0800C992: bl 0x08002854
+-0800C996: ldr r1, [pc, #40] @ =0x0800C9C0
+-0800C998: movs r0, #100
+-0800C99A: mov r2, r8
+-0800C99C: muls r2, r0
+-0800C99E: adds r0, r2, #0
+-0800C9A0: adds r0, r0, r1
+-0800C9A2: strh r6, [r0, #56]
++0800C996: movs r1, #100
++0800C998: lsrs r2, r4, #24
++0800C99A: muls r1, r2
++0800C99C: movs r0, #243
++0800C99E: lsls r0, r0, #5
++0800C9A0: adds r1, r1, r0
++0800C9A2: strh r6, [r1, #56]
+ 0800C9A4: pop {r3, r4}
+ 0800C9A6: mov r8, r3
+@@ -166,3 +167,2 @@
+ 0800C9B8: .word 0x030021CC (literal pool)
+ 0800C9BC: .word 0x03005F50 (literal pool)
+-0800C9C0: .word 0x03001E60 (literal pool)
+Check register allocation, signed widths, statement order, constants and pool alignment.

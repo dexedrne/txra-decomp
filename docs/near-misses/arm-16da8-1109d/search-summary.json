@@ -1,0 +1,23 @@
+{
+  "unique_source_identities": 4429,
+  "unique_compiled_outputs": 275,
+  "invalid_source_hypotheses": 266,
+  "oversize_diagnostics": 125,
+  "runs": [
+    "arm-packet-d",
+    "arm-visibility-d",
+    "arm-bucket-d",
+    "arm-allocation-d",
+    "arm-finish-lifetimes-d",
+    "arm-typed-packets-d",
+    "arm-loop-shapes-d",
+    "arm-focused-sweep-d"
+  ],
+  "focus": "depth-pair additions, packet bucket insertion and next-part/next-face allocation and exits",
+  "budget": 6000,
+  "retained_source_sha256": "62269b1b631e072fa710d6bb8698a75d83d1973ad45f068e68ef5ec25bee79c3",
+  "retained_compiled_sha256": "d821cdb421a0546c681d72df6d21a7e5bf0650253e5a06a2dc357ca78e5292cd",
+  "exact": false,
+  "installed": false,
+  "profile_sweep": false
+}

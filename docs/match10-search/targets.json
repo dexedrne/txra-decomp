@@ -1,0 +1,347 @@
+[
+  {
+    "address": "08015DA8",
+    "prior_score": [
+      4,
+      9
+    ],
+    "source": "docs/near-misses/func_08015DA8.c",
+    "rank": {
+      "address": "08015DA8",
+      "mode": "thumb",
+      "bytes": 118,
+      "instructions": 52,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 1,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 52,
+      "value": 4,
+      "priority": 0.076923,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "08014104",
+    "prior_score": [
+      6,
+      10
+    ],
+    "source": "docs/near-misses/func_08014104.c",
+    "rank": {
+      "address": "08014104",
+      "mode": "thumb",
+      "bytes": 134,
+      "instructions": 60,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 1,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 60,
+      "value": 4,
+      "priority": 0.066667,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "0800B3A0",
+    "prior_score": [
+      24,
+      33
+    ],
+    "source": "docs/match7-search/expanded/func_0800B3A0.c",
+    "rank": {
+      "address": "0800B3A0",
+      "mode": "thumb",
+      "bytes": 310,
+      "instructions": 137,
+      "call_count": null,
+      "observed_entry": false,
+      "static_callers": 0,
+      "matched_callees": 1,
+      "unmatched_callees": 0,
+      "difficulty": 137,
+      "value": 3,
+      "priority": 0.021898,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "08013E74",
+    "prior_score": [
+      36,
+      69
+    ],
+    "source": "docs/match7-search/expanded/func_08013E74.c",
+    "rank": {
+      "address": "08013E74",
+      "mode": "thumb",
+      "bytes": 310,
+      "instructions": 144,
+      "call_count": null,
+      "observed_entry": false,
+      "static_callers": 1,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 144,
+      "value": 2,
+      "priority": 0.013889,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "080149FC",
+    "prior_score": [
+      59,
+      161
+    ],
+    "source": "docs/match7-search/expanded/func_080149FC.c",
+    "rank": {
+      "address": "080149FC",
+      "mode": "thumb",
+      "bytes": 208,
+      "instructions": 102,
+      "call_count": null,
+      "observed_entry": false,
+      "static_callers": 1,
+      "matched_callees": 0,
+      "unmatched_callees": 1,
+      "difficulty": 110,
+      "value": 2,
+      "priority": 0.018182,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "08006270",
+    "prior_score": [
+      61,
+      156
+    ],
+    "source": "docs/match7-search/expanded/func_08006270.c",
+    "rank": {
+      "address": "08006270",
+      "mode": "thumb",
+      "bytes": 348,
+      "instructions": 145,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 0,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 145,
+      "value": 2,
+      "priority": 0.013793,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "080063D4",
+    "prior_score": [
+      73,
+      187
+    ],
+    "source": "docs/match7-search/expanded/func_080063D4.c",
+    "rank": {
+      "address": "080063D4",
+      "mode": "thumb",
+      "bytes": 158,
+      "instructions": 79,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 1,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 79,
+      "value": 4,
+      "priority": 0.050633,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "08005F8C",
+    "prior_score": [
+      74,
+      172
+    ],
+    "source": "docs/match7-search/expanded/func_08005F8C.c",
+    "rank": {
+      "address": "08005F8C",
+      "mode": "thumb",
+      "bytes": 198,
+      "instructions": 99,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 2,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 99,
+      "value": 6,
+      "priority": 0.060606,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "080164D0",
+    "prior_score": [
+      75,
+      224
+    ],
+    "source": "docs/match7-search/expanded/func_080164D0.c",
+    "rank": {
+      "address": "080164D0",
+      "mode": "thumb",
+      "bytes": 198,
+      "instructions": 99,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 3,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 99,
+      "value": 8,
+      "priority": 0.080808,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "080148B0",
+    "prior_score": [
+      79,
+      184
+    ],
+    "source": "docs/match7-search/expanded/func_080148B0.c",
+    "rank": {
+      "address": "080148B0",
+      "mode": "thumb",
+      "bytes": 214,
+      "instructions": 88,
+      "call_count": null,
+      "observed_entry": false,
+      "static_callers": 1,
+      "matched_callees": 1,
+      "unmatched_callees": 1,
+      "difficulty": 96,
+      "value": 4,
+      "priority": 0.041667,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "0800B254",
+    "prior_score": [
+      86,
+      313
+    ],
+    "source": "docs/match7-search/expanded/func_0800B254.c",
+    "rank": {
+      "address": "0800B254",
+      "mode": "thumb",
+      "bytes": 306,
+      "instructions": 152,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 1,
+      "matched_callees": 0,
+      "unmatched_callees": 1,
+      "difficulty": 160,
+      "value": 4,
+      "priority": 0.025,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "08018BE8",
+    "prior_score": [
+      89,
+      256
+    ],
+    "source": "docs/match7-search/eeprom-write/func_08018BE8.c",
+    "rank": {
+      "address": "08018BE8",
+      "mode": "thumb",
+      "bytes": 352,
+      "instructions": 163,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 1,
+      "matched_callees": 1,
+      "unmatched_callees": 0,
+      "difficulty": 163,
+      "value": 8,
+      "priority": 0.04908,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "08006070",
+    "prior_score": [
+      91,
+      164
+    ],
+    "source": "docs/match7-search/expanded/func_08006070.c",
+    "rank": {
+      "address": "08006070",
+      "mode": "thumb",
+      "bytes": 212,
+      "instructions": 106,
+      "call_count": null,
+      "observed_entry": false,
+      "static_callers": 0,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 106,
+      "value": 1,
+      "priority": 0.009434,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "08010910",
+    "prior_score": [
+      107,
+      304
+    ],
+    "source": "docs/match7-search/expanded/func_08010910.c",
+    "rank": {
+      "address": "08010910",
+      "mode": "thumb",
+      "bytes": 298,
+      "instructions": 133,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 2,
+      "matched_callees": 0,
+      "unmatched_callees": 2,
+      "difficulty": 149,
+      "value": 6,
+      "priority": 0.040268,
+      "blocked_reason": null
+    }
+  },
+  {
+    "address": "0800C850",
+    "prior_score": [
+      122,
+      170
+    ],
+    "source": "docs/match7-search/expanded/func_0800C850.c",
+    "rank": {
+      "address": "0800C850",
+      "mode": "thumb",
+      "bytes": 352,
+      "instructions": 152,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 1,
+      "matched_callees": 0,
+      "unmatched_callees": 1,
+      "difficulty": 160,
+      "value": 4,
+      "priority": 0.025,
+      "blocked_reason": null
+    }
+  }
+]

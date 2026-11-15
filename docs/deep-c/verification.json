@@ -1,0 +1,66 @@
+{
+  "functions": [
+    {
+      "address": "08005F8C",
+      "label": "final-installed",
+      "profile": "old",
+      "flags": [],
+      "exact": true,
+      "size": 228,
+      "score": [
+        0,
+        0
+      ],
+      "seconds": 0.09766447392757982,
+      "next_entry": "08006070",
+      "comparison_bytes": 228
+    },
+    {
+      "address": "0800B254",
+      "label": "final-installed",
+      "profile": "old",
+      "flags": [],
+      "exact": true,
+      "size": 332,
+      "score": [
+        0,
+        0
+      ],
+      "seconds": 0.13319778791628778,
+      "next_entry": "0800B3A0",
+      "comparison_bytes": 332
+    },
+    {
+      "address": "0800A00C",
+      "label": "final-installed",
+      "profile": "old",
+      "flags": [],
+      "exact": true,
+      "size": 368,
+      "score": [
+        0,
+        0
+      ],
+      "seconds": 0.12624386604875326,
+      "next_entry": "0800A17C",
+      "comparison_bytes": 368
+    },
+    {
+      "address": "0800A68C",
+      "label": "final-installed",
+      "profile": "old",
+      "flags": [],
+      "exact": true,
+      "size": 532,
+      "score": [
+        0,
+        0
+      ],
+      "seconds": 0.1445111830253154,
+      "next_entry": "0800A8A0",
+      "comparison_bytes": 532
+    }
+  ],
+  "whole_rom_identity": true,
+  "mapped_bytes_denominator": 85132
+}

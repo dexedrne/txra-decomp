@@ -1,0 +1,313 @@
+{
+  "at": "2026-11-06T23:55:34.113215-05:00",
+  "sourceBeforeEvidence": "3c4cb0289c6b06f9a501aaef262c88feb2200888",
+  "binarySha256": "4e4614ba22a64b1f1299b1e779eae3e9940bfcd0604dd4804a5c87bfd3f46f3a",
+  "execution": "worker D incremental GCC16.2.1 runtime build, retained verified translation object, nice10 real PulseAudio physical ALSA backend, app-only stream muted before playback and throughout",
+  "career": {
+    "source": "3c4cb0289c6b06f9a501aaef262c88feb2200888",
+    "binarySha256": "4e4614ba22a64b1f1299b1e779eae3e9940bfcd0604dd4804a5c87bfd3f46f3a",
+    "careerGoldensPass": true,
+    "appStreamIdentityAndMutePass": true,
+    "physicalBackend": "alsa_output.pci-0000_00_1f.3.analog-stereo",
+    "muteChecks": 616,
+    "frames": 37200,
+    "elapsedSeconds": 622.837099,
+    "actualFps": 59.726692677309515,
+    "targetFps": 59.72750056960583,
+    "audioQueueZeroDiagnostics": 1,
+    "audioMaxQueueMs": 66.771,
+    "wholeRoute": {
+      "frames": 37200,
+      "interval_p50_ms": 16.170488499999998,
+      "interval_p95_ms": 21.478374,
+      "work_p50_ms": 16.0215915,
+      "work_p95_ms": 21.478037,
+      "phase_ms": {
+        "host_guest": {
+          "p50": 6.7905765,
+          "p95": 9.95397
+        },
+        "present": {
+          "p50": 0.898907,
+          "p95": 2.157308
+        },
+        "capture": {
+          "p50": 0.075271,
+          "p95": 0.261297
+        },
+        "audio": {
+          "p50": 7.8521105,
+          "p95": 13.506512
+        },
+        "pace": {
+          "p50": 0.000411,
+          "p95": 9.854419
+        }
+      }
+    },
+    "longestFrames": [
+      {
+        "frame": "3257",
+        "interval_ms": "28.964105",
+        "work_ms": "28.963021",
+        "host_guest_ms": "26.678399",
+        "present_ms": "1.888615",
+        "capture_ms": "0.281803",
+        "audio_ms": "0.114204",
+        "pace_ms": "0.001084"
+      },
+      {
+        "frame": "10312",
+        "interval_ms": "28.235694",
+        "work_ms": "28.235313",
+        "host_guest_ms": "24.028945",
+        "present_ms": "4.040244",
+        "capture_ms": "0.131127",
+        "audio_ms": "0.034997",
+        "pace_ms": "0.000381"
+      },
+      {
+        "frame": "23693",
+        "interval_ms": "27.094367",
+        "work_ms": "27.093585",
+        "host_guest_ms": "6.552629",
+        "present_ms": "1.316942",
+        "capture_ms": "0.102209",
+        "audio_ms": "19.121805",
+        "pace_ms": "0.000782"
+      },
+      {
+        "frame": "23709",
+        "interval_ms": "26.877694",
+        "work_ms": "26.877543",
+        "host_guest_ms": "24.813023",
+        "present_ms": "1.911011",
+        "capture_ms": "0.130647",
+        "audio_ms": "0.022862",
+        "pace_ms": "0.000151"
+      },
+      {
+        "frame": "35607",
+        "interval_ms": "25.358044",
+        "work_ms": "25.357057",
+        "host_guest_ms": "4.459882",
+        "present_ms": "0.870299",
+        "capture_ms": "0.053582",
+        "audio_ms": "19.973294",
+        "pace_ms": "0.000987"
+      },
+      {
+        "frame": "15435",
+        "interval_ms": "25.027430",
+        "work_ms": "25.025063",
+        "host_guest_ms": "12.021055",
+        "present_ms": "1.363482",
+        "capture_ms": "0.084692",
+        "audio_ms": "11.555834",
+        "pace_ms": "0.002367"
+      },
+      {
+        "frame": "3996",
+        "interval_ms": "25.023386",
+        "work_ms": "25.021970",
+        "host_guest_ms": "5.869424",
+        "present_ms": "0.759820",
+        "capture_ms": "0.050458",
+        "audio_ms": "18.342268",
+        "pace_ms": "0.001416"
+      },
+      {
+        "frame": "11206",
+        "interval_ms": "24.827900",
+        "work_ms": "24.826260",
+        "host_guest_ms": "7.357266",
+        "present_ms": "0.998675",
+        "capture_ms": "0.050169",
+        "audio_ms": "16.420150",
+        "pace_ms": "0.001640"
+      },
+      {
+        "frame": "28764",
+        "interval_ms": "24.334214",
+        "work_ms": "24.334018",
+        "host_guest_ms": "23.199152",
+        "present_ms": "1.043465",
+        "capture_ms": "0.067624",
+        "audio_ms": "0.023777",
+        "pace_ms": "0.000196"
+      },
+      {
+        "frame": "12922",
+        "interval_ms": "24.267770",
+        "work_ms": "24.266558",
+        "host_guest_ms": "6.266765",
+        "present_ms": "0.784175",
+        "capture_ms": "0.100213",
+        "audio_ms": "17.115405",
+        "pace_ms": "0.001212"
+      }
+    ],
+    "rawArtifactsRemainOnT490": true,
+    "limits": [
+      "Headless software output, not physical display/controller/audio listening acceptance.",
+      "Nice10 diagnostic under existing owner workload, not a quiet paired performance comparison.",
+      "Optional timing overhead is present; no speed improvement or new C match claimed."
+    ]
+  },
+  "reload": {
+    "source": "3c4cb0289c6b06f9a501aaef262c88feb2200888",
+    "binarySha256": "4e4614ba22a64b1f1299b1e779eae3e9940bfcd0604dd4804a5c87bfd3f46f3a",
+    "reloadGoldensPass": true,
+    "appStreamIdentityAndMutePass": true,
+    "physicalBackend": "alsa_output.pci-0000_00_1f.3.analog-stereo",
+    "muteChecks": 36,
+    "frames": 2200,
+    "elapsedSeconds": 36.835056,
+    "actualFps": 59.72571346165457,
+    "targetFps": 59.72750056960583,
+    "audioQueueZeroDiagnostics": 0,
+    "audioMaxQueueMs": 47.792,
+    "wholeRoute": {
+      "frames": 2200,
+      "interval_p50_ms": 16.742706499999997,
+      "interval_p95_ms": 16.765406,
+      "work_p50_ms": 6.124888,
+      "work_p95_ms": 9.593058,
+      "phase_ms": {
+        "host_guest": {
+          "p50": 4.7739745,
+          "p95": 8.15106
+        },
+        "present": {
+          "p50": 0.910021,
+          "p95": 2.203027
+        },
+        "capture": {
+          "p50": 0.0756985,
+          "p95": 0.256863
+        },
+        "audio": {
+          "p50": 0.0161245,
+          "p95": 0.046292
+        },
+        "pace": {
+          "p50": 10.6205525,
+          "p95": 11.964726
+        }
+      }
+    },
+    "longestFrames": [
+      {
+        "frame": "1978",
+        "interval_ms": "18.681225",
+        "work_ms": "14.895685",
+        "host_guest_ms": "13.311958",
+        "present_ms": "1.476537",
+        "capture_ms": "0.082454",
+        "audio_ms": "0.024736",
+        "pace_ms": "3.785540"
+      },
+      {
+        "frame": "1980",
+        "interval_ms": "18.513611",
+        "work_ms": "18.513434",
+        "host_guest_ms": "16.318787",
+        "present_ms": "2.077464",
+        "capture_ms": "0.088047",
+        "audio_ms": "0.029136",
+        "pace_ms": "0.000177"
+      },
+      {
+        "frame": "997",
+        "interval_ms": "18.451263",
+        "work_ms": "12.529718",
+        "host_guest_ms": "10.939307",
+        "present_ms": "1.501490",
+        "capture_ms": "0.066096",
+        "audio_ms": "0.022825",
+        "pace_ms": "5.921545"
+      },
+      {
+        "frame": "1011",
+        "interval_ms": "18.315102",
+        "work_ms": "18.314933",
+        "host_guest_ms": "15.582406",
+        "present_ms": "2.437360",
+        "capture_ms": "0.238362",
+        "audio_ms": "0.056805",
+        "pace_ms": "0.000169"
+      },
+      {
+        "frame": "988",
+        "interval_ms": "18.286697",
+        "work_ms": "5.528948",
+        "host_guest_ms": "4.510929",
+        "present_ms": "0.900805",
+        "capture_ms": "0.098277",
+        "audio_ms": "0.018937",
+        "pace_ms": "12.757749"
+      },
+      {
+        "frame": "256",
+        "interval_ms": "18.155929",
+        "work_ms": "5.438768",
+        "host_guest_ms": "4.464682",
+        "present_ms": "0.905233",
+        "capture_ms": "0.053232",
+        "audio_ms": "0.015621",
+        "pace_ms": "12.717161"
+      },
+      {
+        "frame": "995",
+        "interval_ms": "17.871512",
+        "work_ms": "6.889208",
+        "host_guest_ms": "5.363912",
+        "present_ms": "1.453572",
+        "capture_ms": "0.055594",
+        "audio_ms": "0.016130",
+        "pace_ms": "10.982304"
+      },
+      {
+        "frame": "158",
+        "interval_ms": "17.724527",
+        "work_ms": "5.950765",
+        "host_guest_ms": "4.526529",
+        "present_ms": "1.142023",
+        "capture_ms": "0.252060",
+        "audio_ms": "0.030153",
+        "pace_ms": "11.773762"
+      },
+      {
+        "frame": "328",
+        "interval_ms": "17.442891",
+        "work_ms": "8.344712",
+        "host_guest_ms": "6.616658",
+        "present_ms": "1.640625",
+        "capture_ms": "0.062982",
+        "audio_ms": "0.024447",
+        "pace_ms": "9.098179"
+      },
+      {
+        "frame": "1976",
+        "interval_ms": "17.327154",
+        "work_ms": "10.033303",
+        "host_guest_ms": "8.973202",
+        "present_ms": "0.944019",
+        "capture_ms": "0.097123",
+        "audio_ms": "0.018959",
+        "pace_ms": "7.293851"
+      }
+    ],
+    "rawArtifactsRemainOnT490": true,
+    "limits": [
+      "Headless software output, not physical display/controller/audio listening acceptance.",
+      "Nice10 diagnostic under existing owner workload, not a quiet paired performance comparison.",
+      "Optional timing overhead is present; no speed improvement or new C match claimed."
+    ]
+  },
+  "mainUnchanged": "0af329d308d23d6389902e3b595b6fcd2cd5f813",
+  "matchingCFunctions": 179,
+  "compiledFunctions": 229,
+  "newPerformanceGainClaimed": false,
+  "rawArtifactsStayOnT490": true
+}

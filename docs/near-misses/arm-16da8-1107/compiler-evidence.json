@@ -1,0 +1,87 @@
+{
+  "original_source_fixture": {
+    "extent_bytes_including_pools": 4288,
+    "instructions": 1053,
+    "pool_bytes": 76,
+    "admission_rejection": null,
+    "pool_bindings": "target addresses verified on private host; synthetic memory contents"
+  },
+  "profiles": [
+    {
+      "candidate": "func_08016DA8.c",
+      "profile": "arm",
+      "flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "compiler_sha256": "26d884f0d4d46180dd90d1b1b56371fa1d72e2d0a47b22b65f27b3cebb89cca8",
+      "source_sha256": "a448074fc93e69534ad9112bc48477ec541d3a3c083fd047cdb97df4db55a8ab",
+      "text_bytes": 2856,
+      "target_extent_bytes": 4288,
+      "same_extent": false,
+      "out_of_line_calls": [],
+      "strict_relocation_and_linker_agree": true,
+      "address_linked_text_sha256": "538611006c5a731a22ca1da9d15a80b7793b39daea52a28826fd47da0a3f1e6b",
+      "exact_match": false,
+      "rom_comparison_performed": false
+    },
+    {
+      "candidate": "func_08016DA8.c",
+      "profile": "modern-arm",
+      "flags": [
+        "-O2",
+        "-marm",
+        "-mcpu=arm7tdmi",
+        "-mno-thumb-interwork"
+      ],
+      "compiler_sha256": "510c55cfeed7328ade1eb8cb23808fcce1ba6c52dac8d4ebfe033ae4b2534385",
+      "source_sha256": "a448074fc93e69534ad9112bc48477ec541d3a3c083fd047cdb97df4db55a8ab",
+      "text_bytes": 2596,
+      "target_extent_bytes": 4288,
+      "same_extent": false,
+      "out_of_line_calls": [],
+      "strict_relocation_and_linker_agree": true,
+      "address_linked_text_sha256": "8abdd4f775ef1a05718e0721da3a9a96a3db9d37e9ad749d566b2890e8e68fc3",
+      "exact_match": false,
+      "rom_comparison_performed": false
+    },
+    {
+      "candidate": "func_08016DA8_match.c",
+      "profile": "arm",
+      "flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "compiler_sha256": "26d884f0d4d46180dd90d1b1b56371fa1d72e2d0a47b22b65f27b3cebb89cca8",
+      "source_sha256": "ff01f366e731509f5d7ac163bc64c7b1bf465fbcbef739a1fd37224aee4a16d6",
+      "text_bytes": 4028,
+      "target_extent_bytes": 4288,
+      "same_extent": false,
+      "out_of_line_calls": [],
+      "strict_relocation_and_linker_agree": true,
+      "address_linked_text_sha256": "e04e8ae08b9fa01ec5ab51af46c4a6523f1a75b3e8a45a819c63a51565fd0b01",
+      "exact_match": false,
+      "rom_comparison_performed": false
+    },
+    {
+      "candidate": "func_08016DA8_match.c",
+      "profile": "modern-arm",
+      "flags": [
+        "-O2",
+        "-marm",
+        "-mcpu=arm7tdmi",
+        "-mno-thumb-interwork"
+      ],
+      "compiler_sha256": "510c55cfeed7328ade1eb8cb23808fcce1ba6c52dac8d4ebfe033ae4b2534385",
+      "source_sha256": "ff01f366e731509f5d7ac163bc64c7b1bf465fbcbef739a1fd37224aee4a16d6",
+      "text_bytes": 5604,
+      "target_extent_bytes": 4288,
+      "same_extent": false,
+      "out_of_line_calls": [],
+      "strict_relocation_and_linker_agree": true,
+      "address_linked_text_sha256": "4c959f8cd23b3ee6a6b86bb9ad61c4e3986d3560dce2d73068e2c339d8b97f78",
+      "exact_match": false,
+      "rom_comparison_performed": false
+    }
+  ]
+}

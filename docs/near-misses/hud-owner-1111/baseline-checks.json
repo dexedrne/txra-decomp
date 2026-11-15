@@ -1,0 +1,12 @@
+{
+  "candidate": "func_0800421C.c",
+  "source_sha256": "d106e3fead0f8d42d34073427992cf79ae578c131a9c29eee10db597ff9c2ce8",
+  "reference_sha256": "5b1b934aece458415e5543ddf24765921f659d4d676c563c191274802b17ba5c",
+  "fixtures": 1024,
+  "comparison": "prior C draft state and ordered helper calls; not original instructions",
+  "undefined_behavior_sanitizer": true,
+  "transform_aliases": 6,
+  "registry_unchanged": true,
+  "rom_used": false,
+  "output": "1024 HUD state and ordered-call fixtures passed against the prior C draft; no ROM oracle"
+}

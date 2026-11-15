@@ -1,0 +1,20 @@
+{
+  "unique_source_identities": 317,
+  "unique_compiled_outputs": 131,
+  "compiler_rejections": 0,
+  "oversize_diagnostics": 167,
+  "semantic_rejections": 0,
+  "runs": {
+    "projection-induction-and-texture-ladder": 96,
+    "near-path-joins-and-texture-tail": 158,
+    "signed-loop-and-depth-identities": 63
+  },
+  "baseline_different_bytes": 3251,
+  "retained_different_bytes": 3251,
+  "baseline_instruction_distance": 898,
+  "retained_instruction_distance": 898,
+  "profile_sweep": false,
+  "exact": false,
+  "installed": false,
+  "selection": "No lower full-owner byte distance fit the unchanged boundary. The retained positive-guard rewrite reproduces the baseline compiled hash and passes the unchanged independent fixtures. It is a structural tie, not an improvement."
+}

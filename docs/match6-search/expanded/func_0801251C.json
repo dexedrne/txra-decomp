@@ -1,0 +1,31 @@
+{
+  "address": "0801251C",
+  "mode": "thumb",
+  "bytes": 226,
+  "instructions": 113,
+  "call_count": null,
+  "observed_entry": true,
+  "static_callers": 8,
+  "matched_callees": 0,
+  "unmatched_callees": 0,
+  "difficulty": 113,
+  "value": 18,
+  "priority": 0.159292,
+  "blocked_reason": null,
+  "comparison_bytes": 226,
+  "attempts": 2500,
+  "compile_errors": 0,
+  "seconds": 23.69,
+  "status": "budget exhausted",
+  "exact": false,
+  "focus": null,
+  "learned_candidates": {
+    "guarded-loop": 106
+  },
+  "score": [
+    30,
+    160
+  ],
+  "compiler": "standard",
+  "size": 232
+}

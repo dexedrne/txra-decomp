@@ -1,0 +1,22 @@
+{
+  "address": "08014790",
+  "target_end": "080147C0",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/breadth-1112/baseline-sources/func_08014790.c",
+  "source_sha256": "ca49c73face42f23e0079b421fd75a7d071ea7e6fb02e9a1076f9a482b6d7726",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 48,
+  "target_bytes": 48,
+  "local_frame_bytes": null,
+  "instruction_distance": 0,
+  "different_bytes": 0,
+  "exact": true,
+  "compiled_sha256": "50fb47184b7a222600509d78cf6d5f4b5d185a820641cae64add133eda3d8b8e",
+  "checker_limit": "080147C0",
+  "checker_rejection": null,
+  "installed": false
+}

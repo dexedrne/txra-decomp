@@ -1,0 +1,35 @@
+{
+  "complete": false,
+  "rom_sha1": "4197339d4add74bb40ed02a8fba5e58096afb487",
+  "input_mapping_sha256": "45b0f2932f6dbf220099bcff9eb5a503fdc369cd9804bbc6e8ef9ec69e22eceb",
+  "scanned_source_bytes": 2093057,
+  "reference_counts": {
+    "odd-ROM-pointer": 2027,
+    "direct-BL": 1080,
+    "resolved-indirect": 200
+  },
+  "unresolved_indirect_sites": [
+    "0x08018DEC",
+    "0x08018DF0",
+    "0x08018DF4",
+    "0x08018DF8",
+    "0x08018DFC",
+    "0x08018E00",
+    "0x08018E04",
+    "0x08018E08",
+    "0x08018E0C",
+    "0x08018E10",
+    "0x08018E14"
+  ],
+  "counts": {
+    "existing-entry": 193,
+    "proposal": 0,
+    "rejected": 565,
+    "manual-review": 0,
+    "internal-switch-target": 167
+  },
+  "caveat": "Proposals require review and runtime coverage before seed/map acceptance. Rejections are retained with reasons.",
+  "receipt_note": "Full per-target audit remains ignored under build; this receipt retains counts and input identity only.",
+  "full_audit_sha256": "5cc9dc9b7f0cfaad06bfbed54d4d82857b922324db905e94629fea96697e1ce7",
+  "proposals": []
+}

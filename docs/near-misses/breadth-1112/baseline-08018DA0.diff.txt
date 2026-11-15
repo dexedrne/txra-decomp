@@ -1,0 +1,10 @@
+Compiled output differs: target 64 bytes, compiled 62 bytes.
+First difference at +0x3E (0x08018DDE); exact prefix 62 bytes, exact suffix 0 bytes.
+Length differs by -2 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -28,3 +28,2 @@
+ 08018DDA: pop {r1}
+ 08018DDC: bx r1
+-08018DDE: movs r0, r0
+Check register allocation, signed widths, statement order, constants and pool alignment.

@@ -1,0 +1,27 @@
+{
+  "count": 181,
+  "models": {
+    "kat-coder-v2.5:iq3s": 164,
+    "qwen3.6-35b-a3b:iq3s": 17
+  },
+  "source_identifiers_changed": false,
+  "human_review_required": true,
+  "confidence_counts": {
+    "high": 102,
+    "low": 39,
+    "medium": 40
+  },
+  "namespace_suffix_addresses": [
+    "08005F0C",
+    "0800D290",
+    "080123F0",
+    "0801251C",
+    "0801466C",
+    "08005F34",
+    "08013CF4",
+    "08015250",
+    "08016134",
+    "08016174"
+  ],
+  "table_sha256": "5bcfa2b77e30275e68b3f4564665f42408f98cb86aec123a04519df3a307dc44"
+}

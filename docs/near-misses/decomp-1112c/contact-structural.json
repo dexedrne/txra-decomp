@@ -1,0 +1,60 @@
+{
+  "address": "080181C0",
+  "source_sha256": "d248a33b5bbd9c5544c6dba987e7c36ceb45febac34735ff72325799b4db565a",
+  "compiled_sha256": "fdef93a96d92709a7807514d65281eafe395c29f9d7dadef039681ebd62c881b",
+  "method": "Original-address windows count positional differences, including pools/missing tail. Global instruction-shape alignment ignores register identities and local branch/PC displacements. Referenced pool words only. It is a heuristic layout aid, not causal attribution or semantic proof. Calls are not block boundaries; unconditional/conditional branches are.",
+  "original_local_frame": 72,
+  "compiled_local_frame": 64,
+  "original_pool_words": 18,
+  "compiled_pool_words": 16,
+  "shape_alignment": {
+    "identical_opcode_pairs": 118,
+    "register_operand_pairs": 105,
+    "pc_reference_pairs": 23,
+    "branch_destination_pairs": 17,
+    "unpaired_original_rows": 140,
+    "unpaired_compiled_rows": 136
+  },
+  "regions": [
+    {
+      "region": "entry and pair selection",
+      "start": "080181C0",
+      "end": "08018460",
+      "original_bytes": 672,
+      "positional_different_bytes": 277,
+      "original_basic_blocks": 19,
+      "original_instruction_rows": 168,
+      "original_pool_words": 0
+    },
+    {
+      "region": "rotation",
+      "start": "08018460",
+      "end": "08018528",
+      "original_bytes": 200,
+      "positional_different_bytes": 175,
+      "original_basic_blocks": 2,
+      "original_instruction_rows": 50,
+      "original_pool_words": 0
+    },
+    {
+      "region": "contact updates",
+      "start": "08018528",
+      "end": "080187DC",
+      "original_bytes": 692,
+      "positional_different_bytes": 456,
+      "original_basic_blocks": 21,
+      "original_instruction_rows": 156,
+      "original_pool_words": 17
+    },
+    {
+      "region": "loop exits and return",
+      "start": "080187DC",
+      "end": "08018854",
+      "original_bytes": 120,
+      "positional_different_bytes": 101,
+      "original_basic_blocks": 8,
+      "original_instruction_rows": 29,
+      "original_pool_words": 1
+    }
+  ]
+}

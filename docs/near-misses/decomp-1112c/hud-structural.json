@@ -1,0 +1,80 @@
+{
+  "address": "0800421C",
+  "source_sha256": "f8ecf21820e21c2d1d7069e1aa4a7f09707ea586f267abc9e6ee8ddb372e36ff",
+  "compiled_sha256": "28db65402b5529e06eae2b99b5fc88a4f108cf00299fb0ce792e76c10bf36301",
+  "method": "Original-address windows count positional differences, including pools/missing tail. Global instruction-shape alignment ignores register identities and local branch/PC displacements. Referenced pool words only. It is a heuristic layout aid, not causal attribution or semantic proof. Calls are not block boundaries; unconditional/conditional branches are.",
+  "original_local_frame": 36,
+  "compiled_local_frame": 36,
+  "original_pool_words": 99,
+  "compiled_pool_words": 102,
+  "shape_alignment": {
+    "identical_opcode_pairs": 840,
+    "register_operand_pairs": 524,
+    "pc_reference_pairs": 115,
+    "branch_destination_pairs": 78,
+    "unpaired_original_rows": 256,
+    "unpaired_compiled_rows": 250
+  },
+  "regions": [
+    {
+      "region": "entry and opening overlay",
+      "start": "0800421C",
+      "end": "080042EC",
+      "original_bytes": 208,
+      "positional_different_bytes": 73,
+      "original_basic_blocks": 10,
+      "original_instruction_rows": 96,
+      "original_pool_words": 2
+    },
+    {
+      "region": "sprite strips and text",
+      "start": "080042EC",
+      "end": "080047A4",
+      "original_bytes": 1208,
+      "positional_different_bytes": 607,
+      "original_basic_blocks": 37,
+      "original_instruction_rows": 560,
+      "original_pool_words": 15
+    },
+    {
+      "region": "gauges",
+      "start": "080047A4",
+      "end": "08004A88",
+      "original_bytes": 740,
+      "positional_different_bytes": 677,
+      "original_basic_blocks": 26,
+      "original_instruction_rows": 283,
+      "original_pool_words": 38
+    },
+    {
+      "region": "map and flashes",
+      "start": "08004A88",
+      "end": "08004C96",
+      "original_bytes": 526,
+      "positional_different_bytes": 505,
+      "original_basic_blocks": 33,
+      "original_instruction_rows": 236,
+      "original_pool_words": 12
+    },
+    {
+      "region": "projected effects",
+      "start": "08004C96",
+      "end": "08004FFA",
+      "original_bytes": 868,
+      "positional_different_bytes": 838,
+      "original_basic_blocks": 17,
+      "original_instruction_rows": 394,
+      "original_pool_words": 12
+    },
+    {
+      "region": "smoke and return",
+      "start": "08004FFA",
+      "end": "08005238",
+      "original_bytes": 574,
+      "positional_different_bytes": 444,
+      "original_basic_blocks": 26,
+      "original_instruction_rows": 244,
+      "original_pool_words": 20
+    }
+  ]
+}

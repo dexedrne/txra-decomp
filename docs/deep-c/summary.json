@@ -1,0 +1,68 @@
+{
+  "baseline": {
+    "count": 109,
+    "bytes_including_pools": 10698,
+    "percent_of_mapped_code": 12.566
+  },
+  "final": {
+    "count": 113,
+    "bytes_including_pools": 12158,
+    "percent_of_mapped_code": 14.281
+  },
+  "replacement_bytes_added": 1460,
+  "targets_reviewed": 40,
+  "outcomes": {
+    "asm-only": 13,
+    "boundary-blocked": 6,
+    "unmatched": 13,
+    "matched": 4,
+    "compiler-path-blocked": 2,
+    "unmatched-baseline": 2
+  },
+  "successful_diagnostic_compilations": 441,
+  "per_target_successful_compilations": {
+    "0800CB5C": 7,
+    "0800A68C": 21,
+    "0800EDF4": 19,
+    "0800CEEC": 7,
+    "08007398": 73,
+    "0800C850": 10,
+    "0800BBD4": 17,
+    "0800B254": 14,
+    "0800A00C": 49,
+    "0800B908": 21,
+    "08008914": 11,
+    "080162F8": 7,
+    "08013594": 5,
+    "08005F8C": 5,
+    "080063D4": 116,
+    "080095E4": 6,
+    "08010A50": 5,
+    "080149FC": 41,
+    "0800C3C4": 7
+  },
+  "compile_errors_excluded_from_count": true,
+  "ordinary_c_targets_compared": 19,
+  "fully_handwritten_unmatched_drafts_retained": 13,
+  "large_menu_diagnostic_baselines": 2,
+  "compiler_unit_order": {
+    "08005F8C": "exact with neighboring routine before or after",
+    "080063D4": "unchanged full-pool score 52/114 with initializer before or after"
+  },
+  "verification": "docs/deep-c/verification.json",
+  "final_validation": {
+    "tests_passed": 145,
+    "test_seconds": 92.504,
+    "focused_tests_passed": 14,
+    "whole_rom_identity": true,
+    "build_ok": true,
+    "setup_shell_syntax": true
+  },
+  "review_clip": {
+    "filename": "progress.webm",
+    "duration_seconds": 6,
+    "fps": 30,
+    "bytes": 148840,
+    "audio_streams": 0
+  }
+}

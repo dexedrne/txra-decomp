@@ -1,0 +1,109 @@
+{
+  "copies": [
+    {
+      "load": 134217980,
+      "run": 50351584,
+      "size": 2048,
+      "mode": "arm",
+      "trigger": "0800210A DMA3 startup",
+      "confidence": "high; includes handler, adjacent helpers and data, not all bytes proven executed"
+    },
+    {
+      "load": 134248180,
+      "run": 50358944,
+      "size": 2400,
+      "mode": "arm",
+      "trigger": "0800747E DMA3 sound initialization",
+      "confidence": "high transfer; mixed copied tail, entry is ARM"
+    },
+    {
+      "load": 134242928,
+      "run": 50358432,
+      "size": 480,
+      "mode": "thumb",
+      "trigger": "0800748A DMA3 sound initialization",
+      "confidence": "high transfer; source pointer 08006271 is word-aligned by DMA"
+    },
+    {
+      "load": 134219224,
+      "run": 50349968,
+      "size": 1560,
+      "mode": "arm",
+      "trigger": "08018854 DMA3",
+      "confidence": "high; static setup, execution not traced"
+    },
+    {
+      "load": 134220784,
+      "run": 50336976,
+      "size": 1576,
+      "mode": "arm",
+      "trigger": "08018854 DMA3",
+      "confidence": "high; static setup, execution not traced"
+    },
+    {
+      "load": 134218444,
+      "run": 50338608,
+      "size": 780,
+      "mode": "arm",
+      "trigger": "08018854 DMA3",
+      "confidence": "high; static setup, execution not traced"
+    },
+    {
+      "load": 134222360,
+      "run": 50343520,
+      "size": 1692,
+      "mode": "arm",
+      "trigger": "08018854 DMA3",
+      "confidence": "high; static setup, execution not traced"
+    },
+    {
+      "load": 134309308,
+      "run": 50340672,
+      "size": 1748,
+      "mode": "arm",
+      "trigger": "08018854 DMA3",
+      "confidence": "high; static setup, execution not traced"
+    },
+    {
+      "load": 134310936,
+      "run": 50331680,
+      "size": 400,
+      "mode": "arm",
+      "trigger": "08018854 DMA3",
+      "confidence": "high; static setup, execution not traced"
+    },
+    {
+      "load": 134311336,
+      "run": 50345280,
+      "size": 4500,
+      "mode": "arm",
+      "trigger": "08018854 DMA3",
+      "confidence": "high; static setup, execution not traced"
+    },
+    {
+      "load": 134315624,
+      "run": 50357984,
+      "size": 256,
+      "mode": "arm",
+      "trigger": "08018854 DMA3",
+      "confidence": "high; static setup, execution not traced"
+    },
+    {
+      "load": 134315876,
+      "run": 50354224,
+      "size": 768,
+      "mode": "arm",
+      "trigger": "08018854 DMA3",
+      "confidence": "high; static setup, execution not traced"
+    },
+    {
+      "load": 134316480,
+      "run": 50335232,
+      "size": 1700,
+      "mode": "arm",
+      "trigger": "08018854 DMA3",
+      "confidence": "high; static setup, execution not traced"
+    }
+  ],
+  "caveat": "Transfers include startup IRQ, audio initialization and initializer via 08018E84. Copy ranges overlap and can include mixed code/data tails: preserve order and bytes, do not assume disjoint functions. No EWRAM executable copy proven."
+}

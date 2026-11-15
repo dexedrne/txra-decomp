@@ -1,0 +1,199 @@
+{
+  "baseline_functions": 102,
+  "eligible_8_60": 19,
+  "complete_thumb_candidates": 6,
+  "rejected_entries": 13,
+  "accepted_additions": 1,
+  "documented_compiler_trials": 143895,
+  "passes": [
+    {
+      "pass": "ranked-pass",
+      "attempts": 19008,
+      "compile_errors": 28,
+      "functions_searched": 6
+    },
+    {
+      "pass": "angle-pass",
+      "attempts": 387,
+      "compile_errors": 0,
+      "functions_searched": 1
+    },
+    {
+      "pass": "overlay-initial-pass",
+      "attempts": 20000,
+      "compile_errors": 16951,
+      "functions_searched": 1
+    },
+    {
+      "pass": "overlay-pass",
+      "attempts": 12000,
+      "compile_errors": 4675,
+      "functions_searched": 1
+    },
+    {
+      "pass": "queue-pass",
+      "attempts": 10000,
+      "compile_errors": 3839,
+      "functions_searched": 1
+    },
+    {
+      "pass": "final-pass",
+      "attempts": 75000,
+      "compile_errors": 29297,
+      "functions_searched": 5
+    },
+    {
+      "pass": "loop-pass",
+      "attempts": 6000,
+      "compile_errors": 1170,
+      "functions_searched": 1
+    },
+    {
+      "pass": "signature-pass",
+      "attempts": 1500,
+      "compile_errors": 0,
+      "functions_searched": 1
+    }
+  ],
+  "remaining_best": [
+    {
+      "address": "08014614",
+      "mode": "thumb",
+      "bytes": 84,
+      "instructions": 38,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 6,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 38,
+      "value": 14,
+      "priority": 0.368421,
+      "blocked_reason": null,
+      "comparison_bytes": 88,
+      "attempts": 15000,
+      "compile_errors": 0,
+      "seconds": 143.98,
+      "status": "budget exhausted",
+      "exact": false,
+      "score": [
+        4,
+        11
+      ],
+      "compiler": "old",
+      "size": 92,
+      "best_source_from": "final-pass"
+    },
+    {
+      "address": "08015DA8",
+      "mode": "thumb",
+      "bytes": 118,
+      "instructions": 52,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 1,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 52,
+      "value": 4,
+      "priority": 0.076923,
+      "blocked_reason": null,
+      "comparison_bytes": 118,
+      "attempts": 10000,
+      "compile_errors": 3839,
+      "seconds": 61.15,
+      "status": "budget exhausted",
+      "exact": false,
+      "score": [
+        25,
+        60
+      ],
+      "compiler": "standard-o1",
+      "size": 120,
+      "best_source_from": "queue-pass"
+    },
+    {
+      "address": "08014104",
+      "mode": "thumb",
+      "bytes": 134,
+      "instructions": 60,
+      "call_count": null,
+      "observed_entry": true,
+      "static_callers": 1,
+      "matched_callees": 0,
+      "unmatched_callees": 0,
+      "difficulty": 60,
+      "value": 4,
+      "priority": 0.066667,
+      "blocked_reason": null,
+      "comparison_bytes": 134,
+      "attempts": 1244,
+      "compile_errors": 28,
+      "seconds": 12.01,
+      "exact": false,
+      "score": [
+        6,
+        10
+      ],
+      "compiler": "old",
+      "size": 134,
+      "best_source_from": "ranked-pass"
+    },
+    {
+      "address": "08014988",
+      "mode": "thumb",
+      "bytes": 102,
+      "instructions": 50,
+      "call_count": null,
+      "observed_entry": false,
+      "static_callers": 1,
+      "matched_callees": 0,
+      "unmatched_callees": 1,
+      "difficulty": 58,
+      "value": 2,
+      "priority": 0.034483,
+      "blocked_reason": null,
+      "comparison_bytes": 116,
+      "attempts": 15000,
+      "compile_errors": 11060,
+      "seconds": 113.23,
+      "status": "budget exhausted",
+      "exact": false,
+      "score": [
+        12,
+        50
+      ],
+      "compiler": "old",
+      "size": 116,
+      "best_source_from": "final-pass"
+    },
+    {
+      "address": "0801466C",
+      "mode": "thumb",
+      "bytes": 136,
+      "instructions": 53,
+      "call_count": null,
+      "observed_entry": false,
+      "static_callers": 0,
+      "matched_callees": 0,
+      "unmatched_callees": 1,
+      "difficulty": 61,
+      "value": 1,
+      "priority": 0.016393,
+      "blocked_reason": null,
+      "comparison_bytes": 136,
+      "attempts": 15000,
+      "compile_errors": 3879,
+      "seconds": 128.87,
+      "status": "budget exhausted",
+      "exact": false,
+      "score": [
+        6,
+        10
+      ],
+      "compiler": "old",
+      "size": 136,
+      "best_source_from": "final-pass"
+    }
+  ]
+}

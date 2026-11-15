@@ -1,0 +1,22 @@
+{
+  "address": "080181C0",
+  "target_end": "08018854",
+  "compiler": "arm",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/hand-20261104b/func_080181C0.c",
+  "source_sha256": "4e4b2930b59804060de718cbaa4b0988fb78dbe695fce7ee11cf2f144aff3b6e",
+  "compiler_sha256": "26d884f0d4d46180dd90d1b1b56371fa1d72e2d0a47b22b65f27b3cebb89cca8",
+  "emitted_bytes": 1644,
+  "target_bytes": 1684,
+  "local_frame_bytes": 60,
+  "instruction_distance": 221,
+  "different_bytes": 1143,
+  "exact": false,
+  "compiled_sha256": "f3c5fbae98174b18dde42e4f9d95da99419c81701d3dc2b08c95d61f71026f54",
+  "checker_limit": "08018854",
+  "checker_rejection": null,
+  "installed": false
+}

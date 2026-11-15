@@ -1,0 +1,22 @@
+{
+  "address": "080064A4",
+  "target_end": "08007398",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/finish3-1115-sound/func_080064A4.c",
+  "source_sha256": "8c1c656ec9c84f40aff369804cafdba5e6467750bbb3d9cbbd179fdceb6c04ad",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 3828,
+  "target_bytes": 3828,
+  "local_frame_bytes": 108,
+  "instruction_distance": 134,
+  "different_bytes": 159,
+  "exact": false,
+  "compiled_sha256": "444d622217510a5d4a54c049101b9df18f77b3275dc882e58884ed7a9e925ecf",
+  "checker_limit": "08007398",
+  "checker_rejection": null,
+  "installed": false
+}

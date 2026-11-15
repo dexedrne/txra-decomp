@@ -1,0 +1,215 @@
+{
+  "jdk21": {
+    "version": "Temurin 21.0.13+9",
+    "download": "https://api.adoptium.net/v3/binary/latest/21/ga/linux/x64/jdk/hotspot/normal/eclipse",
+    "archive_sha256": "d7f5d5cf865a2902b70ff549b97586a7d3f234e016f041ab447ea740c7d66d1c",
+    "java_version_verified": true,
+    "installed": "~/opt/jdk21"
+  },
+  "jdk25": {
+    "version": "Temurin 25.0.5+8",
+    "reason": "Ghidra application.java.min=25",
+    "archive_sha256": "68982529869257d0ee6b824ec5aa270ff8b118bb438670da0b97ebdab178d7fb",
+    "installed": "~/opt/jdk25",
+    "download": "https://api.adoptium.net/v3/binary/latest/25/ga/linux/x64/jdk/hotspot/normal/eclipse"
+  },
+  "ghidra": {
+    "version": "12.2",
+    "release": "https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.2_build",
+    "archive_sha256": "2c2cd776db3c1f6a097ba418922378ac3649cadd5e844a6f5f088ae628a7be67",
+    "published_sha256": "2c2cd776db3c1f6a097ba418922378ac3649cadd5e844a6f5f088ae628a7be67",
+    "installed": "~/opt/ghidra/ghidra_12.2_PUBLIC"
+  },
+  "rea": {
+    "version": "6.7.0",
+    "doctor_run": true,
+    "skill_read": true,
+    "configuration_changed": false,
+    "native_provider_used": false,
+    "reason": "Native raw import accepts a base address but first snapshots the whole input. Direct headless import avoids that prohibited standalone ROM copy.",
+    "raw_binary_base_supported": true
+  },
+  "private_rom_identity_verified": true,
+  "rom_copy_created": false,
+  "private_project": "~/.cache/txra-ghidra/txra.gpr",
+  "private_exports_committed": false,
+  "registry_entries_seeded": 237,
+  "host_setup_reused": false,
+  "missing_handoff": "docs/MATCH1112B-SHIP.md is absent on this branch.",
+  "initial_audit": {
+    "language": "ARM:LE:32:v4t",
+    "compiler_spec": "apcs",
+    "image_base": "00000000",
+    "database_function_count": 240,
+    "blocks": [
+      {
+        "start": "02000000",
+        "size": 262144,
+        "initialized": false,
+        "write": true,
+        "execute": false,
+        "volatile": false
+      },
+      {
+        "start": "03000000",
+        "size": 32768,
+        "initialized": false,
+        "write": true,
+        "execute": false,
+        "volatile": false
+      },
+      {
+        "start": "04000000",
+        "size": 1024,
+        "initialized": false,
+        "write": true,
+        "execute": false,
+        "volatile": true
+      },
+      {
+        "start": "05000000",
+        "size": 1024,
+        "initialized": false,
+        "write": true,
+        "execute": false,
+        "volatile": false
+      },
+      {
+        "start": "06000000",
+        "size": 98304,
+        "initialized": false,
+        "write": true,
+        "execute": false,
+        "volatile": false
+      },
+      {
+        "start": "07000000",
+        "size": 1024,
+        "initialized": false,
+        "write": true,
+        "execute": false,
+        "volatile": false
+      },
+      {
+        "start": "08000000",
+        "size": 131072,
+        "initialized": true,
+        "write": false,
+        "execute": true,
+        "volatile": false
+      },
+      {
+        "start": "08020000",
+        "size": 4063232,
+        "initialized": true,
+        "write": false,
+        "execute": false,
+        "volatile": false
+      }
+    ],
+    "owners": [
+      {
+        "entry": "0800421c",
+        "body_bytes_excluding_pools": 3722,
+        "instructions": 1810,
+        "call_sites": 50,
+        "thumb": true
+      },
+      {
+        "entry": "08016da8",
+        "body_bytes_excluding_pools": 4212,
+        "instructions": 1053,
+        "call_sites": 0,
+        "thumb": false
+      }
+    ],
+    "epilogue_separate_function": false
+  },
+  "final_audit": {
+    "database_function_count": 239,
+    "stream_continuation_separate_function": false,
+    "owners": [
+      {
+        "address": "0800421c",
+        "body_bytes_excluding_pools": 3722,
+        "instructions": 1810,
+        "call_sites": 50
+      },
+      {
+        "address": "080181c0",
+        "body_bytes_excluding_pools": 1612,
+        "instructions": 403,
+        "call_sites": 0
+      },
+      {
+        "address": "08002854",
+        "body_bytes_excluding_pools": 6236,
+        "instructions": 3045,
+        "call_sites": 72
+      },
+      {
+        "address": "08016da8",
+        "body_bytes_excluding_pools": 4212,
+        "instructions": 1053,
+        "call_sites": 0
+      }
+    ]
+  },
+  "private_export_identities": [
+    {
+      "name": "08002854.c",
+      "sha256": "86234e82a056fb0c37c46e37230014e47e28c861e6840415518030e84dc6971a",
+      "lines": 953
+    },
+    {
+      "name": "08003786.c",
+      "sha256": "6631e17b43687f6ee26ac12eefa26ebe704905e6a2ad1435a22a5169034ee711",
+      "lines": 423
+    },
+    {
+      "name": "0800421c.c",
+      "sha256": "917ae4b7801eb7fdf7712ef9baaf6a5668eb930406d226a56406dcda5e139d92",
+      "lines": 507
+    },
+    {
+      "name": "08005cf4.c",
+      "sha256": "08a4b6ad1bee3ece70030f6dc8bcb02acea5712fe0ccff143dda12a98c395697",
+      "lines": 23
+    },
+    {
+      "name": "0801533c.c",
+      "sha256": "a25fbf3c5c331f65e28e79aaaa0af96c898e247cca4c2a45f5fa1ceed097c537",
+      "lines": 67
+    },
+    {
+      "name": "0801604c.c",
+      "sha256": "7a369ddf790f1bc689f6816e1c3b522bdd05c5d955499ca6373e618d8cf13ee7",
+      "lines": 11
+    },
+    {
+      "name": "080162f8.c",
+      "sha256": "43a1abb52f88b467eeb3a493f8c508061758960aa07501a3f8efb825309d1cbf",
+      "lines": 32
+    },
+    {
+      "name": "08016da8.c",
+      "sha256": "cc86e32794593047b50b528e5ee616d1b5e1a81cefd3e8aa145537b2eec00e3a",
+      "lines": 460
+    },
+    {
+      "name": "080181c0.c",
+      "sha256": "f5356419e6c764a7a9fc2a9a6bf595db83bfaa9a9a05961bbff3ae027fd7773b",
+      "lines": 180
+    },
+    {
+      "name": "08018e7c.c",
+      "sha256": "eb12b304676eb5c51f27cad69dd5e33922075608f633e2be0d09fc12b9cc8670",
+      "lines": 10
+    },
+    {
+      "name": "final-stream.c",
+      "sha256": "4bb69ee7ea9774b2b0c40833e2176ffcb6a73faac5ce33dcd095f8d7524cd0ce",
+      "lines": 955
+    }
+  ]
+}

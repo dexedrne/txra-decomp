@@ -1,0 +1,19 @@
+{
+  "cases": 384,
+  "passed": 384,
+  "state_changing_cases": 352,
+  "contact_results": 38,
+  "cache_preserved_cases": 226,
+  "cache_cleared_cases": 67,
+  "rejected_narrowing_control_cases": 239,
+  "candidate": "docs/near-misses/breadth-1112b/contact-final/func_080181C0.c",
+  "candidate_sha256": "b3befe5fa022e96bf0580c619e631cf5f991d241b696e094344cdd1a0ff6c76c",
+  "unicorn_version": "2.1.4",
+  "harness_sha256": "eb44d498aad2e38176011955eff532109a0b5f852d15272b361a61ccf1cd4865",
+  "original_instructions_executed": true,
+  "original_instruction_addresses_visited": 403,
+  "original_memory_readonly": true,
+  "installation_authority": false,
+  "method": "Original ARM instructions in Unicorn versus host-compiled complete C; actual private lookup tables; bounded synthetic RAM.",
+  "limitations": "No gameplay, arbitrary malformed-state or byte-equality claim. Original bytes and tables remain private and memory-only."
+}

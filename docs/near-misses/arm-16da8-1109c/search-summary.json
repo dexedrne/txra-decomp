@@ -1,0 +1,18 @@
+{
+  "compiler": "arm",
+  "profile_sweep": false,
+  "selection": "lowest differing-byte count fitting the unchanged complete owner; lower-frame control retained separately",
+  "unique_sources": 1748,
+  "unique_compiled_outputs": 281,
+  "invalid_source_hypotheses": 354,
+  "oversize_sources": 191,
+  "experiments": [
+    "arm-far",
+    "arm-depths",
+    "arm-depths2",
+    "arm-cursor",
+    "arm-near",
+    "arm-roles"
+  ],
+  "limitations": "Initial mixed-declaration hypotheses failed the historical C parser and were corrected in arm-depths2. Only retained C is fixture-checked; diagnostic scores never authorize installation."
+}

@@ -1,0 +1,34 @@
+{
+  "address": "080149FC",
+  "mode": "thumb",
+  "bytes": 208,
+  "instructions": 102,
+  "call_count": null,
+  "observed_entry": false,
+  "static_callers": 1,
+  "matched_callees": 0,
+  "unmatched_callees": 1,
+  "difficulty": 110,
+  "value": 2,
+  "priority": 0.018182,
+  "blocked_reason": null,
+  "comparison_bytes": 228,
+  "attempts": 3000,
+  "compile_errors": 0,
+  "seconds": 18.28,
+  "status": "budget exhausted",
+  "exact": false,
+  "focus": null,
+  "seconds_limit": 45.0,
+  "learned_candidates": {
+    "named-add-input": 12,
+    "saved-constant": 6
+  },
+  "generations": 2,
+  "score": [
+    59,
+    161
+  ],
+  "compiler": "standard-o1",
+  "size": 236
+}

@@ -1,0 +1,68 @@
+{
+ "owner": "080181C0..08018854",
+ "profile": "arm (agbcc_arm -O2 -mthumb-interwork), sha256 34268789...",
+ "worker": "worker A",
+ "tool": "tools/measure_candidate.py",
+ "steps": [
+  {
+   "step": "finish2 candidate (docs/near-misses/finish2-1115-contact/func_080181C0.c)",
+   "different_bytes": 158,
+   "instruction_distance": 74,
+   "emitted_bytes": 1684,
+   "frame": 72,
+   "source_sha256_prefix": "de9c0eec031b",
+   "compiled_sha256_prefix": "d9a63955312f",
+   "note": "giv (probe pointer) loses the global order to k; table bases are block-local qtys"
+  },
+  {
+   "step": "+ function-scope probe pointer p = g_030057A0, used for the probe stores and the rotate loop",
+   "different_bytes": 1161,
+   "instruction_distance": 243,
+   "emitted_bytes": 1672,
+   "frame": 64,
+   "source_sha256_prefix": "6fdb8d0a437e",
+   "compiled_sha256_prefix": "30c54d6eaf1f",
+   "note": "giv init no longer has a constant REG_EQUAL note, so its live length is not doubled; but pass 1 loses the probe-base and probe+8 movables and the loop-pass budget breaks"
+  },
+  {
+   "step": "+ raw heading a before the loop, a & 0x3FFF inside the loop",
+   "different_bytes": 982,
+   "instruction_distance": 128,
+   "emitted_bytes": 1680,
+   "frame": 68,
+   "source_sha256_prefix": "306da952ded7",
+   "compiled_sha256_prefix": "ddbc27346ace",
+   "note": "the mask adds three pass-1 movables (16320, 16383, and): one too many, so record+4 slips to pass 2 and angle*4 is not hoisted"
+  },
+  {
+   "step": "+ mask written as a << 18 >> 18 with u32 a (two pass-1 movables)",
+   "different_bytes": 118,
+   "instruction_distance": 39,
+   "emitted_bytes": 1684,
+   "frame": 72,
+   "source_sha256_prefix": "08a2086ab761",
+   "compiled_sha256_prefix": "d414ded38ef9",
+   "note": "loop passes as in the original; giv r6 / k r7 / c2 r8 / c1 sl / angle*4 sb; only the j body r0/ip and preheader reloads differ"
+  },
+  {
+   "step": "+ box tables through function-scope byte pointers, model scaled to a byte offset (model *= 8; *(s32 *)(wt + model))",
+   "different_bytes": 0,
+   "instruction_distance": 0,
+   "emitted_bytes": 1684,
+   "frame": 72,
+   "source_sha256_prefix": "3e93ce3d67ec",
+   "compiled_sha256_prefix": "960f722ba20b",
+   "note": "table bases become spilled function-wide pseudos reloaded into r4/lr; rec+0x20 takes r1, model r2, j*100 r0"
+  },
+  {
+   "step": "installed: unused locals removed, model = field_02 * 8, re-indented (src/generated/func_080181C0.c)",
+   "different_bytes": 0,
+   "instruction_distance": 0,
+   "emitted_bytes": 1684,
+   "frame": 72,
+   "source_sha256_prefix": "af185e89e996",
+   "compiled_sha256_prefix": "960f722ba20b",
+   "note": "exact; full rebuild SHA-1 4197339d4add74bb40ed02a8fba5e58096afb487"
+  }
+ ]
+}

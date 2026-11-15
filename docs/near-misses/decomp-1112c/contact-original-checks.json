@@ -1,0 +1,17 @@
+{
+  "candidate": "docs/near-misses/decomp-1112c/func_080181C0.c",
+  "source_sha256": "d248a33b5bbd9c5544c6dba987e7c36ceb45febac34735ff72325799b4db565a",
+  "compiled_sha256": "fdef93a96d92709a7807514d65281eafe395c29f9d7dadef039681ebd62c881b",
+  "cases": 192,
+  "passed": 192,
+  "state_changing_cases": 168,
+  "nonzero_return_cases": 30,
+  "original_instructions_executed": true,
+  "engine": "Unicorn ARM",
+  "lookup_data": "synthetic signed triangular wave, synthetic dimensions and masks",
+  "compared": "return, IWRAM below stack region, all callee-saved registers and stack restoration",
+  "private_rom_identity_verified": true,
+  "binary_artifacts_written": false,
+  "installation_authority": false,
+  "limitations": "Synthetic bounded state only; no gameplay or arbitrary malformed-state claim. Exact bytes and whole-ROM gates still required."
+}

@@ -1,0 +1,507 @@
+[
+  {
+    "exact": false,
+    "crosses_next": false,
+    "size": 204,
+    "score": [
+      62,
+      140
+    ],
+    "byte_distance": 140,
+    "profile": "old",
+    "extra": [],
+    "address": "080063D4",
+    "source": "docs/deep-c/seeds/func_080063D4.c",
+    "target_size": 208,
+    "compiled_input_sha256": "0e60e145dd3125f9e5f236a718766cb636ea8749cbd3abaac36a05358601a786",
+    "source_sha256": "1b9f1c8b7341719dbb8516768204f95fab8977884bb0b975a435868dc3af81be"
+  },
+  {
+    "exact": false,
+    "crosses_next": false,
+    "size": 224,
+    "score": [
+      27,
+      89
+    ],
+    "byte_distance": 89,
+    "profile": "old",
+    "extra": [],
+    "address": "08005F8C",
+    "source": "docs/deep-c/seeds/func_08005F8C.c",
+    "target_size": 228,
+    "compiled_input_sha256": "2c503203ea52930f12b1b05a92a1267a9384094da2e5bb99f453a913a358fead",
+    "source_sha256": "928c7e3e7497a0a0231d7031a9d81c710f4eb85723b2b2e184a41fbc61b61c5a"
+  },
+  {
+    "exact": false,
+    "crosses_next": false,
+    "size": 228,
+    "score": [
+      17,
+      76
+    ],
+    "byte_distance": 76,
+    "profile": "old-o1",
+    "extra": [],
+    "address": "080149FC",
+    "source": "docs/deep-c/seeds/func_080149FC.c",
+    "target_size": 228,
+    "compiled_input_sha256": "60ed0fcb3840b70f1c615a777f11f03de785841c23e21ab60d2f485c748ac2e1",
+    "source_sha256": "9fd162b2ea7ceb3c0fb0bb7e204876b820b2f8f443b8469644b6630204dce2e9"
+  },
+  {
+    "exact": false,
+    "crosses_next": true,
+    "size": 396,
+    "score": [
+      78,
+      306
+    ],
+    "byte_distance": 306,
+    "profile": "old",
+    "extra": [],
+    "address": "08007398",
+    "source": "docs/deep-c/seeds/func_08007398.c",
+    "target_size": 376,
+    "compiled_input_sha256": "5a3975f024362aa131f229ecc8b90b98b4919f7f1bc8eb208bb045b4ba2fc28c",
+    "source_sha256": "0e6c9b0168bb718ef2af33fcdee98806260932929e56b873ace1d5bfd5627b74"
+  },
+  {
+    "exact": false,
+    "crosses_next": false,
+    "size": 304,
+    "score": [
+      87,
+      310
+    ],
+    "byte_distance": 310,
+    "profile": "old",
+    "extra": [],
+    "address": "0800B254",
+    "source": "docs/deep-c/seeds/func_0800B254.c",
+    "target_size": 332,
+    "compiled_input_sha256": "fa0359731a8b692c3701aa2364f6178d6b5830e0713aacfdbcb44b5905d512d3",
+    "source_sha256": "0607e2dbc55ef00121f7a0214795ae4991b6f216e4d1491b9a7cb03e36b44ba4"
+  },
+  {
+    "exact": false,
+    "crosses_next": false,
+    "size": 356,
+    "score": [
+      123,
+      315
+    ],
+    "byte_distance": 315,
+    "profile": "old",
+    "extra": [],
+    "address": "0800A00C",
+    "source": "docs/deep-c/seeds/func_0800A00C.c",
+    "target_size": 368,
+    "compiled_input_sha256": "638dc4e9296663d3904ddc8ba8c0f1d23c425ba1f5a9458f15fd4a11572ff5b0",
+    "source_sha256": "eeadcfce08e8841ccf3903b4e149c5e2e9200490b76735c98422ca1ec3f90892"
+  },
+  {
+    "exact": false,
+    "crosses_next": true,
+    "size": 388,
+    "score": [
+      91,
+      350
+    ],
+    "byte_distance": 350,
+    "profile": "old",
+    "extra": [],
+    "address": "0800C850",
+    "source": "docs/deep-c/seeds/func_0800C850.c",
+    "target_size": 372,
+    "compiled_input_sha256": "cdf659c6aee10ecf4e6488f283d09d8445ab33182a56fb95c718ba1e41c24f2c",
+    "source_sha256": "f30d951d582d5cc76c57940e8718e705c98188acc46e43e26f0bfbb57c593bfe"
+  },
+  {
+    "exact": false,
+    "crosses_next": false,
+    "size": 354,
+    "score": [
+      92,
+      298
+    ],
+    "byte_distance": 298,
+    "profile": "old",
+    "extra": [],
+    "address": "08008914",
+    "source": "docs/deep-c/seeds/func_08008914.c",
+    "target_size": 370,
+    "compiled_input_sha256": "1c323a1679f10fb9c3e15f01b5c329712d71ef9965cf48ad32e5ac14e1fce13f",
+    "source_sha256": "1e4db09f9cf78043216963ce9e549e619f765a2c1de8ff5381cb9086a998ec7c"
+  },
+  {
+    "exact": false,
+    "crosses_next": false,
+    "size": 424,
+    "score": [
+      166,
+      439
+    ],
+    "byte_distance": 439,
+    "profile": "old",
+    "extra": [],
+    "address": "080162F8",
+    "source": "docs/deep-c/seeds/func_080162F8.c",
+    "target_size": 472,
+    "compiled_input_sha256": "9f4ad358b7b35bcf303679acc5410445a9155be02e8b32d116d69d4148745744",
+    "source_sha256": "13a589d4b44abe6f55068b4b52b1075f917abd85002ed3a35cf7929f131a64d1"
+  },
+  {
+    "exact": false,
+    "crosses_next": true,
+    "size": 500,
+    "score": [
+      80,
+      222
+    ],
+    "byte_distance": 222,
+    "profile": "old",
+    "extra": [],
+    "address": "0800BBD4",
+    "source": "docs/deep-c/seeds/func_0800BBD4.c",
+    "target_size": 492,
+    "compiled_input_sha256": "cd217c7d2cbc0c71a74d973efbf9294efb7f18a6ee577b6f481debb7e5b2a996",
+    "source_sha256": "a810c252a6c0721da8e1472cf64de5a295ede0adc1046547687a931ada42759c"
+  },
+  {
+    "exact": false,
+    "crosses_next": false,
+    "size": 488,
+    "score": [
+      167,
+      494
+    ],
+    "byte_distance": 494,
+    "profile": "old",
+    "extra": [],
+    "address": "0800A68C",
+    "source": "docs/deep-c/seeds/func_0800A68C.c",
+    "target_size": 532,
+    "compiled_input_sha256": "5e5a5c1e27398a7ec119ce1ae065b94b7e4f0584ba28ca72d296dc8b4202ab1a",
+    "source_sha256": "3f0f310eec04e760c64af9e8ba71a4d25ba23385005fb04fa3e80d7a3f51f7c1"
+  },
+  {
+    "exact": false,
+    "crosses_next": true,
+    "size": 540,
+    "score": [
+      169,
+      413
+    ],
+    "byte_distance": 413,
+    "profile": "old",
+    "extra": [],
+    "address": "0800EDF4",
+    "source": "docs/deep-c/seeds/func_0800EDF4.c",
+    "target_size": 530,
+    "compiled_input_sha256": "f05aafb22a99bc7b2f977135ee0bbdb7cd2234cc869e4bb3b281d8a165b07edb",
+    "source_sha256": "068e89e21b6e6d74d9e5297355a61b89a14fad4b41ad6bfcbde0d9a8ce9f9be2"
+  },
+  {
+    "exact": false,
+    "crosses_next": false,
+    "size": 664,
+    "score": [
+      195,
+      558
+    ],
+    "byte_distance": 558,
+    "profile": "old",
+    "extra": [],
+    "address": "0800CEEC",
+    "source": "docs/deep-c/seeds/func_0800CEEC.c",
+    "target_size": 668,
+    "compiled_input_sha256": "758efc96a9b5b8dba8ee8b7755cb8cdcd26e3aebc655a649b6d076331a56d10d",
+    "source_sha256": "8addb3ee00d5c8a37d43f0357fa6e1686ccdc41a08a8fae0622a3f8c9e2bb6c3"
+  },
+  {
+    "exact": false,
+    "crosses_next": true,
+    "size": 736,
+    "score": [
+      304,
+      648
+    ],
+    "byte_distance": 648,
+    "profile": "old",
+    "extra": [],
+    "address": "0800B908",
+    "source": "docs/deep-c/seeds/func_0800B908.c",
+    "target_size": 716,
+    "compiled_input_sha256": "24a1afafbe21edab3159d9b17c81bb8de19dac38366d3cc2c432cc604d4c0ce9",
+    "source_sha256": "76d79bb908e2ea8dc99f45ca0e282093791b7652064952a7e1f0b426cfb1fad9"
+  },
+  {
+    "exact": false,
+    "crosses_next": false,
+    "size": 748,
+    "score": [
+      313,
+      688
+    ],
+    "byte_distance": 688,
+    "profile": "old",
+    "extra": [],
+    "address": "080095E4",
+    "source": "docs/deep-c/seeds/func_080095E4.c",
+    "target_size": 758,
+    "compiled_input_sha256": "4b8694d3b213620efb0b84fd29e04eb2a0cf91353edebdb9f4f5d98924ec7d17",
+    "source_sha256": "995d842795ffa91f3d1ad1cebe0336ed341988c2baaa7c69b490026c81abfdee"
+  },
+  {
+    "exact": false,
+    "crosses_next": true,
+    "size": 932,
+    "score": [
+      276,
+      877
+    ],
+    "byte_distance": 877,
+    "profile": "old",
+    "extra": [],
+    "address": "0800CB5C",
+    "source": "docs/deep-c/seeds/func_0800CB5C.c",
+    "target_size": 912,
+    "compiled_input_sha256": "c4f6dc8aec173c5fe45a32835a8e6d3aca1051a64215dac71de4822b8385b125",
+    "source_sha256": "d80140c4dd83fe7874e8d72faf6b16bdfe514008419e3e4f3adca233945d2047"
+  },
+  {
+    "exact": false,
+    "crosses_next": true,
+    "size": 1200,
+    "score": [
+      500,
+      1154
+    ],
+    "byte_distance": 1154,
+    "profile": "old",
+    "extra": [],
+    "address": "0800C3C4",
+    "source": "docs/deep-c/seeds/func_0800C3C4.c",
+    "target_size": 1164,
+    "compiled_input_sha256": "f37d5a850d03c75567799a6dd71fe3e9a8efd1bd653c059ee88266b3400a8b9b",
+    "source_sha256": "c66a4e4320da794a2b32d7b78ec753d5e0348930ca1985350c256c9cc288add8"
+  },
+  {
+    "exact": false,
+    "crosses_next": true,
+    "size": 1488,
+    "score": [
+      483,
+      1366
+    ],
+    "byte_distance": 1366,
+    "profile": "old",
+    "extra": [],
+    "address": "08013594",
+    "source": "docs/deep-c/seeds/func_08013594.c",
+    "target_size": 1444,
+    "compiled_input_sha256": "43c78b2125e2e1622286496d038643310efa101de253d5e938be34358e11b1f3",
+    "source_sha256": "5e921ede4c34bb3ec27e454c4942cc45dae3c15205139bc24189c8ad7d752ea1"
+  },
+  {
+    "exact": false,
+    "crosses_next": false,
+    "size": 6344,
+    "score": [
+      2816,
+      6174
+    ],
+    "byte_distance": 6174,
+    "profile": "old",
+    "extra": [],
+    "address": "08010A50",
+    "source": "docs/deep-c/seeds/func_08010A50.c",
+    "target_size": 6460,
+    "compiled_input_sha256": "0a39a15ab7aebfaf139fec84b76bb1fa496d69dc0d87f228b52a504400d3eaa4",
+    "source_sha256": "b9cf838f9ac4eaa331b4d20868db72e51b5e3c88ead6841eff88796a1c5b67b0"
+  },
+  {
+    "address": "080076F4",
+    "source": "docs/deep-c/seeds/func_080076F4.c",
+    "arm_profiles": [
+      {
+        "compiler": "historical",
+        "flags": [
+          "-O2",
+          "-mthumb-interwork"
+        ],
+        "size": 1224,
+        "target_size": 1076,
+        "byte_distance": 1120,
+        "exact": false
+      },
+      {
+        "compiler": "historical",
+        "flags": [
+          "-O1",
+          "-mthumb-interwork"
+        ],
+        "size": 1180,
+        "target_size": 1076,
+        "byte_distance": 1053,
+        "exact": false
+      },
+      {
+        "compiler": "historical",
+        "flags": [
+          "-Os",
+          "-mthumb-interwork"
+        ],
+        "size": 1156,
+        "target_size": 1076,
+        "byte_distance": 1003,
+        "exact": false
+      },
+      {
+        "compiler": "historical",
+        "flags": [
+          "-O2"
+        ],
+        "size": 1220,
+        "target_size": 1076,
+        "byte_distance": 1116,
+        "exact": false
+      },
+      {
+        "compiler": "historical",
+        "flags": [
+          "-O2",
+          "-fomit-frame-pointer",
+          "-mthumb-interwork"
+        ],
+        "size": 1220,
+        "target_size": 1076,
+        "byte_distance": 1139,
+        "exact": false
+      },
+      {
+        "compiler": "historical",
+        "flags": [
+          "-O2",
+          "-fno-gcse",
+          "-mthumb-interwork"
+        ],
+        "size": 1224,
+        "target_size": 1076,
+        "byte_distance": 1120,
+        "exact": false
+      },
+      {
+        "compiler": "modern",
+        "flags": [
+          "-O2",
+          "-marm",
+          "-mcpu=arm7tdmi",
+          "-mthumb-interwork",
+          "-fno-omit-frame-pointer",
+          "-mapcs-frame"
+        ],
+        "size": 1256,
+        "target_size": 1076,
+        "byte_distance": 1155,
+        "exact": false
+      }
+    ],
+    "exact": false,
+    "compiled_input_sha256": "909e4021aa3d2af341be08c8f4d78714ae8d3f8a4802396b5f99c07ec43a0618",
+    "source_sha256": "4709ecc29e14650425f0bbd0e7a351ee15884bda461683915f35dc9ed27dd219"
+  },
+  {
+    "address": "080181C0",
+    "source": "docs/deep-c/seeds/func_080181C0.c",
+    "arm_profiles": [
+      {
+        "compiler": "historical",
+        "flags": [
+          "-O2",
+          "-mthumb-interwork"
+        ],
+        "size": 1976,
+        "target_size": 1684,
+        "byte_distance": 1833,
+        "exact": false
+      },
+      {
+        "compiler": "historical",
+        "flags": [
+          "-O1",
+          "-mthumb-interwork"
+        ],
+        "size": 1636,
+        "target_size": 1684,
+        "byte_distance": 1507,
+        "exact": false
+      },
+      {
+        "compiler": "historical",
+        "flags": [
+          "-Os",
+          "-mthumb-interwork"
+        ],
+        "size": 1572,
+        "target_size": 1684,
+        "byte_distance": 1502,
+        "exact": false
+      },
+      {
+        "compiler": "historical",
+        "flags": [
+          "-O2"
+        ],
+        "size": 1972,
+        "target_size": 1684,
+        "byte_distance": 1829,
+        "exact": false
+      },
+      {
+        "compiler": "historical",
+        "flags": [
+          "-O2",
+          "-fomit-frame-pointer",
+          "-mthumb-interwork"
+        ],
+        "size": 1988,
+        "target_size": 1684,
+        "byte_distance": 1849,
+        "exact": false
+      },
+      {
+        "compiler": "historical",
+        "flags": [
+          "-O2",
+          "-fno-gcse",
+          "-mthumb-interwork"
+        ],
+        "size": 1956,
+        "target_size": 1684,
+        "byte_distance": 1832,
+        "exact": false
+      },
+      {
+        "compiler": "modern",
+        "flags": [
+          "-O2",
+          "-marm",
+          "-mcpu=arm7tdmi",
+          "-mthumb-interwork",
+          "-fno-omit-frame-pointer",
+          "-mapcs-frame"
+        ],
+        "size": 1424,
+        "target_size": 1684,
+        "byte_distance": 1558,
+        "exact": false
+      }
+    ],
+    "exact": false,
+    "compiled_input_sha256": "e1b1167238a01f05d9a219d68630737e7101a791f5c25b404582e68ca65e71a2",
+    "source_sha256": "2dee090b4878b46bf5b8a53230261b6918d49a1c924523bcdd860f630add68ff"
+  }
+]

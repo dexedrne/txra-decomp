@@ -1,0 +1,10 @@
+# Real compiles, official agbcc_arm (sha256 26d884f0... on worker B), batch.py columns:
+# differing bytes, instruction distance, emitted bytes, frame, source
+49    23   4288  96   g6.c             finish 4 best (docs/finish4-1115/renderer/c/g6.c)
+3801  354  4352  96   h7x2.c           finish 5 rendA, allocation-exact under a forced sched1 order
+53    23   4288  96   s2.c             h7x2 + saved_y copy, dy reused for the rotated depth: race (a) fixed
+40    6    4288  96   g2c.c            tx1_a + saved_y + tx as one expression (tx global, takes r2): order (b) fixed
+0     0    4288  96   A.c              g6 + loop rewrite, tx = dx*cos - (k = dz*sin)
+0     0    4288  96   B.c              g6 + loop rewrite (installed form, copy named sv)
+0     0    4288  96   func_08016DA8.c  installed source (saved_y, standard header)
+# what-if (private cc1, TXORDER): s2.c with only the gOffset.x load moved after the depth store -> diff=0

@@ -1,0 +1,34 @@
+[
+  {
+    "address": "080181C0",
+    "source": "func_080181C0.c",
+    "compiler": "arm",
+    "exact": false,
+    "emitted_bytes": 1644,
+    "target_bytes": 1684,
+    "local_frame_bytes": 60,
+    "instruction_diff_rows": 363,
+    "different_bytes": 1143
+  },
+  {
+    "address": "0800421C",
+    "source": "func_0800421C-frame.c",
+    "compiler": "old",
+    "exact": false,
+    "emitted_bytes": 4200,
+    "target_bytes": 4124,
+    "local_frame_bytes": 36,
+    "instruction_diff_rows": 2213,
+    "different_bytes": 3892
+  },
+  {
+    "address": "080064A4",
+    "source": "func_080064A4-prefix.c",
+    "compiler": "old",
+    "exact": false,
+    "emitted_bytes": 576,
+    "incomplete": true,
+    "recovered_until": "08006712",
+    "missing": "eight-voice PCM body"
+  }
+]

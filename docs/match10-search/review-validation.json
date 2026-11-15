@@ -1,0 +1,47 @@
+{
+  "pictures_opened_and_inspected": [
+    "search-results.png",
+    "score-traces.png",
+    "before/matching-status.png",
+    "after/matching-status.png"
+  ],
+  "video_frames_opened_and_inspected_seconds": [
+    0,
+    3,
+    5.9
+  ],
+  "visual_result": "All labels fit; before/after totals agree; opening, middle and closing score replay frames are legible.",
+  "clip_seconds": 6,
+  "clip_fps": 30,
+  "clip_frames": 180,
+  "clip_bytes": 680591,
+  "audio_streams": 0,
+  "caption_coverage": "Every picture and clip is captioned; every media folder has NOTES.md and captions.json.",
+  "media": [
+    {
+      "file": "score-traces.png",
+      "sha256": "d55da8200dce5a10d32a383278a4dfba00703262a4540258dcebee370a2a079e",
+      "caption": "Best instruction differences over each target\u2019s timed window; flat lines show plateaus."
+    },
+    {
+      "file": "search-progress.webm",
+      "sha256": "d380a720acbb0c4e6db9f221544dde23a5946a376d86f0dd7c8f9e7e88d37257",
+      "caption": "Six-second muted replay of our measured search scores, 30 fps; compiler metadata only."
+    },
+    {
+      "file": "search-results.png",
+      "sha256": "f09e25b5299e449f42eab4de9009af5450a4a9695b60885929b6c172c5b37143",
+      "caption": "Round-ten results: prior and best differences, fresh compilations and elapsed time for each target."
+    },
+    {
+      "file": "before/matching-status.png",
+      "sha256": "4b6217c83cfaeb589d75a860d6880cdc1c5fca50d3f2c7b079216d6646a0e900",
+      "caption": "Before: accepted exact replacements, with a fixed mapped-code denominator."
+    },
+    {
+      "file": "after/matching-status.png",
+      "sha256": "2ad92285e400081b0246ed330738c2cda767e0e2e9babf178654ba74dcdd323e",
+      "caption": "After: accepted exact replacements, with a fixed mapped-code denominator."
+    }
+  ]
+}

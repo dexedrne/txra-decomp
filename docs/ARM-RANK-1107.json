@@ -1,0 +1,78 @@
+{
+  "base": "c2ea36c4192f94e5cefd0a1ff18a103e80f0c02f",
+  "purpose": "Admit reviewed compiler-frame ARM leaf candidates to bounded exact-byte search; not general ABI/memory-safety validation",
+  "matchedCBefore": 181,
+  "matchedCAfter": 181,
+  "remainingEntries": 48,
+  "eligibleArmCandidates": [
+    {
+      "address": "080181C0",
+      "bytes": 1684
+    },
+    {
+      "address": "08016DA8",
+      "bytes": 4288
+    }
+  ],
+  "syntheticTests": {
+    "run": 23,
+    "pass": 23
+  },
+  "fullSuite": {
+    "run": 212,
+    "pass": 211,
+    "skip": 1,
+    "skipReason": "fewer than two unmatched retained drafts remain for the existing real resume fixture"
+  },
+  "fullMatchingBuild": {
+    "replacements": 181,
+    "romBytes": 4194304,
+    "sha1": "4197339d4add74bb40ed02a8fba5e58096afb487",
+    "generatedAssemblyAndMapsUnchanged": true
+  },
+  "boundedProbe": {
+    "address": "080181C0",
+    "mode": "arm",
+    "bytes": 1684,
+    "instructions": 403,
+    "call_count": null,
+    "observed_entry": true,
+    "static_callers": 0,
+    "matched_callees": 0,
+    "unmatched_callees": 0,
+    "difficulty": 403,
+    "value": 2,
+    "priority": 0.004963,
+    "blocked_reason": null,
+    "comparison_bytes": 1684,
+    "attempts": 2,
+    "compile_errors": 0,
+    "seconds": 0.91,
+    "status": "budget exhausted",
+    "exact": false,
+    "focus": null,
+    "seconds_limit": 60.0,
+    "learned_candidates": {
+      "saved-constant": 2,
+      "guarded-loop": 2
+    },
+    "generations": 1,
+    "score": [
+      206,
+      1146
+    ],
+    "compiler": "arm",
+    "size": 1644
+  },
+  "verifiedCodeHashes": {
+    "tools/rank_targets.py": "4cdbba065a39c374b197d839099083ddb87fbb025160d63000148052091dd0fa",
+    "tests/test_arm_rank.py": "792ed3d250e72b69f87b8c47f8d526b0b0b75d65252aaf9abcdbf1f0ed1d0ad6"
+  },
+  "cleanup": {
+    "remoteTemporarySourceRemoved": true,
+    "romTransferred": false,
+    "newRemoteCheckout": false,
+    "donorRomUnchanged": true
+  },
+  "runtimeOrPerformanceChange": false
+}

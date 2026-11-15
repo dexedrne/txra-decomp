@@ -1,0 +1,162 @@
+{
+  "08018DE4": {
+    "outcome": "assembly veneer",
+    "learned": "Transfers directly through r1 without a new return address; ordinary ABI C cannot preserve this entry contract."
+  },
+  "08018DF0": {
+    "outcome": "assembly veneer",
+    "learned": "Transfers directly through saved register r4; this is a register-call veneer, not a C function with parameters."
+  },
+  "08018DFC": {
+    "outcome": "assembly veneer",
+    "learned": "Transfers directly through saved register r7; retain the original register-call veneer."
+  },
+  "08018E08": {
+    "outcome": "assembly veneer",
+    "learned": "Transfers through r10; a hidden register entry contract requires an assembly wrapper."
+  },
+  "08018E14": {
+    "outcome": "assembly veneer",
+    "learned": "Transfers through sp; unusual trampoline contract, not an independently compilable ABI C routine."
+  },
+  "08000000": {
+    "outcome": "assembly entry",
+    "learned": "Reset vector is a single ARM branch before C startup; retain as assembly."
+  },
+  "08018E80": {
+    "outcome": "assembly veneer",
+    "learned": "ARM branch into signed division; its surrounding Thumb-to-ARM veneer owns the return contract."
+  },
+  "0800735C": {
+    "outcome": "boundary recovery needed",
+    "learned": "Reads stack slot 88 and r10 from enclosing sound body; BL edges are compiler long branches, not independent calls."
+  },
+  "08007368": {
+    "outcome": "boundary recovery needed",
+    "learned": "Shared sound epilogue discards 108 stack bytes and restores high registers; cannot be a standalone C function."
+  },
+  "08006712": {
+    "outcome": "boundary recovery needed",
+    "learned": "Live r10/r12 and stack slots 88/92 belong to the same sound body; recover enclosing unit before matching."
+  },
+  "0800027C": {
+    "outcome": "assembly runtime",
+    "learned": "Shift/subtract divider returns on zero denominator and uses flags across conditional ARM operations; likely library assembly, attribution unproven."
+  },
+  "08014104": {
+    "outcome": "unmatched: allocation/scheduling",
+    "learned": "Retained 6 instruction / 10 byte miss. Compiler profiles, scheduling flags, register hints, typed bases, dimension widths, initializer order and inline compositor hypotheses did not improve it. Height/destination exchange r8/r9; inner count moves ahead of source setup. Compiling alone and before/after the assigned strip routine gives the same 6/10 miss with old agbcc; compilation-unit order does not resolve it."
+  },
+  "08018E1C": {
+    "outcome": "exact: 94 bytes",
+    "learned": "Bundled library C shape matches with old compiler -O2 without Thumb interworking. The runtime unit returns directly through pc; application routines keep interworking."
+  },
+  "080147D0": {
+    "outcome": "unmatched: loop induction",
+    "learned": "First compilable typed initializer retained. Full span is 224 bytes, including pools. Best hand hypothesis has 38 instruction / 206 byte differences; natural indexed loops, integer cursors, delayed base acquisition and compiler-policy checks still fold an extra induction pointer and save one fewer high register."
+  },
+  "08015128": {
+    "outcome": "ABI/source recovery needed",
+    "learned": "The prologue saves r8 but the first color loop reads it without any definition or ordinary argument transfer. No direct callers are mapped. Do not invent a parameter to hide the live-in; original undefined-source behavior or a private register contract remains unresolved."
+  },
+  "080148B0": {
+    "outcome": "unmatched: switch/allocation",
+    "learned": "Rebuilt the state machine with the shared record, original access widths and switch fallthrough. Best is 35 instruction / 163 byte differences (210 versus 214 bytes), improving the prior 77/182 retained mutated hypothesis while preserving full-width pointers and parameters. Remaining differences are control scratch lifetimes, byte-mask materialization and return layout."
+  },
+  "08014FF4": {
+    "outcome": "ABI/source recovery needed",
+    "learned": "The first palette loop reads r9 as a source pointer without initializing it after saving it. Same unexplained high-register live-in pattern as 08015128; no direct mapped callers. Preserve the entry until its source bug or private calling contract is established."
+  },
+  "08014AE0": {
+    "outcome": "unmatched: packed-input/induction",
+    "learned": "Created a typed interrupt-body draft with the two-word receive buffer, packet swaps and signed per-channel counts. Best is old -O1 at 68 instruction / 203 byte differences. Register-base declarations and union receive storage do not fix the extra independent offset/high-register lifetimes in the target."
+  },
+  "08013E74": {
+    "outcome": "unmatched: allocation at correct length",
+    "learned": "Correct-width lifted source is 310 bytes under old -O1; scalar counter update improves to 36 instruction / 40 byte differences. This is behaviorally safer than the prior search draft that narrowed a packet pointer. Reused coordinates and high-register allocation remain unresolved."
+  },
+  "08006270": {
+    "outcome": "unmatched: signed audio/addressing",
+    "learned": "Recovered correct-width baseline and tested typed 20-byte table records, signed sample accesses and signed loop counters. Best ordinary source is 66 instruction / 245 byte differences under size optimization. Older retained draft narrows a sample pointer; it is not a safe structural seed. No approximate source installed."
+  },
+  "08014CE4": {
+    "outcome": "unmatched: DMA/addressing",
+    "learned": "The DMA loops are ordinary C candidates, not assembly-only. Replaced lifted sp with the address of a real word and made variable-address DMA writes/readbacks volatile. Corrected shared-triple addressing and tested a volatile DMA register record; substantial pointer lifetime, signed division and loop differences remain (best 168/404)."
+  },
+  "080010B8": {
+    "outcome": "assembly renderer/private ABI",
+    "learned": "ARM entry pushes only lr before using live r7/r8/r11, then saves a custom subset and stack layout. It is not an ordinary APCS C function; preserve this renderer wrapper rather than inventing register parameters."
+  },
+  "08016C18": {
+    "outcome": "unmatched: ARM C confirmed",
+    "learned": "Built the pinned ARM compiler locally and reconstructed the complete transform loop. Old ARM -O2 emits the correct 400-byte length with the expected APCS frame, but allocation/scheduling differs. Two instructions labeled long multiply in the lifted draft are MLA, confirmed independently; draft precedence and PC-relative loads also need care. This entry is C, not assembly-only."
+  },
+  "0800841C": {
+    "outcome": "unmatched: record and palette types",
+    "learned": "Reused the mapped 100-byte record and symbolic palette bases; score improves from 129/314 to 105/109 with standard agbcc, but the result is 452 rather than 430 bytes. Signed component locals alone do not help. Repeated record-index arithmetic and palette clamp branch shapes remain unresolved."
+  },
+  "08012CC8": {
+    "outcome": "unmatched: DMA local scopes",
+    "learned": "The setup loop is ordinary C with BIOS veneer calls. Distinct scoped fill words and one symbolic DMA register block improve the baseline from 174/539 to 150/469, but 524 output bytes still exceed the full 496-byte target. Original macros likely create repeated stack-fill objects; a single lifted sp00 local hides that source structure."
+  },
+  "08012EB8": {
+    "outcome": "unmatched: sibling DMA scopes",
+    "learned": "Applied the smaller sibling lesson one entry at a time. Separate fill scopes plus one symbolic DMA register block reduce 187/558 to 164/497 under old -O2 without gcse. Additional live state and branch structure still produce 548 output bytes, so this is not a complete match."
+  },
+  "08012A50": {
+    "outcome": "unmatched: larger setup sibling",
+    "learned": "Reused the scoped-DMA lesson after checking this sibling separately. Best is 184 instruction / 517 byte differences, emitting 636 bytes against the complete 616-byte extent. The extra text and render-state paths still need structured source reconstruction; this is ordinary C, not an assembly-only BIOS trick."
+  },
+  "08002500": {
+    "outcome": "unmatched: indirect calls/switch recovered",
+    "learned": "Ranking rejection is conservative: this is an ordinary C dispatcher, not assembly-only. Recovered the incomplete 94-case switch and replaced register-call pseudo-arguments with typed indirect calls. The draft now compiles; indirect target allocation and table/branch placement remain wrong. Edit scores include table data decoded as instructions and should not be read as literal instruction counts."
+  },
+  "0800F008": {
+    "outcome": "unmatched: outgoing stack arguments",
+    "learned": "The lifted stack word at offset 0 is an outgoing fifth argument, not an ordinary local; offset 4 is a DMA fill word. Tested a fifth-argument call-site prototype and volatile fill storage as well as separate scopes. Best score remains 229/675, with substantial frame and state-machine differences. The installed callee ignores the extra argument; its signature alone cannot recover the original caller prototype."
+  },
+  "080154AC": {
+    "outcome": "unmatched: text record/lifetimes",
+    "learned": "The existing twelve-byte text-record layout and matched glyph/draw signatures were checked against this text parser. Correct callee return width and typed record identity do not improve the 265/690 baseline. Eight stack words, repeated glyph paths and persistent coordinate lifetimes still need structured reconstruction."
+  },
+  "0800AC3C": {
+    "outcome": "unmatched: division calls repaired",
+    "learned": "ARM signature inference had dropped both division arguments. Recovered all fourteen call denominators from the actual call sites: thirteen use 100 and one uses 12. Tested ordinary signed division and explicit helpers plus the existing record layout. Best is old -O1 at 219/710; unrolled record updates, signed rounding and allocation still differ."
+  },
+  "0800B4D8": {
+    "outcome": "unmatched: shared volatile fill",
+    "learned": "Compared the setup path with the installed interrupt and DMA-fill routines. A single volatile fill word plus a symbolic DMA register block improves 398/991 to 344/890 under old -O1 and restores the 1072-byte emitted size. Register lifetimes, setup calls and controller branches still differ; no replacement installed."
+  },
+  "08012600": {
+    "outcome": "unmatched: switch restored",
+    "learned": "Recovered all eight computed-entry labels and the 105-case dispatcher as ordinary C, rather than treating the ranking rejection as assembly-only. The complete draft now compiles across the historical profiles. Table placement and branch allocation differ; table words inflate the instruction-token score. Needs a structured dispatcher source, not a BIOS wrapper."
+  },
+  "080130BC": {
+    "outcome": "unmatched: larger setup/control flow",
+    "learned": "Checked the complete setup/menu body with both stack words preserved. Separate fill storage and the symbolic DMA block improve 454/1195 to 427/981, with 1244 emitted bytes. There are still many controller, glyph and setup paths; no group-wide optimization profile solves them."
+  },
+  "08001218": {
+    "outcome": "likely assembly renderer/private ABI",
+    "learned": "ARM renderer uses lr as a general register, saves r4-r12/lr without an APCS frame, and calls the edge helper while live values remain in private registers. Unlike the two standard-frame ARM functions, this needs its renderer/helper ABI recovered before an ordinary C comparison is meaningful."
+  },
+  "080165BC": {
+    "outcome": "unmatched: ARM frame/source recovered",
+    "learned": "Recovered sixteen frame words, PC-relative literals and all four multiply-add operations into a compilable ordinary C draft. The pinned ARM compiler was tested at -O1/-O2/-Os with interworking and APCS frame options. It does not match; the smaller 400-byte transform establishes the compiler family, but this larger record/primitive emitter still needs structured source."
+  },
+  "08007B40": {
+    "outcome": "boundary recovery needed",
+    "learned": "Entry starts with BL and writes an outgoing argument without saving lr or allocating its frame. The preceding mapped entry falls through directly into this body. Recover the combined enclosing function before compiling; a standalone replacement would invent an ABI and touch a neighboring slice."
+  },
+  "08002854": {
+    "outcome": "boundary recovery needed",
+    "learned": "Independent control-flow validation reaches balanced code through 0800417E, beyond the mapped end 08003786. The mapped prefix is not a complete function. Its large stack frame and neighboring fragments must be reconciled before any byte match can be accepted; no mapping from another slice was changed."
+  },
+  "08008A88": {
+    "outcome": "unmatched: three switches restored",
+    "learned": "Recovered three bounded switches and thirty-one computed-entry labels into a compilable diagnostic draft. The code is ordinary C despite the conservative ranking rejection. Best historical-policy token score is 943/2565 with expensive optimizations disabled. Large branch/table layout and record lifetimes need further work."
+  },
+  "0800F2D0": {
+    "outcome": "unmatched: large source structure",
+    "learned": "Regenerated the complete draft after fixing runtime-helper argument recovery. All division operands now survive. Historical compiler and policy comparisons still emit over 6300 bytes against the roughly 5500-byte target. This text/state body needs record-based source and branch reconstruction; the mismatch is too structural for register hints or more blind variants."
+  }
+}

@@ -1,0 +1,7719 @@
+{
+  "source": "tools/search-drafts/func_08015DA8_offsets.c",
+  "records": [
+    {
+      "flags": [],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-gcse"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-cse-follow-jumps"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-cse-skip-blocks"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-expensive-optimizations"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-branch-count-reg"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-strength-reduce"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-force-mem"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-function-cse"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-cse-follow-jumps"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-cse-skip-blocks"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-expensive-optimizations"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-branch-count-reg"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-strength-reduce"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-force-mem"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-function-cse"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-cse-skip-blocks"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-expensive-optimizations"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-branch-count-reg"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-strength-reduce"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-force-mem"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-function-cse"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-expensive-optimizations"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-branch-count-reg"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-strength-reduce"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-force-mem"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-function-cse"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-branch-count-reg"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-strength-reduce"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-force-mem"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-function-cse"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-strength-reduce"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-force-mem"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-function-cse"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-force-mem"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-function-cse"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-function-cse"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-regmove"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-caller-saves"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-peephole"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-defer-pop"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-crossjumping"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-loop-optimize",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-loop-optimize",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-loop-optimize",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-loop-optimize",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-loop-optimize",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-guess-branch-probability",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-guess-branch-probability",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-guess-branch-probability",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-guess-branch-probability",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-omit-frame-pointer",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-omit-frame-pointer",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-omit-frame-pointer",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-unroll-loops",
+        "-fno-inline"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-unroll-loops",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-inline",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "old",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-gcse"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-cse-follow-jumps"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-cse-skip-blocks"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-expensive-optimizations"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-branch-count-reg"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-strength-reduce"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-force-mem"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-function-cse"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-thread-jumps",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-cse-follow-jumps"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-cse-skip-blocks"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-expensive-optimizations"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-branch-count-reg"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-strength-reduce"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-force-mem"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-function-cse"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-gcse",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-cse-skip-blocks"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-expensive-optimizations"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-branch-count-reg"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-strength-reduce"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-force-mem"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-function-cse"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-follow-jumps",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-expensive-optimizations"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-branch-count-reg"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-strength-reduce"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-force-mem"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-function-cse"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-cse-skip-blocks",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-branch-count-reg"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-strength-reduce"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-force-mem"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-function-cse"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-expensive-optimizations",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-strength-reduce"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-force-mem"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-function-cse"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-branch-count-reg",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-force-mem"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-function-cse"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-strength-reduce",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-function-cse"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-force-mem",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-rerun-cse-after-loop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-function-cse",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-rerun-loop-opt"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-cse-after-loop",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-schedule-insns"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-rerun-loop-opt",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-schedule-insns2"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-regmove"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-schedule-insns2",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-caller-saves"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-regmove",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-peephole"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-caller-saves",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-defer-pop"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-peephole",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-crossjumping"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-defer-pop",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping",
+        "-fno-loop-optimize"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-crossjumping",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-loop-optimize",
+        "-fno-guess-branch-probability"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-loop-optimize",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-loop-optimize",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-loop-optimize",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-loop-optimize",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-guess-branch-probability",
+        "-fno-omit-frame-pointer"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-guess-branch-probability",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-guess-branch-probability",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-guess-branch-probability",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": null,
+      "size": 0,
+      "error": "CalledProcessError",
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-omit-frame-pointer",
+        "-fno-unroll-loops"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-omit-frame-pointer",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-omit-frame-pointer",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        47,
+        94
+      ],
+      "size": 120,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-unroll-loops",
+        "-fno-inline"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-unroll-loops",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    },
+    {
+      "flags": [
+        "-fno-inline",
+        "-fno-strict-aliasing"
+      ],
+      "compiler": "standard",
+      "score": [
+        35,
+        85
+      ],
+      "size": 110,
+      "error": null,
+      "exact": false
+    }
+  ]
+}

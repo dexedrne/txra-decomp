@@ -1,0 +1,33 @@
+{
+  "address": "08015DA8",
+  "mode": "thumb",
+  "bytes": 118,
+  "instructions": 52,
+  "call_count": null,
+  "observed_entry": true,
+  "static_callers": 1,
+  "matched_callees": 0,
+  "unmatched_callees": 0,
+  "difficulty": 52,
+  "value": 4,
+  "priority": 0.076923,
+  "blocked_reason": null,
+  "comparison_bytes": 118,
+  "attempts": 5111,
+  "compile_errors": 856,
+  "seconds": 99.39,
+  "status": "neighborhood exhausted",
+  "exact": false,
+  "focus": null,
+  "learned_candidates": {
+    "saved-constant": 16579,
+    "explicit-global-cursor": 1
+  },
+  "generations": 64,
+  "score": [
+    25,
+    60
+  ],
+  "compiler": "old-o1",
+  "size": 120
+}

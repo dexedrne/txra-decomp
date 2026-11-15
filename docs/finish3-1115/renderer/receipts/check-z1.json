@@ -1,0 +1,11 @@
+{
+  "candidate": "z1.c",
+  "differential_fixtures": 199,
+  "failures": 0,
+  "first_failures": [],
+  "executed_instruction_addresses": 1053,
+  "instruction_addresses": 1053,
+  "source_sha256": "6b0acb40aa4881ee4da544ab92c3cf800b223f5871dfb3be77d489e5b5b34719",
+  "rom_used": false,
+  "byte_match_verified": false
+}

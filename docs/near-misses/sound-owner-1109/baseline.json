@@ -1,0 +1,22 @@
+{
+  "address": "080064A4",
+  "target_end": "08007398",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/sound-owner-1107/func_080064A4.c",
+  "source_sha256": "8b846a8c22a2abeeb8f18042dc195098aa37fc9ff9a633871d67de1ca7b99847",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 2996,
+  "target_bytes": 3828,
+  "local_frame_bytes": 44,
+  "instruction_distance": 1541,
+  "different_bytes": 3568,
+  "exact": false,
+  "compiled_sha256": "e274ed409767128ee9eaa0c2021818c038d4af7843104741a226ba9ad024ae1a",
+  "checker_limit": "08007398",
+  "checker_rejection": null,
+  "installed": false
+}

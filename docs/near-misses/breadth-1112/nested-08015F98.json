@@ -1,0 +1,22 @@
+{
+  "address": "08015F98",
+  "target_end": "08016008",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/breadth-1112/nested-08015F98.c",
+  "source_sha256": "7c7941f0b51cba02ee3116edd445a4134fcf437a45e78b7e446fa9baa8d96aa6",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 112,
+  "target_bytes": 112,
+  "local_frame_bytes": 4,
+  "instruction_distance": 0,
+  "different_bytes": 0,
+  "exact": true,
+  "compiled_sha256": "174b69b27c8df524bd999f5ace0964aa18c08dd143fe7d44f07def66a5a1cdff",
+  "checker_limit": "08016008",
+  "checker_rejection": null,
+  "installed": false
+}

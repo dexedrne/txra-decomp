@@ -1,0 +1,231 @@
+func_0800D960: diagnostic probes only; no installed replacement.
+Target instructions (encodings omitted):
+0800D960: ldr r1, [pc, #4] @ =0x0800D968 (0x030001CC)
+0800D962: movs r0, #1
+0800D964: str r0, [r1, #0]
+0800D966: b 0x0800D630
+
+Probe: seed
+extern void func_0800D630(void);
+void func_0800D960(void) {
+    u32 addr = 0x030001CC;
+    *(u32 *)addr = 1;
+}
+
+
+Default-profile comparison:
+Compiled output differs: target 12 bytes, compiled 12 bytes.
+First difference at +0x6 (0x0800D966); exact prefix 6 bytes, exact suffix 4 bytes.
+--- target
++++ compiled
+@@ -2,4 +2,4 @@
+ 0800D962: movs r0, #1
+ 0800D964: str r0, [r1, #0]
+-0800D966: b 0x0800D630
++0800D966: bx lr
+ 0800D968: .word 0x030001CC (literal pool)
+Check register allocation, signed widths, statement order, constants and pool alignment.
+
+Compiler loop dump:
+
+;; Function func_0800D960
+
+(note 2 0 3 "" NOTE_INSN_DELETED)
+
+(note 3 2 4 "" NOTE_INSN_FUNCTION_BEG)
+
+(note 4 3 6 "" NOTE_INSN_DELETED)
+
+(note 6 4 8 0 NOTE_INSN_BLOCK_BEG)
+
+(insn 8 6 11 (set (reg/v:SI 22)
+        (const_int 50332108)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (const_int 50332108)
+        (nil)))
+
+(insn 11 8 12 (set (reg:SI 23)
+        (const_int 1)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (const_int 1)
+        (nil)))
+
+(insn 12 11 14 (set (mem:SI (reg/v:SI 22) 4)
+        (reg:SI 23)) 1 {*movsi_insn} (nil)
+    (nil))
+
+(note 14 12 0 0 NOTE_INSN_BLOCK_END)
+
+Compiler gcse dump:
+
+;; Function func_0800D960
+
+(note 2 0 3 "" NOTE_INSN_DELETED)
+
+(note 3 2 4 "" NOTE_INSN_FUNCTION_BEG)
+
+(note 4 3 6 "" NOTE_INSN_DELETED)
+
+(note 6 4 8 0 NOTE_INSN_BLOCK_BEG)
+
+(insn 8 6 11 (set (reg/v:SI 22)
+        (const_int 50332108)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (const_int 50332108)
+        (nil)))
+
+(insn 11 8 12 (set (reg:SI 23)
+        (const_int 1)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (const_int 1)
+        (nil)))
+
+(insn 12 11 14 (set (mem:SI (reg/v:SI 22) 4)
+        (reg:SI 23)) 1 {*movsi_insn} (nil)
+    (nil))
+
+(note 14 12 0 0 NOTE_INSN_BLOCK_END)
+
+Compiler global allocation:
+;; Register dispositions:
+22 in 1  23 in 0  
+
+;; Hard regs used:  0 1
+
+Probe: split-pointer
+void func_0800D960(void) { u32 *state = (u32 *)0x030001CC; u32 value = 1; *state = value; }
+
+Default-profile comparison:
+Compiled output differs: target 12 bytes, compiled 12 bytes.
+First difference at +0x6 (0x0800D966); exact prefix 6 bytes, exact suffix 4 bytes.
+--- target
++++ compiled
+@@ -2,4 +2,4 @@
+ 0800D962: movs r0, #1
+ 0800D964: str r0, [r1, #0]
+-0800D966: b 0x0800D630
++0800D966: bx lr
+ 0800D968: .word 0x030001CC (literal pool)
+Check register allocation, signed widths, statement order, constants and pool alignment.
+
+Probe: corrected-call
+extern void func_0800D630(void);
+void func_0800D960(void) { *(u32 *)0x030001CC = 1; func_0800D630(); }
+
+Default-profile comparison:
+Compiled output differs: target 20 bytes, compiled 20 bytes.
+First difference at +0x0 (0x0800D960); exact prefix 0 bytes, exact suffix 0 bytes.
+--- target
++++ compiled
+@@ -1,9 +1,8 @@
+-0800D960: ldr r1, [pc, #4] @ =0x0800D968
+-0800D962: movs r0, #1
+-0800D964: str r0, [r1, #0]
+-0800D966: b 0x0800D630
+-0800D968: .word 0x030001CC (literal pool)
+-0800D96C: movs r0, #7
+-0800D96E: strh r0, [r2, #0]
+-0800D970: ldr r0, [pc, #8] @ =0x0800D97C
+-0800D972: ldr r2, [pc, #12] @ =0x0800D980
++0800D960: push {lr}
++0800D962: ldr r1, [pc, #12] @ =0x0800D970
++0800D964: movs r0, #1
++0800D966: str r0, [r1, #0]
++0800D968: bl 0x0800D630
++0800D96C: pop {r0}
++0800D96E: bx r0
++0800D970: .word 0x030001CC (literal pool)
+Check register allocation, signed widths, statement order, constants and pool alignment.
+
+Compiler loop dump:
+
+;; Function func_0800D960
+
+(note 2 0 3 "" NOTE_INSN_DELETED)
+
+(note 3 2 4 "" NOTE_INSN_FUNCTION_BEG)
+
+(note 4 3 6 "" NOTE_INSN_DELETED)
+
+(note 6 4 8 "" NOTE_INSN_DELETED)
+
+(insn 8 6 10 (set (reg:SI 22)
+        (const_int 50332108)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (const_int 50332108)
+        (nil)))
+
+(insn 10 8 11 (set (reg:SI 23)
+        (const_int 1)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (const_int 1)
+        (nil)))
+
+(insn 11 10 13 (set (mem:SI (reg:SI 22) 4)
+        (reg:SI 23)) 1 {*movsi_insn} (nil)
+    (nil))
+
+(call_insn 13 11 0 (call (mem:SI (symbol_ref:SI ("func_0800D630")) 0)
+        (const_int 0)) -1 (nil)
+    (nil)
+    (nil))
+
+Compiler gcse dump:
+
+;; Function func_0800D960
+
+(note 2 0 3 "" NOTE_INSN_DELETED)
+
+(note 3 2 4 "" NOTE_INSN_FUNCTION_BEG)
+
+(note 4 3 6 "" NOTE_INSN_DELETED)
+
+(note 6 4 8 "" NOTE_INSN_DELETED)
+
+(insn 8 6 10 (set (reg:SI 22)
+        (const_int 50332108)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (const_int 50332108)
+        (nil)))
+
+(insn 10 8 11 (set (reg:SI 23)
+        (const_int 1)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (const_int 1)
+        (nil)))
+
+(insn 11 10 13 (set (mem:SI (reg:SI 22) 4)
+        (reg:SI 23)) 1 {*movsi_insn} (nil)
+    (nil))
+
+(call_insn 13 11 0 (call (mem:SI (symbol_ref:SI ("func_0800D630")) 0)
+        (const_int 0)) -1 (nil)
+    (nil)
+    (nil))
+
+Compiler global allocation:
+;; Register dispositions:
+22 in 1  23 in 0  
+
+;; Hard regs used:  0 1
+
+Probe: explicit-return-call
+extern void func_0800D630(void);
+void func_0800D960(void) { u32 value = 1; u32 *state = (u32 *)0x030001CC; *state = value; return func_0800D630(); }
+
+Default-profile comparison:
+Compiled output differs: target 20 bytes, compiled 20 bytes.
+First difference at +0x0 (0x0800D960); exact prefix 0 bytes, exact suffix 0 bytes.
+--- target
++++ compiled
+@@ -1,9 +1,8 @@
+-0800D960: ldr r1, [pc, #4] @ =0x0800D968
+-0800D962: movs r0, #1
+-0800D964: str r0, [r1, #0]
+-0800D966: b 0x0800D630
+-0800D968: .word 0x030001CC (literal pool)
+-0800D96C: movs r0, #7
+-0800D96E: strh r0, [r2, #0]
+-0800D970: ldr r0, [pc, #8] @ =0x0800D97C
+-0800D972: ldr r2, [pc, #12] @ =0x0800D980
++0800D960: push {lr}
++0800D962: movs r1, #1
++0800D964: ldr r0, [pc, #8] @ =0x0800D970
++0800D966: str r1, [r0, #0]
++0800D968: bl 0x0800D630
++0800D96C: pop {r0}
++0800D96E: bx r0
++0800D970: .word 0x030001CC (literal pool)
+Check register allocation, signed widths, statement order, constants and pool alignment.

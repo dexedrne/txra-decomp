@@ -1,0 +1,22 @@
+{
+  "address": "08016DA8",
+  "target_end": "08017E68",
+  "compiler": "arm",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/finish-1114-renderer/func_08016DA8_structural.c",
+  "source_sha256": "1e028208fa18ee49221c50f2e97de53e463dfceb062997f5b1bf9fb2c8ed3d89",
+  "compiler_sha256": "342687894970c4ed4369945d9a23ea056e9a6a5d3fcd3004044a97d1de777ac6",
+  "emitted_bytes": 4296,
+  "target_bytes": 4288,
+  "local_frame_bytes": 96,
+  "instruction_distance": 658,
+  "different_bytes": 3645,
+  "exact": false,
+  "compiled_sha256": "968ac5286c51924b6d252329419b3fbb0f782a6cf684c90584a496c109bd1322",
+  "checker_limit": "08017E68",
+  "checker_rejection": "output crosses next candidate boundary",
+  "installed": false
+}

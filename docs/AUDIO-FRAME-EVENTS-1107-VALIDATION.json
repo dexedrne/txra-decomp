@@ -1,0 +1,140 @@
+{
+  "source": "f245071aeb2a928dce3a8fb8174a1e5a63f6689f",
+  "binarySha256": "6f3b71a70339169cfaf8804b06d3e08fe9059f36ca2332ecd13dfb622e150d51",
+  "host": "worker D",
+  "scope": "Existing-workload, software headless video, physical PulseAudio backend with unique child stream muted before playback",
+  "controllerSha256": "b549dafe245290bf35c4a7053ac63e8c65edeb1fc9deabfc973d4177fa16e8f6",
+  "gateSha256": "b01e9ddc88afccfd6557d2db4934a2b5ce132f22a2344d93b7fb0eafb5c045d7",
+  "actualRunnerSha256": "8d47f2c8b196d0b09f2978e061d9ace2b2e7ea095972033fce02348a21b175fc",
+  "runtimeOnlyIncrementalBuild": true,
+  "priorFilesUnchanged": true,
+  "guestClockChanged": false,
+  "audioQueuePolicyChanged": false,
+  "performanceImprovementEstablished": false,
+  "audibleAcceptance": false,
+  "positiveNativeQueueZeroPathExercised": false,
+  "routes": [
+    {
+      "route": "career",
+      "goldensPass": true,
+      "nativeReferenceCompared": true,
+      "wholeRoute": {
+        "frames": 37200,
+        "interval_p50_ms": 16.742705,
+        "interval_p95_ms": 16.768869,
+        "work_p50_ms": 8.2155025,
+        "work_p95_ms": 11.382695,
+        "phase_ms": {
+          "host_guest": {
+            "p50": 6.954587500000001,
+            "p95": 9.889231
+          },
+          "present": {
+            "p50": 0.901778,
+            "p95": 2.211312
+          },
+          "capture": {
+            "p50": 0.0765255,
+            "p95": 0.268201
+          },
+          "audio": {
+            "p50": 0.016389,
+            "p95": 0.051124
+          },
+          "pace": {
+            "p50": 8.5267315,
+            "p95": 11.348132
+          }
+        },
+        "audio_queue_zero_count": 0,
+        "audio_backpressure_ms": 0.0
+      },
+      "stats": {
+        "frames": 37200,
+        "pc": "0800642c",
+        "instructions": 3483082560,
+        "compiled_steps": 3483082560,
+        "fallback_steps": 0,
+        "unknown_targets": 0,
+        "unsupported": 0,
+        "functions_compiled": 229,
+        "state_hash": "9cb2d661",
+        "cycles": 10449247680,
+        "audio_samples": 20408686,
+        "audio_hash": "f0334a1118d61f55",
+        "save_writes": 1,
+        "elapsed_seconds": 622.829328,
+        "cpu_seconds": 370.707974,
+        "audio_underruns": 0,
+        "audio_max_queue_ms": 51.333,
+        "audio_backpressure_seconds": 0.0,
+        "stopped": false
+      },
+      "obtainedHz": 48000,
+      "obtainedDeviceFrames": 480
+    },
+    {
+      "route": "reload",
+      "goldensPass": true,
+      "nativeReferenceCompared": true,
+      "wholeRoute": {
+        "frames": 2200,
+        "interval_p50_ms": 16.742704,
+        "interval_p95_ms": 16.764913,
+        "work_p50_ms": 6.334713499999999,
+        "work_p95_ms": 9.304046,
+        "phase_ms": {
+          "host_guest": {
+            "p50": 4.8981765,
+            "p95": 7.846724
+          },
+          "present": {
+            "p50": 0.936013,
+            "p95": 2.214815
+          },
+          "capture": {
+            "p50": 0.07790150000000001,
+            "p95": 0.269239
+          },
+          "audio": {
+            "p50": 0.0168245,
+            "p95": 0.053412
+          },
+          "pace": {
+            "p50": 10.410416999999999,
+            "p95": 11.887747
+          }
+        },
+        "audio_queue_zero_count": 0,
+        "audio_backpressure_ms": 0.0
+      },
+      "stats": {
+        "frames": 2200,
+        "pc": "080063ec",
+        "instructions": 205962528,
+        "compiled_steps": 205962528,
+        "fallback_steps": 0,
+        "unknown_targets": 0,
+        "unsupported": 0,
+        "functions_compiled": 229,
+        "state_hash": "fc469aac",
+        "cycles": 617887584,
+        "audio_samples": 1206811,
+        "audio_hash": "663ef8d84d76617d",
+        "save_writes": 0,
+        "elapsed_seconds": 36.834475,
+        "cpu_seconds": 17.992923,
+        "audio_underruns": 0,
+        "audio_max_queue_ms": 51.604,
+        "audio_backpressure_seconds": 0.0,
+        "stopped": false
+      },
+      "obtainedHz": 48000,
+      "obtainedDeviceFrames": 480
+    }
+  ],
+  "exportSha256": {
+    "career": "11abe6b3bdc1ed9400c4fc2ccdd0de547dbb2bf10894f5f231e91af5925197e2",
+    "reload": "d2335b147b269f0b3b70ccdb782ab333188aec381009f7c93c3b63748698c615"
+  }
+}

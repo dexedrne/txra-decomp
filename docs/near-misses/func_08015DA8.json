@@ -1,0 +1,12 @@
+{
+  "address": "08015DA8",
+  "exact": false,
+  "score": [
+    4,
+    9
+  ],
+  "size": 118,
+  "compiler": "old",
+  "provenance": "docs/match9-search/queue-zero-branch/results.json",
+  "uncached_next_entry_checked": true
+}

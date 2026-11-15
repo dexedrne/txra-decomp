@@ -1,0 +1,122 @@
+[
+  {
+    "id": "integer-cursor",
+    "evidence": [
+      "08013B38",
+      "08013C08"
+    ],
+    "mismatch": "A pointer-only cursor changes the initial base register and folds address arithmetic.",
+    "transformation": "Keep an integer address temporary before assigning the typed pointer.",
+    "operation": "integer_cursor"
+  },
+  {
+    "id": "saved-constant",
+    "evidence": [
+      "08014458"
+    ],
+    "mismatch": "Repeated constant call arguments are rematerialized rather than saved in high registers.",
+    "transformation": "Try a register-qualified local for an existing initialized scalar.",
+    "operation": "register_local"
+  },
+  {
+    "id": "separate-updates",
+    "evidence": [
+      "080142AC"
+    ],
+    "mismatch": "Postincrement pointer stores reorder memory operations and pointer updates.",
+    "transformation": "Separate postincrement reads or stores from their cursor increment.",
+    "operation": "separate_postincrement"
+  },
+  {
+    "id": "guarded-loop",
+    "evidence": [
+      "0800D1B8"
+    ],
+    "mismatch": "The initial entry check and the loop continuation check need distinct placement.",
+    "transformation": "Try an entry-guarded do/while preserving zero iterations.",
+    "operation": "guarded_loop"
+  },
+  {
+    "id": "scaled-stack-address",
+    "evidence": [
+      "08018B24"
+    ],
+    "mismatch": "The stack base and scaled index appear in the opposite addition operand order.",
+    "transformation": "Compute a byte offset first, then add the integer stack address and advance the pointer separately.",
+    "operation": "scaled_stack_address"
+  },
+  {
+    "id": "explicit-global-cursor",
+    "evidence": [
+      "0801466C"
+    ],
+    "mismatch": "The compiler keeps the loop offset and global sink in exchanged registers.",
+    "transformation": "Name a word-global pointer before the loop; try its initializer alongside the other loop setup.",
+    "operation": "global_cursor"
+  },
+  {
+    "id": "direct-short-return",
+    "evidence": [
+      "08014614"
+    ],
+    "mismatch": "A shared narrow result adds return shifts to a wide wraparound tail.",
+    "transformation": "Return direct differences before the shared tail; test a full-width tail result.",
+    "operation": "direct_short_return"
+  },
+  {
+    "id": "distributed-offset",
+    "evidence": [
+      "08014614"
+    ],
+    "mismatch": "Equivalent offset subtraction chooses a different temporary and branch-sharing shape.",
+    "transformation": "Distribute addition or subtraction around a grouped integer offset.",
+    "operation": "distributed_offset"
+  },
+  {
+    "id": "structured-backedge",
+    "evidence": [
+      "0801251C",
+      "080123F0"
+    ],
+    "mismatch": "A label-only outer loop keeps a frequently used mask in a high register.",
+    "transformation": "Express the two-exit backedge as an infinite loop with explicit breaks.",
+    "operation": "structured_backedge"
+  },
+  {
+    "id": "direct-mask-test",
+    "evidence": [
+      "0801251C",
+      "080123F0"
+    ],
+    "mismatch": "A tag loads into the scratch register and then copies into its saved register.",
+    "transformation": "Test the masked tag directly instead of assigning it through the reused scratch variable.",
+    "operation": "direct_mask_test"
+  },
+  {
+    "id": "named-add-input",
+    "evidence": [
+      "0801251C"
+    ],
+    "mismatch": "A reused arithmetic output reverses the addition operands.",
+    "transformation": "Name the old output value before adding it to the saved base.",
+    "operation": "named_add_input"
+  },
+  {
+    "id": "direct-mask-assignment",
+    "evidence": [
+      "080123F0"
+    ],
+    "mismatch": "The constant mask and saved tag arrive in the opposite low registers.",
+    "transformation": "Assign the masked value as one expression instead of reusing the scratch variable for the mask.",
+    "operation": "direct_mask_assignment"
+  },
+  {
+    "id": "direct-zero-test",
+    "evidence": [
+      "080123F0"
+    ],
+    "mismatch": "A redundant tag copy changes the later high-register copy into a low-register copy.",
+    "transformation": "Test the saved tag directly rather than first assigning it to a reused scratch variable.",
+    "operation": "direct_zero_test"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "reason": "Expand the twelve-target manifest to all fifteen eligible retained unfinished drafts.",
+  "completed_target_windows_preserved": 5,
+  "checkpoint_interval_seconds": 30,
+  "accounting": "Only checkpointed consumed trials are counted; unfinished speculative work before restart is excluded. Cache entries may survive that work and avoid recompilation."
+}

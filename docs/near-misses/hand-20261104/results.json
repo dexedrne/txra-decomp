@@ -1,0 +1,20 @@
+[
+  {
+    "address": "080076F4",
+    "compiler": "arm",
+    "exact": false,
+    "emitted_bytes": 1076,
+    "target_bytes": 1076,
+    "instruction_diff_rows": 40,
+    "different_bytes": 110
+  },
+  {
+    "address": "080181C0",
+    "compiler": "arm",
+    "exact": false,
+    "emitted_bytes": 1640,
+    "target_bytes": 1684,
+    "instruction_diff_rows": 528,
+    "different_bytes": 1237
+  }
+]

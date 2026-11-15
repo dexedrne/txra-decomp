@@ -1,0 +1,33 @@
+{
+  "duration_seconds": 6,
+  "frames": 180,
+  "fps": 30,
+  "audio_streams": 0,
+  "bytes": 300416,
+  "validation": "complete ffmpeg decode; input stream metadata and output frame count",
+  "pictures_inspected": [
+    "before/matching-status.png",
+    "after/matching-status.png",
+    "matched-functions.png",
+    "matched-bytes.png",
+    "matched-percent.png"
+  ],
+  "clip_frames_inspected": [
+    0,
+    90,
+    179
+  ],
+  "caption_coverage": "all five pictures and the clip",
+  "full_suite_tests": 145,
+  "full_suite_result": "pass",
+  "focused_corpus_tests": 12,
+  "focused_corpus_result": "pass",
+  "compilation_unit_order_comparisons": 4,
+  "rom_identical": true,
+  "rom_sha1": "4197339d4add74bb40ed02a8fba5e58096afb487",
+  "matches_before": 109,
+  "matches_after": 112,
+  "matched_bytes_before": 10698,
+  "matched_bytes_after": 12528,
+  "mapped_code_bytes": 85132
+}

@@ -1,0 +1,39 @@
+{
+ "alignment_tool": "docs/finish4-1115/sound/align.py (opcode shape first, registers second; regions as in finish2 checks.json)",
+ "alignment": {
+  "docs/near-misses/finish3-1115-sound/func_080064A4.c": {
+   "emitted_bytes": 3828, "local_frame_bytes": 108, "instruction_distance": 134, "different_bytes": 159,
+   "aligned_identical_rows": 1592, "register_only_rows": 131, "shape_rows": 10,
+   "identical_rows_by_region": "A108 B131 C48 D599 E174 F100 G415 H17",
+   "register_only_rows_by_region": "A12 B22 C0 D97 E0 F0 G0 H0"
+  },
+  "docs/near-misses/finish4-1115-sound/func_080064A4.c": {
+   "emitted_bytes": 3828, "local_frame_bytes": 108, "instruction_distance": 87, "different_bytes": 90,
+   "aligned_identical_rows": 1638, "register_only_rows": 87, "shape_rows": 7,
+   "identical_rows_by_region": "A122 B133 C48 D629 E174 F100 G415 H17",
+   "register_only_rows_by_region": "A0 B20 C0 D67 E0 F0 G0 H0",
+   "note": "the 7 shape rows are literal-pool alignment halfwords; every instruction shape, the length and every sp offset match"
+  }
+ },
+ "steps": [
+  {"change": "finish3 source", "different_bytes": 159, "instruction_distance": 134},
+  {"change": "noise slide and volume envelopes use the function-level slide pointer", "different_bytes": 116, "instruction_distance": 104},
+  {"change": "clear loop: s8 *b = gMixBuffer; s8 z = 0; indexed loop storing z", "different_bytes": 97, "instruction_distance": 94},
+  {"change": "scale loop: s8 *b = gMixBuffer; buffer = b + idx * 176", "different_bytes": 90, "instruction_distance": 87}
+ ],
+ "diagnostic_what_ifs": {
+  "tool": "docs/finish4-1115/sound/what.sh with the private traced compiler (trace_patch.py + trace_patch2.py + trace_patch3.py); never a match claim",
+  "pseudo_numbers": "slide pointer 38, effect-loop events16 133 (numbers of this source)",
+  "none": 90,
+  "TXPREF=38:2": 23,
+  "TXLEN=133:74": 72,
+  "TXPREF=38:2,133:4": 5
+ },
+ "differential": [
+  {"reference": "docs/near-misses/finish3-1115-sound/func_080064A4.c", "candidate": "docs/near-misses/finish4-1115-sound/func_080064A4.c",
+   "tool": "docs/near-misses/finish2-1115-sound/diff32.py", "states": 1000, "seed": 1115, "identical": 1000, "failures": []},
+  {"reference": "docs/near-misses/finish3-1115-sound/func_080064A4.c", "candidate": "docs/near-misses/finish4-1115-sound/func_080064A4.c",
+   "tool": "docs/near-misses/finish2-1115-sound/diff32.py", "states": 1000, "seed": 2026, "identical": 1000, "failures": []}
+ ],
+ "rom_used_by_differential": false
+}

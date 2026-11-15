@@ -1,0 +1,18 @@
+{
+  "complete": false,
+  "input_mapping_sha256": "484fd3e335840a940803b8d9094e9267cf63b6c5729a67570b864aa6ab8ba4a2",
+  "tested": 331,
+  "wall_seconds": 0.82,
+  "time_limit_seconds": 600,
+  "stop_reason": "scan exhausted",
+  "thumb_candidates": [],
+  "arm_frame_signatures": [],
+  "rejections": {
+    "nested LR save needs manual review": 120,
+    "undecodable reachable instruction": 42,
+    "instruction outside supported ARMv4T subset": 157,
+    "stack underflow": 8,
+    "unbalanced or unsaved stack return": 4
+  },
+  "caveat": "Outside-enclosure diagnostics only. Static balanced returns do not prove a function or data/code ownership. No mapping or match is changed."
+}

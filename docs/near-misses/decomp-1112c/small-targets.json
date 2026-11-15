@@ -1,0 +1,252 @@
+{
+  "bound": "unmatched registry starts with mapped extent at most 1024 bytes",
+  "entries": [
+    {
+      "address": "080000C0",
+      "mapped_extent_bytes": 52,
+      "classification": "startup or IRQ interface",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "080000FC",
+      "mapped_extent_bytes": 248,
+      "classification": "startup or IRQ interface",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "080001F4",
+      "mapped_extent_bytes": 36,
+      "classification": "startup or IRQ interface",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08000218",
+      "mapped_extent_bytes": 100,
+      "classification": "division runtime flag interface",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "0800027C",
+      "mapped_extent_bytes": 68,
+      "classification": "division runtime flag interface",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "080002CC",
+      "mapped_extent_bytes": 88,
+      "classification": "private raster register interface",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08000324",
+      "mapped_extent_bytes": 680,
+      "classification": "private raster register interface",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08000AA0",
+      "mapped_extent_bytes": 320,
+      "classification": "private raster register interface",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "080010B8",
+      "mapped_extent_bytes": 336,
+      "classification": "private raster register interface",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "080016E0",
+      "mapped_extent_bytes": 452,
+      "classification": "private raster register interface",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "080051FE",
+      "mapped_extent_bytes": 16,
+      "classification": "shared return inside HUD owner",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "080064A4",
+      "mapped_extent_bytes": 622,
+      "classification": "fragment of complete sound owner",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08006712",
+      "mapped_extent_bytes": 46,
+      "classification": "fragment of complete sound owner",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08006740",
+      "mapped_extent_bytes": 54,
+      "classification": "fragment of complete sound owner",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "0800735C",
+      "mapped_extent_bytes": 12,
+      "classification": "fragment of complete sound owner",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08007368",
+      "mapped_extent_bytes": 16,
+      "classification": "fragment of complete sound owner",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "080095C4",
+      "mapped_extent_bytes": 14,
+      "classification": "covered by installed enclosing owner",
+      "enclosing_exact_matches": [
+        "func_08008A88"
+      ]
+    },
+    {
+      "address": "0800D570",
+      "mapped_extent_bytes": 192,
+      "classification": "covered by installed enclosing owner",
+      "enclosing_exact_matches": [
+        "func_0800D51C"
+      ]
+    },
+    {
+      "address": "0800D960",
+      "mapped_extent_bytes": 8,
+      "classification": "covered by installed enclosing owner",
+      "enclosing_exact_matches": [
+        "func_0800D51C"
+      ]
+    },
+    {
+      "address": "08018A54",
+      "mapped_extent_bytes": 4,
+      "classification": "BIOS software interrupt interface",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018A58",
+      "mapped_extent_bytes": 4,
+      "classification": "BIOS software interrupt interface",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018DE0",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018DE4",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018DE8",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018DEC",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018DF0",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018DF4",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018DF8",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018DFC",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018E00",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018E04",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018E08",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018E0C",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018E10",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018E14",
+      "mapped_extent_bytes": 2,
+      "classification": "register-call veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018E7C",
+      "mapped_extent_bytes": 2,
+      "classification": "instruction-state veneer",
+      "enclosing_exact_matches": []
+    },
+    {
+      "address": "08018E84",
+      "mapped_extent_bytes": 2,
+      "classification": "instruction-state veneer",
+      "enclosing_exact_matches": []
+    }
+  ],
+  "counts": {
+    "startup or IRQ interface": 3,
+    "division runtime flag interface": 2,
+    "private raster register interface": 5,
+    "shared return inside HUD owner": 1,
+    "fragment of complete sound owner": 5,
+    "covered by installed enclosing owner": 3,
+    "BIOS software interrupt interface": 2,
+    "register-call veneer": 14,
+    "instruction-state veneer": 2
+  },
+  "new_standalone_candidates": 0,
+  "limitations": "Existing registry only, not a global claim about unknown data or future mapping.",
+  "sources": [
+    "docs/asm-only.md",
+    "docs/near-misses/breadth-1112/TARGETS.md",
+    "tools/rom.cfg",
+    "docs/map/functions.json"
+  ]
+}

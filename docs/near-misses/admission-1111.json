@@ -1,0 +1,95 @@
+{
+  "branch": "work/local-1111",
+  "base_commit": "04ee33c",
+  "code_commits": [
+    "499566c",
+    "2bf47b7"
+  ],
+  "whole_rom_rebuilds": 1,
+  "installed_replacements_recompiled": 181,
+  "registry_sha256": "0c92a13d8a2a2fa1850491f97c2f69957d5306143ecbe5f74171d37b2425f2da",
+  "registry_unchanged_from_base": true,
+  "registry_entries": 181,
+  "matched_bytes_including_pools": 72524,
+  "mapped_code_bytes": 85132,
+  "mapped_functions": 229,
+  "percent_of_mapped_code": 85.19,
+  "admission_tests": 252,
+  "passed": 251,
+  "skipped": 1,
+  "failed": 0,
+  "new_control_plane_and_historical_tests": 29,
+  "skip_reason": "fewer than two unmatched retained drafts remain to search",
+  "progress_script_run": true,
+  "readme_progress_registry_agree": true,
+  "build_sha1_verified": true,
+  "build_sha256": "fd9542217ea2f00c7d40062b4969e0d66fd54fa87518f8384e9e30497eb42c38",
+  "build_log_sha256": "fc7b6f493a0e480cce73cb64c14acdd787ed985aa3afe7e6fa41cde06ba9b6a9",
+  "test_log_sha256": "4dcae542fa0cc2823a4d6321c49bd761e84c5001a119d7f4e83484b7baf7cbf3",
+  "progress_sha256": "1aaee8aa10ddcbaf8e30fce042d485135aa032a61691197a10f50a2981a86991",
+  "owner_notes_present": false,
+  "retained_profiles_reproduced_with_unmodified_helper": 3,
+  "retained_sources": {
+    "0800421C": {
+      "source_sha256": "d97c511ae97193954393b89d29a0941a1703e5fd1f92436f3f47215bc7e291a7",
+      "compiled_sha256": "cc7b397f734bd1458efcc6f95274177f194cb615d682d1a98c857e7cfe721663",
+      "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+      "different_bytes": 3152,
+      "checker_limit": "08005238",
+      "checks": {
+        "candidate": "func_0800421C.c",
+        "source_sha256": "d97c511ae97193954393b89d29a0941a1703e5fd1f92436f3f47215bc7e291a7",
+        "reference_sha256": "5b1b934aece458415e5543ddf24765921f659d4d676c563c191274802b17ba5c",
+        "fixtures": 1024,
+        "comparison": "prior C draft state and ordered helper calls; not original instructions",
+        "undefined_behavior_sanitizer": true,
+        "transform_aliases": 6,
+        "registry_unchanged": true,
+        "rom_used": false,
+        "output": "1024 HUD state and ordered-call fixtures passed against the prior C draft; no ROM oracle"
+      }
+    },
+    "080064A4": {
+      "source_sha256": "c07b91202435f2f7057ce1a49714f819d8a575acbabe40a5ee6cb156fcc310d2",
+      "compiled_sha256": "7d84245b1400063bd8d2828dc6ee45083d8f5adedb138c05bf477c8b65c789c4",
+      "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+      "different_bytes": 3227,
+      "checker_limit": "08007398",
+      "checks": {
+        "candidate": "func_080064A4.c",
+        "source_sha256": "c07b91202435f2f7057ce1a49714f819d8a575acbabe40a5ee6cb156fcc310d2",
+        "fixture_groups": 7,
+        "undefined_behavior_sanitizer": true,
+        "registry_unchanged": true,
+        "voice_field_aliases": 17,
+        "rom_used": false,
+        "output": "7 sound-owner synthetic groups passed (actual complete C candidate; no ROM)"
+      }
+    },
+    "08016DA8": {
+      "source_sha256": "558324bab1fa37d5db18889304436fafea391854c573907850e19859fdf14f58",
+      "compiled_sha256": "d821cdb421a0546c681d72df6d21a7e5bf0650253e5a06a2dc357ca78e5292cd",
+      "compiler_sha256": "26d884f0d4d46180dd90d1b1b56371fa1d72e2d0a47b22b65f27b3cebb89cca8",
+      "different_bytes": 3251,
+      "checker_limit": "08017E68",
+      "checks": {
+        "candidate": "func_08016DA8.c",
+        "differential_fixtures": 199,
+        "fixed_expected_checks": 20,
+        "compile_time_size_checks": 3,
+        "compile_time_offset_checks": 14,
+        "executed_instruction_addresses": 1053,
+        "instruction_addresses": 1053,
+        "not_executed": [],
+        "source_sha256": "558324bab1fa37d5db18889304436fafea391854c573907850e19859fdf14f58",
+        "assembly_sha256": "013f6f4982c413494122f6565c5e0f3e662bd9fd6fc232b76596b1f773b132d6",
+        "rom_used": false,
+        "byte_match_verified": false
+      }
+    }
+  },
+  "final_sources_frozen_before_admission": true,
+  "extra_matches_installed": 0,
+  "source_identifiers_changed": false,
+  "gameplay_milestones_claimed": false
+}

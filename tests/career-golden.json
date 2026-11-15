@@ -1,0 +1,36 @@
+{
+  "description": "Reviewed first Quest win, engine upgrade, different opponent loss, save and unchanged reload.",
+  "save_sha256": "4fe8c808ac90f61f98ad6077d90346ae91f9c9f515dc8cf96835d1dbd2cb1d37",
+  "routes": [
+    {
+      "name": "career",
+      "script": "tests/race-win-input.txt",
+      "script_sha256": "d6ed3a05b8b9db9a50cd5d9308cca7953931113f6fa21375f47089d2eff129b4",
+      "frames_sha256": "2344cb588ff2b5c7bded48ecd92319482e005ea216d592814779265cd8dd5d5f",
+      "pcm_sha256": "79a2c4be4d1dc806982789de1158eb47e0301f2ec7b6ead8b6f6f3557ae82d38",
+      "expected": {
+        "frames": 37200,
+        "state_hash": "9cb2d661",
+        "cycles": 10449247680,
+        "audio_samples": 20408686,
+        "audio_hash": "f0334a1118d61f55",
+        "save_writes": 1
+      }
+    },
+    {
+      "name": "reload",
+      "script": "tests/career-reload-input.txt",
+      "script_sha256": "47e7adbe55ced1c1ce49c1a37af22cf8acbd3357678fcb97a64996f705fa03c3",
+      "frames_sha256": "541929ba40eba7a36bc840dafe4c0e6f5bc43b9058f5e9d04e3e1286a9757cf4",
+      "pcm_sha256": "d9e257d4adb7e20c8e5b54b42bb04348108c7da7068793ef8bc5bef70376f58c",
+      "expected": {
+        "frames": 2200,
+        "state_hash": "fc469aac",
+        "cycles": 617887584,
+        "audio_samples": 1206811,
+        "audio_hash": "663ef8d84d76617d",
+        "save_writes": 0
+      }
+    }
+  ]
+}

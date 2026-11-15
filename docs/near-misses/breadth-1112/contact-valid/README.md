@@ -1,0 +1,7 @@
+The bounded contact pass measured 934 complete sources with the existing historical ARM profile and unchanged 08018854 owner end. Fifteen additional sources failed compilation, and 2,231 source hypotheses were rejected before measurement for unsafe scalar-width changes. The finite neighborhood is exhausted.
+
+The retained candidate replaces the x-position field-array reads with the same signed 32-bit fields in the existing 100-byte record type. Its whole-owner byte distance falls from 1,143 to 1,011, while instruction edit distance worsens from 221 to 307. Output is 1,660 / 1,684 bytes and its local frame is 64 / 72 bytes. This is a byte-distance improvement only, not an exact match or an instruction-shape improvement.
+
+All 768 synthetic prior-C comparison cases pass, including 672 cases that change state. The intentionally narrowed signed-coefficient control differs in 428 cases, demonstrating that the checker detects that bad rewrite. The reference is the earlier C hypothesis, not independently executed cartridge instructions. No original semantics, arbitrary malformed state, gameplay or performance result is claimed. Nothing in this folder is installed.
+
+Reproduce the compiler comparison with tools/measure_candidate.py, address 080181C0, end 08018854 and profile arm. Reproduce the synthetic comparison with tools/check_contact1112.py and this candidate source. Next recover the rotation setup and cached record-index lifetimes to explain the missing eight frame bytes; preserve the signed coefficients.

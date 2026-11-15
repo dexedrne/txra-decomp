@@ -1,0 +1,22 @@
+{
+  "address": "08002854",
+  "target_end": "0800418C",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/decomp-1112c/stream-baseline.c",
+  "source_sha256": "ec7910201a4573c7ba76795e59cb6c6437d0703f82f4ea9386d9056cbbcfc939",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 5160,
+  "target_bytes": 6456,
+  "local_frame_bytes": 164,
+  "instruction_distance": 2747,
+  "different_bytes": 6312,
+  "exact": false,
+  "compiled_sha256": "cd191266671b082b5947fe95fd2c17b39ef03aa9a7d820e8486a9b0e1043b676",
+  "checker_limit": "0800418C",
+  "checker_rejection": null,
+  "installed": false
+}

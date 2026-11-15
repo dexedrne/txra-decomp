@@ -1,0 +1,92 @@
+{
+  "base": "678a801c46732f4569c697f35989ccbeaaa77104",
+  "matchesBefore": 179,
+  "matchesAfter": 181,
+  "newMatches": [
+    {
+      "address": "08000000",
+      "bytes": 4,
+      "compiler": "modern-arm",
+      "role": "entry branch to ARM startup; startup body not converted"
+    },
+    {
+      "address": "08018E80",
+      "bytes": 4,
+      "compiler": "modern-arm",
+      "role": "branch veneer to signed division; division body not converted"
+    }
+  ],
+  "matchingBuild": {
+    "replacementCount": 181,
+    "romBytes": 4194304,
+    "sha1": "4197339d4add74bb40ed02a8fba5e58096afb487",
+    "exact": true
+  },
+  "pythonTests": {
+    "run": 189,
+    "pass": 188,
+    "skip": 1,
+    "skipReason": "fewer than two unmatched retained drafts remain to search"
+  },
+  "metadataRestoration": {
+    "source": "2dd9674e79e3ce1fc13c2b92a1c52d09c558d5cf",
+    "coverageBlobExact": true,
+    "restoredKeys": [
+      "dynamic_seeds",
+      "indirect_sources_observed",
+      "format_evidence",
+      "mapping"
+    ],
+    "mappingSpans": 17672,
+    "classifiedBytes": {
+      "code": 85132,
+      "data": 147511,
+      "table": 1224000,
+      "unknown": 721992,
+      "text": 27395,
+      "graphics": 1033288,
+      "compressed": 327791,
+      "audio": 504914,
+      "fill": 122281
+    },
+    "knownCallMatchesOriginalConfig": true,
+    "matchesRetained": 181,
+    "noNewRuntimeCoverage": true
+  },
+  "indirectProof": {
+    "slot": "08332EA0",
+    "value": "030068A1",
+    "assembly": [
+      "080065C0 bge #0x80065b2",
+      "080065C2 movs r3, #0",
+      "080065C4 mov sl, r3",
+      "080065C6 ldr r4, [pc, #0x68]",
+      "080065C8 ldr r1, [r4]",
+      "080065CA mov r0, sl",
+      "080065CC bl #0x8018de4",
+      "080065D0 movs r5, #1",
+      "080065D2 add sl, r5",
+      "080065D4 mov r6, sl"
+    ],
+    "romUnchanged": true
+  },
+  "generatedChanges": [
+    "asm/program.s",
+    "asm/header.s"
+  ],
+  "sourceSha256": {
+    "src/generated/func_08000000.c": "c7254ef30e9a21fe44be6bc9b63a129b221ad7ff2b972a9822b04b1232f2e923",
+    "src/generated/func_08018E80.c": "0da5ae6d014c5cffcbc6d578b27648cb2b18fa81e971de2f08b90fbc9def3b2a",
+    "tools/rom.cfg": "0c92a13d8a2a2fa1850491f97c2f69957d5306143ecbe5f74171d37b2425f2da",
+    "tests/test_config_metadata.py": "2e6848ab0fab798d01ccf3c8490791a0017056339c1d329bb25c6fb1cbc33d68",
+    "asm/header.s": "bf3eea54a99a60c9423b47482ccf7386ec0975a7dd93de5260c52ef8f11081d7",
+    "asm/program.s": "013f6f4982c413494122f6565c5e0f3e662bd9fd6fc232b76596b1f773b132d6",
+    "progress.json": "1aaee8aa10ddcbaf8e30fce042d485135aa032a61691197a10f50a2981a86991"
+  },
+  "romCopied": false,
+  "matchingRomLeftBehind": false,
+  "temporaryStageRemoved": true,
+  "newNativeBinary": false,
+  "newRuntimePerformanceAcceptance": false,
+  "independentReview": "no must-fix; reviewer did not run compilers or inspect raw ROM"
+}

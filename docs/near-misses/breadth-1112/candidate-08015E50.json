@@ -1,0 +1,29 @@
+{
+  "address": "08015E50",
+  "target_end": "08015ED4",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/breadth-1112/candidates/func_08015E50.c",
+  "source_sha256": "c1d3e9165d361156f558a926603c77243a655e3846ab3fd94a14959ddbdb2e0d",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 132,
+  "target_bytes": 132,
+  "local_frame_bytes": 4,
+  "instruction_distance": 0,
+  "different_bytes": 0,
+  "exact": true,
+  "compiled_sha256": "0069f4d0e8b951ae27d06df89d53143eb77bda35cd5624302b8c82e51f40a489",
+  "checker_limit": "08015ED4",
+  "checker_rejection": null,
+  "installed": true,
+  "whole_rom_gate": true,
+  "whole_rom_sha1_verified": true,
+  "registry_count": 188,
+  "registry_bytes": 73030,
+  "build_seconds": 23.276,
+  "build_sha256": "fd9542217ea2f00c7d40062b4969e0d66fd54fa87518f8384e9e30497eb42c38",
+  "registry_sha256": "1d831f25b060ccaff99073e962b3829f7b1b9e81ae511a010a7d3f6d0d1bb18d"
+}

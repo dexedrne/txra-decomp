@@ -1,0 +1,22 @@
+{
+  "address": "08002854",
+  "target_end": "0800418C",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/finish-1114-stream/func_08002854.c",
+  "source_sha256": "30b48adf88f228e268c3e0cbae54265124b808eee41777c6143cb997eacf22ba",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 6456,
+  "target_bytes": 6456,
+  "local_frame_bytes": 268,
+  "instruction_distance": 20,
+  "different_bytes": 23,
+  "exact": false,
+  "compiled_sha256": "3ea219ef4dc63753ed92e6683779c24af1cd4d78ca4fc66f2a9fe927e3aa787d",
+  "checker_limit": "0800418C",
+  "checker_rejection": null,
+  "installed": false
+}

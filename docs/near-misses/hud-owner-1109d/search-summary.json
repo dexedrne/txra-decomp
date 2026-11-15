@@ -1,0 +1,26 @@
+{
+  "unique_source_identities": 9790,
+  "unique_compiled_outputs": 3193,
+  "invalid_source_hypotheses": 3709,
+  "oversize_diagnostics": 2545,
+  "runs": [
+    "hud-1109d",
+    "hud-roles-1109d",
+    "hud-overlay-d",
+    "hud-sweep-1109d",
+    "hud-focused-1109d",
+    "hud-draw-shapes-d",
+    "hud-role-permutations-d",
+    "hud-gauge-roles-d",
+    "hud-overlay-slots-d",
+    "hud-register-roles-d",
+    "hud-role-scopes-d"
+  ],
+  "focus": "source-row component addresses, projected scalar roles, opening tick/scale stack sharing, gauge lifetimes and corrected separate-role scopes",
+  "budget": 19000,
+  "retained_source_sha256": "cee9148703d271d9f508781b86f3dce388859e201c9b9508cfb4622cbf1bf9c5",
+  "retained_compiled_sha256": "f56e1f20588483cbe8fc791bb7fd67adf3fccee9baa79d4abdd8f60e45de8f01",
+  "exact": false,
+  "installed": false,
+  "profile_sweep": false
+}

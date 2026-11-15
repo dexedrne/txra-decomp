@@ -1,0 +1,8 @@
+{
+  "compiler": "arm",
+  "profile_sweep": false,
+  "selection": "lowest complete-owner differing-byte count within the original owner boundary; instruction/frame regressions reported explicitly",
+  "unique_sources": 1527,
+  "unique_compiled_outputs": 402,
+  "invalid_source_hypotheses": 315
+}

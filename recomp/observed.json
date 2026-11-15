@@ -1,0 +1,11 @@
+{
+  "functions": [
+    {
+      "start": "0x080001F4",
+      "mode": "arm",
+      "spans": [["0x080001F4", "0x08000218"]],
+      "runtime_aliases": [{"start": "0x03004ED8"}],
+      "evidence": "Nine IRQ epilogue execution addresses recorded during boot, menus and a completed race; follows the startup copy's mapped IRQ body. RAM encodings are still checked before native execution."
+    }
+  ]
+}

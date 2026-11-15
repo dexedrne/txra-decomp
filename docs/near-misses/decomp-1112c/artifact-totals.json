@@ -1,0 +1,11 @@
+{
+  "retained_receipt_directory": "docs/near-misses/decomp-1112c",
+  "review_directory": "txra-review/decomp-1112c",
+  "media_bytes": 1348994,
+  "extra_ship_note_and_marker_bytes": 8013,
+  "source_build_hashes": "admission.json and individual candidate profiles",
+  "media_hashes": "review.json",
+  "archive_moved": false,
+  "retained_receipts_bytes": 664130,
+  "combined_review_and_receipts_bytes": 2021137
+}

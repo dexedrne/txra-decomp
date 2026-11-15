@@ -1,0 +1,22 @@
+{
+  "address": "080064A4",
+  "target_end": "08007398",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/sound-owner-1109/phased-fields.c",
+  "source_sha256": "f1ec54560ecb7f28c2c2fe280651561c4cb11194f7354f937240969e7143a7e6",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 3716,
+  "target_bytes": 3828,
+  "local_frame_bytes": 92,
+  "instruction_distance": 1397,
+  "different_bytes": 3537,
+  "exact": false,
+  "compiled_sha256": "e9c72b5b82e338abdcc2bcedc1bb7432ae7d9018e5f554ecd975595200e2513d",
+  "checker_limit": "08007398",
+  "checker_rejection": null,
+  "installed": false
+}

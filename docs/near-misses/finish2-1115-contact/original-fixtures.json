@@ -1,0 +1,20 @@
+{
+  "cases": 384,
+  "passed": 384,
+  "state_changing_cases": 352,
+  "contact_results": 38,
+  "cache_preserved_cases": 226,
+  "cache_cleared_cases": 67,
+  "rejected_narrowing_control_cases": 250,
+  "candidate": "docs/near-misses/finish2-1115-contact/func_080181C0.c",
+  "candidate_sha256": "de9c0eec031b2827349c0212b39990e36816bdfc20b227784c97016e48cc787d",
+  "unicorn_version": "2.1.4",
+  "harness_sha256": "a7eaba969179870cf672af8eb40942397cc59558d019a907fc047e561d30fa35",
+  "original_instructions_executed": true,
+  "original_instruction_addresses_visited": 403,
+  "original_memory_readonly": true,
+  "installation_authority": false,
+  "method": "Original ARM instructions in Unicorn versus host-compiled complete C; actual private lookup tables; bounded synthetic RAM.",
+  "limitations": "No gameplay, arbitrary malformed-state or byte-equality claim. Original bytes and tables remain private and memory-only.",
+  "negative_control": "tools/check_contact_reference1112b.py with the narrowing control applied to the in-loop first coefficient: 'x * g_083D2280[a]' -> 'x * (u16)g_083D2280[a]' (the 1112b text 's1 = g_083D2280[a];' no longer exists)"
+}

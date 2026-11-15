@@ -1,0 +1,186 @@
+{
+  "base_commit": "9e61059bdee446e988a346d838f783f4fec98021",
+  "branch": "work/match-1109",
+  "jdk21": {
+    "version": "Temurin 21.0.13+9",
+    "installed": "~/opt/jdk21",
+    "verified": true,
+    "download": "https://api.adoptium.net/v3/binary/latest/21/ga/linux/x64/jdk/hotspot/normal/eclipse",
+    "archive_sha256": "d7f5d5cf865a2902b70ff549b97586a7d3f234e016f041ab447ea740c7d66d1c"
+  },
+  "jdk25": {
+    "version": "Temurin 25.0.5+8",
+    "installed": "~/opt/jdk25",
+    "reason": "Current Ghidra 12.2 declares Java minimum 25; JDK 21 was verified but cannot launch this release.",
+    "download": "https://api.adoptium.net/v3/binary/latest/25/ga/linux/x64/jdk/hotspot/normal/eclipse",
+    "archive_sha256": "68982529869257d0ee6b824ec5aa270ff8b118bb438670da0b97ebdab178d7fb"
+  },
+  "ghidra": {
+    "version": "12.2",
+    "release": "https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.2_build",
+    "archive": "ghidra_12.2_PUBLIC_20261016.zip",
+    "published_sha256": "2c2cd776db3c1f6a097ba418922378ac3649cadd5e844a6f5f088ae628a7be67",
+    "archive_sha256": "2c2cd776db3c1f6a097ba418922378ac3649cadd5e844a6f5f088ae628a7be67",
+    "verified": true,
+    "installed": "~/opt/ghidra/ghidra_12.2_PUBLIC"
+  },
+  "rea": {
+    "version": "6.7.0",
+    "doctor_run": true,
+    "doctor_healthy": false,
+    "skill_version": "42",
+    "registration_present": false,
+    "configuration_changed": false,
+    "raw_binary_and_base_supported": true,
+    "native_provider_used": false,
+    "reason": "Provider source creates a full immutable input-file snapshot. The task forbids copying this ROM, so only doctor and package documentation/source inspection were used; direct analyzeHeadless imported the ignored symlink."
+  },
+  "private_rom_sha1_verified": true,
+  "standalone_rom_copy_created": false,
+  "project": "~/.cache/txra-ghidra/txra.gpr",
+  "project_alias": "~/txra-ghidra-project",
+  "alias_reason": "Ghidra 12.2 project locator rejects dot-prefixed path components; alias resolves into the required cache directory.",
+  "seeded_registry_functions": 229,
+  "explicit_configuration_seeds_checked": 13,
+  "program_label_crosscheck": {
+    "registry_starts_not_named_as_function_labels": [
+      "08007B40",
+      "080095C4",
+      "0800D570",
+      "0800D630",
+      "0800D960"
+    ],
+    "decision": "Registry remains authoritative for these starts; no public map or source boundary changed."
+  },
+  "audit": {
+    "language": "ARM:LE:32:v4t",
+    "compiler_spec": "apcs",
+    "database_function_count": 232,
+    "blocks": [
+      {
+        "start": "02000000",
+        "size": 262144,
+        "initialized": false,
+        "write": true,
+        "execute": false,
+        "volatile": false
+      },
+      {
+        "start": "03000000",
+        "size": 32768,
+        "initialized": false,
+        "write": true,
+        "execute": false,
+        "volatile": false
+      },
+      {
+        "start": "04000000",
+        "size": 1024,
+        "initialized": false,
+        "write": true,
+        "execute": false,
+        "volatile": true
+      },
+      {
+        "start": "05000000",
+        "size": 1024,
+        "initialized": false,
+        "write": true,
+        "execute": false,
+        "volatile": false
+      },
+      {
+        "start": "06000000",
+        "size": 98304,
+        "initialized": false,
+        "write": true,
+        "execute": false,
+        "volatile": false
+      },
+      {
+        "start": "07000000",
+        "size": 1024,
+        "initialized": false,
+        "write": true,
+        "execute": false,
+        "volatile": false
+      },
+      {
+        "start": "08000000",
+        "size": 131072,
+        "initialized": true,
+        "write": false,
+        "execute": true,
+        "volatile": false
+      },
+      {
+        "start": "08020000",
+        "size": 4063232,
+        "initialized": true,
+        "write": false,
+        "execute": false,
+        "volatile": false
+      }
+    ],
+    "owners": [
+      {
+        "entry": "0800421c",
+        "body_bytes_excluding_pools": 3722,
+        "instructions": 1810,
+        "call_sites": 50,
+        "thumb": true
+      },
+      {
+        "entry": "08016da8",
+        "body_bytes_excluding_pools": 4212,
+        "instructions": 1053,
+        "call_sites": 0,
+        "thumb": false
+      }
+    ],
+    "epilogue_separate_function": false,
+    "image_base_property": "00000000",
+    "raw_loader_base": "08000000",
+    "image_base_note": "BinaryLoader maps file offset zero at 08000000. Its independent image-base property stays zero; no image rebasing was performed."
+  },
+  "exported_views": [
+    {
+      "address": "0800421c",
+      "sha256": "1312fbc2442f712ba8e1610dd90041bde3f3e3591c2ac3f9e59c2f0cbb71b2e1",
+      "lines": 506
+    },
+    {
+      "address": "08005cf4",
+      "sha256": "f2886bf07dd6752d81f7d40f21c61a6ab40673b575bb4f405847abb394e75cc8",
+      "lines": 23
+    },
+    {
+      "address": "0801533c",
+      "sha256": "d69e28714c90f9692566e47e45a1b284208f96f4c4bd7b646c9c0bcbd31568e0",
+      "lines": 67
+    },
+    {
+      "address": "0801604c",
+      "sha256": "ef06f66829f73bd727bbf25cf2b0e3d4e948426e12701293c7da2767765db204",
+      "lines": 11
+    },
+    {
+      "address": "080162f8",
+      "sha256": "a1ebd2d60ba93345978a4162dc6a57d883cbccb22920632b0396d2d09c71da69",
+      "lines": 32
+    },
+    {
+      "address": "08016da8",
+      "sha256": "84994418637071c36b84bf62ab97db669ab963b9f01a506534b93632536fc977",
+      "lines": 460
+    },
+    {
+      "address": "08018e7c",
+      "sha256": "3375cf92aae8fd601175a40d5745dba03f0f1bcf71aa8e005a1c4f8beddd7bfc",
+      "lines": 10
+    }
+  ],
+  "decompiler_output_committed": false,
+  "export_and_project_permission": "owner only",
+  "browser_or_server_started": false
+}

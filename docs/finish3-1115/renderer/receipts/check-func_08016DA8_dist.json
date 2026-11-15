@@ -1,0 +1,11 @@
+{
+  "candidate": "func_08016DA8_dist.c",
+  "differential_fixtures": 199,
+  "failures": 0,
+  "first_failures": [],
+  "executed_instruction_addresses": 1053,
+  "instruction_addresses": 1053,
+  "source_sha256": "64eb5128a9899be16441d49de23c65abcfcd7a06848887694340d42dcd571c83",
+  "rom_used": false,
+  "byte_match_verified": false
+}

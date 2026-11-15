@@ -1,0 +1,64 @@
+{
+  "codeCommit": "5c8b74bd1077e1275df5a2aa54a7db2ab3e153f2",
+  "status": "Native correctness passed; real-backend phase/pacing acceptance held",
+  "binarySha256": "e16b036ca079b0c4fe345ccb3cd4bb24cbc70e5ffe267d804eaeb1aac6d8e76f",
+  "incrementalBuild": true,
+  "coldBuild": false,
+  "compiler": "GCC13.3.0 on Linux",
+  "reusedGeneratedObjectSha256": "97d2cd731564a067bcddefc85342b89834938be958a562e0cec5b36234381f59",
+  "sourceFilesVerified": 17,
+  "shortAccuracyRuns": [
+    {
+      "timed": false,
+      "frames": 4300,
+      "framesSha256": "2d29524dda28a01c3ba9ada347575337a830eb9365e5639aa05bac6d99c77d7c",
+      "pcmSha256": "2cad93185b65bb62cf97e3590e7f295a2cb30d51bd9ae6768e4fa38dbd8aba69",
+      "pass": true
+    },
+    {
+      "timed": true,
+      "frames": 4300,
+      "framesSha256": "2d29524dda28a01c3ba9ada347575337a830eb9365e5639aa05bac6d99c77d7c",
+      "pcmSha256": "2cad93185b65bb62cf97e3590e7f295a2cb30d51bd9ae6768e4fa38dbd8aba69",
+      "pass": true
+    }
+  ],
+  "timingPartitionsValidated": 4300,
+  "fullNativeGoldenRoutes": [
+    {
+      "name": "career",
+      "frames": 37200,
+      "framesSha256": "2344cb588ff2b5c7bded48ecd92319482e005ea216d592814779265cd8dd5d5f",
+      "pcmSha256": "79a2c4be4d1dc806982789de1158eb47e0301f2ec7b6ead8b6f6f3557ae82d38",
+      "saveSha256": "4fe8c808ac90f61f98ad6077d90346ae91f9c9f515dc8cf96835d1dbd2cb1d37",
+      "state": "9cb2d661",
+      "compiled": 229,
+      "fallback": 0,
+      "unknown": 0,
+      "unsupported": 0
+    },
+    {
+      "name": "reload",
+      "frames": 2200,
+      "framesSha256": "541929ba40eba7a36bc840dafe4c0e6f5bc43b9058f5e9d04e3e1286a9757cf4",
+      "pcmSha256": "d9e257d4adb7e20c8e5b54b42bb04348108c7da7068793ef8bc5bef70376f58c",
+      "saveSha256": "4fe8c808ac90f61f98ad6077d90346ae91f9c9f515dc8cf96835d1dbd2cb1d37",
+      "state": "fc469aac",
+      "compiled": 229,
+      "fallback": 0,
+      "unknown": 0,
+      "unsupported": 0
+    }
+  ],
+  "reference": "Existing reviewed goldens; no fresh interpreter run",
+  "inputReaderBoundaryChecks": 6,
+  "normalAudioPlayback": false,
+  "pacingMeasured": false,
+  "newMatchingFunctions": 0,
+  "rawArtifacts": "Remain exclusively on worker E under ignored build/frame-phase-timing-1106",
+  "remaining": [
+    "Real-backend recording with own-stream mute/provenance guards",
+    "Quiet-host phase attribution and paired pacing",
+    "Audible/physical controller/display/Windows acceptance"
+  ]
+}

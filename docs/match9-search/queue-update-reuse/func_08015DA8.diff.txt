@@ -1,0 +1,35 @@
+Compiled output differs: target 118 bytes, compiled 118 bytes.
+First difference at +0x38 (0x08015DE0); exact prefix 56 bytes, exact suffix 37 bytes.
+Instruction shapes, constants and pools agree; inspect register allocation and variable lifetimes.
+--- target
++++ compiled
+@@ -24,17 +24,17 @@
+ 08015DD8: .word 0x030067E4 (literal pool)
+ 08015DDC: .word 0x040000D4 (literal pool)
+-08015DE0: mov r1, r8
+-08015DE2: adds r0, r4, r1
+-08015DE4: ldr r2, [r0, #0]
+-08015DE6: mov r0, r12
+-08015DE8: adds r0, #8
+-08015DEA: adds r0, r4, r0
+-08015DEC: ldr r1, [r0, #0]
++08015DE0: mov r0, r8
++08015DE2: adds r2, r4, r0
++08015DE4: ldr r0, [r2, #0]
++08015DE6: mov r2, r12
++08015DE8: adds r2, #8
++08015DEA: adds r2, r4, r2
++08015DEC: ldr r1, [r2, #0]
+ 08015DEE: str r3, [r6, #0]
+-08015DF0: str r2, [r6, #4]
++08015DF0: str r0, [r6, #4]
+ 08015DF2: lsrs r1, r1, #2
+-08015DF4: movs r0, #132
+-08015DF6: lsls r0, r0, #24
+-08015DF8: orrs r1, r0
++08015DF4: movs r2, #132
++08015DF6: lsls r2, r2, #24
++08015DF8: orrs r1, r2
+ 08015DFA: str r1, [r6, #8]
+ 08015DFC: ldr r0, [r6, #8]
+Check register allocation, signed widths, statement order, constants and pool alignment.

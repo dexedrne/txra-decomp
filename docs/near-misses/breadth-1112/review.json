@@ -1,0 +1,55 @@
+{
+  "directory": "txra-review/breadth-1112",
+  "artifacts": {
+    "before-breadth-status.png": {
+      "bytes": 124518,
+      "sha256": "9a9b5b6b3f6f9d9a0cddf09f4f0627b3e9261a3b9d73b6be43e7fa6f490291e4",
+      "width": 1600,
+      "height": 1000
+    },
+    "after-breadth-status.png": {
+      "bytes": 125731,
+      "sha256": "323b27a2c1c2117883b08126dc9d9ddcf3ecb818d5886bda93db7b155e85ca5d",
+      "width": 1600,
+      "height": 1000
+    },
+    "breadth-status.webm": {
+      "bytes": 307404,
+      "sha256": "8761301f03ff06904b51dc38f93ec9a5871e96dc0717aae94b4d29688e5042ae",
+      "seconds": 4.0,
+      "fps": 30,
+      "width": 1600,
+      "height": 1000,
+      "audio_streams": 0
+    },
+    "before-08015E50.png": {
+      "bytes": 141313,
+      "sha256": "17a8d5f1307c5150cc9475c98b4c6b8377033492bbbc36ef47c0392afa90ac95",
+      "width": 1600,
+      "height": 1000
+    },
+    "after-08015E50.png": {
+      "bytes": 130329,
+      "sha256": "06958c349870c344a37d983c79b188f43980054674630b7421fee3889c6ed077",
+      "width": 1600,
+      "height": 1000
+    },
+    "08015E50.webm": {
+      "bytes": 505583,
+      "sha256": "84c422f555051120a37f256f4a9a26be948a6a78e91a273cb17572ba457722e8",
+      "seconds": 4.0,
+      "fps": 30,
+      "width": 1600,
+      "height": 1000,
+      "audio_streams": 0
+    },
+    "clip-overview.png": {
+      "bytes": 178533,
+      "sha256": "30868284670559456062a71cc0453bbef0253e9d2c44b133553aeb2de163aeb1",
+      "width": 1000,
+      "height": 660
+    }
+  },
+  "comparisons_only": true,
+  "gameplay_claimed": false
+}

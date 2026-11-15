@@ -1,0 +1,14 @@
+{
+  "registry_entries": 181,
+  "unique_names": true,
+  "existing_c_sources": true,
+  "nonoverlapping_extents": true,
+  "mapped_functions": 229,
+  "registered_bytes": 72524,
+  "mapped_code_bytes": 85132,
+  "function_percent": 79.0,
+  "code_percent": 85.19,
+  "progress_summary_agrees": true,
+  "new_exact_matches": 0,
+  "rom_read": false
+}

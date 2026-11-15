@@ -1,0 +1,26 @@
+{
+  "address": "08018AA4",
+  "mode": "thumb",
+  "bytes": 94,
+  "instructions": 47,
+  "call_count": null,
+  "observed_entry": true,
+  "static_callers": 2,
+  "matched_callees": 0,
+  "unmatched_callees": 0,
+  "difficulty": 47,
+  "value": 6,
+  "priority": 0.12766,
+  "blocked_reason": null,
+  "comparison_bytes": 128,
+  "attempts": 5,
+  "compile_errors": 0,
+  "seconds": 0.12,
+  "exact": true,
+  "score": [
+    0,
+    0
+  ],
+  "compiler": "standard-o1",
+  "size": 128
+}

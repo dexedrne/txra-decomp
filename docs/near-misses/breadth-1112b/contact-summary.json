@@ -1,0 +1,72 @@
+{
+  "complete_owner_measurements": 1566,
+  "distinct_measured_source_identities": 1518,
+  "compile_errors": 0,
+  "baseline_different_bytes": 1011,
+  "retained_different_bytes": 919,
+  "baseline_instruction_distance": 307,
+  "retained_instruction_distance": 254,
+  "baseline_frame": 64,
+  "retained_frame": 68,
+  "target_frame": 72,
+  "target_bytes": 1684,
+  "retained_bytes": 1660,
+  "new_matches": 0,
+  "compiler": "arm",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "owner_end": "08018854",
+  "stop_reason": "Three finite source neighborhoods exhausted; no complete byte match.",
+  "groups": {
+    "contact": {
+      "measured": 144,
+      "compile_errors": 0,
+      "distinct_sources": 144,
+      "best_different_bytes": 929,
+      "best_instruction_distance": 206,
+      "wall_seconds": 96.31,
+      "compiler": "arm",
+      "flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "owner_end": "08018854",
+      "installed": false,
+      "stop_reason": "neighborhood exhausted"
+    },
+    "contact-flow": {
+      "measured": 1152,
+      "compile_errors": 0,
+      "distinct_sources": 1152,
+      "best_different_bytes": 919,
+      "best_instruction_distance": 199,
+      "wall_seconds": 766.68,
+      "compiler": "arm",
+      "flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "owner_end": "08018854",
+      "installed": false,
+      "stop_reason": "neighborhood exhausted"
+    },
+    "contact-layout": {
+      "measured": 270,
+      "compile_errors": 0,
+      "distinct_sources": 270,
+      "best_different_bytes": 919,
+      "best_instruction_distance": 199,
+      "wall_seconds": 183.19,
+      "compiler": "arm",
+      "flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "owner_end": "08018854",
+      "installed": false,
+      "stop_reason": "neighborhood exhausted"
+    }
+  }
+}

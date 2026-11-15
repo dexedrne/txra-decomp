@@ -1,0 +1,186 @@
+Compiler: standard
+Instruction edit distance: 30
+Byte distance: 160
+Compiled output differs: target 226 bytes, compiled 232 bytes.
+First difference at +0x6 (0x08012522); exact prefix 6 bytes, exact suffix 11 bytes.
+Length differs by +6 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -2,22 +2,22 @@
+ 0801251E: mov r7, r8
+ 08012520: push {r7}
+-08012522: mov r12, r0
++08012522: adds r7, r0, #0
+ 08012524: adds r6, r1, #0
+-08012526: ldrb r1, [r0, #5]
++08012526: ldrb r1, [r7, #5]
+ 08012528: lsls r0, r1, #8
+-0801252A: mov r3, r12
+-0801252C: ldrb r3, [r3, #4]
+-0801252E: orrs r0, r3
+-08012530: adds r0, #3
+-08012532: subs r2, #1
+-08012534: movs r7, #192
++0801252A: ldrb r3, [r7, #4]
++0801252C: orrs r0, r3
++0801252E: adds r0, #3
++08012530: subs r2, #1
++08012532: movs r1, #192
++08012534: mov r12, r1
+ 08012536: movs r1, #63
+ 08012538: mov r8, r1
+ 0801253A: adds r4, r2, r6
+-0801253C: mov r3, r12
+-0801253E: adds r2, r0, r3
+-08012540: ldrb r5, [r2, #0]
+-08012542: adds r0, r5, #0
+-08012544: ands r0, r7
++0801253C: adds r2, r0, r7
++0801253E: ldrb r0, [r2, #0]
++08012540: adds r5, r0, #0
++08012542: mov r1, r12
++08012544: ands r0, r1
+ 08012546: cmp r0, #192
+ 08012548: bne 0x08012574
+@@ -44,70 +44,73 @@
+ 08012572: bne 0x08012566
+ 08012574: adds r0, r5, #0
+-08012576: ands r0, r7
+-08012578: cmp r0, #128
+-0801257A: bne 0x080125AA
+-0801257C: adds r3, r5, #0
+-0801257E: mov r0, r8
+-08012580: ands r3, r0
+-08012582: subs r2, #1
+-08012584: ldrb r1, [r2, #0]
+-08012586: lsls r0, r1, #8
+-08012588: subs r2, #1
+-0801258A: ldrb r1, [r2, #0]
+-0801258C: orrs r0, r1
+-0801258E: subs r2, #1
+-08012590: adds r0, r6, r0
+-08012592: adds r0, r0, r3
+-08012594: subs r1, r0, #1
+-08012596: cmp r3, #0
+-08012598: beq 0x080125AA
+-0801259A: adds r0, r3, #0
+-0801259C: ldrb r3, [r1, #0]
+-0801259E: strb r3, [r4, #0]
+-080125A0: subs r4, #1
+-080125A2: subs r1, #1
+-080125A4: subs r0, #1
+-080125A6: cmp r0, #0
+-080125A8: bne 0x0801259C
+-080125AA: adds r0, r5, #0
+-080125AC: ands r0, r7
+-080125AE: cmp r0, #64
+-080125B0: bne 0x080125CE
+-080125B2: adds r3, r5, #0
+-080125B4: mov r0, r8
+-080125B6: ands r3, r0
+-080125B8: subs r2, #1
+-080125BA: ldrb r1, [r2, #0]
++08012576: mov r1, r12
++08012578: ands r0, r1
++0801257A: cmp r0, #128
++0801257C: bne 0x080125AC
++0801257E: adds r3, r5, #0
++08012580: mov r0, r8
++08012582: ands r3, r0
++08012584: subs r2, #1
++08012586: ldrb r1, [r2, #0]
++08012588: lsls r0, r1, #8
++0801258A: subs r2, #1
++0801258C: ldrb r1, [r2, #0]
++0801258E: orrs r0, r1
++08012590: subs r2, #1
++08012592: adds r0, r0, r6
++08012594: adds r0, r0, r3
++08012596: subs r1, r0, #1
++08012598: cmp r3, #0
++0801259A: beq 0x080125AC
++0801259C: adds r0, r3, #0
++0801259E: ldrb r3, [r1, #0]
++080125A0: strb r3, [r4, #0]
++080125A2: subs r4, #1
++080125A4: subs r1, #1
++080125A6: subs r0, #1
++080125A8: cmp r0, #0
++080125AA: bne 0x0801259E
++080125AC: adds r0, r5, #0
++080125AE: mov r1, r12
++080125B0: ands r0, r1
++080125B2: cmp r0, #64
++080125B4: bne 0x080125D2
++080125B6: adds r3, r5, #0
++080125B8: mov r0, r8
++080125BA: ands r3, r0
+ 080125BC: subs r2, #1
+-080125BE: cmp r3, #0
+-080125C0: beq 0x080125CE
+-080125C2: adds r0, r3, #0
+-080125C4: strb r1, [r4, #0]
+-080125C6: subs r4, #1
+-080125C8: subs r0, #1
+-080125CA: cmp r0, #0
+-080125CC: bne 0x080125C4
+-080125CE: adds r0, r5, #0
+-080125D0: ands r0, r7
+-080125D2: cmp r0, #0
+-080125D4: bne 0x080125EC
+-080125D6: subs r2, #1
+-080125D8: cmp r5, #0
+-080125DA: beq 0x080125EC
+-080125DC: adds r0, r5, #0
+-080125DE: ldrb r3, [r2, #0]
+-080125E0: strb r3, [r4, #0]
+-080125E2: subs r2, #1
+-080125E4: subs r4, #1
+-080125E6: subs r0, #1
+-080125E8: cmp r0, #0
+-080125EA: bne 0x080125DE
+-080125EC: cmp r2, r12
+-080125EE: ble 0x080125F4
+-080125F0: cmp r4, r6
+-080125F2: bgt 0x08012540
+-080125F4: pop {r3}
+-080125F6: mov r8, r3
+-080125F8: pop {r4, r5, r6, r7}
+-080125FA: pop {r0}
+-080125FC: bx r0
++080125BE: ldrb r1, [r2, #0]
++080125C0: subs r2, #1
++080125C2: cmp r3, #0
++080125C4: beq 0x080125D2
++080125C6: adds r0, r3, #0
++080125C8: strb r1, [r4, #0]
++080125CA: subs r4, #1
++080125CC: subs r0, #1
++080125CE: cmp r0, #0
++080125D0: bne 0x080125C8
++080125D2: adds r0, r5, #0
++080125D4: mov r1, r12
++080125D6: ands r0, r1
++080125D8: cmp r0, #0
++080125DA: bne 0x080125F2
++080125DC: subs r2, #1
++080125DE: cmp r5, #0
++080125E0: beq 0x080125F2
++080125E2: adds r0, r5, #0
++080125E4: ldrb r3, [r2, #0]
++080125E6: strb r3, [r4, #0]
++080125E8: subs r2, #1
++080125EA: subs r4, #1
++080125EC: subs r0, #1
++080125EE: cmp r0, #0
++080125F0: bne 0x080125E4
++080125F2: cmp r2, r7
++080125F4: ble 0x080125FA
++080125F6: cmp r4, r6
++080125F8: bgt 0x0801253E
++080125FA: pop {r3}
++080125FC: mov r8, r3
++080125FE: pop {r4, r5, r6, r7}
++08012600: pop {r0}
++08012602: bx r0
+Check register allocation, signed widths, statement order, constants and pool alignment.

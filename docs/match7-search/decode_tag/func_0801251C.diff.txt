@@ -1,0 +1,6 @@
+Compiled output differs: target 226 bytes, compiled 226 bytes.
+All bytes agree.
+--- target
++++ compiled
+Exact byte match.
+Check register allocation, signed widths, statement order, constants and pool alignment.

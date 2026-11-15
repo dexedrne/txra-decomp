@@ -1,0 +1,41 @@
+[
+  {
+    "address": "08015F58",
+    "recipe": [
+      "u32",
+      "pattern",
+      false
+    ],
+    "source_sha256": "96637516d2b94e9afd923e7097d2f14451f2fcc72e3485705e8e26ba4de2a2a0",
+    "emitted_bytes": 64,
+    "different_bytes": 0,
+    "exact": true,
+    "instruction_distance": 0
+  },
+  {
+    "address": "08015E50",
+    "recipe": [
+      "u32",
+      "pattern",
+      false
+    ],
+    "source_sha256": "c1d3e9165d361156f558a926603c77243a655e3846ab3fd94a14959ddbdb2e0d",
+    "emitted_bytes": 132,
+    "different_bytes": 0,
+    "exact": true,
+    "instruction_distance": 0
+  },
+  {
+    "address": "08015ED4",
+    "recipe": [
+      "u32",
+      "pattern",
+      false
+    ],
+    "source_sha256": "322ae30c81ab8907f3c990baa5696586a1f87d9eaecbd86681510dd6ffb29b22",
+    "emitted_bytes": 132,
+    "different_bytes": 0,
+    "exact": true,
+    "instruction_distance": 0
+  }
+]

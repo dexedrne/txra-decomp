@@ -1,0 +1,33 @@
+{
+  "parent": "ae40135a0dd438be489489d6f430739b5f2098a5",
+  "original_ancestor": "bb3934300f7a40b7e4a9c83920420b5404943746",
+  "parent_files_checked": 1221,
+  "parent_manifest_sha256": "8ff4b8c0fd7fb1322371f16a931a370a53dc846abcce3f1c3378da3bc0d07d2d",
+  "versions": {
+    "cc": "cc (GCC) 16.2.1 20260810",
+    "strip": "GNU strip (GNU Binutils) 2.47",
+    "make": "GNU Make 4.4.1",
+    "python": "Python 3.14.8",
+    "sdl2": "2.32.74"
+  },
+  "cold_generated_build": true,
+  "flags": {
+    "generated": "-O2 -std=c11 -Wall -Wextra -Wno-misleading-indentation -O1 -Iruntime",
+    "runtime": "-O2 -std=c11 -Wall -Wextra -Wno-misleading-indentation $(pkg-config --cflags sdl2) -Iruntime runtime/*.c build/generated.o $(pkg-config --libs sdl2)",
+    "publish_strip": "strip --strip-debug"
+  },
+  "hashes": {
+    "build/generated.c": "d2ec9123b89460ede4168fa387677a89872370e62ea3b3f061e465b610f043c5",
+    "build/generated.o": "75f29e2c544984a04fdd60e878d509d841f1198b8060bf570010b02fb93f46d5",
+    "build/txra-pc": "a2845c0cb3c1774113890e5d8a38a158a053a725a00a54a7585e4988df7d27c8",
+    "build/native-runtime-1106/release-pc": "f826074ce8e8779f1215ffe0c6b90039376a5a4f0a62265039d650aa38571cbd",
+    "progress.json": "5db7b4f3d555d2fc83b178c7a210e4c3e936335c511f5aca4ea30374cbf677ec",
+    "docs/native-runtime-1106/source-manifest.json": "c42f6fbfff53a4e8c2f7758beca82d31bfacf108584a72bebcdbfc77008c0026"
+  },
+  "imported_file_hashes_checked": 14,
+  "runtime_recomp_src_parent_matches": 193,
+  "verified_source_commit_object_available": false,
+  "windows_compiler_available": false,
+  "windows_sdk_available": false,
+  "generated_progress_side_effect": "Private copy retained; parent progress.json restored byte-for-byte."
+}

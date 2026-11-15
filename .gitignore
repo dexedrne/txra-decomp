@@ -1,0 +1,21 @@
+baserom.gba
+*.gba
+build/
+*.o
+*.elf
+assets/
+
+__pycache__/
+*.pyc
+*.sav
+OWNER-NOTES.md
+*.sav.tmp
+*.sav.reset-*.bak
+*.bmp
+*.ppm
+*.pcm
+*.bgra
+*.webm
+
+# Local resumable search state; final review evidence is tracked separately.
+docs/match10-search/*/checkpoint.json

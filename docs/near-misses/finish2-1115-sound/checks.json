@@ -1,0 +1,148 @@
+{
+ "target_rows": 1725,
+ "regions": {
+  "A": "080064A4-080065C2 fade and mix buffer",
+  "B": "080065C2-08006712 hooks, sound effects, tempo",
+  "C": "08006712-08006776 voice loop head and preheader",
+  "D": "08006776-08006D62 envelope tick",
+  "E": "08006D62-08006ECC command loop",
+  "F": "08006ECC-08006FCC repeat marker and note",
+  "G": "08006FCC-08007352 tone start and sample voices",
+  "H": "08007352-08007398 loop tails and epilogue"
+ },
+ "alignment": {
+  "docs/near-misses/sound-owner-1111/func_080064A4.c": {
+   "emitted_bytes": 3808,
+   "local_frame_bytes": 100,
+   "instruction_distance": 1472,
+   "different_bytes": 3227,
+   "aligned_identical_rows": 543,
+   "register_only_rows": 801,
+   "shape_rows": 583,
+   "identical_rows_by_region": "A87 B57 C6 D200 E65 F23 G94 H11"
+  },
+  "docs/near-misses/finish2-1115-sound/func_080064A4.c": {
+   "emitted_bytes": 3820,
+   "local_frame_bytes": 100,
+   "instruction_distance": 283,
+   "different_bytes": 1598,
+   "aligned_identical_rows": 1546,
+   "register_only_rows": 170,
+   "shape_rows": 16,
+   "identical_rows_by_region": "A106 B115 C48 D581 E165 F100 G415 H16"
+  }
+ },
+ "differential": [
+  {
+   "reference": "docs/near-misses/sound-owner-1111/func_080064A4.c",
+   "reference_sha256": "c07b91202435f2f7057ce1a49714f819d8a575acbabe40a5ee6cb156fcc310d2",
+   "reference_fix_pcm_step": true,
+   "candidate": "docs/near-misses/finish2-1115-sound/func_080064A4.c",
+   "candidate_sha256": "4765bf75ecfa4893341e75c81fdf1e51b1e2fd4aed4178716b734c256c59326f",
+   "states": 1000,
+   "seed": 1115,
+   "identical": 1000,
+   "failures": [],
+   "logged_events": 9694,
+   "rom_used": false
+  },
+  {
+   "reference": "docs/near-misses/sound-owner-1111/func_080064A4.c",
+   "reference_sha256": "c07b91202435f2f7057ce1a49714f819d8a575acbabe40a5ee6cb156fcc310d2",
+   "reference_fix_pcm_step": true,
+   "candidate": "docs/near-misses/finish2-1115-sound/func_080064A4.c",
+   "candidate_sha256": "4765bf75ecfa4893341e75c81fdf1e51b1e2fd4aed4178716b734c256c59326f",
+   "states": 1000,
+   "seed": 2026,
+   "identical": 1000,
+   "failures": [],
+   "logged_events": 9573,
+   "rom_used": false
+  },
+  {
+   "reference": "docs/near-misses/sound-owner-1111/func_080064A4.c",
+   "reference_sha256": "c07b91202435f2f7057ce1a49714f819d8a575acbabe40a5ee6cb156fcc310d2",
+   "reference_fix_pcm_step": false,
+   "candidate": "docs/near-misses/finish2-1115-sound/func_080064A4.c",
+   "candidate_sha256": "4765bf75ecfa4893341e75c81fdf1e51b1e2fd4aed4178716b734c256c59326f",
+   "states": 300,
+   "seed": 1115,
+   "identical": 130,
+   "failures": [
+    [
+     0,
+     0,
+     0,
+     704772,
+     704772
+    ],
+    [
+     1,
+     0,
+     0,
+     704772,
+     704772
+    ],
+    [
+     2,
+     0,
+     0,
+     704772,
+     704772
+    ],
+    [
+     8,
+     0,
+     0,
+     704772,
+     704772
+    ],
+    [
+     10,
+     0,
+     0,
+     704772,
+     704772
+    ],
+    [
+     15,
+     0,
+     0,
+     704772,
+     704772
+    ],
+    [
+     16,
+     0,
+     0,
+     704772,
+     704772
+    ],
+    [
+     17,
+     0,
+     0,
+     704772,
+     704772
+    ],
+    [
+     21,
+     0,
+     0,
+     704772,
+     704772
+    ],
+    [
+     24,
+     0,
+     0,
+     704772,
+     704772
+    ]
+   ],
+   "logged_events": 1125,
+   "rom_used": false
+  }
+ ],
+ "note": "alignment rows come from batch.py (opcode-shape alignment against the original listing, rebuilt in memory on the worker); differential runs come from diff32.py (i386 freestanding, synthetic states, no ROM bytes)"
+}

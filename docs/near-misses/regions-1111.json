@@ -1,0 +1,158 @@
+{
+  "0800421C": {
+    "source": "docs/near-misses/hud-owner-1110/func_0800421C.c",
+    "source_sha256": "d106e3fead0f8d42d34073427992cf79ae578c131a9c29eee10db597ff9c2ce8",
+    "rank": 0,
+    "first_line": 224,
+    "last_line": 231,
+    "different_bytes": 201,
+    "machine_spans": [
+      [
+        1924,
+        1962
+      ],
+      [
+        1962,
+        1990
+      ],
+      [
+        1990,
+        2020
+      ],
+      [
+        2020,
+        2028
+      ],
+      [
+        2028,
+        2084
+      ],
+      [
+        2084,
+        2088
+      ],
+      [
+        2088,
+        2138
+      ]
+    ],
+    "prompt_sha256": "96288bc57aafc1f7585d0d94a0d60af4b750f1e2cb00d0d1c9143c5e6b6ef03b",
+    "prompt_characters": 12134,
+    "region_count": 1025,
+    "original_line_budget": 16,
+    "context_character_budget": 18000,
+    "purpose": "Initial baseline calibration; live visits and improved source maps change the next selection."
+  },
+  "080064A4": {
+    "source": "docs/near-misses/sound-owner-1109d/func_080064A4.c",
+    "source_sha256": "c07b91202435f2f7057ce1a49714f819d8a575acbabe40a5ee6cb156fcc310d2",
+    "rank": 14,
+    "first_line": 446,
+    "last_line": 450,
+    "different_bytes": 234,
+    "machine_spans": [
+      [
+        2786,
+        2806
+      ],
+      [
+        2806,
+        2824
+      ],
+      [
+        2824,
+        2844
+      ],
+      [
+        2844,
+        2850
+      ],
+      [
+        2850,
+        3060
+      ]
+    ],
+    "prompt_sha256": "2b2d2dd04f20217a3fa655db67d2b66cd3cc827c21adda1d1a3e243f36ef6c73",
+    "prompt_characters": 17712,
+    "region_count": 451,
+    "original_line_budget": 16,
+    "context_character_budget": 18000,
+    "purpose": "Initial baseline calibration; live visits and improved source maps change the next selection."
+  },
+  "08016DA8": {
+    "source": "docs/near-misses/arm-16da8-1110/func_08016DA8.c",
+    "source_sha256": "558324bab1fa37d5db18889304436fafea391854c573907850e19859fdf14f58",
+    "rank": 0,
+    "first_line": 449,
+    "last_line": 463,
+    "different_bytes": 152,
+    "machine_spans": [
+      [
+        3636,
+        3648
+      ],
+      [
+        3648,
+        3656
+      ],
+      [
+        3656,
+        3664
+      ],
+      [
+        3664,
+        3668
+      ],
+      [
+        3668,
+        3672
+      ],
+      [
+        3672,
+        3720
+      ],
+      [
+        3720,
+        3728
+      ],
+      [
+        3732,
+        3740
+      ],
+      [
+        3744,
+        3748
+      ],
+      [
+        3756,
+        3760
+      ],
+      [
+        3760,
+        3804
+      ],
+      [
+        3804,
+        3816
+      ],
+      [
+        3952,
+        3964
+      ],
+      [
+        3964,
+        3976
+      ],
+      [
+        3976,
+        3988
+      ]
+    ],
+    "prompt_sha256": "81e2ced2d9b3dd3ba1ca396386d6d2d9e50a74f3ae288f16ff4103e23d6171c9",
+    "prompt_characters": 13603,
+    "region_count": 439,
+    "original_line_budget": 16,
+    "context_character_budget": 18000,
+    "purpose": "Initial baseline calibration; live visits and improved source maps change the next selection."
+  }
+}

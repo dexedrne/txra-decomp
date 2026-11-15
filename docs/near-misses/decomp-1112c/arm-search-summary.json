@@ -1,0 +1,30 @@
+{
+  "source_identities": 128,
+  "measured": 128,
+  "output_identities": 28,
+  "compile_failures": 0,
+  "boundary_rejections": 64,
+  "improvements": [
+    {
+      "trial": "baseline",
+      "source_sha256": "558324bab1fa37d5db18889304436fafea391854c573907850e19859fdf14f58",
+      "emitted_bytes": 4268,
+      "local_frame_bytes": 108,
+      "different_bytes": 3251,
+      "compiled_sha256": "d821cdb421a0546c681d72df6d21a7e5bf0650253e5a06a2dc357ca78e5292cd",
+      "boundary_rejected": false,
+      "retained": true
+    },
+    {
+      "trial": "depth-join-and-point-lifetimes-4",
+      "source_sha256": "b11d1e63609befa7ff4fe02365fad02612e15036e255b059b672b37c9fb5af03",
+      "emitted_bytes": 4268,
+      "local_frame_bytes": 108,
+      "different_bytes": 3250,
+      "compiled_sha256": "872806c97fadb57e78b6ae5eb5a441d6f324525ae534ae02ec47f39d03d3612b",
+      "boundary_rejected": false,
+      "retained": true
+    }
+  ],
+  "best_different_bytes": 3250
+}

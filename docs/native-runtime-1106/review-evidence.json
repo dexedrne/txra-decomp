@@ -1,0 +1,105 @@
+{
+  "identicalKeyPictures": {
+    "menu": true,
+    "race": true
+  },
+  "clips": {
+    "after-menu.webm": {
+      "sha256": "e10f0775c950fb6e46e2e2c864de0a9b95b64aa6a0ad4cf8db2c9e09a6599e67",
+      "bytes": 419172,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 720,
+            "height": 480,
+            "avg_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "8.000000",
+          "size": "419172"
+        }
+      },
+      "audio_streams": 0
+    },
+    "after-race.webm": {
+      "sha256": "9ced60f179682d8dbd5bab5d3d10e053ecffcd3c5c27413a6bfed1427fbfc049",
+      "bytes": 706927,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 720,
+            "height": 480,
+            "avg_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "8.000000",
+          "size": "706927"
+        }
+      },
+      "audio_streams": 0
+    },
+    "before-menu.webm": {
+      "sha256": "f5a7799932100bdbf2524b1cd10c8fcc20eb8e98136bc4fb9cf537be0a3a80d2",
+      "bytes": 1421838,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 720,
+            "height": 480,
+            "avg_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "8.000000",
+          "size": "1421838"
+        }
+      },
+      "audio_streams": 0
+    },
+    "before-race.webm": {
+      "sha256": "596dd3f0e26f4a79fa8ac337ee45892f04b1e6ccdd9b0396a89482b8484541cd",
+      "bytes": 1550357,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 720,
+            "height": 480,
+            "avg_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "8.000000",
+          "size": "1550357"
+        }
+      },
+      "audio_streams": 0
+    }
+  },
+  "images": {
+    "after-menu-samples.png": "9a92247a216813f085ddf92036e0fe8291b124c5a1b648a5566cd1c9786caf42",
+    "after-race.png": "f1ed2cdde23a046ba859898e808665804e7f5c770ea1ad2157a4aa8c17be4975",
+    "after-race-samples.png": "f4f97734369c16f59ae658e3e0daf908f11809dcf47280f60e5cc072e9824bc8",
+    "before-race-samples.png": "616e0cd6e2d3353e1191cd2ee0b2502d824ec6a9097ac77c51d903497284c479",
+    "after-menu.png": "6700d889bafabcb2ba7bb37340e7fbde9af9c5f3a13eb95fda7c5522e4c3f467",
+    "before-menu.png": "5c6c977384b5a01af79e46d145123376663c803945fcac27e439595d5a51091b",
+    "before-menu-samples.png": "42dadb653dc086609c9bf9f679260f1ca844d703c07ac71a031efd656dda8f51",
+    "before-race.png": "3df2859a3b1d77f306710823e7b3568f0ff187a968bda0ebca1a4b84a82fa12c",
+    "after-sequence.png": "86114075e37268f2f240f4b3c8b92ff3d568a148270e7aefb169c861537078a6"
+  },
+  "inspection": {
+    "key_pictures": 4,
+    "snapshot_contact_sheet_frames": 14,
+    "clip_contact_sheets": 4,
+    "key_pictures_pixel_identical": true
+  }
+}

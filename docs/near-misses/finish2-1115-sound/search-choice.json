@@ -1,0 +1,25 @@
+{
+ "choice": {
+  "clear": 1,
+  "cur1": 0,
+  "c3s": 1,
+  "ecr": 1,
+  "ecu": 1,
+  "cur2": 1,
+  "eev": 1,
+  "einc": 1,
+  "spc": 1,
+  "arpw": 2,
+  "sseq": 1,
+  "c3l": 5,
+  "efl": 2,
+  "padd": 2,
+  "tarp": 3,
+  "sarp": 2,
+  "dur2": 1,
+  "sss": 1,
+  "c3c": 1,
+  "pcs": 1
+ },
+ "note": "coordinate-search state for search-template.tpl before the final hand edits (mix-buffer index blocks, cosmetic cleanup); see README.md"
+}

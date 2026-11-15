@@ -1,0 +1,6 @@
+start (3800, 348, 4352, 96)
+3 167.7 (98, 45, 4288, 96) {"dyip": 1, "dzip": 0, "txip": 1, "tzsp": 0, "tyip": 0, "tip": 0, "wv": "dy", "syv": "sy", "tpos": "before", "tzc": 0, "tyc": 0, "tc": 0, "sxc": 0, "syc": 0, "wc": 0, "lc": 0, "ls": 0, "ld": 0, "lf": 0, "pxip": 0, "pyip": 0, "shf": 0}
+5 157.0 (102, 41, 4288, 96) {"dyip": 1, "dzip": 0, "txip": 1, "tzsp": 0, "tyip": 0, "tip": 0, "wv": "dy", "syv": "sy", "tpos": "before", "tzc": 1, "tyc": 0, "tc": 0, "sxc": 0, "syc": 0, "wc": 0, "lc": 0, "ls": 0, "ld": 0, "lf": 0, "pxip": 0, "pyip": 0, "shf": 0}
+336 138.7 (83, 37, 4288, 96) {"dyip": 1, "dzip": 0, "txip": 1, "tzsp": 0, "tyip": 0, "tip": 0, "wv": "dy", "syv": "sy", "tpos": "inline", "tzc": 0, "tyc": 1, "tc": 0, "sxc": 1, "syc": 0, "wc": 1, "lc": 0, "ls": 1, "ld": 1, "lf": 1, "pxip": 0, "pyip": 0, "shf": 0}
+362 132.0 (81, 35, 4288, 96) {"dyip": 1, "dzip": 0, "txip": 0, "tzsp": 0, "tyip": 0, "tip": 0, "wv": "dy", "syv": "sy", "tpos": "inline", "tzc": 0, "tyc": 1, "tc": 0, "sxc": 1, "syc": 0, "wc": 1, "lc": 0, "ls": 1, "ld": 1, "lf": 0, "pxip": 0, "pyip": 1, "shf": 0}
+done 7074 best (81, 35, 4288, 96)

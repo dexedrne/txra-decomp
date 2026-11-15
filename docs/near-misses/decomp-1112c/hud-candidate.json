@@ -1,0 +1,22 @@
+{
+  "address": "0800421C",
+  "target_end": "08005238",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/decomp-1112c/func_0800421C.c",
+  "source_sha256": "f8ecf21820e21c2d1d7069e1aa4a7f09707ea586f267abc9e6ee8ddb372e36ff",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 4124,
+  "target_bytes": 4124,
+  "local_frame_bytes": 36,
+  "instruction_distance": 1023,
+  "different_bytes": 3144,
+  "exact": false,
+  "compiled_sha256": "28db65402b5529e06eae2b99b5fc88a4f108cf00299fb0ce792e76c10bf36301",
+  "checker_limit": "08005238",
+  "checker_rejection": null,
+  "installed": false
+}

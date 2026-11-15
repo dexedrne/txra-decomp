@@ -1,0 +1,68 @@
+{
+  "completed_searches": [
+    {
+      "manifest": "docs/match6-search/angle-unsigned/search-results.json",
+      "attempts": 6000,
+      "compile_errors": 0,
+      "searched": 1,
+      "rejected": 0
+    },
+    {
+      "manifest": "docs/match6-search/eeprom/search-results.json",
+      "attempts": 10000,
+      "compile_errors": 6272,
+      "searched": 1,
+      "rejected": 0
+    },
+    {
+      "manifest": "docs/match6-search/expanded/search-results.json",
+      "attempts": 34010,
+      "compile_errors": 4322,
+      "searched": 14,
+      "rejected": 22
+    },
+    {
+      "manifest": "docs/match6-search/packet-focused-final/search-results.json",
+      "attempts": 1440,
+      "compile_errors": 712,
+      "searched": 1,
+      "rejected": 0
+    }
+  ],
+  "attempts": 51450,
+  "compile_errors": 11306,
+  "flags": [
+    {
+      "manifest": "docs/match6-search/flags-08014104/results.json",
+      "trials": 22,
+      "errors": 2
+    },
+    {
+      "manifest": "docs/match6-search/flags-08014614/results.json",
+      "trials": 22,
+      "errors": 2
+    },
+    {
+      "manifest": "docs/match6-search/flags-0801466C/results.json",
+      "trials": 22,
+      "errors": 3
+    },
+    {
+      "manifest": "docs/match6-search/flags-08014988/results.json",
+      "trials": 22,
+      "errors": 3
+    },
+    {
+      "manifest": "docs/match6-search/flags-08018B24/results.json",
+      "trials": 22,
+      "errors": 2
+    }
+  ],
+  "flag_trials": 110,
+  "flag_errors": 12,
+  "manual_grids": "total_jobs describes planned grids only; excluded from measured attempts",
+  "interrupted_passes": [
+    "packet-focused",
+    "packet-focused-bounded"
+  ]
+}

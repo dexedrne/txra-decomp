@@ -1,0 +1,2714 @@
+{
+  "switches": [
+    {
+      "source": "0x080025BA",
+      "start": "0x080025C4",
+      "end": "0x0800273C",
+      "targets": [
+        "0x0800276A",
+        "0x0800276A",
+        "0x0800276A",
+        "0x0800273C",
+        "0x08002744",
+        "0x0800274C",
+        "0x0800273C",
+        "0x08002744",
+        "0x0800274C",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x0800273C",
+        "0x08002744",
+        "0x0800274C",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x0800273C",
+        "0x08002744",
+        "0x0800274C",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x08002758",
+        "0x0800273C",
+        "0x08002744",
+        "0x0800274C"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    },
+    {
+      "source": "0x08007C4E",
+      "start": "0x08007CB0",
+      "end": "0x08007CC8",
+      "targets": [
+        "0x08007CC8",
+        "0x08007CF0",
+        "0x08007D18",
+        "0x08007D40",
+        "0x08007D68",
+        "0x08007D84"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    },
+    {
+      "source": "0x08008AB8",
+      "start": "0x08008AC8",
+      "end": "0x08008AF8",
+      "targets": [
+        "0x08008AF8",
+        "0x08008B3C",
+        "0x08008B6C",
+        "0x08008B7C",
+        "0x08008BC8",
+        "0x08008C00",
+        "0x08008C4C",
+        "0x08008C4C",
+        "0x08008C54",
+        "0x08008C54",
+        "0x08008C64",
+        "0x08008BDC"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    },
+    {
+      "source": "0x08008CAC",
+      "start": "0x08008CBC",
+      "end": "0x08008CE8",
+      "targets": [
+        "0x08008CE8",
+        "0x08008D38",
+        "0x08008DD0",
+        "0x08008E20",
+        "0x08008E58",
+        "0x08008EAC",
+        "0x08008EAC",
+        "0x08008EB4",
+        "0x08008EC0",
+        "0x08008EF8",
+        "0x08008E34"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    },
+    {
+      "source": "0x08008F54",
+      "start": "0x08008F70",
+      "end": "0x08008F9C",
+      "targets": [
+        "0x08008F9C",
+        "0x08009090",
+        "0x0800920C",
+        "0x08009270",
+        "0x0800931C",
+        "0x080093C4",
+        "0x080093F4",
+        "0x08009430",
+        "0x080094D4",
+        "0x080095AC",
+        "0x080092F0"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    },
+    {
+      "source": "0x08009620",
+      "start": "0x08009638",
+      "end": "0x08009654",
+      "targets": [
+        "0x08009654",
+        "0x0800966C",
+        "0x080096A4",
+        "0x080096D8",
+        "0x080096E8",
+        "0x0800971C",
+        "0x08009754"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    },
+    {
+      "source": "0x0800AF60",
+      "start": "0x0800AF68",
+      "end": "0x0800AF88",
+      "targets": [
+        "0x0800AF88",
+        "0x0800B080",
+        "0x0800B080",
+        "0x0800B080",
+        "0x0800B130",
+        "0x0800B130",
+        "0x0800B130",
+        "0x0800B130"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    },
+    {
+      "source": "0x0800D6C8",
+      "start": "0x0800D774",
+      "end": "0x0800D960",
+      "targets": [
+        "0x0800DAE4",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAD0",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DA50",
+        "0x0800DA60",
+        "0x0800DA70",
+        "0x0800DA80",
+        "0x0800DA30",
+        "0x0800DA40",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DA90",
+        "0x0800DAA0",
+        "0x0800DAB0",
+        "0x0800DAC0",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800D96C",
+        "0x0800D984",
+        "0x0800D99C",
+        "0x0800D9B4",
+        "0x0800D9C8",
+        "0x0800D9FC",
+        "0x0800D9B4",
+        "0x0800D9C8",
+        "0x0800D9FC",
+        "0x0800DAEA",
+        "0x0800D96C",
+        "0x0800D984",
+        "0x0800D99C",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAE4",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAD0",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DA50",
+        "0x0800DA60",
+        "0x0800DA70",
+        "0x0800DA80",
+        "0x0800DA30",
+        "0x0800DA40",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DA90",
+        "0x0800DAA0",
+        "0x0800DAB0",
+        "0x0800DAC0",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800D9B4",
+        "0x0800D9C8",
+        "0x0800D9FC",
+        "0x0800DAE4",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAD0",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DA50",
+        "0x0800DA60",
+        "0x0800DA70",
+        "0x0800DA80",
+        "0x0800DA30",
+        "0x0800DA40",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DA90",
+        "0x0800DAA0",
+        "0x0800DAB0",
+        "0x0800DAC0",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800D9B4",
+        "0x0800D9C8",
+        "0x0800D9FC",
+        "0x0800DAE4",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAD0",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DA50",
+        "0x0800DA60",
+        "0x0800DA70",
+        "0x0800DA80",
+        "0x0800DA30",
+        "0x0800DA40",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800DA90",
+        "0x0800DAA0",
+        "0x0800DAB0",
+        "0x0800DAC0",
+        "0x0800DAEA",
+        "0x0800DAEA",
+        "0x0800D9B4",
+        "0x0800D9C8",
+        "0x0800D9FC"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    },
+    {
+      "source": "0x0800E50C",
+      "start": "0x0800E514",
+      "end": "0x0800E68C",
+      "targets": [
+        "0x0800E8C0",
+        "0x0800E960",
+        "0x0800EA00",
+        "0x0800EAA0",
+        "0x0800EB24",
+        "0x0800EBA4",
+        "0x0800EAA0",
+        "0x0800EB24",
+        "0x0800EBA4",
+        "0x0800EC48",
+        "0x0800E68C",
+        "0x0800E748",
+        "0x0800E804",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EAA0",
+        "0x0800EB24",
+        "0x0800EBA4",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EAA0",
+        "0x0800EB24",
+        "0x0800EBA4",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EC48",
+        "0x0800EAA0",
+        "0x0800EB24",
+        "0x0800EBA4"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    },
+    {
+      "source": "0x0800EECA",
+      "start": "0x0800EF28",
+      "end": "0x0800EF6C",
+      "targets": [
+        "0x0800EF6C",
+        "0x0800EF76",
+        "0x0800EF80",
+        "0x0800EF90",
+        "0x0800EF9E",
+        "0x0800EFB0",
+        "0x0800EF8A",
+        "0x0800EF84",
+        "0x0800EF88",
+        "0x0800EF8E",
+        "0x0800EF94",
+        "0x0800EF98",
+        "0x0800EFA2",
+        "0x0800EFAA",
+        "0x0800EFB4",
+        "0x0800EFC0",
+        "0x0800EFCC"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    },
+    {
+      "source": "0x08012614",
+      "start": "0x0801261C",
+      "end": "0x080127C0",
+      "targets": [
+        "0x080128BC",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x080127CC",
+        "0x08012818",
+        "0x08012906",
+        "0x08012864",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x080127C0",
+        "0x080127C4",
+        "0x080127C8",
+        "0x080127C0",
+        "0x080127C4",
+        "0x080127C8",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x080128BC",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x080127CC",
+        "0x08012818",
+        "0x08012906",
+        "0x08012864",
+        "0x08012906",
+        "0x08012906",
+        "0x080127C0",
+        "0x080127C4",
+        "0x080127C8",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x080128BC",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x080127CC",
+        "0x08012818",
+        "0x08012906",
+        "0x08012864",
+        "0x08012906",
+        "0x08012906",
+        "0x080127C0",
+        "0x080127C4",
+        "0x080127C8",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x080128BC",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x08012906",
+        "0x080127CC",
+        "0x08012818",
+        "0x08012906",
+        "0x08012864",
+        "0x08012906",
+        "0x08012906",
+        "0x080127C0",
+        "0x080127C4",
+        "0x080127C8"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    },
+    {
+      "source": "0x080136C4",
+      "start": "0x0801371C",
+      "end": "0x08013744",
+      "targets": [
+        "0x08013744",
+        "0x0801376C",
+        "0x080137F0",
+        "0x0801387C",
+        "0x08013894",
+        "0x08013894",
+        "0x08013894",
+        "0x08013894",
+        "0x08013798",
+        "0x080137C4"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    },
+    {
+      "source": "0x080138F4",
+      "start": "0x08013924",
+      "end": "0x0801394C",
+      "targets": [
+        "0x0801394C",
+        "0x080139B8",
+        "0x08013A02",
+        "0x08013A74",
+        "0x08013A92",
+        "0x08013A92",
+        "0x08013A92",
+        "0x08013A92",
+        "0x080139EC",
+        "0x080139F6"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    },
+    {
+      "source": "0x080157EA",
+      "start": "0x080157F0",
+      "end": "0x08015B70",
+      "targets": [
+        "0x08015B70",
+        "0x08015B78",
+        "0x08015C26",
+        "0x08015B9C",
+        "0x08015B94",
+        "0x08015B90",
+        "0x08015B98",
+        "0x08015B7C",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015B88",
+        "0x08015B80",
+        "0x08015B84",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015B8C",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015B8C",
+        "0x08015C26",
+        "0x08015B74",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015BA0",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015BA8",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015BA4",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015BAC",
+        "0x08015BB0",
+        "0x08015BB4",
+        "0x08015BB8",
+        "0x08015BBC",
+        "0x08015BC0",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015BC4",
+        "0x08015BC8",
+        "0x08015BCC",
+        "0x08015BD0",
+        "0x08015BD4",
+        "0x08015BD8",
+        "0x08015BDC",
+        "0x08015BE0",
+        "0x08015BE4",
+        "0x08015C26",
+        "0x08015BE8",
+        "0x08015BEC",
+        "0x08015BF0",
+        "0x08015BF4",
+        "0x08015BF8",
+        "0x08015BFC",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C00",
+        "0x08015C04",
+        "0x08015C08",
+        "0x08015C0C",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C10",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C26",
+        "0x08015C14",
+        "0x08015C18",
+        "0x08015C1C",
+        "0x08015C20",
+        "0x08015C24"
+      ],
+      "mode": "thumb",
+      "confidence": "high; bounded GCC switch pattern"
+    }
+  ],
+  "tables": [
+    {
+      "start": "0x08002274",
+      "end": "0x0800227C",
+      "kind": "function-pointer or jump-table candidate",
+      "entries": [
+        {
+          "source": "0x08002274",
+          "target": "0x080000FC",
+          "mode": "arm",
+          "runtime_target": "0x080000FC",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08002278",
+          "target": "0x080000FC",
+          "mode": "arm",
+          "runtime_target": "0x03004DE0",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        }
+      ]
+    },
+    {
+      "start": "0x080074CC",
+      "end": "0x080074D8",
+      "kind": "function-pointer or jump-table candidate",
+      "entries": [
+        {
+          "source": "0x080074CC",
+          "target": "0x080076F4",
+          "mode": "arm",
+          "runtime_target": "0x080076F4",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x080074D0",
+          "target": "0x080076F4",
+          "mode": "arm",
+          "runtime_target": "0x03006AA0",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x080074D4",
+          "target": "0x08006270",
+          "mode": "thumb",
+          "runtime_target": "0x08006271",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        }
+      ]
+    },
+    {
+      "start": "0x080189F4",
+      "end": "0x08018A1C",
+      "kind": "function-pointer or jump-table candidate",
+      "entries": [
+        {
+          "source": "0x080189F4",
+          "target": "0x080005D8",
+          "mode": "arm",
+          "runtime_target": "0x080005D8",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x080189F8",
+          "target": "0x08000BF0",
+          "mode": "arm",
+          "runtime_target": "0x08000BF0",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x080189FC",
+          "target": "0x080005D8",
+          "mode": "arm",
+          "runtime_target": "0x03004790",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A00",
+          "target": "0x08000BF0",
+          "mode": "arm",
+          "runtime_target": "0x08000BF0",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A04",
+          "target": "0x08001218",
+          "mode": "arm",
+          "runtime_target": "0x08001218",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A08",
+          "target": "0x08000BF0",
+          "mode": "arm",
+          "runtime_target": "0x030014D0",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A0C",
+          "target": "0x080002CC",
+          "mode": "arm",
+          "runtime_target": "0x080002CC",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A10",
+          "target": "0x080005D8",
+          "mode": "arm",
+          "runtime_target": "0x080005D8",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A14",
+          "target": "0x080002CC",
+          "mode": "arm",
+          "runtime_target": "0x03001B30",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A18",
+          "target": "0x08001218",
+          "mode": "arm",
+          "runtime_target": "0x08001218",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        }
+      ]
+    },
+    {
+      "start": "0x08018A20",
+      "end": "0x08018A54",
+      "kind": "function-pointer or jump-table candidate",
+      "entries": [
+        {
+          "source": "0x08018A20",
+          "target": "0x08001218",
+          "mode": "arm",
+          "runtime_target": "0x03002E60",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A24",
+          "target": "0x080165BC",
+          "mode": "arm",
+          "runtime_target": "0x080165BC",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A28",
+          "target": "0x080165BC",
+          "mode": "arm",
+          "runtime_target": "0x03002340",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A2C",
+          "target": "0x08016C18",
+          "mode": "arm",
+          "runtime_target": "0x08016C18",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A30",
+          "target": "0x08016C18",
+          "mode": "arm",
+          "runtime_target": "0x03000020",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A34",
+          "target": "0x08016DA8",
+          "mode": "arm",
+          "runtime_target": "0x08016DA8",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A38",
+          "target": "0x08016DA8",
+          "mode": "arm",
+          "runtime_target": "0x03003540",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A3C",
+          "target": "0x08017E68",
+          "mode": "arm",
+          "runtime_target": "0x08017E68",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A40",
+          "target": "0x08017E68",
+          "mode": "arm",
+          "runtime_target": "0x030066E0",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A44",
+          "target": "0x08017F64",
+          "mode": "arm",
+          "runtime_target": "0x08017F64",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A48",
+          "target": "0x08017F64",
+          "mode": "arm",
+          "runtime_target": "0x03005830",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A4C",
+          "target": "0x080181C0",
+          "mode": "arm",
+          "runtime_target": "0x080181C0",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018A50",
+          "target": "0x080181C0",
+          "mode": "arm",
+          "runtime_target": "0x03000E00",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        }
+      ]
+    },
+    {
+      "start": "0x08018E8C",
+      "end": "0x08018EC4",
+      "kind": "function-pointer or jump-table candidate",
+      "entries": [
+        {
+          "source": "0x08018E8C",
+          "target": "0x08015DA4",
+          "mode": "thumb",
+          "runtime_target": "0x08015DA5",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018E90",
+          "target": "0x08014E8C",
+          "mode": "thumb",
+          "runtime_target": "0x08014E8D",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018E94",
+          "target": "0x08015DA4",
+          "mode": "thumb",
+          "runtime_target": "0x08015DA5",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018E98",
+          "target": "0x08015D68",
+          "mode": "thumb",
+          "runtime_target": "0x08015D69",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018E9C",
+          "target": "0x08015DA4",
+          "mode": "thumb",
+          "runtime_target": "0x08015DA5",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018EA0",
+          "target": "0x08015DA4",
+          "mode": "thumb",
+          "runtime_target": "0x08015DA5",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018EA4",
+          "target": "0x08015CF0",
+          "mode": "thumb",
+          "runtime_target": "0x08015CF1",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018EA8",
+          "target": "0x08015CF0",
+          "mode": "thumb",
+          "runtime_target": "0x08015CF1",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018EAC",
+          "target": "0x08015DA4",
+          "mode": "thumb",
+          "runtime_target": "0x08015DA5",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018EB0",
+          "target": "0x08015DA4",
+          "mode": "thumb",
+          "runtime_target": "0x08015DA5",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018EB4",
+          "target": "0x08015DA4",
+          "mode": "thumb",
+          "runtime_target": "0x08015DA5",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018EB8",
+          "target": "0x08015DA4",
+          "mode": "thumb",
+          "runtime_target": "0x08015DA5",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018EBC",
+          "target": "0x08015DA4",
+          "mode": "thumb",
+          "runtime_target": "0x08015DA5",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08018EC0",
+          "target": "0x08015DA4",
+          "mode": "thumb",
+          "runtime_target": "0x08015DA5",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        }
+      ]
+    },
+    {
+      "start": "0x080200C4",
+      "end": "0x080200E4",
+      "kind": "function-pointer or jump-table candidate",
+      "entries": [
+        {
+          "source": "0x080200C4",
+          "target": "0x080005D8",
+          "mode": "arm",
+          "runtime_target": "0x03004790",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x080200C8",
+          "target": "0x080165BC",
+          "mode": "arm",
+          "runtime_target": "0x03002340",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x080200CC",
+          "target": "0x08016C18",
+          "mode": "arm",
+          "runtime_target": "0x03000020",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x080200D0",
+          "target": "0x08016DA8",
+          "mode": "arm",
+          "runtime_target": "0x03003540",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x080200D4",
+          "target": "0x08000BF0",
+          "mode": "arm",
+          "runtime_target": "0x030014D0",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x080200D8",
+          "target": "0x08017E68",
+          "mode": "arm",
+          "runtime_target": "0x030066E0",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x080200DC",
+          "target": "0x08017F64",
+          "mode": "arm",
+          "runtime_target": "0x03005830",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x080200E0",
+          "target": "0x08000000",
+          "mode": "arm",
+          "runtime_target": "0x08000000",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        }
+      ]
+    },
+    {
+      "start": "0x08332E9C",
+      "end": "0x08332EA4",
+      "kind": "function-pointer or jump-table candidate",
+      "entries": [
+        {
+          "source": "0x08332E9C",
+          "target": "0x080076F4",
+          "mode": "arm",
+          "runtime_target": "0x03006AA0",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x08332EA0",
+          "target": "0x08006270",
+          "mode": "thumb",
+          "runtime_target": "0x030068A1",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        }
+      ]
+    },
+    {
+      "start": "0x083E2280",
+      "end": "0x083E2294",
+      "kind": "function-pointer or jump-table candidate",
+      "entries": [
+        {
+          "source": "0x083E2280",
+          "target": "0x080181C0",
+          "mode": "arm",
+          "runtime_target": "0x03000E00",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x083E2284",
+          "target": "0x080005D8",
+          "mode": "arm",
+          "runtime_target": "0x03004790",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x083E2288",
+          "target": "0x08000BF0",
+          "mode": "arm",
+          "runtime_target": "0x030014D0",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x083E228C",
+          "target": "0x080002CC",
+          "mode": "arm",
+          "runtime_target": "0x03001B30",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        },
+        {
+          "source": "0x083E2290",
+          "target": "0x08001218",
+          "mode": "arm",
+          "runtime_target": "0x03002E60",
+          "confidence": "candidate; ROM word points to decoded instruction"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "source": "0x080002C4",
+      "target": "0x080020B8",
+      "mode": "thumb",
+      "runtime_target": "0x080020B9",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08002274",
+      "target": "0x080000FC",
+      "mode": "arm",
+      "runtime_target": "0x080000FC",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08002278",
+      "target": "0x080000FC",
+      "mode": "arm",
+      "runtime_target": "0x03004DE0",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080074CC",
+      "target": "0x080076F4",
+      "mode": "arm",
+      "runtime_target": "0x080076F4",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080074D0",
+      "target": "0x080076F4",
+      "mode": "arm",
+      "runtime_target": "0x03006AA0",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080074D4",
+      "target": "0x08006270",
+      "mode": "thumb",
+      "runtime_target": "0x08006271",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080189F4",
+      "target": "0x080005D8",
+      "mode": "arm",
+      "runtime_target": "0x080005D8",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080189F8",
+      "target": "0x08000BF0",
+      "mode": "arm",
+      "runtime_target": "0x08000BF0",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080189FC",
+      "target": "0x080005D8",
+      "mode": "arm",
+      "runtime_target": "0x03004790",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A00",
+      "target": "0x08000BF0",
+      "mode": "arm",
+      "runtime_target": "0x08000BF0",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A04",
+      "target": "0x08001218",
+      "mode": "arm",
+      "runtime_target": "0x08001218",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A08",
+      "target": "0x08000BF0",
+      "mode": "arm",
+      "runtime_target": "0x030014D0",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A0C",
+      "target": "0x080002CC",
+      "mode": "arm",
+      "runtime_target": "0x080002CC",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A10",
+      "target": "0x080005D8",
+      "mode": "arm",
+      "runtime_target": "0x080005D8",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A14",
+      "target": "0x080002CC",
+      "mode": "arm",
+      "runtime_target": "0x03001B30",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A18",
+      "target": "0x08001218",
+      "mode": "arm",
+      "runtime_target": "0x08001218",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A20",
+      "target": "0x08001218",
+      "mode": "arm",
+      "runtime_target": "0x03002E60",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A24",
+      "target": "0x080165BC",
+      "mode": "arm",
+      "runtime_target": "0x080165BC",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A28",
+      "target": "0x080165BC",
+      "mode": "arm",
+      "runtime_target": "0x03002340",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A2C",
+      "target": "0x08016C18",
+      "mode": "arm",
+      "runtime_target": "0x08016C18",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A30",
+      "target": "0x08016C18",
+      "mode": "arm",
+      "runtime_target": "0x03000020",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A34",
+      "target": "0x08016DA8",
+      "mode": "arm",
+      "runtime_target": "0x08016DA8",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A38",
+      "target": "0x08016DA8",
+      "mode": "arm",
+      "runtime_target": "0x03003540",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A3C",
+      "target": "0x08017E68",
+      "mode": "arm",
+      "runtime_target": "0x08017E68",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A40",
+      "target": "0x08017E68",
+      "mode": "arm",
+      "runtime_target": "0x030066E0",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A44",
+      "target": "0x08017F64",
+      "mode": "arm",
+      "runtime_target": "0x08017F64",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A48",
+      "target": "0x08017F64",
+      "mode": "arm",
+      "runtime_target": "0x03005830",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A4C",
+      "target": "0x080181C0",
+      "mode": "arm",
+      "runtime_target": "0x080181C0",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018A50",
+      "target": "0x080181C0",
+      "mode": "arm",
+      "runtime_target": "0x03000E00",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018E8C",
+      "target": "0x08015DA4",
+      "mode": "thumb",
+      "runtime_target": "0x08015DA5",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018E90",
+      "target": "0x08014E8C",
+      "mode": "thumb",
+      "runtime_target": "0x08014E8D",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018E94",
+      "target": "0x08015DA4",
+      "mode": "thumb",
+      "runtime_target": "0x08015DA5",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018E98",
+      "target": "0x08015D68",
+      "mode": "thumb",
+      "runtime_target": "0x08015D69",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018E9C",
+      "target": "0x08015DA4",
+      "mode": "thumb",
+      "runtime_target": "0x08015DA5",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018EA0",
+      "target": "0x08015DA4",
+      "mode": "thumb",
+      "runtime_target": "0x08015DA5",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018EA4",
+      "target": "0x08015CF0",
+      "mode": "thumb",
+      "runtime_target": "0x08015CF1",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018EA8",
+      "target": "0x08015CF0",
+      "mode": "thumb",
+      "runtime_target": "0x08015CF1",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018EAC",
+      "target": "0x08015DA4",
+      "mode": "thumb",
+      "runtime_target": "0x08015DA5",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018EB0",
+      "target": "0x08015DA4",
+      "mode": "thumb",
+      "runtime_target": "0x08015DA5",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018EB4",
+      "target": "0x08015DA4",
+      "mode": "thumb",
+      "runtime_target": "0x08015DA5",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018EB8",
+      "target": "0x08015DA4",
+      "mode": "thumb",
+      "runtime_target": "0x08015DA5",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018EBC",
+      "target": "0x08015DA4",
+      "mode": "thumb",
+      "runtime_target": "0x08015DA5",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08018EC0",
+      "target": "0x08015DA4",
+      "mode": "thumb",
+      "runtime_target": "0x08015DA5",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0801FF94",
+      "target": "0x08016C38",
+      "mode": "arm",
+      "runtime_target": "0x03000040",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080200C4",
+      "target": "0x080005D8",
+      "mode": "arm",
+      "runtime_target": "0x03004790",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080200C8",
+      "target": "0x080165BC",
+      "mode": "arm",
+      "runtime_target": "0x03002340",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080200CC",
+      "target": "0x08016C18",
+      "mode": "arm",
+      "runtime_target": "0x03000020",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080200D0",
+      "target": "0x08016DA8",
+      "mode": "arm",
+      "runtime_target": "0x03003540",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080200D4",
+      "target": "0x08000BF0",
+      "mode": "arm",
+      "runtime_target": "0x030014D0",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080200D8",
+      "target": "0x08017E68",
+      "mode": "arm",
+      "runtime_target": "0x030066E0",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080200DC",
+      "target": "0x08017F64",
+      "mode": "arm",
+      "runtime_target": "0x03005830",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x080200E0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082825E0",
+      "target": "0x08000C00",
+      "mode": "arm",
+      "runtime_target": "0x08000C00",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082893F8",
+      "target": "0x08012484",
+      "mode": "thumb",
+      "runtime_target": "0x08012485",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A5AF0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A5B3C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A5EF0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A5F3C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A62F0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A633C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A66F0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A673C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A6AF0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A6B3C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A6EF0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A6F3C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A72F0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A733C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A76F0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A773C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A7AF0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A7B3C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A7EF0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082A7F3C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082AD07C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082AD17C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082AD27C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082AD37C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x082E0C68",
+      "target": "0x08008C4C",
+      "mode": "thumb",
+      "runtime_target": "0x08008C4D",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083070C4",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083070D0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08307198",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0830738C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08307394",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0830796C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08307974",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08307B50",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08307B60",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0830808C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08308268",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08308270",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08308280",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08308290",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0830838C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08308394",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083084BC",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0830869C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08308888",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08308898",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0830896C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08308974",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08308A60",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08308A68",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08308B50",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08308B60",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083228B8",
+      "target": "0x08000840",
+      "mode": "arm",
+      "runtime_target": "0x08000840",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083228F0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322A14",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322A68",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322A74",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322AB4",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322B80",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322B88",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322BF0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322C88",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322DD8",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322E14",
+      "target": "0x08005664",
+      "mode": "thumb",
+      "runtime_target": "0x08005665",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322EBC",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322ED0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322F78",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322F9C",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322FD0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322FF0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08322FFC",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08323114",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083231E8",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083231F0",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08323214",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083232BC",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083233F8",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083235FC",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08323C24",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083277EC",
+      "target": "0x08010542",
+      "mode": "thumb",
+      "runtime_target": "0x08010543",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08332E9C",
+      "target": "0x080076F4",
+      "mode": "arm",
+      "runtime_target": "0x03006AA0",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08332EA0",
+      "target": "0x08006270",
+      "mode": "thumb",
+      "runtime_target": "0x030068A1",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083367CC",
+      "target": "0x08000408",
+      "mode": "arm",
+      "runtime_target": "0x08000408",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0833E29C",
+      "target": "0x0800F3EA",
+      "mode": "thumb",
+      "runtime_target": "0x0800F3EB",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0833E3FC",
+      "target": "0x0800F4E8",
+      "mode": "thumb",
+      "runtime_target": "0x0800F4E9",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0833E700",
+      "target": "0x0800F6F2",
+      "mode": "thumb",
+      "runtime_target": "0x0800F6F3",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0833F23C",
+      "target": "0x08016CF4",
+      "mode": "arm",
+      "runtime_target": "0x030000FC",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083406D8",
+      "target": "0x08016CF4",
+      "mode": "arm",
+      "runtime_target": "0x030000FC",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0834670C",
+      "target": "0x08000400",
+      "mode": "arm",
+      "runtime_target": "0x08000400",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0834C580",
+      "target": "0x0800FAF2",
+      "mode": "thumb",
+      "runtime_target": "0x0800FAF3",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0834F2C0",
+      "target": "0x08010E04",
+      "mode": "thumb",
+      "runtime_target": "0x08010E05",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0834F990",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083522C8",
+      "target": "0x08016CF4",
+      "mode": "arm",
+      "runtime_target": "0x030000FC",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083539F4",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08354B90",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0835A98C",
+      "target": "0x08000590",
+      "mode": "arm",
+      "runtime_target": "0x03001DF4",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0835B188",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0835DA14",
+      "target": "0x08016CF4",
+      "mode": "arm",
+      "runtime_target": "0x030000FC",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0835DC08",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083604E0",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083620EC",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083625EC",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08373310",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08373E64",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083741AC",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08374788",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08376E18",
+      "target": "0x080101FE",
+      "mode": "thumb",
+      "runtime_target": "0x080101FF",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08378458",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0837C49C",
+      "target": "0x08010F00",
+      "mode": "thumb",
+      "runtime_target": "0x08010F01",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0837EBC0",
+      "target": "0x0800F708",
+      "mode": "thumb",
+      "runtime_target": "0x0800F709",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0837EC00",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0837F568",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08381638",
+      "target": "0x08000108",
+      "mode": "arm",
+      "runtime_target": "0x08000108",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08381EA0",
+      "target": "0x08000104",
+      "mode": "arm",
+      "runtime_target": "0x08000104",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08382408",
+      "target": "0x08000300",
+      "mode": "arm",
+      "runtime_target": "0x08000300",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083830A0",
+      "target": "0x08000100",
+      "mode": "arm",
+      "runtime_target": "0x08000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08383E70",
+      "target": "0x0800FC00",
+      "mode": "thumb",
+      "runtime_target": "0x0800FC01",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0838CAFC",
+      "target": "0x0800DFDC",
+      "mode": "thumb",
+      "runtime_target": "0x0800DFDD",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0838D1C0",
+      "target": "0x08000100",
+      "mode": "arm",
+      "runtime_target": "0x08000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x08391E58",
+      "target": "0x0800EDC8",
+      "mode": "thumb",
+      "runtime_target": "0x0800EDC9",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0839778C",
+      "target": "0x0800F4F4",
+      "mode": "thumb",
+      "runtime_target": "0x0800F4F5",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x0839E3C4",
+      "target": "0x0800F7F2",
+      "mode": "thumb",
+      "runtime_target": "0x0800F7F3",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083A28B4",
+      "target": "0x0800EFFC",
+      "mode": "thumb",
+      "runtime_target": "0x0800EFFD",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083A3434",
+      "target": "0x080007F8",
+      "mode": "arm",
+      "runtime_target": "0x080007F8",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083A3CC4",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083A866C",
+      "target": "0x0800F4E4",
+      "mode": "thumb",
+      "runtime_target": "0x0800F4E5",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083A8704",
+      "target": "0x0800FD00",
+      "mode": "thumb",
+      "runtime_target": "0x0800FD01",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083A8F34",
+      "target": "0x0800F7F8",
+      "mode": "thumb",
+      "runtime_target": "0x0800F7F9",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083A95F4",
+      "target": "0x0801000A",
+      "mode": "thumb",
+      "runtime_target": "0x0801000B",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083AE000",
+      "target": "0x08010B02",
+      "mode": "thumb",
+      "runtime_target": "0x08010B03",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083AE238",
+      "target": "0x08000210",
+      "mode": "arm",
+      "runtime_target": "0x08000210",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083B0164",
+      "target": "0x08010D10",
+      "mode": "thumb",
+      "runtime_target": "0x08010D11",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083B02DC",
+      "target": "0x08000A10",
+      "mode": "arm",
+      "runtime_target": "0x08000A10",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083B294C",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083B2AD8",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083B4FB8",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083B5270",
+      "target": "0x08016CF8",
+      "mode": "arm",
+      "runtime_target": "0x03000100",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083B55BC",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083B5AC0",
+      "target": "0x08010300",
+      "mode": "thumb",
+      "runtime_target": "0x08010301",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083B5C60",
+      "target": "0x08000000",
+      "mode": "arm",
+      "runtime_target": "0x08000000",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083B7CB0",
+      "target": "0x08010300",
+      "mode": "thumb",
+      "runtime_target": "0x08010301",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083E2280",
+      "target": "0x080181C0",
+      "mode": "arm",
+      "runtime_target": "0x03000E00",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083E2284",
+      "target": "0x080005D8",
+      "mode": "arm",
+      "runtime_target": "0x03004790",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083E2288",
+      "target": "0x08000BF0",
+      "mode": "arm",
+      "runtime_target": "0x030014D0",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083E228C",
+      "target": "0x080002CC",
+      "mode": "arm",
+      "runtime_target": "0x03001B30",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    },
+    {
+      "source": "0x083E2290",
+      "target": "0x08001218",
+      "mode": "arm",
+      "runtime_target": "0x03002E60",
+      "confidence": "candidate; ROM word points to decoded instruction"
+    }
+  ]
+}

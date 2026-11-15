@@ -1,0 +1,28 @@
+Compiler: old
+Instruction edit distance: 4
+Byte distance: 9
+Compiled output differs: target 118 bytes, compiled 118 bytes.
+First difference at +0x24 (0x08015DCC); exact prefix 36 bytes, exact suffix 33 bytes.
+--- target
++++ compiled
+@@ -17,8 +17,8 @@
+ 08015DC8: cmp r3, #0
+ 08015DCA: bne 0x08015DE0
+-08015DCC: mov r1, r12
+-08015DCE: str r3, [r1, #0]
+-08015DD0: b 0x08015E08
+-08015DD2: movs r0, r0
++08015DCC: movs r2, #0
++08015DCE: mov r1, r12
++08015DD0: str r2, [r1, #0]
++08015DD2: b 0x08015E08
+ 08015DD4: .word 0x030061F0 (literal pool)
+ 08015DD8: .word 0x030067E4 (literal pool)
+@@ -38,5 +38,5 @@
+ 08015DF8: orrs r1, r0
+ 08015DFA: str r1, [r6, #8]
+-08015DFC: ldr r0, [r6, #8]
++08015DFC: ldr r1, [r6, #8]
+ 08015DFE: adds r5, #12
+ 08015E00: adds r4, #12
+Check register allocation, signed widths, statement order, constants and pool alignment.

@@ -1,0 +1,37 @@
+{
+  "address": "0800B3A0",
+  "seed": 134364741,
+  "seconds": 1500.2275370889693,
+  "attempts": 37299,
+  "compiled": 15175,
+  "cache_hits": 22124,
+  "errors": 0,
+  "restarts": 17,
+  "equal_moves": 4315,
+  "generation": 68,
+  "operators": {
+    "seed": 5,
+    "direct-mask-test": 80,
+    "named-add-input": 103,
+    "temporary-introduce": 6144,
+    "base": 22586,
+    "widen-narrow": 5628,
+    "qualifier": 1143,
+    "if-switch": 410,
+    "independent-order": 286,
+    "address-pointer": 251,
+    "multiply-shift": 166,
+    "offset-field": 84,
+    "profile": 335,
+    "saved-constant": 72,
+    "qualifier-remove": 5,
+    "shift-multiply": 1
+  },
+  "best_score": [
+    23,
+    31
+  ],
+  "compiler": "old",
+  "exact": false,
+  "variants_per_second": 24.86
+}

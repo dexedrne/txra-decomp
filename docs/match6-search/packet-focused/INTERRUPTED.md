@@ -1,0 +1,1 @@
+The focused packet pass was interrupted while generating its next neighborhood after prolonged high CPU use without new compiler output. The retained one-instruction near miss is valid; no completed attempt total is claimed for this pass. Other completed manifests provide the counted trials.

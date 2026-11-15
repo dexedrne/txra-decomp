@@ -1,0 +1,22 @@
+{
+  "address": "0800421C",
+  "target_end": "08005238",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/hud-owner-1111/func_0800421C.c",
+  "source_sha256": "d97c511ae97193954393b89d29a0941a1703e5fd1f92436f3f47215bc7e291a7",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 4124,
+  "target_bytes": 4124,
+  "local_frame_bytes": 36,
+  "instruction_distance": 1022,
+  "different_bytes": 3152,
+  "exact": false,
+  "compiled_sha256": "cc7b397f734bd1458efcc6f95274177f194cb615d682d1a98c857e7cfe721663",
+  "checker_limit": "08005238",
+  "checker_rejection": null,
+  "installed": false
+}

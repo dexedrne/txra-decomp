@@ -1,0 +1,22 @@
+{
+  "address": "080064A4",
+  "target_end": "08007398",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/sound-owner-1109c/preparation-control.c",
+  "source_sha256": "ff2d69a926c6e6fba1dd44eac2f1b468c38b79bf5fd1f5d64e68c6d4cf3b7b78",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 3692,
+  "target_bytes": 3828,
+  "local_frame_bytes": 100,
+  "instruction_distance": 1338,
+  "different_bytes": 3542,
+  "exact": false,
+  "compiled_sha256": "b95fde48643dd0bd5e65eb7801feec91477042fb0b37f4f50052a68f1dbcb2f9",
+  "checker_limit": "08007398",
+  "checker_rejection": null,
+  "installed": false
+}

@@ -1,0 +1,42 @@
+{
+  "base_commit": "9e61059bdee446e988a346d838f783f4fec98021",
+  "branch": "work/match-1109",
+  "whole_rom_rebuilds": 1,
+  "installed_replacements_recompiled": 181,
+  "registry_sha256": "0c92a13d8a2a2fa1850491f97c2f69957d5306143ecbe5f74171d37b2425f2da",
+  "registry_unchanged_from_base": true,
+  "registry_entries": 181,
+  "matched_bytes_including_pools": 72524,
+  "mapped_code_bytes": 85132,
+  "mapped_functions": 229,
+  "percent_of_mapped_code": 85.19,
+  "admission_tests": 223,
+  "passed": 222,
+  "skipped": 1,
+  "failed": 0,
+  "skip_reason": "fewer than two unmatched retained drafts remain to search",
+  "progress_script_run": true,
+  "readme_progress_registry_agree": true,
+  "build_sha1_verified": true,
+  "build_sha256": "fd9542217ea2f00c7d40062b4969e0d66fd54fa87518f8384e9e30497eb42c38",
+  "build_log_sha256": "d1980c22f64b264f865ce6752ebdf8ba588967f12989841724c7a1002bb8da0c",
+  "test_log_sha256": "04f109ea23717d9b1fe04aaef626d7c8426627d01b1269ac4e3167fd4145c188",
+  "owner_notes_present": false,
+  "retained_sources": {
+    "0800421C": {
+      "source_sha256": "d106e3fead0f8d42d34073427992cf79ae578c131a9c29eee10db597ff9c2ce8",
+      "compiled_sha256": "643e8b7a4e2f1442804cf6a69974d49416674f9efa6b59e7cee2b4e518a7d639",
+      "different_bytes": 3168,
+      "checker_limit": "08005238"
+    },
+    "08016DA8": {
+      "source_sha256": "558324bab1fa37d5db18889304436fafea391854c573907850e19859fdf14f58",
+      "compiled_sha256": "d821cdb421a0546c681d72df6d21a7e5bf0650253e5a06a2dc357ca78e5292cd",
+      "different_bytes": 3251,
+      "checker_limit": "08017E68"
+    }
+  },
+  "retained_profiles_reproduced_with_unmodified_helper": 4,
+  "final_sources_frozen_before_admission": true,
+  "extra_matches_installed": 0
+}

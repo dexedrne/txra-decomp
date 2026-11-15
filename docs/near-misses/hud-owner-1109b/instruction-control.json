@@ -1,0 +1,22 @@
+{
+  "address": "0800421C",
+  "target_end": "08005238",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/hud-owner-1109b/instruction-control.c",
+  "source_sha256": "b5bfa7482e8c1b7957b6faffa54d8ebe33f9aeaa1c7126e57132e7d4cc8767ac",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 4124,
+  "target_bytes": 4124,
+  "local_frame_bytes": 36,
+  "instruction_distance": 1051,
+  "different_bytes": 3497,
+  "exact": false,
+  "compiled_sha256": "86d9eb3464d351c6e5a2d9062bf7e837bc4bf95a249a384edb098cdc5532edf9",
+  "checker_limit": "08005238",
+  "checker_rejection": null,
+  "installed": false
+}

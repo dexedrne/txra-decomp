@@ -1,0 +1,15 @@
+Compiled output differs: target 226 bytes, compiled 226 bytes.
+First difference at +0x24 (0x08012540); exact prefix 36 bytes, exact suffix 187 bytes.
+Instruction shapes, constants and pools agree; inspect register allocation and variable lifetimes.
+--- target
++++ compiled
+@@ -17,6 +17,6 @@
+ 0801253C: mov r3, r12
+ 0801253E: adds r2, r0, r3
+-08012540: ldrb r5, [r2, #0]
+-08012542: adds r0, r5, #0
++08012540: ldrb r0, [r2, #0]
++08012542: adds r5, r0, #0
+ 08012544: ands r0, r7
+ 08012546: cmp r0, #192
+Check register allocation, signed widths, statement order, constants and pool alignment.

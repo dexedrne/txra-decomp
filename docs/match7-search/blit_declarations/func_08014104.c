@@ -1,0 +1,25 @@
+extern volatile u32 g_03005FC0;
+extern u16 g_02003C00[],g_0832F29C[];
+void func_08014104(void){
+ u32 unused;
+u32 width;
+s32 height;
+u32 destbase;
+u32 sourcebase;
+s32 y;
+ unused=g_03005FC0;width=120;height=48;
+ destbase=(u32)g_02003C00;sourcebase=(u32)g_0832F29C;
+ y=0;
+ do {s32 nextrow=y+1;
+ if(width){s32 offset=y*240;u32 dest;u32 source;u32 left;dest=(u32)(destbase+offset);source=(u32)(sourcebase+offset);left=width;
+ do {u32 value=*(u16 *)source;
+ if(value){
+ if(!(value&255)) *(u16 *)dest=(*(u16 *)dest & 255)+value;
+ else if(!(value&65280)) *(u16 *)dest=(*(u16 *)dest & 65280)+value;
+ else *(u16 *)dest=value;
+ }
+ dest+=2;source+=2;left--;
+ }while(left);}
+ y=nextrow;
+ }while(y<height);
+}

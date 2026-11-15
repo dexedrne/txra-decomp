@@ -1,0 +1,79 @@
+{
+  "base": "bb3934300f7a40b7e4a9c83920420b5404943746",
+  "verifiedSource": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530",
+  "verifiedBinarySha256": "f826074ce8e8779f1215ffe0c6b90039376a5a4f0a62265039d650aa38571cbd",
+  "files": [
+    {
+      "file": "Makefile",
+      "sha256": "dd16a8cc4b6e59d02346ec9f4654462df1c578a5bb671912f89432c9280e9260",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    },
+    {
+      "file": "runtime/audio.c",
+      "sha256": "cc4d5ee805b772198b6d627e55b64ab2e58099b722ce6cc4a531568651f15b67",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    },
+    {
+      "file": "runtime/audio.h",
+      "sha256": "ee38f1f693f91a417149996a7308c7ef337ef53e8c2e846bb87013da0236215e",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    },
+    {
+      "file": "runtime/hardware.c",
+      "sha256": "963ca9c5461063dc265e54e68d71bdf060c4f2309b9a7f95a4ab03cae538545a",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    },
+    {
+      "file": "runtime/main.c",
+      "sha256": "5575b3ae89e9704ece051cc328b44d412458e19ed6cad005bfe4cffc389b10ef",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    },
+    {
+      "file": "runtime/memory.c",
+      "sha256": "90880af1d341326081cc2c226e266fb3b155cc4971fc0bb635877aa07866fc7d",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    },
+    {
+      "file": "tests/runtime_test.c",
+      "sha256": "65f337465edc67689ec6dec51c59ef36345e79d22c26815d043263dd7bdd3f12",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    },
+    {
+      "file": "tests/desktop_test.c",
+      "sha256": "a9ed174ab2a830cbe54954af6e050cd3752ca40c71560638c6ccdb94f89cba42",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    },
+    {
+      "file": "tests/career-golden.json",
+      "sha256": "e1a66807fdccc7f72fc2144e986ee0100d986dcb54c12f2f41c3130d87168ee6",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    },
+    {
+      "file": "tests/race-win-input.txt",
+      "sha256": "d6ed3a05b8b9db9a50cd5d9308cca7953931113f6fa21375f47089d2eff129b4",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    },
+    {
+      "file": "tests/career-reload-input.txt",
+      "sha256": "47e7adbe55ced1c1ce49c1a37af22cf8acbd3357678fcb97a64996f705fa03c3",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    },
+    {
+      "file": "tools/build_pc.py",
+      "sha256": "727f6338f12e3adea917648d9bd904175abfe45bc06488e797799430c2d53e9e",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    },
+    {
+      "file": "tools/check_career.py",
+      "sha256": "dda499a7f41df947ac12229c193d5ff845793dc0eea3fec11f1be2335cb6b862",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    },
+    {
+      "file": "tools/report_pacing.py",
+      "sha256": "5130fc3c29446d279ecf822e6ceabf6301555817d2e69cf9345f1a0e2a70b363",
+      "sourceCommit": "4f11abdc79b0b6ee9cec3afafcf61c386e17a530"
+    }
+  ],
+  "excluded": "Mutation/search tools, unrelated diagnostics and all private ROM/save/PCM/executable/generated recordings",
+  "runtimeAndTranslationInputsByteIdentical": true
+}

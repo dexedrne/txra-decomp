@@ -1,0 +1,194 @@
+[
+  {
+    "address": "08015F58",
+    "recipe": {
+      "scoped": false,
+      "volatile": false
+    },
+    "source_sha256": "87c4829621a47fdaf0d859ee9251ba90d9e1e6c885dc767c30daf5d6d225c458",
+    "emitted_bytes": 64,
+    "different_bytes": 20,
+    "exact": false,
+    "instruction_distance": 7
+  },
+  {
+    "address": "08015F58",
+    "recipe": {
+      "scoped": false,
+      "volatile": true
+    },
+    "source_sha256": "21e206a059ec6bd5e88c1b3098eea27f44db9ae7a3e6aa0c9f6cf08cce0a595a",
+    "emitted_bytes": 64,
+    "different_bytes": 20,
+    "exact": false,
+    "instruction_distance": 7
+  },
+  {
+    "address": "08015F58",
+    "recipe": {
+      "scoped": true,
+      "volatile": false
+    },
+    "source_sha256": "6efbd06d947ee6a133e75a17638216e3334491ae65f1c8132bdc6ae533c696bb",
+    "emitted_bytes": 72,
+    "different_bytes": 46,
+    "exact": false,
+    "instruction_distance": 13
+  },
+  {
+    "address": "08015F58",
+    "recipe": {
+      "scoped": true,
+      "volatile": true
+    },
+    "source_sha256": "99d657e0890e153899292e10369c5a65c0b307c25368efb1be7784625dc6d5f7",
+    "emitted_bytes": 72,
+    "different_bytes": 45,
+    "exact": false,
+    "instruction_distance": 10
+  },
+  {
+    "address": "08015F98",
+    "recipe": {
+      "scoped": false,
+      "volatile": false
+    },
+    "source_sha256": "4c4367b52c17badb63b13914db40ccb82e74d570aa557cfceeb797ab7a1cd91c",
+    "emitted_bytes": 104,
+    "different_bytes": 73,
+    "exact": false,
+    "instruction_distance": 38
+  },
+  {
+    "address": "08015F98",
+    "recipe": {
+      "scoped": false,
+      "volatile": true
+    },
+    "source_sha256": "5bb87cecbaa3cadc8fd5352f599b021a70933508ad5775686d8d1ef9f0ba59bc",
+    "emitted_bytes": 104,
+    "different_bytes": 73,
+    "exact": false,
+    "instruction_distance": 38
+  },
+  {
+    "address": "08015F98",
+    "recipe": {
+      "scoped": true,
+      "volatile": false
+    },
+    "source_sha256": "b9bc547e0f8937dd95c2966350d5f6da09111f996dfa8df88c2a6a7e842d010a",
+    "emitted_bytes": 112,
+    "different_bytes": 35,
+    "exact": false,
+    "instruction_distance": 32
+  },
+  {
+    "address": "08015F98",
+    "recipe": {
+      "scoped": true,
+      "volatile": true
+    },
+    "source_sha256": "d4bc0812a154d98c9551e9b30b4876bcf0ccb6739e8e75305ebf96ddb371d737",
+    "emitted_bytes": 112,
+    "different_bytes": 33,
+    "exact": false,
+    "instruction_distance": 31
+  },
+  {
+    "address": "08015E50",
+    "recipe": {
+      "scoped": false,
+      "volatile": false
+    },
+    "source_sha256": "c72193b1dfe5bee75ebb065fe5d269ae2915613dec74c434dd9e5eb9e3dd24cc",
+    "emitted_bytes": 120,
+    "different_bytes": 107,
+    "exact": false,
+    "instruction_distance": 27
+  },
+  {
+    "address": "08015E50",
+    "recipe": {
+      "scoped": false,
+      "volatile": true
+    },
+    "source_sha256": "73e2f274a6a1afd8c250d01fb79b5e24a36beee6e0498ceeac22fc9a91080e05",
+    "emitted_bytes": 120,
+    "different_bytes": 107,
+    "exact": false,
+    "instruction_distance": 27
+  },
+  {
+    "address": "08015E50",
+    "recipe": {
+      "scoped": true,
+      "volatile": false
+    },
+    "source_sha256": "b73ea084ad7c0c38b3fdc3f1e38f62babaa9a1daaf4fe408b1d1cfab263a1921",
+    "emitted_bytes": 124,
+    "different_bytes": 109,
+    "exact": false,
+    "instruction_distance": 32
+  },
+  {
+    "address": "08015E50",
+    "recipe": {
+      "scoped": true,
+      "volatile": true
+    },
+    "source_sha256": "837b2aea14bc9f1060422a58e7f61a11791a606644201928f1028aaac532ee37",
+    "emitted_bytes": 124,
+    "different_bytes": 108,
+    "exact": false,
+    "instruction_distance": 30
+  },
+  {
+    "address": "08015ED4",
+    "recipe": {
+      "scoped": false,
+      "volatile": false
+    },
+    "source_sha256": "4b0f10981ccad43a1d3743c279f3eae4e8bc6f932fa27186f7a0fbd44ef36f80",
+    "emitted_bytes": 120,
+    "different_bytes": 107,
+    "exact": false,
+    "instruction_distance": 27
+  },
+  {
+    "address": "08015ED4",
+    "recipe": {
+      "scoped": false,
+      "volatile": true
+    },
+    "source_sha256": "6e7a434aeb1a013efc8fb6a95b33b6023c01a15535711f929024f4eed8d2e7f9",
+    "emitted_bytes": 120,
+    "different_bytes": 107,
+    "exact": false,
+    "instruction_distance": 27
+  },
+  {
+    "address": "08015ED4",
+    "recipe": {
+      "scoped": true,
+      "volatile": false
+    },
+    "source_sha256": "51ff919fff1d8db99ea7aaf7c2c57761a4cf87d1b6747c8c190ff0a6c06d0dc8",
+    "emitted_bytes": 124,
+    "different_bytes": 109,
+    "exact": false,
+    "instruction_distance": 32
+  },
+  {
+    "address": "08015ED4",
+    "recipe": {
+      "scoped": true,
+      "volatile": true
+    },
+    "source_sha256": "6c61f9dd39064057ac5e2574af216a1b8ca7f69b6250b0e114d202c7edba2d5e",
+    "emitted_bytes": 124,
+    "different_bytes": 108,
+    "exact": false,
+    "instruction_distance": 30
+  }
+]

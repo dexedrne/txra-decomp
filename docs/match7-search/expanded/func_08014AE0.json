@@ -1,0 +1,27 @@
+{
+  "address": "08014AE0",
+  "mode": "thumb",
+  "bytes": 270,
+  "instructions": 122,
+  "call_count": null,
+  "observed_entry": false,
+  "static_callers": 1,
+  "matched_callees": 0,
+  "unmatched_callees": 0,
+  "difficulty": 122,
+  "value": 2,
+  "priority": 0.016393,
+  "blocked_reason": null,
+  "comparison_bytes": 280,
+  "attempts": 1625,
+  "compile_errors": 1625,
+  "seconds": 5.85,
+  "status": "neighborhood exhausted",
+  "exact": false,
+  "focus": null,
+  "seconds_limit": 45.0,
+  "learned_candidates": {
+    "named-add-input": 1
+  },
+  "generations": 1
+}

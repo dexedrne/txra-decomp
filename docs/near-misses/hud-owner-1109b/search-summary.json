@@ -1,0 +1,9 @@
+{
+  "compiler": "old",
+  "profile_sweep": false,
+  "selection": "lowest complete-owner differing-byte count within the strict owner boundary; separate instruction-distance control",
+  "unique_sources": 4735,
+  "unique_compiled_outputs": 2519,
+  "invalid_source_hypotheses": 0,
+  "oversize_sources": 1031
+}

@@ -1,0 +1,297 @@
+Compiler: old
+Instruction edit distance: 107
+Byte distance: 304
+Compiled output differs: target 320 bytes, compiled 332 bytes.
+First difference at +0x6 (0x08010916); exact prefix 6 bytes, exact suffix 12 bytes.
+Length differs by +12 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -2,143 +2,148 @@
+ 08010912: mov r7, r8
+ 08010914: push {r7}
+-08010916: adds r4, r2, #0
++08010916: adds r4, r0, #0
+ 08010918: adds r5, r3, #0
+-0801091A: ldr r6, [pc, #64] @ =0x0801095C
+-0801091C: movs r7, #0
+-0801091E: ldr r3, [pc, #64] @ =0x08010960
++0801091A: lsls r0, r2, #16
++0801091C: ldr r6, [pc, #80] @ =0x08010970
++0801091E: movs r7, #0
+ 08010920: movs r2, #7
+-08010922: ands r2, r4
+-08010924: str r2, [r3, #0]
+-08010926: ldr r3, [pc, #60] @ =0x08010964
+-08010928: strb r0, [r3, #0]
+-0801092A: strb r1, [r3, #1]
+-0801092C: ldr r2, [pc, #56] @ =0x08010968
+-0801092E: movs r0, #0
+-08010930: str r0, [r2, #0]
+-08010932: ldr r0, [pc, #56] @ =0x0801096C
+-08010934: str r1, [r0, #0]
+-08010936: str r6, [r3, #4]
+-08010938: movs r0, #1
+-0801093A: strb r0, [r3, #8]
+-0801093C: strb r0, [r3, #9]
+-0801093E: movs r1, #8
+-08010940: adds r0, r4, #0
+-08010942: ands r0, r1
+-08010944: mov r8, r3
+-08010946: cmp r0, #0
+-08010948: beq 0x08010950
+-0801094A: movs r0, #80
+-0801094C: strb r0, [r3, #1]
+-0801094E: strb r1, [r3, #0]
+-08010950: movs r0, #16
+-08010952: ands r0, r4
+-08010954: cmp r0, #0
+-08010956: bne 0x08010970
+-08010958: movs r0, #36
+-0801095A: b 0x08010972
+-0801095C: .word 0x03000A70 (literal pool)
+-08010960: .word 0x03001B18 (literal pool)
+-08010964: .word 0x03002190 (literal pool)
+-08010968: .word 0x03002E58 (literal pool)
+-0801096C: .word 0x030066D4 (literal pool)
+-08010970: movs r0, #35
+-08010972: strb r0, [r6, #0]
+-08010974: adds r6, #1
+-08010976: ldr r0, [pc, #196] @ =0x08010A3C
+-08010978: cmp r5, r0
+-0801097A: bgt 0x08010980
+-0801097C: cmp r7, #1
+-0801097E: bne 0x08010998
+-08010980: ldr r4, [pc, #188] @ =0x08010A40
+-08010982: adds r0, r5, #0
+-08010984: adds r1, r4, #0
+-08010986: bl 0x08018E7C
+-0801098A: adds r1, r0, #0
+-0801098C: muls r1, r4
+-0801098E: subs r5, r5, r1
+-08010990: adds r0, #48
+-08010992: strb r0, [r6, #0]
+-08010994: adds r6, #1
+-08010996: movs r7, #1
+-08010998: ldr r0, [pc, #168] @ =0x08010A44
+-0801099A: cmp r5, r0
+-0801099C: bgt 0x080109A2
+-0801099E: cmp r7, #1
+-080109A0: bne 0x080109BA
+-080109A2: ldr r4, [pc, #164] @ =0x08010A48
+-080109A4: adds r0, r5, #0
+-080109A6: adds r1, r4, #0
+-080109A8: bl 0x08018E7C
+-080109AC: adds r1, r0, #0
+-080109AE: muls r1, r4
+-080109B0: subs r5, r5, r1
+-080109B2: adds r0, #48
+-080109B4: strb r0, [r6, #0]
+-080109B6: adds r6, #1
+-080109B8: movs r7, #1
+-080109BA: ldr r0, [pc, #144] @ =0x08010A4C
+-080109BC: cmp r5, r0
+-080109BE: bgt 0x080109C4
+-080109C0: cmp r7, #1
+-080109C2: bne 0x080109E2
+-080109C4: movs r1, #250
+-080109C6: lsls r1, r1, #2
+-080109C8: adds r0, r5, #0
+-080109CA: bl 0x08018E7C
+-080109CE: lsls r1, r0, #5
+-080109D0: subs r1, r1, r0
+-080109D2: lsls r1, r1, #2
+-080109D4: adds r1, r1, r0
+-080109D6: lsls r1, r1, #3
+-080109D8: subs r5, r5, r1
+-080109DA: adds r0, #48
+-080109DC: strb r0, [r6, #0]
+-080109DE: adds r6, #1
+-080109E0: movs r7, #1
+-080109E2: cmp r5, #99
+-080109E4: bgt 0x080109EA
+-080109E6: cmp r7, #1
+-080109E8: bne 0x08010A02
+-080109EA: movs r4, #100
+-080109EC: adds r0, r5, #0
+-080109EE: movs r1, #100
+-080109F0: bl 0x08018E7C
+-080109F4: adds r1, r0, #0
+-080109F6: muls r1, r4
+-080109F8: subs r5, r5, r1
+-080109FA: adds r0, #48
+-080109FC: strb r0, [r6, #0]
+-080109FE: adds r6, #1
+-08010A00: movs r7, #1
+-08010A02: cmp r5, #9
+-08010A04: bgt 0x08010A0A
+-08010A06: cmp r7, #1
+-08010A08: bne 0x08010A20
+-08010A0A: adds r0, r5, #0
+-08010A0C: movs r1, #10
+-08010A0E: bl 0x08018E7C
+-08010A12: lsls r1, r0, #2
+-08010A14: adds r1, r1, r0
+-08010A16: lsls r1, r1, #1
+-08010A18: subs r5, r5, r1
+-08010A1A: adds r0, #48
+-08010A1C: strb r0, [r6, #0]
+-08010A1E: adds r6, #1
+-08010A20: adds r0, r5, #0
+-08010A22: adds r0, #48
+-08010A24: strb r0, [r6, #0]
+-08010A26: movs r0, #0
+-08010A28: strb r0, [r6, #1]
+-08010A2A: mov r0, r8
+-08010A2C: bl 0x080154AC
+-08010A30: pop {r3}
+-08010A32: mov r8, r3
+-08010A34: pop {r4, r5, r6, r7}
+-08010A36: pop {r0}
+-08010A38: bx r0
+-08010A3A: movs r0, r0
+-08010A3C: .word 0x0001869F (literal pool)
+-08010A40: .word 0x000186A0 (literal pool)
+-08010A44: .word 0x0000270F (literal pool)
+-08010A48: .word 0x00002710 (literal pool)
+-08010A4C: .word 0x000003E7 (literal pool)
++08010922: asrs r3, r0, #16
++08010924: ands r2, r3
++08010926: ldr r0, [pc, #76] @ =0x08010974
++08010928: str r2, [r0, #0]
++0801092A: ldr r0, [pc, #76] @ =0x08010978
++0801092C: mov r8, r0
++0801092E: strb r4, [r0, #0]
++08010930: adds r0, #1
++08010932: mov r12, r0
++08010934: strb r1, [r0, #0]
++08010936: ldr r2, [pc, #68] @ =0x0801097C
++08010938: movs r4, #0
++0801093A: str r4, [r2, #0]
++0801093C: ldr r0, [pc, #64] @ =0x08010980
++0801093E: str r1, [r0, #0]
++08010940: ldr r0, [pc, #64] @ =0x08010984
++08010942: str r6, [r0, #0]
++08010944: movs r4, #1
++08010946: adds r0, #4
++08010948: strb r4, [r0, #0]
++0801094A: adds r0, #1
++0801094C: strb r4, [r0, #0]
++0801094E: movs r1, #8
++08010950: adds r4, r3, #0
++08010952: ands r4, r1
++08010954: cmp r4, #0
++08010956: beq 0x08010962
++08010958: movs r4, #80
++0801095A: mov r0, r12
++0801095C: strb r4, [r0, #0]
++0801095E: mov r0, r8
++08010960: strb r1, [r0, #0]
++08010962: movs r4, #16
++08010964: ands r3, r4
++08010966: cmp r3, #0
++08010968: bne 0x08010988
++0801096A: movs r4, #36
++0801096C: b 0x0801098A
++0801096E: movs r0, r0
++08010970: .word 0x03000A70 (literal pool)
++08010974: .word 0x03001B18 (literal pool)
++08010978: .word 0x03002190 (literal pool)
++0801097C: .word 0x03002E58 (literal pool)
++08010980: .word 0x030066D4 (literal pool)
++08010984: .word 0x03002194 (literal pool)
++08010988: movs r4, #35
++0801098A: strb r4, [r6, #0]
++0801098C: adds r6, #1
++0801098E: ldr r4, [pc, #184] @ =0x08010A48
++08010990: cmp r5, r4
++08010992: bgt 0x08010998
++08010994: cmp r7, #1
++08010996: bne 0x080109AE
++08010998: bl 0x08018E7C
++0801099C: adds r4, r0, #0
++0801099E: ldr r0, [pc, #172] @ =0x08010A4C
++080109A0: adds r1, r4, #0
++080109A2: muls r1, r0
++080109A4: subs r5, r5, r1
++080109A6: adds r4, #48
++080109A8: strb r4, [r6, #0]
++080109AA: adds r6, #1
++080109AC: movs r7, #1
++080109AE: ldr r4, [pc, #160] @ =0x08010A50
++080109B0: cmp r5, r4
++080109B2: bgt 0x080109B8
++080109B4: cmp r7, #1
++080109B6: bne 0x080109CE
++080109B8: ldr r7, [pc, #152] @ =0x08010A54
++080109BA: bl 0x08018E7C
++080109BE: adds r4, r0, #0
++080109C0: adds r1, r4, #0
++080109C2: muls r1, r7
++080109C4: subs r5, r5, r1
++080109C6: adds r4, #48
++080109C8: strb r4, [r6, #0]
++080109CA: adds r6, #1
++080109CC: movs r7, #1
++080109CE: ldr r4, [pc, #136] @ =0x08010A58
++080109D0: cmp r5, r4
++080109D2: bgt 0x080109D8
++080109D4: cmp r7, #1
++080109D6: bne 0x080109F2
++080109D8: bl 0x08018E7C
++080109DC: adds r4, r0, #0
++080109DE: lsls r1, r4, #5
++080109E0: subs r1, r1, r4
++080109E2: lsls r1, r1, #2
++080109E4: adds r1, r1, r4
++080109E6: lsls r1, r1, #3
++080109E8: subs r5, r5, r1
++080109EA: adds r4, #48
++080109EC: strb r4, [r6, #0]
++080109EE: adds r6, #1
++080109F0: movs r7, #1
++080109F2: cmp r5, #99
++080109F4: bgt 0x080109FA
++080109F6: cmp r7, #1
++080109F8: bne 0x08010A10
++080109FA: movs r7, #100
++080109FC: bl 0x08018E7C
++08010A00: adds r4, r0, #0
++08010A02: adds r1, r4, #0
++08010A04: muls r1, r7
++08010A06: subs r5, r5, r1
++08010A08: adds r4, #48
++08010A0A: strb r4, [r6, #0]
++08010A0C: adds r6, #1
++08010A0E: movs r7, #1
++08010A10: cmp r5, #9
++08010A12: bgt 0x08010A18
++08010A14: cmp r7, #1
++08010A16: bne 0x08010A2C
++08010A18: bl 0x08018E7C
++08010A1C: adds r4, r0, #0
++08010A1E: lsls r1, r4, #2
++08010A20: adds r1, r1, r4
++08010A22: lsls r1, r1, #1
++08010A24: subs r5, r5, r1
++08010A26: adds r4, #48
++08010A28: strb r4, [r6, #0]
++08010A2A: adds r6, #1
++08010A2C: adds r4, r5, #0
++08010A2E: adds r4, #48
++08010A30: strb r4, [r6, #0]
++08010A32: movs r4, #0
++08010A34: strb r4, [r6, #1]
++08010A36: movs r0, #144
++08010A38: bl 0x080154AC
++08010A3C: pop {r3}
++08010A3E: mov r8, r3
++08010A40: pop {r4, r5, r6, r7}
++08010A42: pop {r0}
++08010A44: bx r0
++08010A46: movs r0, r0
++08010A48: .word 0x0001869F (literal pool)
++08010A4C: .word 0xFFFF86A0 (literal pool)
++08010A50: .word 0x0000270F (literal pool)
++08010A54: .word 0x00002710 (literal pool)
++08010A58: .word 0x000003E7 (literal pool)
+Check register allocation, signed widths, statement order, constants and pool alignment.

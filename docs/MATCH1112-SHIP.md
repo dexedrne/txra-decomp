@@ -1,0 +1,34 @@
+# Breadth recovery, 12 November
+
+Installed **eight exact C replacements**, adding **638 bytes including pools**. The exact registry is now **189 of 237 mapped entries**, **73,162 bytes including pools**, **85.492% of 85,578 mapped instruction bytes**. `progress.json`, the registry, current map documentation and README agree. All 181 previous replacement records are preserved verbatim.
+
+The small-target inventory is [TARGETS.md](near-misses/breadth-1112/TARGETS.md). Many old tiny entries are already covered internal labels, BIOS/register veneers, IRQ/startup code or private renderer interfaces; their old diagnostic distances are not installation candidates. Reviewing the unclassified program gaps found eight complete routines that the earlier pointer/prologue scans missed. Each has its own complete entry, balanced return and sensible suggested name. The new names do not rename source symbols or establish execution.
+
+| Entry | Complete bytes | Purpose | Installation commit |
+| --- | ---: | --- | --- |
+| 0800753C | 24 | start sound fade request | 96c7c8f |
+| 080075DC | 64 | restore sound state and clear pair | a70bc97 |
+| 08014790 | 48 | set link request and companion byte | 16176f9 |
+| 08015E50 | 132 | neutral display/object fill | 8da48fa |
+| 08015ED4 | 132 | second neutral display/object fill | f1e71c3 |
+| 08015F58 | 64 | neutral display fill | cc9c4c6 |
+| 08015F98 | 112 | clear display/object buffers | 03decc5 |
+| 08018DA0 | 62 | retry EEPROM write and verification | 4380d0a |
+
+This note’s commit records the frozen receipts, review tools and handoff. Mapping commit **e11706c** adds the eight static candidates and the reproducible gap scan. The map gains **446 instruction bytes and 176 literal-pool bytes**; unknown bytes fall **721,992 → 721,370**. Existing read, transfer and execution evidence is preserved. An initial broad proposal at 08002000 was rejected because it falls into an existing body; the corrected scan forbids entering established instructions or pools. It reproduces eight baseline candidates and zero remaining independent candidates in that enclosure. The fresh pointer/call audit also yields zero proposals. This is bounded discovery, not proof that no further code exists among the remaining unknown bytes.
+
+The state/link helpers match on their first ordinary C draft. The EEPROM wrapper is a three-try loop through the already matched helpers. Its complete function ends at **08018DDE**; the following two-byte alignment gap stays outside the replacement. No padding was introduced. The DMA family needed a shared neutral value and separate DMA base scopes; the 08015E50 example goes from **107 differing bytes to zero**. Every new source uses the existing historical Thumb compiler profile and structured C. No assembly, bound registers, binary patches, checker-limit changes or compiler-family sweep was used. Each installation forced a complete rebuild and cartridge hash verification before its individual commit.
+
+A bounded follow-up on **080181C0** retains a nonmatch: replacing the x-position field-array reads with the same signed word fields in the existing record type reduces byte distance **1,143 → 1,011**, while instruction edit distance worsens **221 → 307**. Output is **1,660 / 1,684 bytes**, with a **64 / 72-byte local frame**. The width-preserving neighborhood exhausted after **934 measurements**, **15 compiler failures**, and **2,231 width hypotheses rejected before measurement**. Its **768 synthetic prior-C comparisons pass**, including 672 state-changing cases. The reference is earlier C, not independently executed cartridge instructions. The intentionally narrowed signed-coefficient control differs in 428 cases. The broader diagnostic's 941-byte-distance source makes that bad narrowing and is rejected, not retained as a valid improvement or installed. Both journals, the accepted hypothesis and its sanitized best diff are recorded; none has installation authority.
+
+Final validation forced all **189 installed replacements** through byte comparison and the complete ROM SHA-1 gate. Admission ran **258 tests: 257 passed, one existing skip, zero failures**. The earlier coverage-summary mismatch after the new classification was corrected by updating its static totals while preserving execution evidence. The native build emits and compiles **237 functions / 268 load-run entries**, and passes **446 runtime assertions** plus a repeated **15-test mapping suite**. `tools/progress.py` ran afterward. The new native executable has no reviewed gameplay milestones: career/reload, controller presentation and audio were not rerun. The admission receipt pins source, compiler-profile, registry, map, build and log identities.
+
+Finished review folder: `txra-review/breadth-1112/`. Start with `before-breadth-status.png` / `after-breadth-status.png`, then `before-08015E50.png` / `after-08015E50.png`. Both pairs use the same viewpoints. All four pictures and the final decoded `clip-overview.png` were opened and inspected; the before-view wording and status highlight were corrected. `breadth-status.webm` and `08015E50.webm` are each **four seconds, muted, 30 fps, 1600×1000**, at **307,404 and 505,583 bytes**. Notes and captions cover every picture and clip. These are compiler comparisons, not gameplay footage. No browser, server or browser profile was created. Finished media hashes are in `review.json`; source/build hashes are in the compiler profiles and `admission.json`. No archive was moved.
+
+The evidence totals **1,783,692 bytes**: 269,072 bytes of receipts and 1,514,620 bytes of review files. Diagnostic receipts over 500 lines are compressed. No ROM, extracted binary, raw encoding column or literal-pool contents are committed. The private ROM identity was checked through the ignored link. The home filesystem retains about **298 GiB free**. Work stayed on **work/match-1112** from **f9ce6b1**; no main changes, reset, rebase, stash, push, merge, deployment or extra session occurred. The continuing region-search service remains active and its state was not edited.
+
+Still unfinished: 080181C0 needs its rotation setup and cached record-index lifetimes recovered to explain the missing eight frame bytes. 08002854 still needs a complete structured streaming owner through its continuation before matching. The small independent candidate list is exhausted; remaining small registry entries require enclosing-owner or assembly-interface work. The explicitly excluded owners **0800421C, 08016DA8 and 080064A4** were not worked on. `OWNER-NOTES.md` was absent at each major step and final read, so there are no appended owner notes to leave unaddressed.
+
+matches installed: 0800753C, 080075DC, 08014790, 08015E50, 08015ED4, 08015F58, 08015F98, 08018DA0
+functions newly mapped: 8 (237 total)
+next targets: 080181C0 rotation/frame layout; 08002854 complete streaming owner

@@ -1,0 +1,37 @@
+Compiler: old-o1
+Instruction edit distance: 7
+Byte distance: 12
+Compiled output differs: target 300 bytes, compiled 300 bytes.
+First difference at +0x74 (0x08012464); exact prefix 116 bytes, exact suffix 55 bytes.
+--- target
++++ compiled
+@@ -57,6 +57,6 @@
+ 08012460: cmp r0, r1
+ 08012462: bne 0x08012498
+-08012464: mov r3, r12
+-08012466: ldr r0, [pc, #176] @ =0x08012518
++08012464: ldr r0, [pc, #176] @ =0x08012518
++08012466: mov r3, r12
+ 08012468: ands r3, r0
+ 0801246A: subs r4, #2
+@@ -90,6 +90,6 @@
+ 080124A2: cmp r0, r1
+ 080124A4: bne 0x080124CC
+-080124A6: mov r3, r12
+-080124A8: ldr r0, [pc, #108] @ =0x08012518
++080124A6: ldr r0, [pc, #112] @ =0x08012518
++080124A8: mov r3, r12
+ 080124AA: ands r3, r0
+ 080124AC: subs r4, #2
+@@ -119,7 +119,7 @@
+ 080124DC: cmp r3, #0
+ 080124DE: beq 0x08012500
+-080124E0: mov r1, r12
+-080124E2: mov r0, r8
+-080124E4: adds r2, r5, r0
++080124E0: adds r1, r3, #0
++080124E2: mov r3, r8
++080124E4: adds r2, r5, r3
+ 080124E6: lsls r3, r7, #1
+ 080124E8: add r3, r10
+Check register allocation, signed widths, statement order, constants and pool alignment.

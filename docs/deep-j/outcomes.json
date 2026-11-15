@@ -1,0 +1,227 @@
+[
+ {
+  "address": "080020B8",
+  "group": "Exact C match, installed",
+  "note": "Start-up routine. Row copy as a count-up index loop; the next clear loop reuses the outer counter, which isolates the outer increment for PRE so it stays at the latch."
+ },
+ {
+  "address": "08010910",
+  "group": "Exact C match, installed",
+  "note": "Number to text. The zero store is an always-zero narrowed shift that only combine folds, so CSE cannot merge it into the flag register; the do-while workaround is gone."
+ },
+ {
+  "address": "0800EDF4",
+  "group": "Exact C match, installed",
+  "note": "Palette effect with an 18-way switch. Three separate halfword reads per channel and a destination pointer variable computed before packing."
+ },
+ {
+  "address": "0800BBD4",
+  "group": "Exact C match, installed",
+  "note": "Per-frame camera. Each offset product is its own function-level variable (not tied to the shift result); a block-scoped mask variable in the second block."
+ },
+ {
+  "address": "08012A50",
+  "group": "Exact C match, installed",
+  "note": "Title menu loop, written from the matched sibling 08012CC8; screen-base select as a zero-test conditional expression."
+ },
+ {
+  "address": "080130BC",
+  "group": "Exact C match, installed",
+  "note": "Name entry screen on the same template; the frame counter is reused as the letter count after the loop."
+ },
+ {
+  "address": "08013594",
+  "group": "Exact C match, installed",
+  "note": "Mode menu with two ten-way switches on the same template; case labels in the original emission order 0, 1, 8, 9, 2, 3."
+ },
+ {
+  "address": "08013E74",
+  "group": "C, improved draft retained",
+  "note": "85 to 18 differing instructions (one r4/r5 swap between k and the cached record pointer). Draft in drafts/."
+ },
+ {
+  "address": "0800B4D8",
+  "group": "C, improved draft retained",
+  "note": "New draft on the title-loop template, 273 normalized lines; loop.c strength-reduces g_03002A30 + 384 into a hoisted constant. Draft in drafts/."
+ },
+ {
+  "address": "08008914",
+  "group": "C, worked, not matched",
+  "note": "Row bases inside the inner loop reproduce the hoisted bases; the original keeps 1 and 255 in registers and spills two other values."
+ },
+ {
+  "address": "0800C850",
+  "group": "C, read, not reworked",
+  "note": "Read the target against the deep-c draft (98 differing lines with old-no-gcse, 190 with old); not reworked. An apparently dead next+1 increment in the original is still unexplained."
+ },
+ {
+  "address": "080162F8",
+  "group": "C, earlier seed kept, not reached",
+  "note": "Not reworked this round."
+ },
+ {
+  "address": "080154AC",
+  "group": "C, earlier seed kept, not reached",
+  "note": "Not reworked this round."
+ },
+ {
+  "address": "0800AF4C",
+  "group": "C, earlier seed kept, not reached",
+  "note": "Not reworked this round."
+ },
+ {
+  "address": "0800CB5C",
+  "group": "C, earlier seed kept, not reached",
+  "note": "Not reworked this round."
+ },
+ {
+  "address": "080098DC",
+  "group": "C, earlier seed kept, not reached",
+  "note": "Not reworked this round."
+ },
+ {
+  "address": "0800E498",
+  "group": "C, earlier seed kept, not reached",
+  "note": "Not reworked this round."
+ },
+ {
+  "address": "0800F2D0",
+  "group": "C, earlier seed kept, not reached",
+  "note": "Not reworked this round."
+ },
+ {
+  "address": "080165BC",
+  "group": "C, earlier seed kept, not reached",
+  "note": "ARM C seed, not reworked."
+ },
+ {
+  "address": "08018DE4",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r1 call veneer"
+ },
+ {
+  "address": "08018DEC",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r3 call veneer"
+ },
+ {
+  "address": "08018DF4",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r5 call veneer"
+ },
+ {
+  "address": "08018DFC",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r7 call veneer"
+ },
+ {
+  "address": "08018E04",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r9 call veneer"
+ },
+ {
+  "address": "08018E0C",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r11 call veneer"
+ },
+ {
+  "address": "08018E14",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx r13 call veneer"
+ },
+ {
+  "address": "08018E84",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "bx pc state switch (bx r15)"
+ },
+ {
+  "address": "08018A54",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "CpuFastSet SWI veneer"
+ },
+ {
+  "address": "08018E80",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "ARM branch into the division runtime"
+ },
+ {
+  "address": "08000218",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "signed division runtime"
+ },
+ {
+  "address": "080000FC",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "IRQ entry"
+ },
+ {
+  "address": "080010B8",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "ARM rasteriser with private register inputs"
+ },
+ {
+  "address": "08000BF0",
+  "group": "Assembly, BIOS or runtime entry (docs/asm-only.md)",
+  "note": "ARM rasteriser with private register inputs"
+ },
+ {
+  "address": "0800735C",
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "fragment inside a larger routine"
+ },
+ {
+  "address": "080051FE",
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "shared epilogue"
+ },
+ {
+  "address": "08007B28",
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "boundary-blocked"
+ },
+ {
+  "address": "08006712",
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "fragment"
+ },
+ {
+  "address": "08006740",
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "fragment"
+ },
+ {
+  "address": "0800D51C",
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "boundary-blocked"
+ },
+ {
+  "address": "0800D570",
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "fragment"
+ },
+ {
+  "address": "080064A4",
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "boundary-blocked"
+ },
+ {
+  "address": "08003786",
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "fragment"
+ },
+ {
+  "address": "08008A88",
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "boundary-blocked"
+ },
+ {
+  "address": "0800D630",
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "fragment"
+ },
+ {
+  "address": "0800421C",
+  "group": "Fragment, shared epilogue or broken boundary",
+  "note": "boundary-blocked"
+ }
+]

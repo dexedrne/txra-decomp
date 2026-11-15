@@ -1,0 +1,60 @@
+{
+  "func_08016DA8": {
+    "candidate": "func_08016DA8.c",
+    "differential_fixtures": 199,
+    "failures": 0,
+    "first_failures": [],
+    "executed_instruction_addresses": 1053,
+    "instruction_addresses": 1053,
+    "source_sha256": "216d1a5119af291a79a3300e221500d61ae7e9957824d3f9505f8d6b64da0969",
+    "rom_used": false,
+    "byte_match_verified": false
+  },
+  "func_08016DA8_structural": {
+    "candidate": "func_08016DA8_structural.c",
+    "differential_fixtures": 199,
+    "failures": 0,
+    "first_failures": [],
+    "executed_instruction_addresses": 1053,
+    "instruction_addresses": 1053,
+    "source_sha256": "1e028208fa18ee49221c50f2e97de53e463dfceb062997f5b1bf9fb2c8ed3d89",
+    "rom_used": false,
+    "byte_match_verified": false
+  },
+  "neg1": {
+    "candidate": "neg1.c",
+    "differential_fixtures": 199,
+    "failures": 49,
+    "first_failures": [
+      "near-0: at 02019efc: C 53, ARM 52",
+      "mixed-0: at 02019efc: C 53, ARM 52",
+      "mixed-4: at 02019f9c: C 53, ARM 52",
+      "mixed-5: at 02019fdc: C 53, ARM 52",
+      "mixed-7: at 02019fdc: C 53, ARM 52"
+    ],
+    "executed_instruction_addresses": 1053,
+    "instruction_addresses": 1053,
+    "source_sha256": "81442ea5bb0a80723b2d7f5675d3ad2a268ab5e3ca75dcada9614df55d0866f8",
+    "rom_used": false,
+    "byte_match_verified": false,
+    "mutation": "func_08016DA8.c with y[2] lower clamp stored as -173 instead of -174"
+  },
+  "neg2": {
+    "candidate": "neg2.c",
+    "differential_fixtures": 199,
+    "failures": 16,
+    "first_failures": [
+      "far-0: at 02019f0d: C 00, ARM 80",
+      "mixed-5: at 02019f8d: C 00, ARM 80",
+      "mixed-7: at 0201a0ad: C 00, ARM 80",
+      "mixed-11: at 02019f4d: C 00, ARM 80",
+      "far-17: at 02019f0d: C 00, ARM 80"
+    ],
+    "executed_instruction_addresses": 1053,
+    "instruction_addresses": 1053,
+    "source_sha256": "38978557f766adeddfcd2186452f9cef19057f5acd634a8ffcb59d2a8d6f7d0b",
+    "rom_used": false,
+    "byte_match_verified": false,
+    "mutation": "func_08016DA8.c with bucket limit MIN(z, 254) instead of MIN(z, 255)"
+  }
+}

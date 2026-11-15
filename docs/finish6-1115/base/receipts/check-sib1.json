@@ -1,0 +1,11 @@
+{
+  "candidate": "sib1.c",
+  "differential_fixtures": 199,
+  "failures": 0,
+  "first_failures": [],
+  "executed_instruction_addresses": 1053,
+  "instruction_addresses": 1053,
+  "source_sha256": "bfeb66218f94dabeff9446f3d517a0520b9b773a71cd05aa4643d6e7b1ede2f3",
+  "rom_used": false,
+  "byte_match_verified": false
+}

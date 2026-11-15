@@ -1,0 +1,29 @@
+[
+  {
+    "address": "08014104",
+    "mode": "thumb",
+    "bytes": 134,
+    "instructions": 60,
+    "call_count": null,
+    "observed_entry": true,
+    "static_callers": 1,
+    "matched_callees": 0,
+    "unmatched_callees": 0,
+    "difficulty": 60,
+    "value": 4,
+    "priority": 0.066667,
+    "blocked_reason": null,
+    "comparison_bytes": 134,
+    "attempts": 12000,
+    "compile_errors": 4675,
+    "seconds": 99.46,
+    "status": "budget exhausted",
+    "exact": false,
+    "score": [
+      6,
+      10
+    ],
+    "compiler": "old",
+    "size": 134
+  }
+]

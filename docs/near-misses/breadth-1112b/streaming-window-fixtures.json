@@ -1,0 +1,19 @@
+{
+  "cases": 1024,
+  "passed": 1024,
+  "reverse_cases": 768,
+  "current_wrap_cases": 132,
+  "original_instruction_addresses_visited": 187,
+  "original_instructions_executed": true,
+  "original_memory_readonly": true,
+  "unicorn_version": "2.1.4",
+  "source": "docs/near-misses/breadth-1112b/streaming-window.c",
+  "source_sha256": "460a7f5d3456cf3b0a671fa05f8bbbb00716798507a3c6ea8c6754e31f4bd930",
+  "tested_start": "08002854",
+  "tested_end_exclusive": "080029F0",
+  "complete_owner_end": "0800418C",
+  "source_is_partial": true,
+  "installed": false,
+  "installation_authority": false,
+  "limitations": "Only window selection and 24-record clears are checked. Geometry generation, continuation and complete-byte equality remain unfinished."
+}

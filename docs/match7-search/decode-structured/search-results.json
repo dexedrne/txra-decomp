@@ -1,0 +1,36 @@
+[
+  {
+    "address": "0801251C",
+    "mode": "thumb",
+    "bytes": 226,
+    "instructions": 113,
+    "call_count": null,
+    "observed_entry": true,
+    "static_callers": 8,
+    "matched_callees": 0,
+    "unmatched_callees": 0,
+    "difficulty": 113,
+    "value": 18,
+    "priority": 0.159292,
+    "blocked_reason": null,
+    "comparison_bytes": 226,
+    "attempts": 6000,
+    "compile_errors": 583,
+    "seconds": 122.71,
+    "status": "budget exhausted",
+    "exact": false,
+    "focus": null,
+    "learned_candidates": {
+      "integer-cursor": 879,
+      "saved-constant": 3890,
+      "guarded-loop": 511
+    },
+    "generations": 15,
+    "score": [
+      46,
+      175
+    ],
+    "compiler": "old-no-gcse",
+    "size": 222
+  }
+]

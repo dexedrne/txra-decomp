@@ -1,0 +1,21 @@
+{
+  "reviewedAt": "2026-11-06T09:09:13.555722+00:00",
+  "base": "bb3934300f7a40b7e4a9c83920420b5404943746",
+  "workerHead": "70675dc705afb5daee5ba3ea68c65a5a0cbe37e2",
+  "rootFreshPublishTestPassed": true,
+  "rootRehashedActualPrivateCareerAndReload": true,
+  "frames": [
+    37200,
+    2200
+  ],
+  "runtimeAndTranslationSourceMatchesVerifiedCandidate": true,
+  "binarySha256": "f826074ce8e8779f1215ffe0c6b90039376a5a4f0a62265039d650aa38571cbd",
+  "scope": "native timing/input/build/save/career verification; unrelated mutation changes excluded",
+  "holds": [
+    "frame pacing and queue starvation variability",
+    "Windows device execution",
+    "physical controller",
+    "visible window and audible fidelity"
+  ],
+  "romOrExtractedAssetsOrExecutableIncluded": false
+}

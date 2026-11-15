@@ -1,0 +1,30 @@
+{
+  "unique_source_identities": 13575,
+  "unique_compiled_outputs": 1330,
+  "invalid_source_hypotheses": 2422,
+  "oversize_diagnostics": 899,
+  "runs": [
+    "sound-pairs-control-d",
+    "sound-hardware-control-d",
+    "sound-index-control-d",
+    "sound-field-views-control-d",
+    "sound-hardware-primary-d",
+    "sound-index-primary-d",
+    "sound-field-views-primary-d",
+    "sound-loop-primary-d",
+    "sound-loop-control-d",
+    "sound-pairs-primary-d",
+    "sound-hardware-follow-d",
+    "sound-focused-primary-d",
+    "sound-focused-frame-d",
+    "sound-original-pitch-primary-d",
+    "sound-original-pitch-frame-d"
+  ],
+  "focus": "first-tone cursor/pair/result lifetimes, six-field preparation, note/envelope byte-offset views and frame/index allocation",
+  "budget": 16000,
+  "retained_source_sha256": "c07b91202435f2f7057ce1a49714f819d8a575acbabe40a5ee6cb156fcc310d2",
+  "retained_compiled_sha256": "7d84245b1400063bd8d2828dc6ee45083d8f5adedb138c05bf477c8b65c789c4",
+  "exact": false,
+  "installed": false,
+  "profile_sweep": false
+}

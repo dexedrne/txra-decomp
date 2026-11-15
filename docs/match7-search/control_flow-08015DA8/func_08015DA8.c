@@ -1,0 +1,32 @@
+extern u32 g_030061F0[],g_030067E4;
+void func_08015DA8(void)
+{
+    u32 i = 0;
+    u32 base = (u32)g_030061F0;
+    u32 endmarker = (u32)&g_030067E4;
+    vu32 *dma = (vu32 *)0x040000D4;
+    u32 cursor = base;
+    u32 offset = 0;
+    u32 destbase = base + 4;
+    do {
+        u32 source = *(u32 *)cursor;
+        u32 dest;
+        u32 count;
+        if (!source) {
+ *(u32 *)base = source;
+ goto done;
+ }
+        dest = *(u32 *)(destbase + offset);
+        count = *(u32 *)(base + 8 + offset);
+        dma[0] = source;
+        dma[1] = dest;
+        dma[2] = (count >> 2) | 0x84000000;
+        dma[2];
+        cursor += 12;
+        offset += 12;
+        i++;
+    }
+ while (i <= 96);
+done:    *(u32 *)base = 0;
+    *(u32 *)endmarker = 0;
+}

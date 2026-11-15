@@ -1,0 +1,149 @@
+func_080095C4: diagnostic probes only; no installed replacement.
+Target instructions (encodings omitted):
+080095C4: adds r0, r7, #0
+080095C6: pop {r3, r4}
+080095C8: mov r8, r3
+080095CA: mov r9, r4
+080095CC: pop {r4, r5, r6, r7}
+080095CE: pop {r1}
+080095D0: bx r1
+
+Probe: seed
+u32 func_080095C4(void) {
+    vu16 *r7 = (vu16 *)0x03000A70;
+    void (*r1)(void);
+    r1 = (void (*)(void))0;
+    ((void (*)(void))r1)();
+    return 0;
+}
+
+
+Default-profile comparison:
+Compiled output differs: target 14 bytes, compiled 14 bytes.
+First difference at +0x0 (0x080095C4); exact prefix 0 bytes, exact suffix 4 bytes.
+--- target
++++ compiled
+@@ -1,7 +1,6 @@
+-080095C4: adds r0, r7, #0
+-080095C6: pop {r3, r4}
+-080095C8: mov r8, r3
+-080095CA: mov r9, r4
+-080095CC: pop {r4, r5, r6, r7}
++080095C4: push {lr}
++080095C6: movs r0, #0
++080095C8: bl 0x08018DE0
++080095CC: movs r0, #0
+ 080095CE: pop {r1}
+ 080095D0: bx r1
+Check register allocation, signed widths, statement order, constants and pool alignment.
+
+Compiler loop dump:
+
+;; Function func_080095C4
+
+(note 2 0 3 "" NOTE_INSN_DELETED)
+
+(note 3 2 4 "" NOTE_INSN_FUNCTION_BEG)
+
+(note 4 3 6 "" NOTE_INSN_DELETED)
+
+(note 6 4 11 0 NOTE_INSN_BLOCK_BEG)
+
+(insn 11 6 14 (set (reg/v:SI 23)
+        (const_int 0)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (const_int 0)
+        (nil)))
+
+(call_insn 14 11 17 (call (mem:SI (reg/v:SI 23) 0)
+        (const_int 0)) 63 {*call_indirect} (nil)
+    (nil)
+    (nil))
+
+(insn 17 14 18 (set (reg/i:SI 0 r0)
+        (const_int 0)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (const_int 0)
+        (nil)))
+
+(insn 18 17 22 (use (reg/i:SI 0 r0)) -1 (nil)
+    (nil))
+
+(note 22 18 0 0 NOTE_INSN_BLOCK_END)
+
+Compiler gcse dump:
+
+;; Function func_080095C4
+
+(note 2 0 3 "" NOTE_INSN_DELETED)
+
+(note 3 2 4 "" NOTE_INSN_FUNCTION_BEG)
+
+(note 4 3 6 "" NOTE_INSN_DELETED)
+
+(note 6 4 11 0 NOTE_INSN_BLOCK_BEG)
+
+(insn 11 6 14 (set (reg/v:SI 23)
+        (const_int 0)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (const_int 0)
+        (nil)))
+
+(call_insn 14 11 17 (call (mem:SI (reg/v:SI 23) 0)
+        (const_int 0)) 63 {*call_indirect} (nil)
+    (nil)
+    (nil))
+
+(insn 17 14 18 (set (reg/i:SI 0 r0)
+        (const_int 0)) 1 {*movsi_insn} (nil)
+    (expr_list:REG_EQUAL (const_int 0)
+        (nil)))
+
+(insn 18 17 22 (use (reg/i:SI 0 r0)) -1 (nil)
+    (nil))
+
+(note 22 18 0 0 NOTE_INSN_BLOCK_END)
+
+Compiler global allocation:
+;; Register dispositions:
+23 in 0  
+
+;; Hard regs used:  0
+
+Probe: return-argument
+u32 func_080095C4(u32 value) { return value; }
+
+Default-profile comparison:
+Compiled output differs: target 14 bytes, compiled 2 bytes.
+First difference at +0x0 (0x080095C4); exact prefix 0 bytes, exact suffix 1 bytes.
+Length differs by -12 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -1,7 +1 @@
+-080095C4: adds r0, r7, #0
+-080095C6: pop {r3, r4}
+-080095C8: mov r8, r3
+-080095CA: mov r9, r4
+-080095CC: pop {r4, r5, r6, r7}
+-080095CE: pop {r1}
+-080095D0: bx r1
++080095C4: bx lr
+Check register allocation, signed widths, statement order, constants and pool alignment.
+
+Probe: return-zero
+u32 func_080095C4(void) { u32 value = 0; return value; }
+
+Default-profile comparison:
+Compiled output differs: target 14 bytes, compiled 4 bytes.
+First difference at +0x0 (0x080095C4); exact prefix 0 bytes, exact suffix 1 bytes.
+Length differs by -10 bytes; resolve missing/extra instructions or pools before allocation.
+--- target
++++ compiled
+@@ -1,7 +1,2 @@
+-080095C4: adds r0, r7, #0
+-080095C6: pop {r3, r4}
+-080095C8: mov r8, r3
+-080095CA: mov r9, r4
+-080095CC: pop {r4, r5, r6, r7}
+-080095CE: pop {r1}
+-080095D0: bx r1
++080095C4: movs r0, #0
++080095C6: bx lr
+Check register allocation, signed widths, statement order, constants and pool alignment.

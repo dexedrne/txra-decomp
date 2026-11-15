@@ -1,0 +1,22 @@
+{
+  "address": "08002854",
+  "target_end": "0800418C",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "src/generated/func_08002854.c",
+  "source_sha256": "55b490193244d2dd7c6e9b097effd19964757e333ce3892a8e4f408e952ecf86",
+  "compiler_sha256": "90bdd572d4849304b147115458d1953a457ad3ba11f3686d8029bad3a3d95cb0",
+  "emitted_bytes": 6456,
+  "target_bytes": 6456,
+  "local_frame_bytes": 268,
+  "instruction_distance": 0,
+  "different_bytes": 0,
+  "exact": true,
+  "compiled_sha256": "ecab29c6194836f9932ea16687d8ee87727ed0fb6bafea3e8c5c0a011d30c22d",
+  "checker_limit": "0800418C",
+  "checker_rejection": null,
+  "installed": false
+}

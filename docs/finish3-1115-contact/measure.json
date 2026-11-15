@@ -1,0 +1,22 @@
+{
+  "address": "080181C0",
+  "target_end": "08018854",
+  "compiler": "arm",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "src/generated/func_080181C0.c",
+  "source_sha256": "af185e89e996fe36a8c6f9cede6b293e355b763606da0b2494a4e8ee5589c4bc",
+  "compiler_sha256": "342687894970c4ed4369945d9a23ea056e9a6a5d3fcd3004044a97d1de777ac6",
+  "emitted_bytes": 1684,
+  "target_bytes": 1684,
+  "local_frame_bytes": 72,
+  "instruction_distance": 0,
+  "different_bytes": 0,
+  "exact": true,
+  "compiled_sha256": "960f722ba20b42bb602e5bebb9230c738e77f2923bffff030638af3248ba5c8a",
+  "checker_limit": "08018854",
+  "checker_rejection": null,
+  "installed": false
+}

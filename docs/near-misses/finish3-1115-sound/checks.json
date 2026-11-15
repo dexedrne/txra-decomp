@@ -1,0 +1,24 @@
+{
+ "alignment_tool": "docs/finish3-1115/sound/align.py (opcode shape first, registers second; regions as in finish2 checks.json)",
+ "alignment": {
+  "docs/near-misses/finish2-1115-sound/func_080064A4.c": {
+   "emitted_bytes": 3820, "local_frame_bytes": 100, "instruction_distance": 283, "different_bytes": 1598,
+   "aligned_identical_rows": 1546, "register_only_rows": 170, "shape_rows": 16,
+   "identical_rows_by_region": "A106 B115 C48 D581 E165 F100 G415 H16"
+  },
+  "docs/near-misses/finish3-1115-sound/func_080064A4.c": {
+   "emitted_bytes": 3828, "local_frame_bytes": 108, "instruction_distance": 134, "different_bytes": 159,
+   "aligned_identical_rows": 1592, "register_only_rows": 131, "shape_rows": 10,
+   "identical_rows_by_region": "A108 B131 C48 D599 E174 F100 G415 H17",
+   "register_only_rows_by_region": "A12 B22 C0 D97 E0 F0 G0 H0",
+   "note": "the 10 shape rows are pool-alignment halfwords and the clear-loop zero-constant placement; the length and every sp offset match"
+  }
+ },
+ "differential": [
+  {"reference": "docs/near-misses/finish2-1115-sound/func_080064A4.c", "candidate": "docs/near-misses/finish3-1115-sound/func_080064A4.c",
+   "tool": "docs/near-misses/finish2-1115-sound/diff32.py", "states": 1000, "seed": 1115, "identical": 1000, "failures": []},
+  {"reference": "docs/near-misses/finish2-1115-sound/func_080064A4.c", "candidate": "docs/near-misses/finish3-1115-sound/func_080064A4.c",
+   "tool": "docs/near-misses/finish2-1115-sound/diff32.py", "states": 1000, "seed": 2026, "identical": 1000, "failures": []}
+ ],
+ "rom_used_by_differential": false
+}

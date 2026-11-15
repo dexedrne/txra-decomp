@@ -1,0 +1,11 @@
+{
+  "candidate": "g6.c",
+  "differential_fixtures": 199,
+  "failures": 0,
+  "first_failures": [],
+  "executed_instruction_addresses": 1053,
+  "instruction_addresses": 1053,
+  "source_sha256": "1b535c1807d82db97adedac9864a937399ac7e8741370b9c759619026ed2d95a",
+  "rom_used": false,
+  "byte_match_verified": false
+}

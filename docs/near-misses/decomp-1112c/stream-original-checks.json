@@ -1,0 +1,42 @@
+{
+  "candidate": "docs/near-misses/decomp-1112c/func_08002854.c",
+  "source_sha256": "3cf5c6f34087ae99b1626f76d770b73d43e23f4acea1b5faa880dde01d05c8e6",
+  "compiled_sha256": "3fd8cba1008e16692a97cd1e76d66ff039787fa6cc3cba04b58ce496de01bcf7",
+  "cases": 480,
+  "passed": 480,
+  "ordered_helper_calls_compared": 11998,
+  "scenery_types": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "directions": [
+    0,
+    1
+  ],
+  "compared": "all EWRAM, IWRAM below stack, helper arguments/order, callee-saved registers and stack restoration",
+  "original_instructions_executed": true,
+  "original_helpers_executed": true,
+  "helper_calls_mocked": false,
+  "private_rom_identity_verified": true,
+  "binary_artifacts_written": false,
+  "installation_authority": false,
+  "limitations": "Bounded synthetic states with bridge/bank dependencies for arch types; original lookup data. No arbitrary malformed-state or gameplay claim."
+}

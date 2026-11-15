@@ -1,0 +1,77 @@
+{
+  "snapshot": "2026-11-12T20:25:48.893640+00:00",
+  "branch": "work/match-1112c",
+  "base_commit": "2e743c2",
+  "private_rom_identity_verified": true,
+  "forced_complete_rebuild": true,
+  "whole_rom_sha1_gate": true,
+  "matched_replacements_verified": 189,
+  "new_matches_installed": [],
+  "registry_unchanged_from_base": true,
+  "registry_sha256": "58699d627fd45ec20c4151a608fb41d3cef03fe8e463888f2618ae7a855ee94e",
+  "map_sha256": "4375ecc69d7e16d28bd82c6973faca9988c734af1c7f7bf364544d27a7b59609",
+  "progress_sha256": "0a2e0bf80116e2817693a95518ddb6846490f26a0cf0f0b8ec1d2ffffd298f70",
+  "tests": {
+    "run": 258,
+    "passed": 257,
+    "skipped": 1,
+    "failed": 0,
+    "skip_reason": "fewer than two unmatched retained drafts remain to search"
+  },
+  "runtime_assertions": 446,
+  "repeated_mapping_tests": 15,
+  "compiled_native_functions": 237,
+  "native_load_run_entries": 268,
+  "execution_milestones_claimed": false,
+  "counts": {
+    "mapped": 237,
+    "matched": 189,
+    "matched_bytes_including_pools": 73162,
+    "mapped_code_bytes": 85578,
+    "percent_of_mapped_code": 85.492
+  },
+  "rom_build_sha256": "fd9542217ea2f00c7d40062b4969e0d66fd54fa87518f8384e9e30497eb42c38",
+  "native_binary_sha256": "bd213cf5d9cc3d450bab0a7677bed0c1a217ebe17dcda31826a91140c36628e2",
+  "native_source_sha256": "4368d19bf1c2b0177ec2fe6aa988925a58295edc0726dad4845f8604ec245c51",
+  "admission_log_sha256": "a70b3cec330c40e2cb9448f40ece37c4f7bf423a7d2d68c43c008b1e49fe62c8",
+  "native_log_sha256": "50374330897c0e9354049796a670d02b412703cb76ba6d1a8543a1d21cf3729a",
+  "retained_sources_frozen_before_admission": true,
+  "retained_candidates": {
+    "hud": {
+      "source": "docs/near-misses/decomp-1112c/func_0800421C.c",
+      "source_sha256": "f8ecf21820e21c2d1d7069e1aa4a7f09707ea586f267abc9e6ee8ddb372e36ff",
+      "compiled_sha256": "28db65402b5529e06eae2b99b5fc88a4f108cf00299fb0ce792e76c10bf36301",
+      "different_bytes": 3144
+    },
+    "contact": {
+      "source": "docs/near-misses/decomp-1112c/func_080181C0.c",
+      "source_sha256": "d248a33b5bbd9c5544c6dba987e7c36ceb45febac34735ff72325799b4db565a",
+      "compiled_sha256": "fdef93a96d92709a7807514d65281eafe395c29f9d7dadef039681ebd62c881b",
+      "different_bytes": 1009
+    },
+    "arm": {
+      "source": "docs/near-misses/decomp-1112c/func_08016DA8.c",
+      "source_sha256": "b11d1e63609befa7ff4fe02365fad02612e15036e255b059b672b37c9fb5af03",
+      "compiled_sha256": "872806c97fadb57e78b6ae5eb5a441d6f324525ae534ae02ec47f39d03d3612b",
+      "different_bytes": 3250
+    },
+    "stream": {
+      "source": "docs/near-misses/decomp-1112c/func_08002854.c",
+      "source_sha256": "3cf5c6f34087ae99b1626f76d770b73d43e23f4acea1b5faa880dde01d05c8e6",
+      "compiled_sha256": "3fd8cba1008e16692a97cd1e76d66ff039787fa6cc3cba04b58ce496de01bcf7",
+      "different_bytes": 6106
+    }
+  },
+  "tool_sha256": {
+    "tools/match.py": "7d5c30a32e6e0a22da10d02f29a2eb305485625d1b76ae0d57d03571fe4b33e0",
+    "tools/measure_candidate.py": "10c77bf97e3e4fde4613df00aefd36f990a8a7f5bad8b0e7c43a410d04bbf05d",
+    "tools/check_contact_original1112c.py": "857c7db33e7156e6223eb2759a4560eb543d10ce371d384f6e1d48e4e71b5b1b",
+    "tools/check_hud_original1112c.py": "2825a0947f7672ca222082ef0e0f5ddcaa231c744fc1693b6bcd8314d372e761",
+    "tools/check_stream_original1112c.py": "bbbef9ace24949e4c36ac51fd52bc367a2008ee16b43de30f5bb16dd0c86939a",
+    "tools/search_decomp1112c.py": "f39f58cbafd59264e35633bb39a914f925f473c68265a56c6928ec14d98ebe7e",
+    "tools/review_decomp1112c.py": "58887b70bf02bb0752566ae59e940db1dba52a4597a5786dce3b43fb2d5644d0"
+  },
+  "owner_notes_present": false,
+  "browser_or_server_started": false,
+  "private_decompiler_output_committed": false
+}

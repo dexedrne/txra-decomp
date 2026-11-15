@@ -1,0 +1,22 @@
+{
+  "address": "08015F58",
+  "target_end": "08015F98",
+  "compiler": "old",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "source": "docs/near-misses/breadth-1112/pattern-08015F58.c",
+  "source_sha256": "cb2ede214e5d5240bfe572b78cdf3dc2a90a7e1cd5e863652809b10f12bc1d43",
+  "compiler_sha256": "b3f3f96762a66f1a1ad571adce34e7ad2cc2eca950b8c020437011b0e2ca0de8",
+  "emitted_bytes": 60,
+  "target_bytes": 64,
+  "local_frame_bytes": 4,
+  "instruction_distance": 9,
+  "different_bytes": 38,
+  "exact": false,
+  "compiled_sha256": "c6b2f0a27ee65735d9239ea222b5fefb823219c9a400b95ea1b9e09c998c0723",
+  "checker_limit": "08015F98",
+  "checker_rejection": null,
+  "installed": false
+}

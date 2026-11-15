@@ -1,0 +1,53 @@
+{
+  "source": "8344f170cdacc5d464debeee75e2de718f6500ff",
+  "scope": "Two historical ARM compilations only: pinned control then projection variant",
+  "romTransferred": false,
+  "installed": false,
+  "accepted": false,
+  "modelCalls": 0,
+  "profile": "arm",
+  "flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "rows": [
+    {
+      "candidate": "func_08016DA8_match.c",
+      "sourceSha256": "ff01f366e731509f5d7ac163bc64c7b1bf465fbcbef739a1fd37224aee4a16d6",
+      "compiledBytes": 4028,
+      "exactCandidate": false,
+      "compiledSha256": "e04e8ae08b9fa01ec5ab51af46c4a6523f1a75b3e8a45a819c63a51565fd0b01",
+      "score": [
+        1046,
+        3850
+      ]
+    },
+    {
+      "candidate": "func_08016DA8_projection.c",
+      "sourceSha256": "7f69d480447873162d8721a3adcda54b5705a7a495f389f87fc5ae5dfe91059a",
+      "compiledBytes": 4036,
+      "exactCandidate": false,
+      "compiledSha256": "2a8fc011389b3bc2f55958f166f6580ddd3b9bc475398a8377aeb4fa067c1ce1",
+      "score": [
+        1047,
+        3840
+      ]
+    }
+  ],
+  "romSha1Before": "4197339d4add74bb40ed02a8fba5e58096afb487",
+  "startedAt": 1794083519.178175,
+  "status": "different nonmatching output; no new match",
+  "compilerSha256": "26d884f0d4d46180dd90d1b1b56371fa1d72e2d0a47b22b65f27b3cebb89cca8",
+  "matchedBefore": 181,
+  "targetBytes": 4288,
+  "abiAdmission": true,
+  "sourceAssemblyExact": true,
+  "sourceAssemblySha256": "7fa142f8d5114098aac6e6579c2eb6214de22529d447caed8f09d8d8a90cd852",
+  "poolTargetsVerified": 19,
+  "matchedAfter": 181,
+  "registryUnchanged": true,
+  "snapshotUnchanged": true,
+  "scratchRemoved": true,
+  "romUnchanged": true,
+  "finishedAt": 1794083522.235977
+}

@@ -1,0 +1,10 @@
+{
+  "candidate": "preparation-control.c",
+  "source_sha256": "ff2d69a926c6e6fba1dd44eac2f1b468c38b79bf5fd1f5d64e68c6d4cf3b7b78",
+  "fixture_groups": 7,
+  "undefined_behavior_sanitizer": true,
+  "registry_unchanged": true,
+  "voice_field_aliases": 17,
+  "rom_used": false,
+  "output": "7 sound-owner synthetic groups passed (actual complete C candidate; no ROM)"
+}

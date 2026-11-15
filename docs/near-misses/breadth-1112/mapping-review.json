@@ -1,0 +1,54 @@
+{
+  "entries": [
+    {
+      "offset": 30012,
+      "mode": "thumb",
+      "name": "begin_sound_fade",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Starts the sound fade request and clears its phase tick."
+    },
+    {
+      "offset": 30172,
+      "mode": "thumb",
+      "name": "restore_sound_state_and_clear_pair",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Restores saved sound words on request, then clears the adjacent state pair."
+    },
+    {
+      "offset": 83856,
+      "mode": "thumb",
+      "name": "set_link_transfer_request",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Sets the link request byte and snapshots its companion byte when clearing it."
+    },
+    {
+      "offset": 89680,
+      "mode": "thumb",
+      "name": "fill_display_buffers_neutral_a",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Fills display and object buffers with a neutral pattern or clears display memory."
+    },
+    {
+      "offset": 89812,
+      "mode": "thumb",
+      "name": "fill_display_buffers_neutral_b",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Second identical neutral display/object fill helper."
+    },
+    {
+      "offset": 89944,
+      "mode": "thumb",
+      "name": "fill_display_neutral",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Fills one display buffer with a neutral pattern using DMA3."
+    },
+    {
+      "offset": 90008,
+      "mode": "thumb",
+      "name": "clear_display_buffers",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Clears the selected display and object buffers using DMA3."
+    },
+    {
+      "offset": 101792,
+      "mode": "thumb",
+      "name": "retry_eeprom_write_and_verify",
+      "evidence": "reviewed unreferenced code-gap candidate; balanced ARMv4T return; Retries the existing EEPROM write and compare helpers up to three times."
+    }
+  ],
+  "reference_audit": "No incoming pointer or direct call was found in the existing inventory. These are static candidates, not observed execution.",
+  "boundary_review": "Zero halfword alignment at 0801478E and 08018D9E is excluded. Each entry has independent argument setup, balanced stack and a complete return. Literal pools are excluded from code spans."
+}

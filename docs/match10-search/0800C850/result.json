@@ -1,0 +1,33 @@
+{
+  "address": "0800C850",
+  "seed": 134370037,
+  "seconds": 1501.0866093590157,
+  "attempts": 75323,
+  "compiled": 22341,
+  "cache_hits": 52982,
+  "errors": 0,
+  "restarts": 39,
+  "equal_moves": 9379,
+  "generation": 160,
+  "operators": {
+    "seed": 5,
+    "named-add-input": 561,
+    "temporary-introduce": 9148,
+    "base": 50508,
+    "widen-narrow": 11218,
+    "independent-order": 202,
+    "multiply-shift": 198,
+    "qualifier": 2304,
+    "offset-field": 197,
+    "profile": 795,
+    "saved-constant": 174,
+    "qualifier-remove": 13
+  },
+  "best_score": [
+    120,
+    193
+  ],
+  "compiler": "old",
+  "exact": false,
+  "variants_per_second": 50.18
+}

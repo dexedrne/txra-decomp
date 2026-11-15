@@ -1,0 +1,77 @@
+{
+  "execution": "native-only",
+  "reference": "existing reviewed goldens; not executed",
+  "binary_sha256": "f826074ce8e8779f1215ffe0c6b90039376a5a4f0a62265039d650aa38571cbd",
+  "routes": [
+    {
+      "name": "career",
+      "stats": {
+        "frames": 37200,
+        "pc": "0800642c",
+        "instructions": 3483082560,
+        "compiled_steps": 3483082560,
+        "fallback_steps": 0,
+        "unknown_targets": 0,
+        "unsupported": 0,
+        "functions_compiled": 229,
+        "state_hash": "9cb2d661",
+        "cycles": 10449247680,
+        "audio_samples": 20408686,
+        "audio_hash": "f0334a1118d61f55",
+        "save_writes": 1,
+        "stopped": false
+      },
+      "frames_sha256": "2344cb588ff2b5c7bded48ecd92319482e005ea216d592814779265cd8dd5d5f",
+      "pcm_sha256": "79a2c4be4d1dc806982789de1158eb47e0301f2ec7b6ead8b6f6f3557ae82d38",
+      "save_sha256": "4fe8c808ac90f61f98ad6077d90346ae91f9c9f515dc8cf96835d1dbd2cb1d37",
+      "frame_hash_count": 37200
+    },
+    {
+      "name": "reload",
+      "stats": {
+        "frames": 2200,
+        "pc": "080063ec",
+        "instructions": 205962528,
+        "compiled_steps": 205962528,
+        "fallback_steps": 0,
+        "unknown_targets": 0,
+        "unsupported": 0,
+        "functions_compiled": 229,
+        "state_hash": "fc469aac",
+        "cycles": 617887584,
+        "audio_samples": 1206811,
+        "audio_hash": "663ef8d84d76617d",
+        "save_writes": 0,
+        "stopped": false
+      },
+      "frames_sha256": "541929ba40eba7a36bc840dafe4c0e6f5bc43b9058f5e9d04e3e1286a9757cf4",
+      "pcm_sha256": "d9e257d4adb7e20c8e5b54b42bb04348108c7da7068793ef8bc5bef70376f58c",
+      "save_sha256": "4fe8c808ac90f61f98ad6077d90346ae91f9c9f515dc8cf96835d1dbd2cb1d37",
+      "frame_hash_count": 2200
+    }
+  ],
+  "focused_checks": {
+    "runtime_assertions": 446,
+    "desktop_assertions": 69,
+    "desktop_flow_checks": 22,
+    "mapping_tests": 15,
+    "accuracy_frames": 4300,
+    "input_reader_boundaries": 6,
+    "publish_tests": 1,
+    "publish_failure_boundaries": 3,
+    "publish_same_path_success": true,
+    "controller_passed": true,
+    "optimized_python_refused": true
+  },
+  "raw_directory": "build/native-runtime-1106",
+  "log_hashes": {
+    "capture-review.log": "0610b8f867c596adb96ddcf064bc660f0e6464fd74569a1b1d5c03f84407b03c",
+    "accuracy.log": "5456fd259bf73298e23643e970b2050b7bf01b27f8de2438b06565f6520f19ff",
+    "career-check.log": "ff75befa564255816ef16971b31d495ab63fd0133d603dc6fd8821111c63bfeb",
+    "publish-test.log": "87db3207aa4e2b8c792340c25f118a1f8073142b44836a4ab6e43f0c59407a2e",
+    "desktop-flow.log": "27a039e2fdbe4ffa96b8252eda49b197e984e17561f3b5bf7b332c7988aa58cb",
+    "build.log": "5c056ede318dcb2f7a87f267fee7b00f11eb26407ee4e9cb273719a46d2e73fb",
+    "optimized-refusal.log": "e53b001d003b8a2727fab14751dfcb5562bff5e7ae8e23a378af452c80397901",
+    "focused.log": "3efe08f878390d72a386efb4a18e6c423351f33ee618f8bcf78d24a224ab5f04"
+  }
+}

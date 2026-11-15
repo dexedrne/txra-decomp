@@ -1,0 +1,11 @@
+{
+  "candidate": "func_08016DA8_bytes.c",
+  "differential_fixtures": 199,
+  "failures": 0,
+  "first_failures": [],
+  "executed_instruction_addresses": 1053,
+  "instruction_addresses": 1053,
+  "source_sha256": "f75f4f8f40a4028cfbce889ec2e97e37147483737467a6ee3b3bf4abeb29a480",
+  "rom_used": false,
+  "byte_match_verified": false
+}

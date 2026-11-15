@@ -1,0 +1,21 @@
+{
+  "compiler": "old",
+  "profile_sweep": false,
+  "selection": "lowest differing-byte count fitting the unchanged complete owner; instruction control retained separately",
+  "unique_sources": 4445,
+  "unique_compiled_outputs": 1516,
+  "invalid_source_hypotheses": 580,
+  "oversize_sources": 496,
+  "experiments": [
+    "hud-overlay",
+    "hud-strips",
+    "hud-follow",
+    "hud-lifetimes",
+    "hud-allocation",
+    "hud-roles",
+    "hud-effects",
+    "hud-bases",
+    "hud-gauge"
+  ],
+  "limitations": "Search scores are compilation diagnostics, not semantic validation. Only the retained sources pass the state/call fixtures; no proposed source has installation authority."
+}

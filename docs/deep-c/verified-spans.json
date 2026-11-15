@@ -1,0 +1,8 @@
+{
+  "08005F8C": {
+    "loop_start": "08005FBA",
+    "loop_end_exclusive": "0800601A",
+    "equal_bytes": 96,
+    "whole_function_exact": false
+  }
+}

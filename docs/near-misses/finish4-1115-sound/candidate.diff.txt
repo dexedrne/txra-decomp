@@ -1,0 +1,359 @@
+Compiled output differs: target 3828 bytes, compiled 3828 bytes.
+First difference at +0x14E (0x080065F2); exact prefix 334 bytes, exact suffix 1615 bytes.
+Instruction shapes, constants and pools agree; inspect register allocation and variable lifetimes.
+--- target
++++ compiled
+@@ -154,6 +154,6 @@
+ 080065EE: mov r8, r1
+ 080065F0: adds r5, r6, #0
+-080065F2: ldr r4, [r5, #0]
+-080065F4: cmp r4, #0
++080065F2: ldr r2, [r5, #0]
++080065F4: cmp r2, #0
+ 080065F6: beq 0x080066CE
+ 080065F8: adds r0, r6, #0
+@@ -170,14 +170,14 @@
+ 0800660E: adds r0, #5
+ 08006610: str r0, [r5, #4]
+-08006612: movs r3, #0
++08006612: movs r4, #0
+ 08006614: lsls r0, r0, #1
+-08006616: adds r0, r0, r4
+-08006618: ldrh r2, [r0, #0]
+-0800661A: cmp r2, #254
++08006616: adds r0, r0, r2
++08006618: ldrh r3, [r0, #0]
++0800661A: cmp r3, #254
+ 0800661C: bne 0x08006648
+ 0800661E: ldrh r1, [r0, #2]
+ 08006620: cmp r1, #253
+ 08006622: bne 0x08006640
+-08006624: movs r3, #255
++08006624: movs r4, #255
+ 08006626: b 0x08006648
+ 08006628: .word <literal pool>
+@@ -189,17 +189,17 @@
+ 08006640: ldrh r0, [r0, #2]
+ 08006642: subs r0, #1
+-08006644: mov r2, r8
+-08006646: str r0, [r2, #0]
+-08006648: adds r2, r6, #0
++08006644: mov r3, r8
++08006646: str r0, [r3, #0]
++08006648: adds r3, r6, #0
+ 0800664A: ldr r0, [r5, #4]
+ 0800664C: lsls r0, r0, #1
+-0800664E: adds r1, r0, r4
++0800664E: adds r1, r0, r2
+ 08006650: ldrh r0, [r1, #0]
+ 08006652: cmp r0, #255
+ 08006654: bne 0x08006658
+-08006656: movs r3, #255
+-08006658: cmp r3, #255
++08006656: movs r4, #255
++08006658: cmp r4, #255
+ 0800665A: bne 0x0800666C
+-0800665C: adds r0, r7, r2
++0800665C: adds r0, r7, r3
+ 0800665E: movs r1, #0
+ 08006660: str r1, [r0, #0]
+@@ -217,5 +217,5 @@
+ 08006678: ldr r1, [r3, #0]
+ 0800667A: lsls r1, r1, #1
+-0800667C: adds r1, r1, r4
++0800667C: adds r1, r1, r2
+ 0800667E: ldrh r4, [r1, #4]
+ 08006680: lsls r0, r4, #8
+@@ -274,10 +274,10 @@
+ 080066EA: beq 0x080066F0
+ 080066EC: bl 0x08007368
+-080066F0: ldr r3, [pc, #812] @ =0x08006A20
+-080066F2: ldr r2, [pc, #816] @ =0x08006A24
+-080066F4: ldr r1, [r3, #0]
++080066F0: ldr r2, [pc, #812] @ =0x08006A20
++080066F2: ldr r0, [pc, #816] @ =0x08006A24
++080066F4: ldr r1, [r0, #0]
+ 080066F6: ldr r0, [r2, #0]
+ 080066F8: adds r0, r1, r0
+-080066FA: str r0, [r3, #0]
++080066FA: str r0, [r2, #0]
+ 080066FC: cmp r0, #255
+ 080066FE: bhi 0x08006704
+@@ -285,5 +285,5 @@
+ 08006704: ldr r6, [pc, #800] @ =0x08006A28
+ 08006706: adds r0, r0, r6
+-08006708: str r0, [r3, #0]
++08006708: str r0, [r2, #0]
+ 0800670A: movs r7, #0
+ 0800670C: mov r10, r7
+@@ -421,9 +421,9 @@
+ 08006818: mov r2, r9
+ 0800681A: str r0, [r2, #64]
+-0800681C: ldr r2, [r6, #24]
+-0800681E: cmp r2, #0
++0800681C: ldr r3, [r6, #24]
++0800681E: cmp r3, #0
+ 08006820: beq 0x08006896
+-08006822: ldr r3, [sp, #40]
+-08006824: lsls r1, r3, #3
++08006822: ldr r4, [sp, #40]
++08006824: lsls r1, r4, #3
+ 08006826: ldr r5, [pc, #532] @ =0x08006A3C
+ 08006828: adds r4, r1, r5
+@@ -440,32 +440,32 @@
+ 0800683E: str r0, [r5, #0]
+ 08006840: lsls r0, r0, #1
+-08006842: adds r0, r0, r2
++08006842: adds r0, r0, r3
+ 08006844: ldrh r7, [r0, #0]
+ 08006846: cmp r7, #254
+ 08006848: bne 0x08006850
+-0800684A: movs r3, #2
+-0800684C: ldrsh r0, [r0, r3]
++0800684A: movs r2, #2
++0800684C: ldrsh r0, [r0, r2]
+ 0800684E: str r0, [r5, #0]
+ 08006850: ldr r0, [r5, #0]
+ 08006852: lsls r0, r0, #1
+-08006854: adds r3, r0, r2
++08006854: adds r2, r0, r3
+ 08006856: movs r7, #0
+-08006858: ldrsh r0, [r3, r7]
++08006858: ldrsh r0, [r2, r7]
+ 0800685A: cmp r0, #253
+ 0800685C: bgt 0x08006886
+ 0800685E: movs r7, #2
+-08006860: ldrsh r0, [r3, r7]
++08006860: ldrsh r0, [r2, r7]
+ 08006862: str r0, [r4, #0]
+ 08006864: ldr r0, [pc, #460] @ =0x08006A34
+ 08006866: adds r1, r1, r0
+-08006868: ldr r3, [r1, #0]
++08006868: ldr r2, [r1, #0]
+ 0800686A: ldr r0, [r5, #0]
+ 0800686C: lsls r0, r0, #1
+-0800686E: adds r0, r0, r2
++0800686E: adds r0, r0, r3
+ 08006870: movs r4, #0
+ 08006872: ldrsh r0, [r0, r4]
+-08006874: adds r3, r3, r0
+-08006876: str r3, [r1, #0]
+-08006878: lsls r1, r3, #16
++08006874: adds r2, r2, r0
++08006876: str r2, [r1, #0]
++08006878: lsls r1, r2, #16
+ 0800687A: ldr r0, [r6, #0]
+ 0800687C: lsls r0, r0, #24
+@@ -476,5 +476,5 @@
+ 08006886: ldr r1, [r5, #0]
+ 08006888: lsls r0, r1, #1
+-0800688A: adds r0, r0, r2
++0800688A: adds r0, r0, r3
+ 0800688C: ldrh r0, [r0, #0]
+ 0800688E: cmp r0, #255
+@@ -619,9 +619,9 @@
+ 080069A4: subs r0, r5, #2
+ 080069A6: str r0, [r7, #0]
+-080069A8: ldr r2, [r6, #24]
+-080069AA: cmp r2, #0
++080069A8: ldr r3, [r6, #24]
++080069AA: cmp r3, #0
+ 080069AC: beq 0x08006A6A
+-080069AE: ldr r3, [sp, #40]
+-080069B0: lsls r1, r3, #3
++080069AE: ldr r2, [sp, #40]
++080069B0: lsls r1, r2, #3
+ 080069B2: ldr r5, [pc, #136] @ =0x08006A3C
+ 080069B4: adds r4, r1, r5
+@@ -638,32 +638,32 @@
+ 080069CA: str r0, [r5, #0]
+ 080069CC: lsls r0, r0, #1
+-080069CE: adds r0, r0, r2
++080069CE: adds r0, r0, r3
+ 080069D0: ldrh r7, [r0, #0]
+ 080069D2: cmp r7, #254
+ 080069D4: bne 0x080069DC
+-080069D6: movs r3, #2
+-080069D8: ldrsh r0, [r0, r3]
++080069D6: movs r2, #2
++080069D8: ldrsh r0, [r0, r2]
+ 080069DA: str r0, [r5, #0]
+ 080069DC: ldr r0, [r5, #0]
+ 080069DE: lsls r0, r0, #1
+-080069E0: adds r3, r0, r2
++080069E0: adds r2, r0, r3
+ 080069E2: movs r7, #0
+-080069E4: ldrsh r0, [r3, r7]
++080069E4: ldrsh r0, [r2, r7]
+ 080069E6: cmp r0, #253
+ 080069E8: bgt 0x08006A5A
+ 080069EA: movs r7, #2
+-080069EC: ldrsh r0, [r3, r7]
++080069EC: ldrsh r0, [r2, r7]
+ 080069EE: str r0, [r4, #0]
+ 080069F0: ldr r0, [pc, #64] @ =0x08006A34
+ 080069F2: adds r1, r1, r0
+-080069F4: ldr r3, [r1, #0]
++080069F4: ldr r2, [r1, #0]
+ 080069F6: ldr r0, [r5, #0]
+ 080069F8: lsls r0, r0, #1
+-080069FA: adds r0, r0, r2
++080069FA: adds r0, r0, r3
+ 080069FC: movs r4, #0
+ 080069FE: ldrsh r0, [r0, r4]
+-08006A00: adds r3, r3, r0
+-08006A02: str r3, [r1, #0]
+-08006A04: lsls r1, r3, #16
++08006A00: adds r2, r2, r0
++08006A02: str r2, [r1, #0]
++08006A04: lsls r1, r2, #16
+ 08006A06: ldr r0, [r6, #0]
+ 08006A08: lsls r0, r0, #24
+@@ -693,5 +693,5 @@
+ 08006A5A: ldr r1, [r5, #0]
+ 08006A5C: lsls r0, r1, #1
+-08006A5E: adds r0, r0, r2
++08006A5E: adds r0, r0, r3
+ 08006A60: ldrh r0, [r0, #0]
+ 08006A62: cmp r0, #255
+@@ -835,9 +835,9 @@
+ 08006B76: subs r0, r4, #2
+ 08006B78: str r0, [r5, #0]
+-08006B7A: ldr r2, [r6, #24]
+-08006B7C: cmp r2, #0
++08006B7A: ldr r3, [r6, #24]
++08006B7C: cmp r3, #0
+ 08006B7E: beq 0x08006BF4
+-08006B80: ldr r3, [sp, #40]
+-08006B82: lsls r1, r3, #3
++08006B80: ldr r4, [sp, #40]
++08006B82: lsls r1, r4, #3
+ 08006B84: ldr r5, [pc, #344] @ =0x08006CE0
+ 08006B86: adds r4, r1, r5
+@@ -854,32 +854,32 @@
+ 08006B9C: str r0, [r5, #0]
+ 08006B9E: lsls r0, r0, #1
+-08006BA0: adds r0, r0, r2
++08006BA0: adds r0, r0, r3
+ 08006BA2: ldrh r7, [r0, #0]
+ 08006BA4: cmp r7, #254
+ 08006BA6: bne 0x08006BAE
+-08006BA8: movs r3, #2
+-08006BAA: ldrsh r0, [r0, r3]
++08006BA8: movs r2, #2
++08006BAA: ldrsh r0, [r0, r2]
+ 08006BAC: str r0, [r5, #0]
+ 08006BAE: ldr r0, [r5, #0]
+ 08006BB0: lsls r0, r0, #1
+-08006BB2: adds r3, r0, r2
++08006BB2: adds r2, r0, r3
+ 08006BB4: movs r7, #0
+-08006BB6: ldrsh r0, [r3, r7]
++08006BB6: ldrsh r0, [r2, r7]
+ 08006BB8: cmp r0, #253
+ 08006BBA: bgt 0x08006BE4
+ 08006BBC: movs r7, #2
+-08006BBE: ldrsh r0, [r3, r7]
++08006BBE: ldrsh r0, [r2, r7]
+ 08006BC0: str r0, [r4, #0]
+ 08006BC2: ldr r0, [pc, #260] @ =0x08006CC8
+ 08006BC4: adds r1, r1, r0
+-08006BC6: ldr r3, [r1, #0]
++08006BC6: ldr r2, [r1, #0]
+ 08006BC8: ldr r0, [r5, #0]
+ 08006BCA: lsls r0, r0, #1
+-08006BCC: adds r0, r0, r2
++08006BCC: adds r0, r0, r3
+ 08006BCE: movs r4, #0
+ 08006BD0: ldrsh r0, [r0, r4]
+-08006BD2: adds r3, r3, r0
+-08006BD4: str r3, [r1, #0]
+-08006BD6: lsls r1, r3, #16
++08006BD2: adds r2, r2, r0
++08006BD4: str r2, [r1, #0]
++08006BD6: lsls r1, r2, #16
+ 08006BD8: ldr r0, [r6, #0]
+ 08006BDA: lsls r0, r0, #24
+@@ -890,5 +890,5 @@
+ 08006BE4: ldr r1, [r5, #0]
+ 08006BE6: lsls r0, r1, #1
+-08006BE8: adds r0, r0, r2
++08006BE8: adds r0, r0, r3
+ 08006BEA: ldrh r0, [r0, #0]
+ 08006BEC: cmp r0, #255
+@@ -971,6 +971,6 @@
+ 08006C86: adds r0, r0, r1
+ 08006C88: ldr r6, [r0, #0]
+-08006C8A: ldr r2, [r6, #24]
+-08006C8C: cmp r2, #0
++08006C8A: ldr r3, [r6, #24]
++08006C8C: cmp r3, #0
+ 08006C8E: beq 0x08006CFE
+ 08006C90: movs r5, #138
+@@ -985,13 +985,13 @@
+ 08006CA2: lsls r4, r4, #1
+ 08006CA4: add r4, r12
+-08006CA6: ldr r3, [r4, #0]
+-08006CA8: adds r0, r3, #2
++08006CA6: ldr r2, [r4, #0]
++08006CA8: adds r0, r2, #2
+ 08006CAA: str r0, [r4, #0]
+ 08006CAC: lsls r0, r0, #1
+-08006CAE: adds r1, r0, r2
+-08006CB0: ldrh r2, [r1, #0]
+-08006CB2: cmp r2, #255
++08006CAE: adds r1, r0, r3
++08006CB0: ldrh r3, [r1, #0]
++08006CB2: cmp r3, #255
+ 08006CB4: bne 0x08006CE8
+-08006CB6: str r3, [r4, #0]
++08006CB6: str r2, [r4, #0]
+ 08006CB8: b 0x08006CFE
+ 08006CBA: movs r0, r0
+@@ -1009,6 +1009,6 @@
+ 08006CE8: ldr r0, [r6, #0]
+ 08006CEA: lsls r0, r0, #8
+-08006CEC: ldrh r3, [r1, #0]
+-08006CEE: orrs r0, r3
++08006CEC: ldrh r4, [r1, #0]
++08006CEE: orrs r0, r4
+ 08006CF0: lsls r0, r0, #16
+ 08006CF2: lsrs r4, r0, #16
+@@ -1018,6 +1018,6 @@
+ 08006CFA: ldr r0, [pc, #52] @ =0x08006D30
+ 08006CFC: strh r4, [r0, #0]
+-08006CFE: ldr r2, [r6, #16]
+-08006D00: cmp r2, #0
++08006CFE: ldr r3, [r6, #16]
++08006D00: cmp r3, #0
+ 08006D02: beq 0x08006D58
+ 08006D04: ldr r0, [sp, #40]
+@@ -1032,14 +1032,14 @@
+ 08006D16: bne 0x08006D58
+ 08006D18: ldr r4, [pc, #24] @ =0x08006D34
+-08006D1A: adds r3, r1, r4
+-08006D1C: ldr r4, [r3, #0]
++08006D1A: adds r2, r1, r4
++08006D1C: ldr r4, [r2, #0]
+ 08006D1E: adds r0, r4, #2
+-08006D20: str r0, [r3, #0]
++08006D20: str r0, [r2, #0]
+ 08006D22: lsls r0, r0, #1
+-08006D24: adds r2, r0, r2
+-08006D26: ldrh r1, [r2, #0]
++08006D24: adds r3, r0, r3
++08006D26: ldrh r1, [r3, #0]
+ 08006D28: cmp r1, #255
+ 08006D2A: bne 0x08006D38
+-08006D2C: str r4, [r3, #0]
++08006D2C: str r4, [r2, #0]
+ 08006D2E: b 0x08006D58
+ 08006D30: .word <literal pool>
+@@ -1053,5 +1053,5 @@
+ 08006D44: strh r4, [r0, #0]
+ 08006D46: movs r6, #2
+-08006D48: ldrsh r0, [r2, r6]
++08006D48: ldrsh r0, [r3, r6]
+ 08006D4A: str r0, [r5, #0]
+ 08006D4C: ldr r1, [pc, #76] @ =0x08006D9C
+Check register allocation, signed widths, statement order, constants and pool alignment.

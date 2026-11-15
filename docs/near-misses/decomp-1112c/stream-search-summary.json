@@ -1,0 +1,110 @@
+{
+  "source_identities": 64,
+  "measured": 64,
+  "output_identities": 64,
+  "compile_failures": 0,
+  "boundary_rejections": 0,
+  "improvements": [
+    {
+      "trial": "baseline",
+      "source_sha256": "ec7910201a4573c7ba76795e59cb6c6437d0703f82f4ea9386d9056cbbcfc939",
+      "emitted_bytes": 5160,
+      "local_frame_bytes": 164,
+      "different_bytes": 6312,
+      "compiled_sha256": "cd191266671b082b5947fe95fd2c17b39ef03aa9a7d820e8486a9b0e1043b676",
+      "boundary_rejected": false,
+      "retained": true
+    },
+    {
+      "trial": "row-lookups-and-window-1",
+      "source_sha256": "1ba96d1c1cac8e94779cf23cb371c1982f6bae3b4ac01fd157119cdefc6dd2ad",
+      "emitted_bytes": 5388,
+      "local_frame_bytes": 172,
+      "different_bytes": 6293,
+      "compiled_sha256": "aeeef5f2ddcba2c23eed9ada84b63fd3368eca77478e78588d060f0226c44c3f",
+      "boundary_rejected": false,
+      "retained": true
+    },
+    {
+      "trial": "row-lookups-and-window-2",
+      "source_sha256": "3475c6ea4d0631c1aa2a326a53a3dd09adbc844cec2aa33adcc473cd4fb3b1ed",
+      "emitted_bytes": 5424,
+      "local_frame_bytes": 140,
+      "different_bytes": 6272,
+      "compiled_sha256": "2f9335eb4341c7ffc48c43822b3b83caf0e89f076558d1565a7e7218c7413c5f",
+      "boundary_rejected": false,
+      "retained": true
+    },
+    {
+      "trial": "row-lookups-and-window-8",
+      "source_sha256": "2a44f6988634d32d31bc8069ec0947645088a0cc67e8917867e6eb2b96dc5652",
+      "emitted_bytes": 5212,
+      "local_frame_bytes": 164,
+      "different_bytes": 6254,
+      "compiled_sha256": "e2e5de8787b19a89c6da84fe51bd4ded5584be183ca8a7ae350a9d73eafcabfc",
+      "boundary_rejected": false,
+      "retained": true
+    },
+    {
+      "trial": "row-lookups-and-window-9",
+      "source_sha256": "8601a3d54b520b1e78d4fee1af288562340747e78b3298d935ef59604db92738",
+      "emitted_bytes": 5440,
+      "local_frame_bytes": 168,
+      "different_bytes": 6245,
+      "compiled_sha256": "6d95d6e626beb2304f4d56e3988a3f27d817607a64c01c97161667aee1362211",
+      "boundary_rejected": false,
+      "retained": true
+    },
+    {
+      "trial": "row-lookups-and-window-10",
+      "source_sha256": "1584ba3aa5dde2b65461c9060326b7537ec4c893037d28ec1c0f8342f65abd0b",
+      "emitted_bytes": 5396,
+      "local_frame_bytes": 148,
+      "different_bytes": 6239,
+      "compiled_sha256": "9ee435a37c63ec9979fa01c44a4439d6b0a2a0dd75b6a9d2e34b68ee6aa27f4f",
+      "boundary_rejected": false,
+      "retained": true
+    },
+    {
+      "trial": "row-lookups-and-window-11",
+      "source_sha256": "42df2aec3caa2404edd16681485b6af298aa2e8001dfc2adae82afe9a2b2cc88",
+      "emitted_bytes": 5620,
+      "local_frame_bytes": 148,
+      "different_bytes": 6209,
+      "compiled_sha256": "39470f07cc02d3b52e47911b74528fc62d71884467ddfb2d4b3511d456583bb4",
+      "boundary_rejected": false,
+      "retained": true
+    },
+    {
+      "trial": "row-lookups-and-window-15",
+      "source_sha256": "6ec011930a2c207898a74a219ff715046c6561438156e1e002729fe79de951dc",
+      "emitted_bytes": 5812,
+      "local_frame_bytes": 148,
+      "different_bytes": 6203,
+      "compiled_sha256": "3ac0a7abb7381aabbbf67a061bdf10eac87d0dc67762b3b2895b23dd5dbafd9c",
+      "boundary_rejected": false,
+      "retained": true
+    },
+    {
+      "trial": "row-lookups-and-window-19",
+      "source_sha256": "c0b61d3e5bff68fc43686a1ae55eccfc2dde54d1a3e0661d69abb5705829d19f",
+      "emitted_bytes": 5920,
+      "local_frame_bytes": 156,
+      "different_bytes": 6161,
+      "compiled_sha256": "e69ebbbc9c0d1643c7eb2039630f4aeecc8fcd63c67ba1fc02ab00347761a851",
+      "boundary_rejected": false,
+      "retained": true
+    },
+    {
+      "trial": "row-lookups-and-window-23",
+      "source_sha256": "3cf5c6f34087ae99b1626f76d770b73d43e23f4acea1b5faa880dde01d05c8e6",
+      "emitted_bytes": 6120,
+      "local_frame_bytes": 156,
+      "different_bytes": 6106,
+      "compiled_sha256": "3fd8cba1008e16692a97cd1e76d66ff039787fa6cc3cba04b58ce496de01bcf7",
+      "boundary_rejected": false,
+      "retained": true
+    }
+  ],
+  "best_different_bytes": 6106
+}

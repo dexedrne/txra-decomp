@@ -1,0 +1,26 @@
+[
+  {
+    "order": "slot-first",
+    "address": "08002500",
+    "size": 632,
+    "exact": true
+  },
+  {
+    "order": "slot-first",
+    "address": "08012600",
+    "size": 1104,
+    "exact": true
+  },
+  {
+    "order": "component-first",
+    "address": "08002500",
+    "size": 632,
+    "exact": true
+  },
+  {
+    "order": "component-first",
+    "address": "08012600",
+    "size": 1104,
+    "exact": true
+  }
+]
