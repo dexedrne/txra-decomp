@@ -97,13 +97,21 @@ check-code-audit:
 # PC-only builds do not require the matching compiler toolchain.
 check-accuracy: recomp
 	python3 tools/check_accuracy.py
-check-desktop: build/desktop-test check-controller recomp
+check-desktop: build/desktop-test check-controller check-touch recomp
 	./build/desktop-test
 	python3 tools/check_desktop_flow.py
 build/desktop-test: tests/desktop_test.c runtime/desktop.c runtime/desktop.h runtime/input.c runtime/input.h runtime/audio.c runtime/audio.h
 	@mkdir -p build
 	$(HOST_CC) $(HOST_CFLAGS) $(SDL_CFLAGS) -Iruntime tests/desktop_test.c runtime/desktop.c runtime/input.c runtime/audio.c $(SDL_LIBS) -o $@
 .PHONY: check-accuracy check-desktop
+
+# iPhone on-screen controls and ROM finder (plain C, no SDL): layout, hit-testing, SHA-1, scan.
+build/touch-test: tests/touch_test.c runtime/ios/touch.c runtime/ios/touch.h runtime/ios/romscan.c runtime/ios/romscan.h
+	@mkdir -p build
+	$(HOST_CC) $(HOST_CFLAGS) -Iruntime/ios tests/touch_test.c runtime/ios/touch.c runtime/ios/romscan.c -lm -o $@
+check-touch: build/touch-test
+	./build/touch-test
+.PHONY: check-touch
 
 # Windows x86-64 cross-build with MinGW-w64 and the official SDL2 MinGW SDK; the ROM stays separate.
 # SDL2_WINDOWS_ROOT is the SDK's x86_64-w64-mingw32 folder (or set TXRA_SDL2_WINDOWS_ROOT).

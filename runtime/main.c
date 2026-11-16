@@ -2,6 +2,9 @@
 #include "desktop.h"
 #include "gba.h"
 #include "input.h"
+#ifdef TXRA_IOS
+#include "ios/ios.h"
+#endif
 #include <SDL.h>
 #include <errno.h>
 #include <inttypes.h>
@@ -50,6 +53,41 @@ static void fatal(const char *format, ...) {
     if (dialogs)
         SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "TXRA", message, NULL);
 #endif
+#ifdef TXRA_IOS
+    ios_show_error(message); /* the app has no console: an alert, then it closes */
+#endif
+}
+/* Reads the player's ROM into g->rom and checks it against this build. */
+static bool read_rom(GBA *g, const char *rompath, bool rom_given) {
+    FILE *f = fopen(rompath, "rb");
+    if (!f) {
+        int error = errno;
+        if (rom_given)
+            fatal("Player ROM: %s\n%s", strerror(error), rompath);
+        else
+            fatal("Player ROM: %s\nDrop your own cartridge .gba file onto txra-pc, or run "
+                  "txra-pc --rom FILE.",
+                  strerror(error));
+        return false;
+    }
+    size_t n = fread(g->rom, 1, sizeof(g->rom), f);
+    bool extra = fgetc(f) != EOF;
+    fclose(f);
+    if (n != sizeof(g->rom) || extra) {
+        fatal("Expected a 4 MiB ROM");
+        return false;
+    }
+    u32 crc = ~0u;
+    for (size_t i = 0; i < n; i++) {
+        crc ^= g->rom[i];
+        for (unsigned b = 0; b < 8; b++)
+            crc = (crc >> 1) ^ (0xedb88320u & (0u - (crc & 1)));
+    }
+    if ((~crc) != recompiled_rom_crc) {
+        fatal("ROM does not match this recompiled build; rebuild with the supported player ROM.");
+        return false;
+    }
+    return true;
 }
 static void capture(GBA *g, const char *path) {
     FILE *f = fopen(path, "wb");
@@ -191,39 +229,24 @@ int main(int argc, char **argv) {
     GBA *g = calloc(1, sizeof(*g));
     if (!g)
         return 1;
-    FILE *f = fopen(rompath, "rb");
-    if (!f) {
-        int error = errno;
-        if (rom_given)
-            fatal("Player ROM: %s\n%s", strerror(error), rompath);
-        else
-            fatal("Player ROM: %s\nDrop your own cartridge .gba file onto txra-pc, or run "
-                  "txra-pc --rom FILE.",
-                  strerror(error));
-        free(g);
-        return 1;
-    }
-    size_t n = fread(g->rom, 1, sizeof(g->rom), f);
-    bool extra = fgetc(f) != EOF;
-    fclose(f);
-    if (n != sizeof(g->rom) || extra) {
-        fatal("Expected a 4 MiB ROM");
-        free(g);
-        return 1;
-    }
-    u32 crc = ~0u;
-    for (size_t i = 0; i < n; i++) {
-        crc ^= g->rom[i];
-        for (unsigned b = 0; b < 8; b++)
-            crc = (crc >> 1) ^ (0xedb88320u & (0u - (crc & 1)));
-    }
-    if ((~crc) != recompiled_rom_crc) {
-        fatal("ROM does not match this recompiled build; rebuild with the supported player ROM.");
+#ifdef TXRA_IOS
+    /* The app finds the player's dump in its Documents folder once its window is up;
+       --rom stays for automated review runs. Always full screen, filling the safe area. */
+    bool find_rom = !rom_given;
+    desktop.fullscreen = true;
+    desktop.integer = false;
+#else
+    const bool find_rom = false;
+#endif
+    if (!find_rom && !read_rom(g, rompath, rom_given)) {
         free(g);
         return 1;
     }
     if (headless)
         SDL_setenv("SDL_VIDEODRIVER", "dummy", 1);
+#ifdef TXRA_IOS
+    ios_hints();
+#endif
 #ifdef _WIN32
     SDL_SetMainReady();
     /* Draw at physical pixels instead of letting Windows stretch the window
@@ -252,7 +275,13 @@ int main(int argc, char **argv) {
     }
 #endif
     char default_save[4096], default_bindings[4096], default_stats[4096], default_unknown[4096];
+#ifdef TXRA_IOS
+    snprintf(default_save, sizeof(default_save), "%s", ios_save_path(pref));
+    bool sound_on = !mute;
+    ios_load_settings(pref, &desktop, &sound_on);
+#else
     snprintf(default_save, sizeof(default_save), "%stxra.sav", pref);
+#endif
     snprintf(default_bindings, sizeof(default_bindings), "%sbindings.ini", pref);
     snprintf(default_stats, sizeof(default_stats), "%slast-run.json", pref);
     snprintf(default_unknown, sizeof(default_unknown), "%sunknown-targets.log", pref);
@@ -316,21 +345,48 @@ int main(int argc, char **argv) {
     if (bf) {
         fclose(bf);
         if (!bindings_load(&bindings, binding_path)) {
+#ifdef TXRA_IOS
+            /* Players cannot reach this file on an iPhone: start with the defaults and keep
+               the rejected file next to the new one. */
+            char rejected[4096];
+            snprintf(rejected, sizeof(rejected), "%s.rejected", binding_path);
+            remove(rejected);
+            rename(binding_path, rejected);
+            bindings_default(&bindings);
+            fprintf(stderr, "Bindings file rejected; using the defaults (kept as %s)\n", rejected);
+            if (!bindings_write(&bindings, binding_path))
+                fprintf(stderr, "Bindings: %s\n", strerror(errno));
+#else
             fatal("Bindings file rejected: %s", binding_path);
             return 2;
+#endif
         }
     } else if (!bindings_write(&bindings, binding_path)) {
+#ifdef TXRA_IOS
+        fprintf(stderr, "Bindings: %s\n", strerror(errno)); /* the defaults still apply */
+#else
         fatal("Bindings: %s", strerror(errno));
         return 1;
+#endif
     }
     SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "0");
+#ifdef TXRA_IOS
+    Uint32 window_flags = SDL_WINDOW_FULLSCREEN | SDL_WINDOW_BORDERLESS | SDL_WINDOW_ALLOW_HIGHDPI;
+#else
+    Uint32 window_flags = SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI |
+                          (desktop.fullscreen ? SDL_WINDOW_FULLSCREEN_DESKTOP : 0);
+#endif
     SDL_Window *window =
         SDL_CreateWindow("TXRA", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 960, 640,
-                         headless ? SDL_WINDOW_HIDDEN
-                                  : (SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI |
-                                     (desktop.fullscreen ? SDL_WINDOW_FULLSCREEN_DESKTOP : 0)));
+                         headless ? SDL_WINDOW_HIDDEN : window_flags);
     if (window)
         SDL_SetWindowMinimumSize(window, 240, 160);
+#ifdef TXRA_IOS
+    if (window && !headless) {
+        ios_attach_window(window);
+        ios_error_window(window);
+    }
+#endif
     SDL_Renderer *renderer =
         window && !headless
             ? SDL_CreateRenderer(window, -1,
@@ -356,7 +412,7 @@ int main(int argc, char **argv) {
     if (ui_script) {
         FILE *uf = fopen(ui_script, "r");
         if (!uf) {
-            perror(ui_script);
+            fatal("%s: %s", ui_script, strerror(errno));
             return 1;
         }
         while (ui_count < 256 &&
@@ -397,8 +453,16 @@ int main(int argc, char **argv) {
         }
     Audio audio = {0};
     desktop.muted = mute;
-    if (!mute && !audio_open(&audio))
+#ifdef TXRA_IOS
+    desktop.muted = !sound_on; /* Sound off in the pause menu lasts between launches */
+#endif
+    if (!desktop.muted && !audio_open(&audio))
         desktop.muted = true;
+#ifdef TXRA_IOS
+    ios_attach(g, &audio, &desktop, window, renderer);
+    if (find_rom && !ios_find_rom(g->rom, sizeof(g->rom)))
+        g->stopped = true; /* the app is closing */
+#endif
     FILE *video = raw ? fopen(raw, "wb") : NULL;
     FILE *sound = pcm ? fopen(pcm, "wb") : NULL;
     /* Binary mode keeps diagnostic files byte-identical on every platform. */
@@ -452,6 +516,9 @@ int main(int argc, char **argv) {
                     quit = true;
             }
             while (SDL_PollEvent(&event)) {
+#ifdef TXRA_IOS
+                ios_event(&event, &command);
+#endif
                 controller_event(&pad, &event);
                 if (event.type == SDL_QUIT)
                     quit = true;
@@ -515,9 +582,10 @@ int main(int argc, char **argv) {
             }
             if (desktop.paused && !desktop.confirm_reset) {
                 if (command == 4)
-                    desktop.selected = (desktop.selected + 6) % 7;
+                    desktop.selected =
+                        (desktop.selected + desktop_menu_count - 1) % desktop_menu_count;
                 if (command == 5)
-                    desktop.selected = (desktop.selected + 1) % 7;
+                    desktop.selected = (desktop.selected + 1) % desktop_menu_count;
             }
             if (command == 7) {
                 if (desktop.confirm_reset)
@@ -545,7 +613,7 @@ int main(int argc, char **argv) {
                         desktop_notice(&desktop, "SAVE RESET - BACKUP RETAINED");
                     }
                 } else
-                    switch (desktop.selected) {
+                    switch (desktop_menu[desktop.selected]) {
                     case 0:
                         desktop.paused = false;
                         break;
@@ -560,6 +628,9 @@ int main(int argc, char **argv) {
                     }
                     case 2:
                         desktop.integer = !desktop.integer;
+#ifdef TXRA_IOS
+                        ios_save_settings(false);
+#endif
                         break;
                     case 3:
                         if (desktop.muted && !audio.device) {
@@ -571,6 +642,9 @@ int main(int argc, char **argv) {
                             }
                         }
                         desktop.muted = !desktop.muted;
+#ifdef TXRA_IOS
+                        ios_save_settings(true);
+#endif
                         break;
                     case 4:
                         command = 3;
@@ -602,8 +676,14 @@ int main(int argc, char **argv) {
                 desktop_pixels(&desktop, g->pixels, display);
             if (command == 3) {
                 char path[4096];
+#ifdef TXRA_IOS
+                /* Documents, so screenshots show up in the Files app. */
+                snprintf(path, sizeof(path), "%s/shot-%lld-%u.bmp", ios_documents(),
+                         (long long)time(NULL), SDL_GetTicks());
+#else
                 snprintf(path, sizeof(path), "%sshot-%lld-%u.bmp", pref, (long long)time(NULL),
                          SDL_GetTicks());
+#endif
                 bool ok = desktop_screenshot(display, path);
                 desktop_notice(&desktop, ok ? "SCREENSHOT SAVED" : "SCREENSHOT FAILED");
                 if (ok)
@@ -612,11 +692,21 @@ int main(int argc, char **argv) {
             if (quit)
                 break;
             if (desktop.paused) {
+#ifdef TXRA_IOS
+                if (!headless) {
+                    ios_present(texture, display);
+                    SDL_Delay(ios_background() ? 50 : 8);
+                    continue;
+                }
+#endif
                 desktop_present(renderer, texture, window, display, desktop.integer);
                 SDL_Delay(8);
                 continue;
             }
             unsigned keys = bindings_keys(&bindings, pad, k);
+#ifdef TXRA_IOS
+            keys |= ios_keys();
+#endif
             /* Do not leak overlay accept/cancel/fullscreen chords into the guest. */
             if (!keys)
                 release_input = false;
@@ -655,7 +745,12 @@ int main(int argc, char **argv) {
                 eeprom_flush(g);
             uint64_t present_start = timings ? SDL_GetPerformanceCounter() : 0;
             desktop_pixels(&desktop, g->pixels, display);
-            desktop_present(renderer, texture, window, display, desktop.integer);
+#ifdef TXRA_IOS
+            if (!headless)
+                ios_present(texture, display);
+            else
+#endif
+                desktop_present(renderer, texture, window, display, desktop.integer);
             uint64_t present_end = timings ? SDL_GetPerformanceCounter() : 0;
             if (video && shown % 2 == 0 && shown >= video_start && shown < video_end)
                 fwrite(g->pixels, 4, 240 * 160, video);
@@ -759,7 +854,7 @@ int main(int argc, char **argv) {
             elapsed ? g->frame / elapsed : 0, cpu_seconds,
             elapsed ? cpu_seconds * 100 / elapsed : 0, audio.underruns,
             audio.format.freq ? audio.max_queue_bytes * 1000.0 / (audio.format.freq * 4) : 0);
-    f = fopen(stats, "wb");
+    FILE *f = fopen(stats, "wb");
     if (f) {
         fprintf(f,
                 "{\"frames\":%u,\"pc\":\"%08x\",\"instructions\":%" PRIu64

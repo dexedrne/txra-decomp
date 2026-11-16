@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BD3E4E2D06342E63931ECCD /* coverage.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C9495332796EDF89EC09F /* coverage.c */; };
+		309A21567D0CE9130D4D114F /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D11EBC5BB0C7F478873971D /* input.c */; };
+		490010AD8A7FFDD6B3A13E05 /* touch.c in Sources */ = {isa = PBXBuildFile; fileRef = 616393A8AC2D11F8741296C9 /* touch.c */; };
+		79B573EEBC00F2A2C1DCCB52 /* desktop.c in Sources */ = {isa = PBXBuildFile; fileRef = E211F361A49A0D1B97D28A97 /* desktop.c */; };
+		8B1EC9E4307F3B162571CB16 /* audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 8647CCE2FC89DCE4DC0F43F8 /* audio.c */; };
+		A2DA7643C4DD86647B168149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B330B3579A553F3A4344E3C /* Assets.xcassets */; };
+		AC1717AF1B978957E6BD7D63 /* romscan.c in Sources */ = {isa = PBXBuildFile; fileRef = 2EC606078462DCEE73187ECB /* romscan.c */; };
+		ACEB163BC5E03329DB2FD75B /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = D821411D1A06EBDA3BAFBA77 /* memory.c */; };
+		BF155FD09620E8E21861AC75 /* hardware.c in Sources */ = {isa = PBXBuildFile; fileRef = D665C3BCB1E8D69150522FD4 /* hardware.c */; };
+		C5F6873BE579428FD4D7846E /* ios.c in Sources */ = {isa = PBXBuildFile; fileRef = D832D453D1BCBA2D56BB764E /* ios.c */; };
+		D1B823B4212389C1074010B8 /* ios_platform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5C156A33C2BA89F79DFCA5 /* ios_platform.m */; };
+		E240404CA881A1C346CD20C4 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FFCF3300E1CCFF4BBC25D0B2 /* main.c */; };
+		E2829324B4864CC804438D7B /* cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 521913B251CBE71608AC21F9 /* cpu.c */; };
+		EE79E72EA71F47ACAD953A0C /* generated.c in Sources */ = {isa = PBXBuildFile; fileRef = 093327E8B4D158FB06D2AE80 /* generated.c */; settings = {COMPILER_FLAGS = "-O1"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		093327E8B4D158FB06D2AE80 /* generated.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = generated.c; path = ../../build/generated.c; sourceTree = SOURCE_ROOT; };
+		0B5C156A33C2BA89F79DFCA5 /* ios_platform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ios_platform.m; path = ../../runtime/ios/ios_platform.m; sourceTree = SOURCE_ROOT; };
+		2118ECA11D7E1ACDF609358A /* desktop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = desktop.h; path = ../../runtime/desktop.h; sourceTree = SOURCE_ROOT; };
+		2EC606078462DCEE73187ECB /* romscan.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = romscan.c; path = ../../runtime/ios/romscan.c; sourceTree = SOURCE_ROOT; };
+		521913B251CBE71608AC21F9 /* cpu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cpu.c; path = ../../runtime/cpu.c; sourceTree = SOURCE_ROOT; };
+		5C2C9495332796EDF89EC09F /* coverage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = coverage.c; path = ../../runtime/coverage.c; sourceTree = SOURCE_ROOT; };
+		616393A8AC2D11F8741296C9 /* touch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = touch.c; path = ../../runtime/ios/touch.c; sourceTree = SOURCE_ROOT; };
+		6D11EBC5BB0C7F478873971D /* input.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = input.c; path = ../../runtime/input.c; sourceTree = SOURCE_ROOT; };
+		74059E4E97DE2E44428E7167 /* touch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = touch.h; path = ../../runtime/ios/touch.h; sourceTree = SOURCE_ROOT; };
+		8647CCE2FC89DCE4DC0F43F8 /* audio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = audio.c; path = ../../runtime/audio.c; sourceTree = SOURCE_ROOT; };
+		8B330B3579A553F3A4344E3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D83F6160FE4B358FE005358 /* TXRA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TXRA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B247B9B845778380DACBBFEB /* input.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = input.h; path = ../../runtime/input.h; sourceTree = SOURCE_ROOT; };
+		BAE6B34843471CF907B271F9 /* audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = audio.h; path = ../../runtime/audio.h; sourceTree = SOURCE_ROOT; };
+		BCE7A5BD78B732A217A4598D /* gba.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gba.h; path = ../../runtime/gba.h; sourceTree = SOURCE_ROOT; };
+		CB7F2B8FAAA9A59A6619FAA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = "<group>"; };
+		D665C3BCB1E8D69150522FD4 /* hardware.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = hardware.c; path = ../../runtime/hardware.c; sourceTree = SOURCE_ROOT; };
+		D821411D1A06EBDA3BAFBA77 /* memory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = memory.c; path = ../../runtime/memory.c; sourceTree = SOURCE_ROOT; };
+		D832D453D1BCBA2D56BB764E /* ios.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ios.c; path = ../../runtime/ios/ios.c; sourceTree = SOURCE_ROOT; };
+		E211F361A49A0D1B97D28A97 /* desktop.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = desktop.c; path = ../../runtime/desktop.c; sourceTree = SOURCE_ROOT; };
+		EE72C13FC4C004639A515D82 /* romscan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = romscan.h; path = ../../runtime/ios/romscan.h; sourceTree = SOURCE_ROOT; };
+		F06ED73CD1380D49D0AF3A07 /* ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ios.h; path = ../../runtime/ios/ios.h; sourceTree = SOURCE_ROOT; };
+		FFCF3300E1CCFF4BBC25D0B2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../../runtime/main.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C800E092330CE5A8BAF3047F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10CD3D2119D9D679018E958B = {
+			isa = PBXGroup;
+			children = (
+				62A8EB48C191CB6063EFB957 /* Runtime */,
+				8CACA522B8B4274F76AE4490 /* iOS */,
+				34DDF01A36D31C807CB4197A /* Generated (from your ROM, not committed) */,
+				260737057D492B8B6704898F /* App */,
+				380D87AC1CB2D27804DE7D09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		260737057D492B8B6704898F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CB7F2B8FAAA9A59A6619FAA4 /* Info.plist */,
+				8B330B3579A553F3A4344E3C /* Assets.xcassets */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		34DDF01A36D31C807CB4197A /* Generated (from your ROM, not committed) */ = {
+			isa = PBXGroup;
+			children = (
+				093327E8B4D158FB06D2AE80 /* generated.c */,
+			);
+			name = "Generated (from your ROM, not committed)";
+			sourceTree = "<group>";
+		};
+		380D87AC1CB2D27804DE7D09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D83F6160FE4B358FE005358 /* TXRA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62A8EB48C191CB6063EFB957 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				8647CCE2FC89DCE4DC0F43F8 /* audio.c */,
+				BAE6B34843471CF907B271F9 /* audio.h */,
+				5C2C9495332796EDF89EC09F /* coverage.c */,
+				521913B251CBE71608AC21F9 /* cpu.c */,
+				E211F361A49A0D1B97D28A97 /* desktop.c */,
+				2118ECA11D7E1ACDF609358A /* desktop.h */,
+				BCE7A5BD78B732A217A4598D /* gba.h */,
+				D665C3BCB1E8D69150522FD4 /* hardware.c */,
+				6D11EBC5BB0C7F478873971D /* input.c */,
+				B247B9B845778380DACBBFEB /* input.h */,
+				FFCF3300E1CCFF4BBC25D0B2 /* main.c */,
+				D821411D1A06EBDA3BAFBA77 /* memory.c */,
+			);
+			name = Runtime;
+			sourceTree = "<group>";
+		};
+		8CACA522B8B4274F76AE4490 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D832D453D1BCBA2D56BB764E /* ios.c */,
+				F06ED73CD1380D49D0AF3A07 /* ios.h */,
+				0B5C156A33C2BA89F79DFCA5 /* ios_platform.m */,
+				2EC606078462DCEE73187ECB /* romscan.c */,
+				EE72C13FC4C004639A515D82 /* romscan.h */,
+				616393A8AC2D11F8741296C9 /* touch.c */,
+				74059E4E97DE2E44428E7167 /* touch.h */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FC7B0AF20E3488E872A520C /* TXRA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95386E68272D1D3550AC3314;
+			buildPhases = (
+				3692A725E752904981017226 /* Sources */,
+				C800E092330CE5A8BAF3047F /* Frameworks */,
+				178C75741F2D6AE654EB179F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TXRA;
+			productName = TXRA;
+			productReference = 8D83F6160FE4B358FE005358 /* TXRA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71F94DCF760F041B7ACD0FF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2700;
+			};
+			buildConfigurationList = 437967DBC0E9E31EAB43BDC7;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10CD3D2119D9D679018E958B;
+			productRefGroup = 380D87AC1CB2D27804DE7D09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FC7B0AF20E3488E872A520C /* TXRA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		178C75741F2D6AE654EB179F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2DA7643C4DD86647B168149 /* Assets.xcassets */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3692A725E752904981017226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1EC9E4307F3B162571CB16 /* audio.c */,
+				2BD3E4E2D06342E63931ECCD /* coverage.c */,
+				E2829324B4864CC804438D7B /* cpu.c */,
+				79B573EEBC00F2A2C1DCCB52 /* desktop.c */,
+				BF155FD09620E8E21861AC75 /* hardware.c */,
+				309A21567D0CE9130D4D114F /* input.c */,
+				E240404CA881A1C346CD20C4 /* main.c */,
+				ACEB163BC5E03329DB2FD75B /* memory.c */,
+				C5F6873BE579428FD4D7846E /* ios.c */,
+				D1B823B4212389C1074010B8 /* ios_platform.m */,
+				AC1717AF1B978957E6BD7D63 /* romscan.c */,
+				490010AD8A7FFDD6B3A13E05 /* touch.c */,
+				EE79E72EA71F47ACAD953A0C /* generated.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		138556F4C24F67C1B4DD6C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6E217D0EB380B59BCAB7B2C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		ABDE739E3816AD2CC9D55FAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TXRA_IOS=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(TXRA_REPO)/runtime",
+					"$(TXRA_REPO)/runtime/ios",
+					"$(TXRA_SDL_SRC)/include",
+				);
+				INFOPLIST_FILE = Info.plist;
+				MARKETING_VERSION = 1.2.0;
+				OTHER_CFLAGS = (
+					"-ffp-contract=off",
+					"-ffile-prefix-map=$(TXRA_REPO)/=txra/",
+					"-ffile-prefix-map=$(TXRA_DEPS)/=deps/",
+				);
+				OTHER_LDFLAGS = (
+					"$(TXRA_SDL_LIB)/libSDL2.a",
+					"-liconv",
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreHaptics,
+					"-framework",
+					CoreMotion,
+					"-framework",
+					Foundation,
+					"-framework",
+					GameController,
+					"-framework",
+					Metal,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beer.vyvanse.txra;
+				PRODUCT_NAME = TXRA;
+				TXRA_DEPS = "$(TXRA_REPO)/build/ios/deps";
+				TXRA_REPO = "$(SRCROOT)/../..";
+				TXRA_SDL_LIB = "$(TXRA_DEPS)/sdl-build/sym/Release-$(PLATFORM_NAME)";
+				TXRA_SDL_SRC = "$(TXRA_DEPS)/SDL2-2.30.12";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-misleading-indentation",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = Debug;
+		};
+		B5A6B6EFF16478A6A77A05E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TXRA_IOS=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(TXRA_REPO)/runtime",
+					"$(TXRA_REPO)/runtime/ios",
+					"$(TXRA_SDL_SRC)/include",
+				);
+				INFOPLIST_FILE = Info.plist;
+				MARKETING_VERSION = 1.2.0;
+				OTHER_CFLAGS = (
+					"-ffp-contract=off",
+					"-ffile-prefix-map=$(TXRA_REPO)/=txra/",
+					"-ffile-prefix-map=$(TXRA_DEPS)/=deps/",
+				);
+				OTHER_LDFLAGS = (
+					"$(TXRA_SDL_LIB)/libSDL2.a",
+					"-liconv",
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreHaptics,
+					"-framework",
+					CoreMotion,
+					"-framework",
+					Foundation,
+					"-framework",
+					GameController,
+					"-framework",
+					Metal,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beer.vyvanse.txra;
+				PRODUCT_NAME = TXRA;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = all;
+				TXRA_DEPS = "$(TXRA_REPO)/build/ios/deps";
+				TXRA_REPO = "$(SRCROOT)/../..";
+				TXRA_SDL_LIB = "$(TXRA_DEPS)/sdl-build/sym/Release-$(PLATFORM_NAME)";
+				TXRA_SDL_SRC = "$(TXRA_DEPS)/SDL2-2.30.12";
+				VALIDATE_PRODUCT = NO;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-misleading-indentation",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		437967DBC0E9E31EAB43BDC7 /* Build configuration list for PBXProject "TXRA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138556F4C24F67C1B4DD6C17 /* Debug */,
+				6E217D0EB380B59BCAB7B2C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95386E68272D1D3550AC3314 /* Build configuration list for PBXNativeTarget "TXRA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABDE739E3816AD2CC9D55FAD /* Debug */,
+				B5A6B6EFF16478A6A77A05E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71F94DCF760F041B7ACD0FF3 /* Project object */;
+}

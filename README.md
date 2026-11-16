@@ -74,7 +74,7 @@ make check
 | `make check-accuracy` | Builds `build/txra-pc` and runs a scripted 4,300-frame session (`tests/race-input.txt`) headless. | Every framebuffer hash, every PCM audio byte, the final machine state and the sample clock equal a recorded reference, with no fallback or unknown instruction. The reference is an earlier recording of the same runtime, so this is a regression lock, not a hardware comparison. |
 | `make check-runtime` | CPU and hardware-model assertions (446). | Instruction semantics and the hardware model hold. |
 
-Other targets: `make analyze` regenerates the assembly and JSON inventories, `make drafts` writes readable pseudo-C lifted by the recompiler (build output, not committed), `make check-mapping`, `check-desktop`, `check-controller`, `check-career` and `check-cpu-reference` cover the coverage tools and the PC build, and `make code-audit` writes metadata-only code-discovery proposals for review.
+Other targets: `make analyze` regenerates the assembly and JSON inventories, `make drafts` writes readable pseudo-C lifted by the recompiler (build output, not committed), `make check-mapping`, `check-desktop`, `check-controller`, `check-touch`, `check-career` and `check-cpu-reference` cover the coverage tools, the PC build and the iPhone touch controls, and `make code-audit` writes metadata-only code-discovery proposals for review.
 
 ## Repository layout
 
@@ -82,9 +82,9 @@ Other targets: `make analyze` regenerates the assembly and JSON inventories, `ma
 | --- | --- |
 | `src/` | The C source: one file per function in `src/generated/` (`func_<address>.c`), the compilation unit `unit_08005C7C.c`, which compiles seventeen sound routines in ROM order (08005C7C–0800622A and 08007398; 08006070 matches only that way), four small routines in `leaves.c`, and shared types in `types.h`. |
 | `asm/` | `rom.s` and the listings it includes, written by `tools/analyze.py`: assembly for the 31 interfaces, an `.incbin` of each compiled C function, and `.incbin` slices of `baserom.gba` for data. |
-| `tools/` | `rom.cfg` (the byte-exact ROM partition, the registered C functions with their compiler profiles, reviewed boundaries) and the build, matching, measurement, audit and review scripts. |
+| `tools/` | `rom.cfg` (the byte-exact ROM partition, the registered C functions with their compiler profiles, reviewed boundaries) and the build, matching, measurement, audit and review scripts. `tools/ios/` builds the iPhone app. |
 | `recomp/` | The static recompiler (`generate.py`), the pseudo-C lifter (`draft.py`) and reviewed observed transfer targets. |
-| `runtime/` | The native runtime: ARMv4T semantics and fallback interpreter, GBA memory and hardware model, SDL2 desktop shell, input, audio and EEPROM saves. |
+| `runtime/` | The native runtime: ARMv4T semantics and fallback interpreter, GBA memory and hardware model, SDL2 desktop shell, input, audio and EEPROM saves. `runtime/ios/` is the iPhone shell (touch controls, ROM finder, app lifecycle). |
 | `tests/` | Python unit tests, C tests for the runtime, controller and desktop layers, scripted input files and golden hashes (metadata only). |
 | `docs/` | The finish tracker, map, compiler and hardware notes, machine-readable inventories in `docs/map/`, a note for every matching round, and retained near-miss sources in `docs/near-misses/`. |
 
@@ -117,10 +117,13 @@ The PC build needs only a C11 compiler, make, Python 3, pkg-config and SDL2 deve
 
 `make package-pc` builds a reproducible Linux archive and `make package-windows` a Windows one (cross-built with MinGW-w64 and SDL2); both check that the executable embeds no ROM data. See [PC build and controls](docs/PC-RUNTIME.md).
 
+**iPhone.** `tools/ios/build.sh` builds the same translated code into an iPhone app (iOS 15 or newer) on a Mac with Xcode. It produces an unsigned IPA: install it with a sideloading tool such as AltStore, SideStore or Sideloadly, which signs it with your own Apple ID (a free one works, but must re-sign every 7 days). The app reads your dump from its folder in the Files app (On My iPhone > TXRA) and has on-screen touch controls and controller support. Like the PC builds it contains no ROM data. See the [iPhone build notes](tools/ios/README.md) and the [player README](tools/ios/README-iOS.txt).
+
 Status:
 
 - The current tree emits and compiles all 228 mapped functions, and `make check-accuracy` passes: the scripted 4,300-frame session runs with no fallback, unknown or unsupported operation and reproduces its recorded framebuffer and audio hashes.
 - On 15 November the current Linux executable passed `make check-career`: the 37,200-frame scripted career and the 2,200-frame save reload match every recorded framebuffer hash, PCM byte, state counter and EEPROM save, with no fallback or unknown operation (first reviewed on 6 November, [review](docs/NATIVE-RUNTIME-1106-REVIEW.md)). The Windows executable reproduced the same accuracy, career and reload hashes under Wine.
+- The iPhone build, run in the iOS Simulator (iOS 27.2, arm64), reproduced the same career and reload frame hashes, PCM and save as Linux. It has not been run on a physical iPhone, and the touch controls and controllers have not been tried by hand.
 - `progress.json` reports `boots`, `reaches_title` and `playable` as false. Those flags turn true only through a recorded review of the exact executable, and no such review has been done for the current build.
 - Timing is approximate (three clocks per instruction, not cycle-accurate). Running on a real Windows PC, physical controllers, visible-window presentation and audible fidelity have not been verified. See [native execution](docs/RECOMP.md) and [PC runtime](docs/PC-RUNTIME.md).
 

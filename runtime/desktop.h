@@ -15,4 +15,11 @@ void desktop_present(SDL_Renderer *, SDL_Texture *, SDL_Window *, const uint32_t
 bool desktop_screenshot(const uint32_t *, const char *);
 bool desktop_backup(const char *);
 void desktop_notice(Desktop *, const char *);
+/* Pause-menu rows in display order, as action numbers 0 resume, 1 fullscreen, 2 scale,
+   3 sound, 4 screenshot, 5 reset save, 6 quit. The iPhone build has no fullscreen or quit
+   rows (iOS apps are always full screen and do not quit themselves). */
+extern const int desktop_menu[];
+extern const int desktop_menu_count;
+/* 5x7 lettering columns (bit 0 = top row) for A-Z and 0-9, or NULL. */
+const uint8_t *desktop_glyph(int ch);
 #endif

@@ -1,4 +1,7 @@
 #include "desktop.h"
+#ifdef TXRA_IOS
+#include "ios/touch.h"
+#endif
 #include <errno.h>
 #include <stdio.h>
 #include <string.h>
@@ -40,6 +43,17 @@ static const uint8_t glyphs[][5] = {{0x7e, 0x11, 0x11, 0x11, 0x7e},
                                     {1, 0x71, 9, 5, 3},
                                     {0x36, 0x49, 0x49, 0x49, 0x36},
                                     {6, 0x49, 0x49, 0x29, 0x1e}};
+#ifdef TXRA_IOS
+const int desktop_menu[] = {0, 2, 3, 4, 5};
+#else
+const int desktop_menu[] = {0, 1, 2, 3, 4, 5, 6};
+#endif
+const int desktop_menu_count = sizeof(desktop_menu) / sizeof(desktop_menu[0]);
+const uint8_t *desktop_glyph(int ch) {
+    if (ch >= 'a' && ch <= 'z')
+        ch -= 32;
+    return ch >= 'A' && ch <= 'Z' ? glyphs[ch - 'A'] : ch >= '0' && ch <= '9' ? glyphs[26 + ch - '0'] : NULL;
+}
 static void box(uint32_t *p, int x, int y, int w, int h, uint32_t c) {
     for (int j = y; j < y + h && j < 160; j++)
         for (int i = x; i < x + w && i < 240; i++)
@@ -85,6 +99,32 @@ void desktop_pixels(const Desktop *d, const uint32_t *source, uint32_t *p) {
         box(p, 13, 8, 214, 144, 0x1b1915);
         text(p, 24, 17, "TXRA", 0xffefd0);
         text(p, 114, 17, "PAUSED", 0xffb12a);
+#ifdef TXRA_IOS
+        /* Touch-sized rows (TOUCH_MENU_*): tap a row, or use the D-pad and A. */
+        if (d->confirm_reset) {
+            text(p, 24, TOUCH_MENU_Y + 5, "RESET THIS SAVE?", 0xffb12a);
+            text(p, 24, TOUCH_MENU_Y + TOUCH_MENU_STEP + 5, "OLD FILE IS BACKED UP.", 0xffefd0);
+            const char *rows[] = {"RESET THE SAVE", "CANCEL"};
+            for (int i = 0; i < 2; i++) {
+                int y = TOUCH_MENU_Y + (i + 2) * TOUCH_MENU_STEP;
+                box(p, TOUCH_MENU_X, y, TOUCH_MENU_W, TOUCH_MENU_H, 0x3a332a);
+                text(p, TOUCH_MENU_X + 6, y + 5, rows[i], 0xffefd0);
+            }
+            text(p, 24, 128, "A: RESET   B: CANCEL", 0xb8ad9b);
+        } else {
+            const char *items[] = {"RESUME", d->integer ? "SCALE: INTEGER" : "SCALE: FILL",
+                                   d->muted ? "SOUND: OFF" : "SOUND: ON", "SCREENSHOT",
+                                   "RESET SAVE"};
+            for (int i = 0; i < desktop_menu_count; i++) {
+                int y = TOUCH_MENU_Y + i * TOUCH_MENU_STEP;
+                box(p, TOUCH_MENU_X, y, TOUCH_MENU_W, TOUCH_MENU_H,
+                    i == d->selected ? 0x4a4033 : 0x2a2620);
+                text(p, TOUCH_MENU_X + 6, y + 5, items[i], i == d->selected ? 0xffb12a : 0xffefd0);
+            }
+            text(p, 24, 128, "TAP A ROW - OR D-PAD AND A", 0xb8ad9b);
+            text(p, 24, 140, "PLAY BUTTON OR MENU: RESUME", 0xb8ad9b);
+        }
+#else
         if (d->confirm_reset) {
             text(p, 24, 42, "RESET THIS SAVE?", 0xffb12a);
             text(p, 24, 60, "OLD FILE IS BACKED UP.", 0xffefd0);
@@ -106,6 +146,7 @@ void desktop_pixels(const Desktop *d, const uint32_t *source, uint32_t *p) {
             text(p, 24, 128, "ARROWS / D-PAD   A: SELECT", 0xb8ad9b);
             text(p, 24, 140, "ESC / GUIDE: RESUME", 0xb8ad9b);
         }
+#endif
     }
     if (!d->paused && d->speed != 1) {
         box(p, 4, 4, 100, 13, 0x1b1915);

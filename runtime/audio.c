@@ -46,6 +46,14 @@ bool audio_queue(Audio *a, const void *data, int bytes) {
         do {
             SDL_Delay(1);
             queued = SDL_GetQueuedAudioSize(a->device);
+#ifdef TXRA_IOS
+            /* An interrupted iOS audio session stops consuming: never hold the game on it. */
+            if (SDL_GetPerformanceCounter() - start > SDL_GetPerformanceFrequency() / 4) {
+                a->backpressure_ticks += SDL_GetPerformanceCounter() - start;
+                audio_clear(a);
+                return true;
+            }
+#endif
         } while (a->started && queued > (Uint32)a->format.freq * 4 * 50 / 1000);
         a->backpressure_ticks += SDL_GetPerformanceCounter() - start;
     }
